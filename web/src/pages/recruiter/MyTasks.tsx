@@ -70,7 +70,7 @@ export default function MyTasks() {
 
       {error && <Notice>{error}</Notice>}
       {isLoading && <p className="text-muted">Loading…</p>}
-      {!isLoading && !tasks?.length && <p className="m-0 text-ink-2">You haven't posted a task yet. <Link to="/post">Post your first one</Link>: graduates apply by doing it.</p>}
+      {!isLoading && !tasks?.length && <p className="m-0 text-ink-2">You haven't posted a task yet. <Link to="/post">Post your first one</Link>. Graduates do it, and you invite the ones you want to interview.</p>}
 
       <div className="flex flex-col gap-3">
         {tasks?.map((t) => {

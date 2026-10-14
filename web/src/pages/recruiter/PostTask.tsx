@@ -86,7 +86,7 @@ export default function PostTask() {
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-6">
           <div className="flex flex-col gap-1.5">
             <h1 className="m-0 text-[30px] font-bold tracking-[-0.03em] sm:text-[34px]">Post a task</h1>
-            <p className="m-0 text-muted">A short test task for a role you're hiring for. Graduates apply by doing it.</p>
+            <p className="m-0 text-muted">A short test task for a role you're hiring for. Graduates do it, and you invite the ones you want to interview.</p>
           </div>
 
           {allowance && !allowance.can_post && (

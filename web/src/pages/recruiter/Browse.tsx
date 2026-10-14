@@ -108,7 +108,7 @@ export default function Browse() {
           <p className="m-0 max-w-[60ch] text-ink-2">
             {tools.length
               ? 'No one matches all of those tools. Try fewer.'
-              : <>No one has finished a {role.toLowerCase()} task yet. <Link to="/post">Post your own task</Link> and graduates will apply by doing it.</>}
+              : <>No one has finished a {role.toLowerCase()} task yet. <Link to="/post">Post your own task</Link> and graduates will do it to show what they can do.</>}
           </p>
           {!tools.length && elsewhere.length > 0 && (
             <div className="flex flex-wrap items-center gap-2">

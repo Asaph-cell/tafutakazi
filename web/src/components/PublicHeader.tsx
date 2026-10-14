@@ -5,7 +5,7 @@ import { homeFor, useAuth } from '../lib/auth'
 export function PublicHeader() {
   const { session, profile } = useAuth()
   return (
-    <header className="mx-auto flex max-w-[1120px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-5 sm:px-6">
+    <header className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-5 sm:px-6">
       <Link to="/" className="flex-1 text-[22px] no-underline"><Logo /></Link>
       <Link to="/about" className="hidden min-h-11 items-center text-ink no-underline sm:flex">About</Link>
       <Link to="/jobs" className="flex min-h-11 items-center text-ink no-underline">Jobs</Link>

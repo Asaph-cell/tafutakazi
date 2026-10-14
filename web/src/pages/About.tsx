@@ -28,7 +28,7 @@ const forGrads = [
 
 const forEmployers = [
   "Post a short test task for the role you're hiring for",
-  'Graduates apply by doing it, so you see real work instead of reading CVs',
+  'Graduates do it to show what they can do, so you see real work instead of reading CVs',
   'Watch them explain it, give a thumbs up or a comment, and invite the ones you want to meet',
   'Search every graduate by role and by the tools they have actually used',
 ]
@@ -70,7 +70,7 @@ export default function About() {
       />
       <PublicHeader />
 
-      <main className="mx-auto flex max-w-[1000px] flex-col gap-12 px-5 pb-6 pt-4 sm:gap-16 sm:px-6 sm:pt-10">
+      <main className="mx-auto flex max-w-[1280px] flex-col gap-12 px-5 pb-6 pt-4 sm:gap-16 sm:px-6 sm:pt-10">
         <section className="flex flex-col gap-6">
           <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-brand">Why Tafutakazi</span>
           <h1 className="m-0 max-w-[18ch] text-[clamp(36px,8vw,64px)] font-bold leading-[1.04] tracking-[-0.04em]">
@@ -172,7 +172,7 @@ export default function About() {
 
         <Section eyebrow="What Tafutakazi is not" title="Not another CV pile">
           <ul className="m-0 flex max-w-[66ch] flex-col gap-2.5 pl-5 text-[17px] leading-relaxed text-ink-2">
-            <li><strong className="text-ink">Not a job board of CVs.</strong> You apply by doing the work.</li>
+            <li><strong className="text-ink">Not a job board of CVs.</strong> Graduates show their work, and companies invite the people they want to interview.</li>
             <li><strong className="text-ink">Not a paid course.</strong> We don't sell training; the tasks are free and the experience is real.</li>
             <li><strong className="text-ink">Not a recruitment agency.</strong> We never charge graduates, and employers talk to graduates directly.</li>
           </ul>

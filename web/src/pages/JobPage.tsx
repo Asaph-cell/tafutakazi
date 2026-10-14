@@ -38,7 +38,7 @@ export default function JobPage() {
     <div className="min-h-screen">
       <Seo
         title={`${job.role} at ${job.company_name}`}
-        description={`${job.company_name} is hiring a ${job.role} and is open to fresh graduates with no experience. Apply by doing a short task: ${job.title}.`}
+        description={`${job.company_name} is hiring a ${job.role} and is open to fresh graduates with no experience. Do its short task to show what you can do: ${job.title}.`}
         jsonLd={jobPostingLd(job)}
       />
       <PublicHeader />
@@ -50,7 +50,7 @@ export default function JobPage() {
             {links.map((l) => <span key={l}> · <a href={l.startsWith('http') ? l : `https://${l}`} target="_blank" rel="noopener noreferrer">{host(l)}</a></span>)}
           </span>
           <h1 className="m-0 text-[30px] font-bold leading-tight tracking-[-0.03em] sm:text-[40px]">{job.role}</h1>
-          <span className="text-[17px] text-ink-2">Apply by doing: {job.title}</span>
+          <span className="text-[17px] text-ink-2">The task: {job.title}</span>
         </div>
 
         <div className="-mt-2 flex flex-wrap gap-2 text-sm">
@@ -67,7 +67,7 @@ export default function JobPage() {
             Do the task below ({minutesLabel(job.minutes_estimate).toLowerCase()}), explain your work in a short video, and the
             company sees it directly. It's free.
           </span>
-          <LinkButton to={apply} variant="light" className="self-start">{profile?.role === 'grad' ? 'Start this task' : 'Sign up to apply'}</LinkButton>
+          <LinkButton to={apply} variant="light" className="self-start">{profile?.role === 'grad' ? 'Start this task' : 'Sign up to do this task'}</LinkButton>
         </section>
 
         <section className="flex flex-col gap-2">
@@ -76,7 +76,7 @@ export default function JobPage() {
         </section>
 
         <p className="m-0 text-sm text-muted">
-          Tafutakazi never charges graduates. If anyone asks you for money to apply, report it to hello@tafutakazi.co.ke.
+          Tafutakazi never charges graduates. If anyone asks you for money for a job or a task, report it to hello@tafutakazi.co.ke.
         </p>
       </main>
       <SiteFooter />

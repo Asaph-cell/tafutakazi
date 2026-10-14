@@ -58,7 +58,8 @@ export function jobPostingLd(job: Job) {
     title: `${job.role}: ${job.title}`,
     description:
       `<p>${job.company_name} is hiring a ${job.role} and is open to fresh graduates with no work experience. ` +
-      `Apply by completing this short task on Tafutakazi (about ${Math.round(job.minutes_estimate / 60)} hours).</p>` +
+      `Do this short task on Tafutakazi (about ${Math.round(job.minutes_estimate / 60)} hours) to show what you can do. ` +
+      `The company sees your work and invites the people it wants to interview.</p>` +
       paragraphs,
     identifier: { '@type': 'PropertyValue', name: 'Tafutakazi', value: job.id },
     datePosted: posted.toISOString().slice(0, 10),

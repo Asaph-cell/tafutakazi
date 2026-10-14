@@ -123,7 +123,7 @@ export default function Home() {
       <Seo />
       <PublicHeader />
 
-      <main className="mx-auto flex max-w-[1120px] flex-col gap-12 px-5 pt-4 sm:gap-16 sm:px-6 sm:pt-10">
+      <main className="mx-auto flex max-w-[1280px] flex-col gap-12 px-5 pt-4 sm:gap-16 sm:px-6 sm:pt-10">
         <section className="flex flex-wrap items-center gap-12 lg:gap-16">
           <div className="flex min-w-0 flex-[1_1_440px] flex-col gap-6 sm:gap-7">
             <h1 className="rise m-0 text-[clamp(30px,12vw,68px)] font-bold leading-[1.02] tracking-[-0.04em]">
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="flex flex-[1_1_360px] flex-col gap-2.5">
             <h2 className="m-0 text-[24px] font-semibold tracking-[-0.025em] sm:text-[32px]">Hiring? Skip the 500 CVs.</h2>
             <p className="m-0 max-w-[46ch] text-[#C9C9C3]">
-              Post a short task for the role. Graduates apply by doing it. Watch them explain their work, then invite
+              Post a short task for the role. Graduates do it to show what they can do. Watch them explain their work, then invite
               the ones you want to meet.
             </p>
           </div>
@@ -200,7 +200,7 @@ export default function Home() {
           {[
             ['Your work stays private', "Only signed-in recruiters can see it. Other graduates can't."],
             ['Real companies only', 'Every company shows where to find it online, and no one may ever ask you for money.'],
-            ['Free, always', 'Never pay to join or to apply.'],
+            ['Free, always', 'Never pay to join or to do a task.'],
           ].map(([title, body]) => (
             <div key={title} className="flex flex-[1_1_240px] flex-col gap-1">
               <span className="font-semibold">{title}</span>

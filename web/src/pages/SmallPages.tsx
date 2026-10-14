@@ -56,15 +56,3 @@ export function NotFound() {
     </AuthShell>
   )
 }
-
-export function Legal({ kind }: { kind: 'terms' | 'privacy' }) {
-  return (
-    <AuthShell
-      title={kind === 'terms' ? 'Terms of Use' : 'Privacy Policy'}
-      intro="The final version is being reviewed and will be published here before launch."
-    >
-      <Seo title={kind === 'terms' ? 'Terms of Use' : 'Privacy Policy'} />
-      <Link to="/">Back to the homepage</Link>
-    </AuthShell>
-  )
-}

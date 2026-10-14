@@ -28,7 +28,7 @@ export default function Support() {
   return (
     <div className="min-h-screen">
       <Seo title="Support Tafutakazi" description="Tafutakazi is free and exists to help reduce graduate unemployment in Kenya. Buy us a chai or partner with us." />
-      <header className="mx-auto flex max-w-[1120px] items-center px-5 py-5 sm:px-6">
+      <header className="mx-auto flex max-w-[1280px] items-center px-5 py-5 sm:px-6">
         <Link to="/" className="text-[22px] no-underline"><Logo /></Link>
       </header>
       <main className="mx-auto flex max-w-[720px] flex-col gap-12 px-5 pb-10 pt-8 sm:px-6">

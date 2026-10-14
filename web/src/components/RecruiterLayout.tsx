@@ -18,7 +18,7 @@ export function RecruiterLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen">
       <header className="border-b border-line bg-white">
-        <div className="mx-auto flex max-w-[1120px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6 sm:py-4">
+        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6 sm:py-4">
           <Link to="/browse" className="text-xl no-underline"><Logo /></Link>
           <nav className="order-last flex w-full gap-5 sm:order-none sm:w-auto sm:flex-1">
             {links.map((l) => (
@@ -37,7 +37,7 @@ export function RecruiterLayout({ children }: { children: ReactNode }) {
           </Link>
         </div>
       </header>
-      <main className="mx-auto flex max-w-[1120px] flex-col gap-8 px-5 py-8 sm:px-6 sm:py-10">{children}</main>
+      <main className="mx-auto flex max-w-[1280px] flex-col gap-8 px-5 py-8 sm:px-6 sm:py-10">{children}</main>
     </div>
   )
 }

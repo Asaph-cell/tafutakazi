@@ -20,7 +20,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
   return (
     <div className="min-h-screen pb-24 sm:pb-0">
       <header className="border-b border-line bg-white">
-        <div className="mx-auto flex max-w-[1120px] items-center gap-8 px-5 py-3.5 sm:px-6">
+        <div className="mx-auto flex max-w-[1280px] items-center gap-8 px-5 py-3.5 sm:px-6">
           <Link to="/me" className="flex-1 text-xl no-underline sm:flex-none"><Logo /></Link>
           <nav className="hidden flex-1 gap-6 sm:flex">
             {tabs.map((t) => (
@@ -42,7 +42,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
         </div>
       </header>
 
-      <main className="mx-auto max-w-[1120px] px-5 py-7 sm:px-6 sm:py-10">
+      <main className="mx-auto max-w-[1280px] px-5 py-7 sm:px-6 sm:py-10">
         <div className={`flex flex-col gap-8 ${narrow ? 'max-w-[760px]' : ''}`}>{children}</div>
       </main>
 

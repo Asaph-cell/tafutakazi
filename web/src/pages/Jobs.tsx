@@ -18,15 +18,16 @@ export default function Jobs() {
     <div className="min-h-screen">
       <Seo
         title={heading}
-        description={`Open ${role ? role.toLowerCase() + ' ' : ''}roles at Kenyan companies that hire fresh graduates with no work experience. Apply by doing a short task, not by sending a CV.`}
+        description={`Open ${role ? role.toLowerCase() + ' ' : ''}roles at Kenyan companies that hire fresh graduates with no work experience. Do a short task from the job to show the company what you can do.`}
       />
       <PublicHeader />
-      <main className="mx-auto flex max-w-[960px] flex-col gap-8 px-5 pb-10 pt-6 sm:px-6 sm:pt-10">
+      <main className="mx-auto flex max-w-[1280px] flex-col gap-8 px-5 pb-10 pt-6 sm:px-6 sm:pt-10">
         <div className="flex flex-col gap-3">
           <h1 className="m-0 text-[32px] font-bold leading-tight tracking-[-0.03em] sm:text-[42px]">{heading}</h1>
           <p className="m-0 max-w-[60ch] text-[17px] text-ink-2">
-            Every job here is open to graduates with no work experience. You apply by doing a short task from the
-            company, not by sending a CV.
+            These companies are hiring and are open to graduates with no work experience. Each has posted a short task
+            from the job. Do it to show what you can do. The company sees your work and invites the people it wants to
+            interview.
           </p>
         </div>
 
@@ -43,7 +44,7 @@ export default function Jobs() {
 
         {isLoading && <p className="text-muted">Loading jobs…</p>}
         {!isLoading && jobs.length === 0 && (
-          <div className="flex flex-col gap-3 rounded-2xl border border-line bg-white p-6">
+          <div className="flex max-w-[720px] flex-col gap-3 rounded-2xl border border-line bg-white p-6">
             <span className="text-lg font-semibold">No open jobs right now</span>
             <span className="text-ink-2">
               New ones are posted often. Sign up and start a practice task: recruiters see that work too, and we'll
@@ -53,7 +54,7 @@ export default function Jobs() {
           </div>
         )}
 
-        <div className="flex flex-col gap-3">
+        <div className="grid gap-3 md:grid-cols-2">
           {jobs.map((j) => (
             <Link key={j.id} to={`/jobs/${j.id}`}
               className="press flex flex-col gap-1 rounded-xl border border-line bg-white p-5 text-ink no-underline hover:border-line-strong hover:text-ink">
