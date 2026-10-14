@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tafutakazi logo and favicon</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+</style>
+</helmet>
+<div style="width: 1280px; height: 720px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; padding: 96px; display: flex; flex-direction: column; justify-content: center; gap: 72px">
+  <span style="font-weight: 700; font-size: 160px; line-height: 1; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+
+  <div style="display: flex; align-items: center; gap: 40px">
+    <svg role="img" aria-label="Favicon" width="128" height="128" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="14" fill="#FFFFFF" stroke="#E3E3DE"></rect>
+      <path d="M17 11h10v9h9v8h-9v14q0 4 4 4h5v8h-7q-12 0-12-11V28h-5v-8h5z" fill="#141414"></path>
+      <rect x="41" y="44" width="10" height="10" fill="#0E5C45"></rect>
+    </svg>
+    <svg role="img" aria-label="Favicon at tab size" width="32" height="32" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="14" fill="#FFFFFF" stroke="#E3E3DE"></rect>
+      <path d="M17 11h10v9h9v8h-9v14q0 4 4 4h5v8h-7q-12 0-12-11V28h-5v-8h5z" fill="#141414"></path>
+      <rect x="41" y="44" width="10" height="10" fill="#0E5C45"></rect>
+    </svg>
+    <span style="font-size: 20px; color: #5C5C57">Favicon, full size and browser-tab size</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":720}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New grad, no company tasks yet</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 1200px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.5; padding: 20px 20px 96px; display: flex; flex-direction: column; gap: 26px">
+  <div style="display: flex; justify-content: space-between; align-items: center">
+    <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+    <span aria-label="Brian Otieno" style="width: 36px; height: 36px; border-radius: 999px; background: #E6EFEB; color: #0E5C45; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center">BO</span>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <h1 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Start your first task, Brian.</h1>
+    <p style="margin: 0; color: #2E2E2B">No company has posted a data analyst task this week. Your work still gets seen: recruiters browse data analysts every day.</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <span style="font-size: 28px; font-weight: 600; letter-spacing: -0.02em">8 recruiters</span>
+    <span style="color: #5C5C57">looked at data analysts this week</span>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5C5C57">Practice tasks · always open</h2>
+    <sc-for list="{{starters}}" as="s" hint-placeholder-count="3">
+      <a href="Phone-Brief.dc.html" style="display: flex; flex-direction: column; gap: 4px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px; color: #141414; text-decoration: none">
+        <span style="font-weight: 600">{{s.title}}</span>
+        <span style="color: #5C5C57; font-size: 14px">{{s.meta}}</span>
+      </a>
+    </sc-for>
+    <span style="color: #5C5C57; font-size: 14px">Written by Tafutakazi, based on real Kenyan businesses. Your work goes on your profile like any other task.</span>
+  </section>
+
+  <div style="display: flex; gap: 12px; align-items: flex-start; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E5C45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+    <span>We'll email you at <span style="font-weight: 600">brian.otieno@gmail.com</span> as soon as a company posts a data analyst task.</span>
+  </div>
+
+  <nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 72px; background: #FFFFFF; border-top: 1px solid #E3E3DE; display: flex">
+    <a href="Phone-Home.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #0E5C45; text-decoration: none; font-size: 12px; font-weight: 600">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7v9H4z"></path></svg>
+      My work
+    </a>
+    <a href="Phone-Brief.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #5C5C57; text-decoration: none; font-size: 12px">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2"></rect><path d="M9 6V4h6v2"></path></svg>
+      Tasks
+    </a>
+    <a href="Phone-GradProfile.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #5C5C57; text-decoration: none; font-size: 12px">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+      Profile
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      starters: [
+        { title: 'Grocery chain sales dashboard', meta: 'About 4 hours · Excel or Power BI' },
+        { title: 'SACCO loan arrears summary', meta: 'About 3 hours · Excel' },
+        { title: 'Clinic appointments report', meta: 'About 3 hours · any tool' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

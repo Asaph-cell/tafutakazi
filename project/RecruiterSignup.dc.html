@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recruiter sign up</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 15px; line-height: 1.5">
+  <header style="border-bottom: 1px solid #E3E3DE; background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="Main.dc.html" style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #141414; text-decoration: none"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></a>
+      <span style="color: #5C5C57; font-size: 14px">Have an account? <a href="Main.dc.html">Log in</a></span>
+    </div>
+  </header>
+
+  <main style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+      <h1 style="margin: 0; font-size: 40px; line-height: 1.1; font-weight: 600; letter-spacing: -0.03em">Hire from real work, not CVs.</h1>
+      <p style="margin: 0; color: #5C5C57; font-size: 17px">Watch graduates explain work they actually did. Free to join.</p>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 8px">
+        <div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; color: #0E5C45">1</span><span>Pick the role you're hiring for</span></div>
+        <div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; color: #0E5C45">2</span><span>Watch videos, preview the work, read honest verdicts</span></div>
+        <div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; color: #0E5C45">3</span><span>Invite the best to interview, or post your own task</span></div>
+      </div>
+    </div>
+
+    <form style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 18px; padding: 28px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px; box-sizing: border-box">
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+          <label for="rname" style="font-weight: 600">Your name</label>
+          <input id="rname" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+        <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+          <label for="rtitle" style="font-weight: 600">Your job title</label>
+          <input id="rtitle" placeholder="e.g. HR Manager" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="remail" style="font-weight: 600">Work email</label>
+        <input id="remail" type="email" placeholder="you@company.co.ke" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        <span style="color: #5C5C57; font-size: 13px">We'll send a link to confirm it.</span>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+          <label for="rcompany" style="font-weight: 600">Company</label>
+          <input id="rcompany" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+        <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+          <label for="rsize" style="font-weight: 600">Company size</label>
+          <select id="rsize" style="font: inherit; min-height: 46px; padding: 0 10px; border: 1px solid #D6D6D0; border-radius: 8px; background: #FFFFFF">
+            <option>1–10</option>
+            <option>11–50</option>
+            <option selected>51–200</option>
+            <option>200+</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="rindustry" style="font-weight: 600">Industry</label>
+        <select id="rindustry" style="font: inherit; min-height: 46px; padding: 0 10px; border: 1px solid #D6D6D0; border-radius: 8px; background: #FFFFFF">
+          <option selected>Logistics and transport</option>
+          <option>Retail</option>
+          <option>Banking, SACCOs and insurance</option>
+          <option>Health</option>
+          <option>Tech and telecoms</option>
+          <option>Media and marketing</option>
+          <option>NGO</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+        <legend style="font-weight: 600; padding: 0; margin-bottom: 4px">Where can graduates find your company online?</legend>
+        <span style="color: #5C5C57; font-size: 13px">Add at least one. It's shown on your tasks so graduates know you're real.</span>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <label for="rsite" style="font-size: 14px">Company website</label>
+          <input id="rsite" placeholder="e.g. kamaulogistics.co.ke" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <label for="rlinkedin" style="font-size: 14px">LinkedIn page</label>
+          <input id="rlinkedin" placeholder="linkedin.com/company/…" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <label for="rsocial" style="font-size: 14px">Business page on Facebook, Instagram or TikTok</label>
+          <input id="rsocial" placeholder="e.g. instagram.com/yourshop" style="font: inherit; min-height: 46px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+        <span style="color: #5C5C57; font-size: 13px">Signed up with a company email (not Gmail or Yahoo)? That counts too.</span>
+      </fieldset>
+
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <label for="rrole" style="font-weight: 600">Roles you hire for</label>
+
+        <sc-if value="{{hasPicked}}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{picked}}" as="p" hint-placeholder-count="1">
+              <span style="display: inline-flex; align-items: center; gap: 2px; padding-left: 14px; border-radius: 999px; background: #141414; color: #FFFFFF; font-size: 14px">
+                {{p.label}}
+                <button type="button" onClick="{{p.remove}}" aria-label="{{p.removeName}}" style="width: 40px; height: 40px; border: 0; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center">
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+                </button>
+              </span>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <div style="position: relative">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5C5C57" stroke-width="2" stroke-linecap="round" style="position: absolute; left: 14px; top: 14px"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          <input id="rrole" value="{{q}}" onChange="{{onQ}}" placeholder="Type a role, e.g. accountant" autocomplete="off" style="font: inherit; width: 100%; box-sizing: border-box; min-height: 46px; padding: 0 12px 0 42px; border: 1px solid #D6D6D0; border-radius: 8px">
+        </div>
+
+        <span style="color: #5C5C57; font-size: 13px">{{suggestLabel}}</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{suggestions}}" as="s" hint-placeholder-count="6">
+            <button type="button" onClick="{{s.add}}" style="font: inherit; font-size: 14px; padding: 0 14px; min-height: 40px; border-radius: 999px; border: 1px solid #D6D6D0; background: #FFFFFF; color: #141414; cursor: pointer">+ {{s.label}}</button>
+          </sc-for>
+          <sc-if value="{{canAddCustom}}" hint-placeholder-val="{{ false }}">
+            <button type="button" onClick="{{addCustom}}" style="font: inherit; font-size: 14px; font-weight: 600; padding: 0 14px; min-height: 40px; border-radius: 999px; border: 1px dashed #0E5C45; background: #FFFFFF; color: #0E5C45; cursor: pointer">+ Add "{{qTrim}}"</button>
+          </sc-if>
+        </div>
+      </div>
+
+      <label style="display: flex; gap: 10px; align-items: flex-start">
+        <input type="checkbox" required style="width: 18px; height: 18px; margin-top: 3px; accent-color: #0E5C45">
+        <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>. I'll use graduates' work only to assess them, and I'm responsible for anything shared from my account.</span>
+      </label>
+      <button type="button" style="font: inherit; font-weight: 600; min-height: 50px; margin-top: 6px; border-radius: 8px; border: 0; background: #0E5C45; color: #FFFFFF; cursor: pointer">Create recruiter account</button>
+      <span style="color: #5C5C57; font-size: 13px">You can browse straight away. To post tasks you need a company email, or one of the links above.</span>
+    </form>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { picked: ['Data Analyst'], q: '' };
+  }
+  renderVals() {
+    const all = ['Data Analyst', 'Accountant', 'Digital Marketer', 'Software Developer', 'Sales', 'Customer Service', 'Finance', 'IT Support', 'Graphic Designer', 'Content Writer', 'HR', 'Admin / Office', 'Procurement', 'Logistics', 'Engineering', 'Project Assistant', 'Research', 'Social Media Manager', 'Lab Assistant', 'Teacher', 'Nurse', 'Pharmacist', 'Agronomist', 'Quantity Surveyor', 'Architect', 'Legal Assistant'];
+    const picked = this.state.picked;
+    const q = this.state.q;
+    const qTrim = q.trim();
+    const low = qTrim.toLowerCase();
+    const add = (n) => this.setState({ picked: picked.concat([n]), q: '' });
+    const pool = all.filter((n) => picked.indexOf(n) === -1);
+    const matches = low ? pool.filter((n) => n.toLowerCase().indexOf(low) !== -1) : pool;
+    const exact = all.concat(picked).some((n) => n.toLowerCase() === low);
+    return {
+      q: q,
+      qTrim: qTrim,
+      onQ: (e) => this.setState({ q: (e && e.target && e.target.value) || '' }),
+      hasPicked: picked.length > 0,
+      picked: picked.map((n) => ({
+        label: n,
+        removeName: 'Remove ' + n,
+        remove: () => this.setState({ picked: picked.filter((p) => p !== n) })
+      })),
+      suggestLabel: low ? (matches.length ? 'Matching roles' : 'No match in our list') : 'Popular',
+      suggestions: matches.slice(0, 6).map((n) => ({ label: n, add: () => add(n) })),
+      canAddCustom: !!low && !exact,
+      addCustom: () => add(qTrim)
+    };
+  }
+}
+</script>
+</body>
+</html>

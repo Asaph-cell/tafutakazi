@@ -1,0 +1,14 @@
+# Tafutakazi: public pages are open to search engines; accounts and admin are not.
+User-agent: *
+Allow: /
+Disallow: /me
+Disallow: /tasks
+Disallow: /browse
+Disallow: /post
+Disallow: /my-tasks
+Disallow: /account
+Disallow: /admin
+Disallow: /check-email
+Disallow: /reset-password
+
+Sitemap: https://tafutakazi.co.ke/sitemap.xml

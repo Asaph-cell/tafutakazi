@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grad profile and settings</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 1800px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.5; padding: 20px 20px 96px; display: flex; flex-direction: column; gap: 26px">
+  <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+
+  <div style="display: flex; gap: 14px; align-items: center">
+    <span aria-hidden="true" style="width: 56px; height: 56px; border-radius: 999px; background: #E6EFEB; color: #0E5C45; font-weight: 600; font-size: 20px; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">WK</span>
+    <div style="display: flex; flex-direction: column">
+      <h1 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 600; letter-spacing: -0.02em">Wanjiru Kamau</h1>
+      <span style="color: #5C5C57; font-size: 15px">Data Analyst · 3 tasks done</span>
+    </div>
+  </div>
+
+  <a href="Phone-RecruiterProfile.dc.html" style="display: flex; justify-content: space-between; align-items: center; min-height: 52px; padding: 0 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px; color: #141414; text-decoration: none">
+    <span>See your profile as recruiters see it</span>
+    <span aria-hidden="true" style="color: #5C5C57">→</span>
+  </a>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5C5C57">For your CV</h2>
+    <div style="display: flex; flex-direction: column; gap: 12px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px; font-size: 15px">
+      <span style="font-weight: 600">Practical work · Tafutakazi</span>
+      <span style="color: #0E5C45">tafutakazi.co.ke/wanjiru-kamau</span>
+      <span>• Grocery sales dashboard (Power BI): cleaned 12,400 sales rows and found duplicate receipts inflating revenue.</span>
+      <span>• SACCO member report (Excel): monthly summary of savings, loans and arrears for 3,000 members.</span>
+      <span>• Delivery times analysis (SQL): found the three routes late most often.</span>
+      <span style="color: #2E2E2B">Invited to interview by 2 companies · 6 recruiter thumbs up</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <button onClick="{{copyCv}}" style="font: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 0; background: #0E5C45; color: #FFFFFF">{{cvLabel}}</button>
+        <button onClick="{{copyLink}}" style="font: inherit; font-size: 15px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #D6D6D0; background: #FFFFFF; color: #141414">{{linkLabel}}</button>
+      </div>
+    </div>
+    <a href="PublicProfile.dc.html" style="font-size: 15px">See what your link shows</a>
+    <span style="color: #5C5C57; font-size: 13px">Your link shows your tasks and verdicts. Your videos and work stay private to signed-in recruiters.</span>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 0; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <h2 style="margin: 0; padding: 16px 16px 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5C5C57">Your details</h2>
+    <a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; padding: 0 16px; border-bottom: 1px solid #EEEEE9; color: #141414; text-decoration: none"><span style="display: flex; flex-direction: column"><span style="color: #5C5C57; font-size: 13px">Course</span><span>BSc Statistics, JKUAT 2026</span></span><span style="font-size: 14px; color: #0E5C45">Edit</span></a>
+    <a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; padding: 0 16px; border-bottom: 1px solid #EEEEE9; color: #141414; text-decoration: none"><span style="display: flex; flex-direction: column"><span style="color: #5C5C57; font-size: 13px">Job you want</span><span>Data Analyst</span></span><span style="font-size: 14px; color: #0E5C45">Edit</span></a>
+    <a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; padding: 0 16px; color: #141414; text-decoration: none"><span style="display: flex; flex-direction: column"><span style="color: #5C5C57; font-size: 13px">Email · confirmed</span><span>wanjiru.kamau@gmail.com</span></span><span style="font-size: 14px; color: #0E5C45">Edit</span></a>
+  </section>
+
+  <section style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <h2 style="margin: 0; padding: 16px 16px 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5C5C57">Emails</h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 16px">
+      <span style="display: flex; flex-direction: column">
+        <span id="digest-label">Daily digest</span>
+        <span style="color: #5C5C57; font-size: 14px">{{digestNote}}</span>
+      </span>
+      <button role="switch" aria-checked="{{digestAria}}" aria-labelledby="digest-label" onClick="{{toggleDigest}}" style="flex: 0 0 auto; width: 52px; height: 32px; border-radius: 999px; border: 0; padding: 3px; background: {{trackBg}}; display: block; transition: background-color 200ms ease, transform 160ms cubic-bezier(0.23,1,0.32,1); cursor: pointer">
+        <span aria-hidden="true" style="display: block; width: 26px; height: 26px; border-radius: 999px; background: #FFFFFF; transform: translateX({{knobX}}); transition: transform 200ms cubic-bezier(0.23,1,0.32,1)"></span>
+      </button>
+    </div>
+    <span style="padding: 0 16px 16px; color: #5C5C57; font-size: 13px">Password resets and email confirmations are always sent when you ask for them.</span>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 4px">
+    <a href="#" style="min-height: 44px; display: flex; align-items: center; color: #141414; text-decoration: none">Change password</a>
+    <a href="#" style="min-height: 44px; display: flex; align-items: center; color: #141414; text-decoration: none">Log out</a>
+    <a href="#" style="min-height: 44px; display: flex; align-items: center; color: #A3361B; text-decoration: none">Delete my account and all my work</a>
+  </section>
+
+  <nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 72px; background: #FFFFFF; border-top: 1px solid #E3E3DE; display: flex">
+    <a href="Phone-Home.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #5C5C57; text-decoration: none; font-size: 12px">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7v9H4z"></path></svg>
+      My work
+    </a>
+    <a href="Phone-Brief.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #5C5C57; text-decoration: none; font-size: 12px">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2"></rect><path d="M9 6V4h6v2"></path></svg>
+      Tasks
+    </a>
+    <a href="Phone-GradProfile.dc.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #0E5C45; text-decoration: none; font-size: 12px; font-weight: 600">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+      Profile
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1800}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { digest: true, copied: "" };
+  }
+  renderVals() {
+    const on = this.state.digest;
+    return {
+      digestAria: on ? 'true' : 'false',
+      digestNote: on ? 'New tasks and recruiter comments, once a day at most.' : 'Off. You won’t get any alerts from us.',
+      trackBg: on ? '#0E5C45' : '#C9C9C3',
+      knobX: on ? "20px" : "0px",
+      toggleDigest: () => this.setState({ digest: !on }),
+      cvLabel: this.state.copied === "cv" ? "Copied" : "Copy for my CV",
+      linkLabel: this.state.copied === "link" ? "Copied" : "Copy link",
+      copyCv: () => { this.setState({ copied: "cv" }); setTimeout(() => this.setState({ copied: "" }), 2000); },
+      copyLink: () => { this.setState({ copied: "link" }); setTimeout(() => this.setState({ copied: "" }), 2000); }
+    };
+  }
+}
+</script>
+</body>
+</html>

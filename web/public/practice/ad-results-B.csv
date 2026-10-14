@@ -1,0 +1,101 @@
+week_starting,platform,ad_name,audience,spend_ksh,impressions,clicks,whatsapp_chats,enrolments
+2026-07-06,Facebook,Pass first time,18-24 Nairobi,1400,15634,246,8,0
+2026-07-06,Facebook,Pass first time,25-34 Nairobi,1400,20397,326,22,2
+2026-07-06,Instagram,Pass first time,University students,600,8956,66,2,0
+2026-07-06,Instagram,Weekend classes,18-24 Nairobi,1200,12948,153,8,1
+2026-07-06,Instagram,Weekend classes,25-34 Nairobi,700,7807,167,10,1
+2026-07-06,Facebook,Weekend classes,University students,1000,13153,152,4,0
+2026-07-06,Facebook,"From KSh 18,000",25-34 Nairobi,1600,19919,320,29,3
+2026-07-06,Facebook,"From KSh 18,000",University students,1100,11062,149,6,1
+2026-07-06,Facebook,Student offer,18-24 Nairobi,1000,14389,283,18,2
+2026-07-06,Instagram,Student offer,25-34 Nairobi,900,11391,265,21,2
+2026-07-06,Facebook,Student offer,University students,1000,11164,167,9,0
+2026-07-06,Facebook,Female instructors,18-24 Nairobi,1600,18160,515,26,4
+2026-07-06,Facebook,Female instructors,25-34 Nairobi,1500,18465,682,85,9
+2026-07-06,Facebook,Female instructors,University students,1600,14741,166,10,1
+2026-07-13,Instagram,Pass first time,18-24 Nairobi,2000,18030,276,11,1
+2026-07-13,Instagram,Pass first time,25-34 Nairobi,1800,18957,342,13,1
+2026-07-13,Facebook,Pass first time,University students,600,7824,101,3,0
+2026-07-13,Facebook,Weekend classes,18-24 Nairobi,900,9730,95,4,0
+2026-07-13,Instagram,Weekend classes,25-34 Nairobi,1700,25239,375,26,3
+2026-07-13,Facebook,"From KSh 18,000",18-24 Nairobi,1700,18583,280,13,1
+2026-07-13,Instagram,"From KSh 18,000",25-34 Nairobi,1700,24812,531,42,7
+2026-07-13,Facebook,Student offer,18-24 Nairobi,1100,11823,164,9,1
+2026-07-13,Instagram,Student offer,25-34 Nairobi,1500,18793,478,32,4
+2026-07-13,Instagram,Student offer,University students,1100,15793,175,8,0
+2026-07-13,Facebook,Female instructors,25-34 Nairobi,1400,17432,454,31,4
+2026-07-13,Instagram,Female instructors,University students,2000,20820,470,35,4
+2026-07-20,Facebook,Pass first time,18-24 Nairobi,1900,20327,161,8,1
+2026-07-20,Instagram,Pass first time,University students,2000,25818,277,7,0
+2026-07-20,Facebook,Weekend classes,25-34 Nairobi,1800,16425,215,15,2
+2026-07-20,Facebook,Weekend classes,University students,1800,25024,200,6,0
+2026-07-20,Instagram,"From KSh 18,000",25-34 Nairobi,1100,10228,299,29,3
+2026-07-20,Facebook,"From KSh 18,000",University students,1700,20802,389,20,1
+2026-07-20,Facebook,Student offer,18-24 Nairobi,1100,12969,208,13,1
+2026-07-20,Facebook,Student offer,25-34 Nairobi,1200,14288,290,16,1
+2026-07-20,Instagram,Student offer,University students,1100,15545,184,10,0
+2026-07-20,Instagram,Female instructors,18-24 Nairobi,600,8968,157,10,1
+2026-07-20,Instagram,Female instructors,University students,1700,15991,209,16,1
+2026-07-27,Instagram,Pass first time,18-24 Nairobi,700,7684,91,5,0
+2026-07-27,Facebook,Pass first time,25-34 Nairobi,1300,12628,235,9,1
+2026-07-27,Facebook,Pass first time,University students,900,9919,131,4,0
+2026-07-27,Instagram,Weekend classes,18-24 Nairobi,1700,19586,195,8,1
+2026-07-27,Instagram,Weekend classes,25-34 Nairobi,1200,11704,218,11,1
+2026-07-27,Facebook,"From KSh 18,000",25-34 Nairobi,1000,10951,155,12,2
+2026-07-27,Facebook,"From KSh 18,000",University students,1600,16158,173,10,1
+2026-07-27,Facebook,Student offer,25-34 Nairobi,1700,25387,298,19,2
+2026-07-27,Facebook,Student offer,University students,1900,23819,200,11,0
+2026-07-27,Facebook,Female instructors,18-24 Nairobi,700,7104,170,15,2
+2026-07-27,Facebook,Female instructors,25-34 Nairobi,1400,12730,473,47,8
+2026-07-27,Instagram,Female instructors,University students,1900,26550,515,25,2
+2026-08-03,Instagram,Pass first time,18-24 Nairobi,2000,27721,240,8,0
+2026-08-03,Facebook,Pass first time,25-34 Nairobi,2000,20485,303,12,1
+2026-08-03,Instagram,Pass first time,University students,800,7619,59,2,0
+2026-08-03,Facebook,Weekend classes,18-24 Nairobi,700,7747,101,6,0
+2026-08-03,Instagram,Weekend classes,25-34 Nairobi,1000,13841,281,17,1
+2026-08-03,Facebook,Weekend classes,University students,1400,17149,158,5,0
+2026-08-03,Facebook,"From KSh 18,000",18-24 Nairobi,1100,14551,189,10,1
+2026-08-03,Instagram,"From KSh 18,000",25-34 Nairobi,1400,18130,486,28,4
+2026-08-03,Instagram,"From KSh 18,000",University students,600,7209,116,7,0
+2026-08-03,Instagram,Student offer,18-24 Nairobi,1300,16483,225,9,1
+2026-08-03,Facebook,Student offer,25-34 Nairobi,1500,20674,354,17,1
+2026-08-03,Instagram,Student offer,University students,1200,12779,146,7,0
+2026-08-03,Facebook,Female instructors,18-24 Nairobi,700,9812,172,16,3
+2026-08-03,Facebook,Female instructors,25-34 Nairobi,1700,18711,331,27,3
+2026-08-10,Instagram,Pass first time,18-24 Nairobi,800,7597,61,3,0
+2026-08-10,Instagram,Pass first time,25-34 Nairobi,900,12698,195,7,1
+2026-08-10,Facebook,Pass first time,University students,1200,14658,92,2,0
+2026-08-10,Instagram,Weekend classes,18-24 Nairobi,1100,13407,198,9,1
+2026-08-10,Instagram,Weekend classes,25-34 Nairobi,1400,19857,253,14,1
+2026-08-10,Facebook,"From KSh 18,000",18-24 Nairobi,1200,15947,292,20,3
+2026-08-10,Facebook,"From KSh 18,000",25-34 Nairobi,1900,22141,552,35,4
+2026-08-10,Facebook,"From KSh 18,000",University students,900,9016,125,8,1
+2026-08-10,Instagram,Student offer,18-24 Nairobi,1900,21309,333,17,1
+2026-08-10,Instagram,Student offer,25-34 Nairobi,1400,19644,351,23,3
+2026-08-10,Instagram,Student offer,University students,900,9456,89,5,0
+2026-08-10,Facebook,Female instructors,18-24 Nairobi,800,11684,326,26,2
+2026-08-10,Instagram,Female instructors,25-34 Nairobi,1600,15708,326,27,3
+2026-08-10,Facebook,Female instructors,University students,1500,19714,268,13,2
+2026-08-17,Instagram,Pass first time,25-34 Nairobi,1200,12853,127,8,1
+2026-08-17,Facebook,Pass first time,University students,1300,15767,113,5,0
+2026-08-17,Facebook,Weekend classes,18-24 Nairobi,1900,22257,398,13,1
+2026-08-17,Facebook,Weekend classes,25-34 Nairobi,1700,24904,306,21,3
+2026-08-17,Facebook,"From KSh 18,000",18-24 Nairobi,1100,10027,122,7,1
+2026-08-17,Facebook,"From KSh 18,000",25-34 Nairobi,1900,22185,390,32,4
+2026-08-17,Instagram,Student offer,25-34 Nairobi,1300,16610,401,30,2
+2026-08-17,Instagram,Student offer,University students,1300,12378,99,3,0
+2026-08-17,Instagram,Female instructors,18-24 Nairobi,1000,11610,266,19,1
+2026-08-17,Facebook,Female instructors,25-34 Nairobi,2000,27677,495,61,11
+2026-08-17,Facebook,Female instructors,University students,1800,26030,382,27,3
+2026-08-24,Instagram,Pass first time,18-24 Nairobi,700,7844,86,3,0
+2026-08-24,Instagram,Weekend classes,18-24 Nairobi,800,11369,117,6,0
+2026-08-24,Facebook,Weekend classes,25-34 Nairobi,1900,18624,389,24,3
+2026-08-24,Facebook,Weekend classes,University students,700,9039,122,5,0
+2026-08-24,Instagram,"From KSh 18,000",18-24 Nairobi,1500,20785,289,20,2
+2026-08-24,Instagram,"From KSh 18,000",25-34 Nairobi,1500,18473,441,29,3
+2026-08-24,Instagram,"From KSh 18,000",University students,800,7454,147,9,1
+2026-08-24,Facebook,Student offer,18-24 Nairobi,600,5500,71,3,0
+2026-08-24,Facebook,Student offer,25-34 Nairobi,700,8885,152,12,1
+2026-08-24,Instagram,Female instructors,18-24 Nairobi,800,9838,189,15,2
+2026-08-24,Facebook,Female instructors,25-34 Nairobi,1200,17040,385,34,4
+2026-08-24,Instagram,Female instructors,University students,1400,13532,278,20,3

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tafutakazi homepage on phone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+a:active{transform:scale(0.97)}
+@keyframes rise{from{opacity:0;transform:translateY(14px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+.rise{opacity:0;animation:rise 900ms cubic-bezier(0.22,1,0.36,1) forwards}
+.d1{animation-delay:90ms}.d2{animation-delay:180ms}.d3{animation-delay:270ms}.d4{animation-delay:380ms}
+.ch{display:inline-block;transition:opacity 700ms cubic-bezier(0.22,1,0.36,1),transform 700ms cubic-bezier(0.22,1,0.36,1),filter 700ms cubic-bezier(0.22,1,0.36,1)}
+.card{transition:opacity 900ms cubic-bezier(0.65,0,0.35,1),transform 900ms cubic-bezier(0.65,0,0.35,1),filter 900ms cubic-bezier(0.65,0,0.35,1)}
+.pop{transition:opacity 600ms cubic-bezier(0.22,1,0.36,1),transform 600ms cubic-bezier(0.22,1,0.36,1)}
+@media (prefers-reduced-motion: reduce){
+  .rise{animation:none;opacity:1}
+  .ch,.card,.pop{transition:opacity 300ms ease;transition-delay:0ms !important}
+  button,a{transition:none}
+}
+</style>
+</helmet>
+<div style="width: 390px; height: 2300px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.55; padding: 20px 20px 32px; display: flex; flex-direction: column; gap: 44px">
+  <div style="display: flex; justify-content: space-between; align-items: center">
+    <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+    <a href="Phone-Signup.dc.html" style="color: #141414; text-decoration: none; font-weight: 600; min-height: 44px; display: flex; align-items: center">Log in</a>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 20px">
+    <h1 class="rise" style="margin: 0; font-size: 46px; line-height: 1.02; font-weight: 700; letter-spacing: -0.04em">
+      <span style="display: block">Show your</span>
+      <span style="display: block; position: relative; color: #0E5C45">
+        <span aria-hidden="true" style="visibility: hidden">spreadsheet.</span>
+        <sc-for list="{{words}}" as="w" hint-placeholder-count="1">
+              <span aria-hidden="{{w.hidden}}" style="position: absolute; left: 0; top: 0; white-space: nowrap"><sc-for list="{{w.chars}}" as="c" hint-placeholder-count="10"><span class="ch" style="opacity: {{c.o}}; transform: translateY({{c.y}}); filter: blur({{c.b}}); transition-delay: {{c.d}}">{{c.t}}</span></sc-for></span>
+            </sc-for>
+      </span>
+      <span style="display: block">Get hired.</span>
+    </h1>
+    <p class="rise d1" style="margin: 0; font-size: 17px; color: #2E2E2B">Just graduated, with no work experience yet? Do short tasks set by Kenyan companies, explain your work on video, and get seen by people who are hiring.</p>
+    <div class="rise d2" style="display: flex; flex-direction: column; gap: 10px">
+      <a href="Phone-Signup.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 12px; background: #0E5C45; color: #FFFFFF; font-weight: 600; text-decoration: none">I just graduated</a>
+      <a href="RecruiterSignup.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 12px; border: 1px solid #141414; color: #141414; font-weight: 600; text-decoration: none">I'm hiring</a>
+    </div>
+    <span class="rise d3" style="color: #5C5C57; font-size: 15px; text-align: center">Free for fresh graduates and recruiters. No experience needed.</span>
+  </section>
+
+  <div class="rise d4" aria-hidden="true" style="display: grid; padding-bottom: 36px">
+    <sc-for list="{{people}}" as="p" hint-placeholder-count="1">
+          <div class="card" style="grid-area: 1 / 1; position: relative; overflow: hidden; z-index: {{p.z}}; transform-origin: 50% 100%; display: flex; flex-direction: column; gap: 14px; padding: 18px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 16px; box-shadow: 0 1px 2px rgba(20,20,20,0.04), 0 14px 36px rgba(20,20,20,0.07); opacity: {{p.o}}; transform: translateY({{p.y}}) scale({{p.s}}); filter: blur({{p.b}})">
+            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #1C1F1D; border-radius: 10px; display: flex; align-items: center; justify-content: center">
+              <span style="width: 52px; height: 52px; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#141414"><path d="M8 5v14l11-7z"></path></svg>
+              </span>
+              <span style="position: absolute; left: 12px; bottom: 9px; color: #E8E8E3; font-size: 13px">{{p.video}}</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-weight: 600; font-size: 17px">{{p.name}}</span>
+              <span style="color: #5C5C57; font-size: 14px">{{p.role}}</span>
+            </div>
+            <span style="font-size: 15px; color: #2E2E2B">{{p.quote}}</span>
+            <span class="pop" style="margin-top: auto; align-self: flex-start; display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: #E6EFEB; font-size: 14px; font-weight: 600; color: #0E5C45; opacity: {{p.eo}}; transform: translateY({{p.ey}}); transition-delay: {{p.ed}}">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17 19 7"></path></svg>
+              {{p.event}}
+            </span>
+          </div>
+        </sc-for>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5C45">Why Tafutakazi exists</span>
+    <p style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 600; letter-spacing: -0.02em">Every job ad asks for experience. But you can't get experience without a job.</p>
+    <p style="margin: 0; color: #2E2E2B">So capable graduates stay unemployed, not because they can't do the work, but because no one gives them a chance to show it. Tafutakazi exists to help reduce graduate unemployment. Here, companies post short tasks from real jobs, graduates do them, and employers hire based on what you can actually do, not on years of experience.</p>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 22px">
+    <h2 style="margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.025em">How it works</h2>
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 2px solid #141414"><span style="font-weight: 600">Pick a task</span><span style="color: #2E2E2B">A real problem from a Kenyan company, done in a few hours.</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 2px solid #141414"><span style="font-weight: 600">Do it, then explain it</span><span style="color: #2E2E2B">Your work, a 2–3 minute video, and how you did it.</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 14px; border-top: 2px solid #0E5C45"><span style="font-weight: 600">Get seen</span><span style="color: #2E2E2B">Recruiters watch, comment and invite the best to interview.</span></div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Your work stays private</span><span style="color: #2E2E2B">Only signed-in recruiters see it.</span></div>
+    <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Real companies only</span><span style="color: #2E2E2B">No one may ever ask you for money.</span></div>
+    <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Free, always</span><span style="color: #2E2E2B">Never pay to join or to apply.</span></div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #141414; color: #F6F6F3; border-radius: 16px">
+    <span style="font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Hiring? Skip the 500 CVs.</span>
+    <span style="color: #C9C9C3">Post a short task. Graduates apply by doing it.</span>
+    <a href="RecruiterSignup.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 50px; border-radius: 12px; background: #F6F6F3; color: #141414; font-weight: 600; text-decoration: none">Post a task, free</a>
+  </section>
+
+  <footer style="display: flex; flex-wrap: wrap; gap: 16px; padding-top: 20px; border-top: 1px solid #E3E3DE; color: #5C5C57; font-size: 14px">
+    <a href="Support.dc.html" style="color: #5C5C57">Support us</a>
+    <a href="Support.dc.html" style="color: #5C5C57">Partner with us</a>
+    <a href="#" style="color: #5C5C57">Terms</a>
+    <a href="#" style="color: #5C5C57">Privacy</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { i: 0, still: false };
+  }
+  componentDidMount() {
+    const mq = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq && mq.matches) this.setState({ still: true });
+    this.timer = setInterval(() => {
+      if (document.hidden) return;
+      this.setState({ i: (this.state.i + 1) % 5 });
+    }, 3800);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  renderVals() {
+    const i = this.state.i;
+    const still = this.state.still;
+    const data = [
+      { word: 'dashboard.', name: 'Wanjiru Kamau', role: 'Data analysis · Statistics, JKUAT 2026', quote: '"Caught duplicate receipts most people miss."', event: 'Invited to interview by Umoja SACCO', video: 'Grocery sales dashboard · 2:41' },
+      { word: 'campaign.', name: 'Grace Achieng', role: 'Marketing · BCom, Strathmore 2026', quote: '"A clear plan with a budget a small business could afford."', event: 'Invited to interview by Duka Bora', video: 'Social media plan · 2:15' },
+      { word: 'poster.', name: 'Ian Mwangi', role: 'Graphic design · Kenyatta University 2025', quote: '"Clean, readable from across a room, true to the brand."', event: '6 thumbs up from recruiters', video: 'Clinic open-day poster · 2:03' },
+      { word: 'spreadsheet.', name: 'Faith Chebet', role: 'Accounting · Diploma, KCA 2026', quote: '"Every number reconciles, and the summary fits on one page."', event: 'Invited to interview by Pwani Insurance', video: 'Fuel costs summary · 2:30' },
+      { word: 'code.', name: 'Kevin Mutua', role: 'Software · IT, Multimedia University 2025', quote: '"Simple, tested, and the README explains it in a minute."', event: 'Invited to interview by Kamau & Co.', video: 'Delivery tracker app · 2:51' }
+    ];
+    const n = data.length;
+    const dist = (k) => (k - i + n) % n;
+    const words = data.map((p, k) => {
+      const d = dist(k);
+      const on = d === 0;
+      const gone = d === n - 1;
+      return {
+        hidden: on ? 'false' : 'true',
+        chars: p.word.split('').map((t, j) => ({
+          t: t,
+          o: on ? 1 : 0,
+          y: still || on ? '0' : (gone ? '-0.45em' : '0.45em'),
+          b: still || on ? '0' : '8px',
+          d: still ? '0ms' : (on ? (140 + j * 32) + 'ms' : (gone ? (j * 16) + 'ms' : '0ms'))
+        }))
+      };
+    });
+    const people = data.map((p, k) => {
+      const d = dist(k);
+      let z = 0, o = 0, y = '24px', s = 0.9, b = '0';
+      if (d === 0) { z = 3; o = 1; y = '0'; s = 1; }
+      else if (d === 1) { z = 2; o = 0.85; y = '12px'; s = 0.95; }
+      else if (d === 2) { z = 1; o = 0.5; y = '24px'; s = 0.9; }
+      else if (d === n - 1) { z = 4; o = 0; y = '-24px'; s = 1; b = '6px'; }
+      if (still) { y = '0'; s = 1; b = '0'; o = d === 0 ? 1 : 0; }
+      return Object.assign({}, p, {
+        z: z, o: o, y: y, s: s, b: b,
+        eo: d === 0 ? 1 : 0,
+        ey: d === 0 || still ? '0' : '6px',
+        ed: d === 0 && !still ? '700ms' : '0ms'
+      });
+    });
+    return { words, people };
+  }
+}
+</script>
+</body>
+</html>

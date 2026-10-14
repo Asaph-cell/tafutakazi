@@ -1,0 +1,16 @@
+# Local only
+scratch/
+.playwright-mcp/
+.claude/
+project/.claude/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build and dependencies
+node_modules/
+dist/
+.wrangler/
+.supabase/

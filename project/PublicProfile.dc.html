@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wanjiru Kamau on Tafutakazi</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+a:active{transform:scale(0.97)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.55">
+  <header style="max-width: 960px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+    <a href="Home.dc.html" style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #141414; text-decoration: none; flex: 1 1 auto"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></a>
+    <a href="RecruiterSignup.dc.html" style="color: #141414; text-decoration: none; font-weight: 600; min-height: 44px; display: flex; align-items: center">Log in</a>
+  </header>
+
+  <main style="max-width: 960px; margin: 0 auto; padding: 32px 24px 72px; display: flex; flex-direction: column; gap: 40px">
+    <section style="display: flex; flex-direction: column; gap: 10px">
+      <span style="color: #5C5C57; font-size: 14px">tafutakazi.co.ke/wanjiru-kamau</span>
+      <h1 style="margin: 0; font-size: 44px; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em">Wanjiru Kamau</h1>
+      <span style="font-size: 18px; color: #2E2E2B">Fresh graduate · BSc Statistics, JKUAT 2026 · Nairobi</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px">
+        <span style="padding: 6px 12px; border-radius: 999px; background: #E6EFEB; color: #0E5C45; font-size: 14px; font-weight: 600">Invited to interview by 2 companies</span>
+        <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E3E3DE; font-size: 14px">6 thumbs up from recruiters</span>
+        <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E3E3DE; font-size: 14px">3 tasks done</span>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5C5C57">Practical work</h2>
+      <sc-for list="{{tasks}}" as="t" hint-placeholder-count="3">
+        <div style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 20px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+          <div style="flex: 999 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+            <span style="font-weight: 600; font-size: 18px">{{t.title}}</span>
+            <span style="color: #5C5C57; font-size: 14px">{{t.meta}}</span>
+            <span style="color: #2E2E2B">{{t.did}}</span>
+          </div>
+          <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #0E5C45">Verdict</span>
+            <span style="color: #2E2E2B; font-size: 15px">{{t.verdict}}</span>
+          </div>
+        </div>
+      </sc-for>
+    </section>
+
+    <section style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; padding: 28px; background: #141414; color: #F6F6F3; border-radius: 16px">
+      <div aria-hidden="true" style="flex: 0 0 auto; width: 200px; aspect-ratio: 16 / 9; border-radius: 10px; background: #2B2F2C; display: flex; align-items: center; justify-content: center">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F6F6F3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+      </div>
+      <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Watch Wanjiru explain her work</span>
+        <span style="color: #C9C9C3">Her videos, work previews and write-ups are only for recruiters. Signing up is free and takes two minutes.</span>
+      </div>
+      <a href="RecruiterSignup.dc.html" style="display: flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 12px; background: #F6F6F3; color: #141414; font-weight: 600; text-decoration: none">I'm hiring, sign up free</a>
+    </section>
+
+    <span style="color: #5C5C57; font-size: 14px">Every task here was completed on Tafutakazi and explained by Wanjiru on video. Verdicts are honest: strengths and what to improve.</span>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      tasks: [
+        { title: 'Grocery sales dashboard', meta: 'For a retail company · Power BI · Sep 2026', did: 'Cleaned 12,400 rows of sales data and found 312 duplicate receipts that were inflating revenue. Built a one-page dashboard showing which branches lose money.', verdict: 'Strong: caught an error most people miss. To improve: chart labels too small on phones.' },
+        { title: 'SACCO member report', meta: 'For a SACCO · Excel · Sep 2026', did: 'Summarised 3,000 member records into a monthly report on savings, loans and arrears.', verdict: 'Strong: clear structure. To improve: shorter write-up.' },
+        { title: 'Delivery times analysis', meta: 'For a logistics company · SQL and Excel · Oct 2026', did: 'Found the three routes that are late most often and the time of day it happens.', verdict: 'Strong: answers the question directly. To improve: explain how outliers were handled.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

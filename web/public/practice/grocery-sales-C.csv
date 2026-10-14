@@ -1,0 +1,2660 @@
+date,branch,receipt_no,product,category,quantity,unit_price_ksh,discount_pct,total_ksh
+2026-07-01,Ngong Road,R13350,Water 1L,Beverages,5,60,0,300
+2026-07-01,Thika Road,R13387,Rice 1kg,Grains,3,190,0,570
+2026-07-01,Kasarani,R13435,Rice 1kg,Grains,1,190,0,190
+2026-07-01,Ngong Road,R13526,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-01,Kasarani,R13786,Mandazi pack,Bakery,3,100,0,300
+2026-07-01,Westlands,R13909,Cake slice,Bakery,4,120,0,480
+2026-07-01,Kilimani,R13945,Maize flour 2kg,Grains,2,175,0,350
+2026-07-01,Westlands,R13980,Milk 500ml,Dairy,4,65,0,260
+2026-07-01,Kasarani,R14085,Maize flour 2kg,Grains,1,175,0,175
+2026-07-01,Ngong Road,R14092,Bananas 1kg,Produce,1,90,20,72
+2026-07-01,Eastleigh,R14238,Mandazi pack,Bakery,1,100,0,100
+2026-07-01,ngong road,R14245,Maize flour 2kg,Grains,3,175,20,420
+2026-07-01,Eastleigh,R14396,Bread 400g,Bakery,2,65,0,130
+2026-07-01,Eastleigh,R14500,Cake slice,Bakery,3,120,0,360
+2026-07-01,Eastleigh,R14526,Beans 1kg,Grains,4,220,0,880
+2026-07-01,Kilimani,R14531,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-01,Ngong Road,R14541,Mandazi pack,Bakery,3,100,10,270
+2026-07-01,Eastleigh,R14570,Mandazi pack,Bakery,5,100,0,500
+2026-07-01,Ngong Road,R14590,Yoghurt 1L,Dairy,4,180,10,648
+2026-07-01,Thika Road,R14670,Cake slice,Bakery,1,120,0,120
+2026-07-01,Kasarani,R14820,Milk 500ml,Dairy,1,65,0,65
+2026-07-01,Westlands,R15065,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-01,Kasarani,R15194,Sukuma wiki bunch,Produce,5,30,5,143
+2026-07-01,Ngong Road,R15204,Onions 1kg,Produce,1,110,10,99
+2026-07-01,Ngong Road,R15284,Water 1L,Beverages,3,60,10,162
+2026-07-01,Westlands,R15617,Bananas 1kg,Produce,3,90,0,270
+2026-07-01,Thika Road,R15790,Bar soap,Household,3,120,0,360
+2026-07-01,Thika Road,R15818,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-02,Kilimani,R13399,Sukuma wiki bunch,Produce,2,30,0,60
+2026-07-02,Kasarani,R13455,Rice 1kg,Grains,3,190,0,570
+2026-07-02,Thika Road,R13497,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-02,Eastleigh,R13542,Water 1L,Beverages,3,60,0,180
+2026-07-02,Kilimani,R13583,Onions 1kg,Produce,2,110,0,220
+2026-07-02,Ngong Road,R13635,Water 1L,Beverages,2,60,20,96
+2026-07-02,Kasarani,R13664,Butter 250g,Dairy,1,290,0,290
+2026-07-02,Westlands,R13933,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-02,Thika Road,R13982,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-02,Eastleigh,R14335,Cake slice,Bakery,3,120,5,342
+2026-07-02,Westlands,R14342,Water 1L,Beverages,3,60,0,180
+2026-07-02,Thika Road,R14447,Soda 500ml,Beverages,1,70,0,70
+2026-07-02,Kilimani,R14450,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-02,Eastleigh,R14666,Maize flour 2kg,Grains,5,175,0,875
+2026-07-02,Ngong Road,R14714,Maize flour 2kg,Grains,2,175,0,350
+2026-07-02,Kilimani,R14853,Water 1L,Beverages,5,60,0,300
+2026-07-02,Westlands,R14933,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-02,Kilimani,R14980,Onions 1kg,Produce,3,110,0,330
+2026-07-02,Westlands,R15009,Washing powder 1kg,Household,1,320,0,320
+2026-07-02,Thika Road,R15017,Maize flour 2kg,Grains,3,175,5,499
+2026-07-02,kasarani,R15228,Beans 1kg,Grains,4,220,0,880
+2026-07-02,Eastleigh,R15331,Water 1L,Beverages,3,60,5,171
+2026-07-02,Thika Road,R15469,Yoghurt 1L,Dairy,1,180,0,180
+2026-07-02,Kilimani,R15552,Washing powder 1kg,Household,1,320,0,320
+2026-07-02,Thika Road,R15683,Tissue 10 pack,Household,3,450,0,1350
+2026-07-02,Kilimani,R15717,Maize flour 2kg,Grains,5,175,0,875
+2026-07-03,Eastleigh,R13346,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-03,Kilimani,R13359,Soda 500ml,Beverages,2,70,5,133
+2026-07-03,Kilimani,R13359,Soda 500ml,Beverages,2,70,5,133
+2026-07-03,Kilimani,R13362,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-03,Thika Road,R13392,Milk 500ml,Dairy,4,65,0,260
+2026-07-03,Eastleigh,R13440,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-03,Kasarani,R13508,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-03,Thika Road,R13561,Milk 500ml,Dairy,5,65,0,325
+2026-07-03,Eastleigh,R13651,Beans 1kg,Grains,1,220,0,220
+2026-07-03,Westlands,R13819,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-03,Ngong Road,R13837,Water 1L,Beverages,5,60,15,255
+2026-07-03,Kilimani,R13959,Tissue 10 pack,Household,2,450,0,900
+2026-07-03,Ngong Road,R13990,Sukuma wiki bunch,Produce,1,30,25,23
+2026-07-03,Ngong road,R14061,Maize flour 2kg,Grains,3,175,0,525
+2026-07-03,Ngong road,R14061,Maize flour 2kg,Grains,3,175,0,525
+2026-07-03,Thika Road,R14118,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-03,Kilimani,R14227,Cooking oil 1L,Household,4,340,0,1360
+2026-07-03,Eastleigh,R14386,Milk 500ml,Dairy,4,65,0,260
+2026-07-03,kilimani,R14407,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-03,Kilimani,R14466,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-03,Kilimani,R14546,Rice 1kg,Grains,5,190,0,950
+2026-07-03,Thika Road,R14645,Milk 500ml,Dairy,4,65,0,260
+2026-07-03,Kasarani,R14663,Cake slice,Bakery,1,120,0,120
+2026-07-03,Thika Road,R14712,Mandazi pack,Bakery,2,100,0,200
+2026-07-03,Kasarani,R14741,Bar soap,Household,2,120,0,240
+2026-07-03,Westlands,R14864,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-03,Eastleigh,R15111,Milk 500ml,Dairy,2,65,0,130
+2026-07-03,Kilimani,R15124,Tea leaves 250g,Beverages,1,160,0,160
+2026-07-03,Westlands,R15171,Onions 1kg,Produce,3,110,0,330
+2026-07-03,Eastleigh,R15186,Mandazi pack,Bakery,1,100,5,95
+2026-07-03,Eastleigh,R15332,Juice 1L,Beverages,4,250,0,1000
+2026-07-03,Thika Road,R15376,Juice 1L,Beverages,3,250,0,750
+2026-07-03,Ngong Road,R15483,Washing powder 1kg,Household,4,320,30,896
+2026-07-03,Kilimani,R15797,Rice 1kg,Grains,5,190,0,950
+2026-07-03,Eastleigh,R15814,Bread 400g,Bakery,5,65,0,325
+2026-07-03,Eastleigh,R15819,Rice 1kg,Grains,5,190,0,950
+2026-07-03,Eastleigh,R15874,Milk 500ml,Dairy,1,65,5,62
+2026-07-03,Ngong Road,R15876,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-04,Kilimani,R13382,Cooking oil 1L,Household,4,340,0,1360
+2026-07-04,Eastleigh,R13449,Tissue 10 pack,Household,5,450,0,2250
+2026-07-04,Thika Road,R13470,Soda 500ml,Beverages,3,70,0,210
+2026-07-04,Ngong Road,R13529,Bar soap,Household,1,120,10,108
+2026-07-04,Ngong Road,R13529,Bar soap,Household,1,120,10,108
+2026-07-04,Eastleigh,R13557,Milk 500ml,Dairy,1,65,0,65
+2026-07-04,Westlands,R13866,Washing powder 1kg,Household,3,320,0,960
+2026-07-04,Westlands,R13899,Cake slice,Bakery,4,120,0,480
+2026-07-04,Kasarani,R13939,Tissue 10 pack,Household,3,450,0,1350
+2026-07-04,Thika Road,R13952,Mandazi pack,Bakery,5,100,0,500
+2026-07-04,Ngong Road,R14052,Rice 1kg,Grains,4,190,0,760
+2026-07-04,Kilimani,R14101,Soda 500ml,Beverages,2,70,0,140
+2026-07-04,Eastleigh,R14150,Mandazi pack,Bakery,3,100,0,300
+2026-07-04,Kilimani,R14609,Bananas 1kg,Produce,5,90,0,450
+2026-07-04,Kilimani,R14699,Maize flour 2kg,Grains,5,175,5,831
+2026-07-04,Ngong Road,R14773,Bananas 1kg,Produce,3,90,5,257
+2026-07-04,Kasarani,R14789,Cooking oil 1L,Household,4,340,0,1360
+2026-07-04,Thika Road,R14806,Cake slice,Bakery,3,120,0,360
+2026-07-04,Kilimani,R14811,Butter 250g,Dairy,3,290,0,870
+2026-07-04,Thika Road,R14819,Juice 1L,Beverages,5,250,0,1250
+2026-07-04,Kasarani,R14867,Bananas 1kg,Produce,4,90,0,360
+2026-07-04,Westlands,R14945,Bananas 1kg,Produce,1,90,0,90
+2026-07-04,Westlands,R14993,Bar soap,Household,2,120,0,240
+2026-07-04,Eastleigh,R15031,Butter 250g,Dairy,4,290,0,1160
+2026-07-04,Kilimani,R15058,Juice 1L,Beverages,3,250,0,750
+2026-07-04,Westlands ,R15152,Juice 1L,Beverages,2,250,0,500
+2026-07-04,Kilimani,R15324,Mandazi pack,Bakery,1,100,0,100
+2026-07-04,Kasarani,R15347,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-04,kilimani,R15360,Bread 400g,Bakery,3,65,0,195
+2026-07-04,Westlands,R15400,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-04,Ngong Road,R15425,Cake slice,Bakery,2,120,10,216
+2026-07-04,Westlands,R15449,Maize flour 2kg,Grains,5,175,0,875
+2026-07-04,Thika Road,R15497,Rice 1kg,Grains,4,190,0,760
+2026-07-04,Ngong Road,R15504,Tea leaves 250g,Beverages,3,160,20,384
+2026-07-04,Ngong Road,R15504,Tea leaves 250g,Beverages,3,160,20,384
+2026-07-04,Westlands,R15578,Tissue 10 pack,Household,1,450,0,450
+2026-07-04,Kasarani,R15651,Water 1L,Beverages,1,60,0,60
+2026-07-04,Kasarani,R15663,Cake slice,Bakery,4,120,0,480
+2026-07-04,Thika Road,R15748,Cooking oil 1L,Household,5,340,0,1700
+2026-07-04,Ngong road,R15778,Tea leaves 250g,Beverages,2,160,15,272
+2026-07-05,Kilimani,R13378,Beans 1kg,Grains,5,220,0,1100
+2026-07-05,Kilimani,R13502,Cake slice,Bakery,4,120,0,480
+2026-07-05,Kasarani,R13558,Bananas 1kg,Produce,3,90,0,270
+2026-07-05,Kilimani,R13613,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-05,Westlands,R13703,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-05,Eastleigh,R13847,Tissue 10 pack,Household,3,450,0,1350
+2026-07-05,Ngong Road,R13892,Sukuma wiki bunch,Produce,1,30,25,23
+2026-07-05,Ngong Road,R13892,Sukuma wiki bunch,Produce,1,30,25,23
+2026-07-05,Westlands,R13979,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-05,Eastleigh,R13988,Milk 500ml,Dairy,5,65,0,325
+2026-07-05,Westlands,R14195,Butter 250g,Dairy,1,290,0,290
+2026-07-05,Kasarani,R14253,Washing powder 1kg,Household,3,320,0,960
+2026-07-05,Ngong Road,R14496,Beans 1kg,Grains,1,220,25,165
+2026-07-05,Ngong Road,R14496,Beans 1kg,Grains,1,220,25,165
+2026-07-05,Kasarani,R14509,Milk 500ml,Dairy,2,65,5,124
+2026-07-05,Westlands,R14544,Maize flour 2kg,Grains,4,175,5,665
+2026-07-05,Kasarani,R14642,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-05,Thika Road,R14730,Beans 1kg,Grains,2,220,0,440
+2026-07-05,Kasarani,R14858,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-05,Kasarani,R15406,Maize flour 2kg,Grains,3,175,0,525
+2026-07-05,Eastleigh,R15610,Cake slice,Bakery,4,120,0,480
+2026-07-05,Ngong Road,R15830,Rice 1kg,Grains,4,190,20,608
+2026-07-06,Eastleigh,R13304,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-06,Eastleigh,R13384,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-06,Kasarani,R13420,Tissue 10 pack,Household,1,450,0,450
+2026-07-06,Ngong Road,R13451,Onions 1kg,Produce,4,110,25,330
+2026-07-06,Ngong Road,R13495,Bread 400g,Bakery,3,65,15,166
+2026-07-06,Ngong Road,R13495,Bread 400g,Bakery,3,65,15,166
+2026-07-06,Eastleigh,R13524,Tissue 10 pack,Household,2,450,0,900
+2026-07-06,Kasarani,R13648,Rice 1kg,Grains,1,190,0,190
+2026-07-06,Thika Rd,R13777,Cake slice,Bakery,4,120,0,480
+2026-07-06,Kasarani,R13856,Mandazi pack,Bakery,5,100,0,500
+2026-07-06,Eastleigh,R14123,Washing powder 1kg,Household,3,320,0,960
+2026-07-06,Kasarani,R14206,Bar soap,Household,1,120,0,120
+2026-07-06,Ngong Road,R14310,Beans 1kg,Grains,1,220,25,165
+2026-07-06,Eastleigh,R14474,Mandazi pack,Bakery,1,100,0,100
+2026-07-06,Eastleigh,R14497,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-06,Kilimani,R14648,Mandazi pack,Bakery,3,100,0,300
+2026-07-06,Eastleigh,R14790,Mandazi pack,Bakery,3,100,0,300
+2026-07-06,Kilimani,R14800,Cake slice,Bakery,1,120,0,120
+2026-07-06,Westlands,R14831,Wheat flour 2kg,Grains,2,210,5,399
+2026-07-06,Ngong Road,R14843,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-06,Kasarani,R14932,Rice 1kg,Grains,3,190,0,570
+2026-07-06,Kilimani,R14948,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-06,Thika Road,R14964,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-06,Eastleigh,R15085,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-06,Kasarani,R15185,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-06,Thika Road,R15275,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-06,Kasarani,R15346,Juice 1L,Beverages,3,250,0,750
+2026-07-06,Kilimani,R15506,Tea leaves 250g,Beverages,4,160,5,608
+2026-07-06,Ngong Road,R15670,Maize flour 2kg,Grains,1,175,25,131
+2026-07-06,Thika Road,R15768,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-06,Kasarani,R15799,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-07,Thika Road,R13511,Onions 1kg,Produce,2,110,0,220
+2026-07-07,Thika Road,R13515,Mandazi pack,Bakery,3,100,0,300
+2026-07-07,Eastleigh,R13804,Beans 1kg,Grains,4,220,0,880
+2026-07-07,Ngong Road,R13884,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-07,Ngong Road,R13891,Rice 1kg,Grains,4,190,0,760
+2026-07-07,Westlands,R13910,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-07,Kasarani,R13917,Soda 500ml,Beverages,3,70,0,210
+2026-07-07,Ngong Road,R14094,Mandazi pack,Bakery,2,100,0,200
+2026-07-07,Kasarani,R14133,Yoghurt 1L,Dairy,1,180,0,180
+2026-07-07,Ngong Road,R14326,Cooking oil 1L,Household,4,340,0,1360
+2026-07-07,Kilimani,R14368,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-07,Kilimani,R14375,Juice 1L,Beverages,2,250,0,500
+2026-07-07,Eastleigh,R14400,Cooking oil 1L,Household,2,340,0,680
+2026-07-07,Ngong Road,R14448,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-07,Kilimani,R14568,Juice 1L,Beverages,4,250,0,1000
+2026-07-07,Ngong Road,R14617,Soda 500ml,Beverages,4,70,0,280
+2026-07-07,Kasarani,R14720,Milk 500ml,Dairy,3,65,0,195
+2026-07-07,Westlands,R14797,Rice 1kg,Grains,3,190,0,570
+2026-07-07,Eastleigh,R14816,Butter 250g,Dairy,1,290,0,290
+2026-07-07,Eastleigh,R14827,Sukuma wiki bunch,Produce,3,30,5,86
+2026-07-07,Kasarani,R14966,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-07,Kilimani,R14971,Bar soap,Household,4,120,0,480
+2026-07-07,Ngong Road,R15005,Bananas 1kg,Produce,4,90,0,360
+2026-07-07,Kasarani,R15044,Bananas 1kg,Produce,4,90,0,360
+2026-07-07,Thika Road,R15070,Rice 1kg,Grains,4,190,0,760
+2026-07-07,Westlands,R15155,Tomatoes 1kg,Produce,2,120,5,228
+2026-07-07,Kasarani,R15167,Soda 500ml,Beverages,2,70,0,140
+2026-07-07,Westlands,R15297,Maize flour 2kg,Grains,1,175,0,175
+2026-07-07,Kasarani,R15535,Juice 1L,Beverages,3,250,0,750
+2026-07-07,Kilimani,R15554,Butter 250g,Dairy,3,290,0,870
+2026-07-07,westlands,R15650,Sukuma wiki bunch,Produce,5,30,5,143
+2026-07-07,Thika Road,R15770,Wheat flour 2kg,Grains,1,210,5,200
+2026-07-07,Westlands,R15786,Onions 1kg,Produce,1,110,0,110
+2026-07-07,Kasarani,R15860,Cake slice,Bakery,2,120,0,240
+2026-07-08,Thika Road,R13332,Washing powder 1kg,Household,2,320,5,608
+2026-07-08,Ngong Road,R13475,Water 1L,Beverages,4,60,0,240
+2026-07-08,Thika Road,R13593,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-08,Eastleigh,R13707,Water 1L,Beverages,3,60,0,180
+2026-07-08,Westlands,R14167,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-08,Eastleigh,R14615,Beans 1kg,Grains,1,220,0,220
+2026-07-08,Kasarani,R14632,Butter 250g,Dairy,4,290,0,1160
+2026-07-08,Kilimani,R14703,Onions 1kg,Produce,3,110,0,330
+2026-07-08,Eastleigh,R14705,Soda 500ml,Beverages,2,70,0,140
+2026-07-08,Westlands,R14707,Cake slice,Bakery,3,120,0,360
+2026-07-08,Westlands,R14715,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-08,Ngong Road,R14746,Washing powder 1kg,Household,4,320,25,960
+2026-07-08,Ngong Road,R14957,Soda 500ml,Beverages,2,70,15,119
+2026-07-08,Eastleigh,R15110,Water 1L,Beverages,5,60,0,300
+2026-07-08,Ngong Road,R15183,Bread 400g,Bakery,3,65,15,166
+2026-07-08,Kasarani,R15241,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-08,thika road,R15299,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-08,Eastleigh,R15304,Tissue 10 pack,Household,3,450,0,1350
+2026-07-08,Kasarani,R15365,Tissue 10 pack,Household,4,450,0,1800
+2026-07-08,Eastleigh,R15477,Mandazi pack,Bakery,1,100,0,100
+2026-07-08,eastleigh,R15480,Maize flour 2kg,Grains,1,175,5,166
+2026-07-08,Westlands,R15514,Mandazi pack,Bakery,5,100,0,500
+2026-07-08,Kilimani,R15551,Cake slice,Bakery,2,120,0,240
+2026-07-08,Thika Road,R15577,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-08,Ngong Road,R15595,Washing powder 1kg,Household,3,320,30,672
+2026-07-08,Kasarani,R15725,Yoghurt 1L,Dairy,5,180,0,900
+2026-07-08,Eastleigh,R15749,Beans 1kg,Grains,3,220,0,660
+2026-07-08,Kasarani,R15775,Onions 1kg,Produce,4,110,5,418
+2026-07-08,Kilimani,R15847,Water 1L,Beverages,2,60,0,120
+2026-07-09,Thika Road,R13512,Milk 500ml,Dairy,4,65,0,260
+2026-07-09,Kasarani,R13571,Cake slice,Bakery,5,120,0,600
+2026-07-09,Eastleigh,R13624,Onions 1kg,Produce,5,110,0,550
+2026-07-09,Ngong Road,R13712,Bananas 1kg,Produce,2,90,0,180
+2026-07-09,Westlands,R13868,Milk 500ml,Dairy,1,65,0,65
+2026-07-09,Westlands,R13985,Beans 1kg,Grains,1,220,0,220
+2026-07-09,Ngong Road,R14170,Mandazi pack,Bakery,3,100,25,225
+2026-07-09,Ngong Road,R14170,Mandazi pack,Bakery,3,100,25,225
+2026-07-09,Kasarani,R14175,Bar soap,Household,2,120,0,240
+2026-07-09,Kilimani,R14224,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-09,Kilimani,R14278,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-09,Kasarani,R14360,Tea leaves 250g,Beverages,4,160,5,608
+2026-07-09,Westlands,R14577,Bananas 1kg,Produce,4,90,0,360
+2026-07-09,Eastleigh,R14580,Tissue 10 pack,Household,5,450,0,2250
+2026-07-09,Westlands,R14660,Milk 500ml,Dairy,1,65,0,65
+2026-07-09,Ngong Road,R14854,Tissue 10 pack,Household,2,450,0,900
+2026-07-09,Eastleigh,R14928,Bread 400g,Bakery,2,65,0,130
+2026-07-09,Eastleigh,R15007,Juice 1L,Beverages,2,250,0,500
+2026-07-09,Eastleigh,R15081,Bar soap,Household,5,120,0,600
+2026-07-09,Kilimani,R15231,Bananas 1kg,Produce,2,90,0,180
+2026-07-09,Westlands,R15413,Cake slice,Bakery,5,120,0,600
+2026-07-09,Thika Road,R15417,Bar soap,Household,4,120,0,480
+2026-07-09,Thika Road,R15555,Beans 1kg,Grains,1,220,0,220
+2026-07-09,Kasarani,R15647,Cooking oil 1L,Household,5,340,0,1700
+2026-07-09,eastleigh,R15658,Bananas 1kg,Produce,2,90,0,180
+2026-07-09,Ngong Road,R15680,Water 1L,Beverages,4,60,0,240
+2026-07-09,Westlands,R15731,Bananas 1kg,Produce,5,90,0,450
+2026-07-09,Ngong Road,R15758,Tissue 10 pack,Household,2,450,10,810
+2026-07-09,Eastleigh,R15815,Rice 1kg,Grains,5,190,0,950
+2026-07-09,Eastleigh,R15890,Cake slice,Bakery,1,120,0,120
+2026-07-10,Eastleigh,R13366,Mandazi pack,Bakery,5,100,0,500
+2026-07-10,Kilimani,R13408,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-10,Eastleigh,R13489,Mandazi pack,Bakery,4,100,0,400
+2026-07-10,Eastleigh,R13631,Juice 1L,Beverages,4,250,5,950
+2026-07-10,Thika Road,R13691,Cooking oil 1L,Household,2,340,0,680
+2026-07-10,Thika Road,R13694,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-10,Eastleigh,R13913,Juice 1L,Beverages,4,250,0,1000
+2026-07-10,Kilimani,R13921,Butter 250g,Dairy,3,290,0,870
+2026-07-10,Kilimani,R13921,Butter 250g,Dairy,3,290,0,870
+2026-07-10,Kilimani,R13996,Butter 250g,Dairy,2,290,0,580
+2026-07-10,Thika Road,R14093,Rice 1kg,Grains,5,190,0,950
+2026-07-10,Eastleigh ,R14177,Cake slice,Bakery,5,120,0,600
+2026-07-10,Westlands,R14188,Mandazi pack,Bakery,5,100,0,500
+2026-07-10,Westlands,R14217,Milk 500ml,Dairy,2,65,0,130
+2026-07-10,Westlands,R14272,Mandazi pack,Bakery,4,100,0,400
+2026-07-10,Thika Road,R14329,Mandazi pack,Bakery,2,100,0,200
+2026-07-10,Kilimani,R14371,Rice 1kg,Grains,1,190,0,190
+2026-07-10,westlands,R14373,Onions 1kg,Produce,1,110,0,110
+2026-07-10,Eastleigh,R14413,Bar soap,Household,2,120,0,240
+2026-07-10,Westlands ,R14461,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-10,Thika Rd,R14628,Bread 400g,Bakery,5,65,0,325
+2026-07-10,Eastleigh,R14681,Butter 250g,Dairy,5,290,0,1450
+2026-07-10,Eastleigh,R14922,Bread 400g,Bakery,5,65,0,325
+2026-07-10,THIKA ROAD,R14978,Cooking oil 1L,Household,1,340,0,340
+2026-07-10,Kilimani,R14983,Rice 1kg,Grains,2,190,0,380
+2026-07-10,Thika Road,R15002,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-10,Ngong Road,R15016,Juice 1L,Beverages,3,250,0,750
+2026-07-10,Eastleigh,R15062,Butter 250g,Dairy,1,290,0,290
+2026-07-10,Westlands,R15474,Onions 1kg,Produce,4,110,0,440
+2026-07-10,Thika Rd,R15850,Tomatoes 1kg,Produce,3,,0,360
+2026-07-10,Westlands,R15852,Milk 500ml,Dairy,4,65,0,260
+2026-07-10,Westlands,R15861,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-11,Ngong Road,R13319,Yoghurt 1L,Dairy,2,180,15,306
+2026-07-11,Ngong Road,R13339,Beans 1kg,Grains,3,220,25,495
+2026-07-11,Eastleigh,R13354,Onions 1kg,Produce,1,110,0,110
+2026-07-11,Eastleigh,R13522,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-11,Ngong Road,R13525,Cake slice,Bakery,3,120,0,360
+2026-07-11,Westlands,R13677,Water 1L,Beverages,1,60,5,57
+2026-07-11,Kilimani,R13715,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-11,Kilimani,R13839,Maize flour 2kg,Grains,2,175,0,350
+2026-07-11,Ngong Road,R13956,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-11,Ngong Road,R14075,Mandazi pack,Bakery,1,100,0,100
+2026-07-11,Kasarani ,R14088,Cooking oil 1L,Household,5,340,0,1700
+2026-07-11,Westlands,R14111,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-11,Ngong Road,R14275,Bar soap,Household,4,120,30,336
+2026-07-11,Thika Road,R14406,Butter 250g,Dairy,2,290,0,580
+2026-07-11,Eastleigh,R14470,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-11,Ngong Road,R14534,Cake slice,Bakery,5,120,30,420
+2026-07-11,Ngong Road,R15141,Sukuma wiki bunch,Produce,4,30,25,90
+2026-07-11,Thika Road,R15145,Onions 1kg,Produce,4,110,0,440
+2026-07-11,Westlands,R15326,Yoghurt 1L,Dairy,5,180,0,900
+2026-07-11,Ngong Road,R15361,Sukuma wiki bunch,Produce,5,30,25,113
+2026-07-11,kilimani,R15379,Mandazi pack,Bakery,5,100,0,500
+2026-07-11,Westlands,R15492,Soda 500ml,Beverages,2,70,0,140
+2026-07-11,Thika Road,R15836,Mandazi pack,Bakery,2,100,0,200
+2026-07-11,Thika Road,R15851,Cake slice,Bakery,4,120,0,480
+2026-07-11,Kasarani,R15885,Bananas 1kg,Produce,2,90,0,180
+2026-07-11,Kilimani,R15887,Washing powder 1kg,Household,3,320,0,960
+2026-07-12,Kasarani,R13306,Cake slice,Bakery,1,120,0,120
+2026-07-12,Kilimani,R13442,Milk 500ml,Dairy,4,65,0,260
+2026-07-12,Ngong Road,R13452,Butter 250g,Dairy,1,290,30,203
+2026-07-12,Eastleigh,R13674,Cooking oil 1L,Household,1,340,0,340
+2026-07-12,Kasarani,R13798,Soda 500ml,Beverages,1,70,0,70
+2026-07-12,Westlands,R13809,Bananas 1kg,Produce,5,90,0,450
+2026-07-12,Kasarani,R13903,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-12,Westlands,R13961,Onions 1kg,Produce,2,110,0,220
+2026-07-12,Westlands ,R13978,Milk 500ml,Dairy,2,65,0,130
+2026-07-12,Kasarani,R14011,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-12,Kasarani,R14050,Milk 500ml,Dairy,3,65,0,195
+2026-07-12,Kasarani,R14271,Juice 1L,Beverages,3,250,0,750
+2026-07-12,Thika Road,R14336,Water 1L,Beverages,2,60,0,120
+2026-07-12,Westlands,R14362,Onions 1kg,Produce,2,110,0,220
+2026-07-12,Kasarani,R14417,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-12,Ngong Road,R14429,Juice 1L,Beverages,2,250,0,500
+2026-07-12,Ngong Road,R14499,Bar soap,Household,2,120,15,204
+2026-07-12,Ngong Rd,R14604,Tea leaves 250g,Beverages,3,160,20,384
+2026-07-12,Ngong Rd,R14604,Tea leaves 250g,Beverages,3,160,20,384
+2026-07-12,Ngong Road,R14607,Maize flour 2kg,Grains,4,175,0,700
+2026-07-12,Eastleigh,R14649,Butter 250g,Dairy,4,290,0,1160
+2026-07-12,Ngong Road,R14802,Washing powder 1kg,Household,5,320,25,1200
+2026-07-12,Kilimani,R15114,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-12,Kasarani,R15172,Bread 400g,Bakery,1,65,0,65
+2026-07-12,Thika Road,R15211,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-12,Eastleigh,R15260,Cooking oil 1L,Household,5,340,0,1700
+2026-07-12,Thika Road,R15296,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-12,Eastleigh,R15482,Maize flour 2kg,Grains,4,175,0,700
+2026-07-12,Eastleigh,R15564,Bar soap,Household,2,120,0,240
+2026-07-12,Eastleigh,R15564,Bar soap,Household,2,120,0,240
+2026-07-12,Thika Road,R15568,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-12,Westlands ,R15620,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-12,Kasarani,R15696,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-12,Kasarani,R15728,Bread 400g,Bakery,2,65,0,130
+2026-07-13,Eastleigh,R13315,Tomatoes 1kg,Produce,5,120,5,570
+2026-07-13,Ngong Road,R13327,Beans 1kg,Grains,5,220,0,1100
+2026-07-13,Westlands,R13476,Tea leaves 250g,Beverages,1,,0,160
+2026-07-13,Ngong Road,R13572,Juice 1L,Beverages,2,250,25,375
+2026-07-13,Ngong Road,R13645,Cake slice,Bakery,5,120,15,510
+2026-07-13,Kasarani,R13960,Bar soap,Household,1,120,5,114
+2026-07-13,Thika Road,R14042,Mandazi pack,Bakery,5,100,0,500
+2026-07-13,Thika Road,R14057,Mandazi pack,Bakery,4,100,0,400
+2026-07-13,Thika Road,R14134,Water 1L,Beverages,5,60,0,300
+2026-07-13,Kasarani,R14136,Juice 1L,Beverages,5,250,0,1250
+2026-07-13,Kasarani,R14155,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-13,Ngong Rd,R14338,Wheat flour 2kg,Grains,4,210,20,672
+2026-07-13,Ngong Rd,R14338,Wheat flour 2kg,Grains,4,210,20,672
+2026-07-13,Kasarani,R14573,Butter 250g,Dairy,4,290,0,1160
+2026-07-13,Kasarani,R14573,Butter 250g,Dairy,4,290,0,1160
+2026-07-13,Ngong Road,R14601,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-13,Kilimani,R14654,Rice 1kg,Grains,2,190,0,380
+2026-07-13,Ngong Road,R14876,Wheat flour 2kg,Grains,1,210,20,168
+2026-07-13,Eastleigh,R14991,Cake slice,Bakery,3,120,0,360
+2026-07-13,Thika Road,R15250,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-13,Kasarani,R15325,Bananas 1kg,Produce,5,90,0,450
+2026-07-13,Ngong Road,R15443,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-13,Thika Road,R15486,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-13,Kasarani,R15544,Tea leaves 250g,Beverages,1,160,0,160
+2026-07-13,Ngong Road,R15625,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-13,Ngong Road,R15625,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-13,Kasarani,R15698,Beans 1kg,Grains,4,220,0,880
+2026-07-14,Thika Road,R13427,Milk 500ml,Dairy,3,65,0,195
+2026-07-14,Kasarani ,R13457,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-14,Kilimani,R13520,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-14,Eastleigh,R13671,Cake slice,Bakery,3,120,0,360
+2026-07-14,Kasarani,R13700,Tissue 10 pack,Household,1,450,0,450
+2026-07-14,Thika Road,R13797,Yoghurt 1L,Dairy,1,180,0,180
+2026-07-14,Westlands,R13934,Water 1L,Beverages,5,60,0,300
+2026-07-14,Thika Road,R14005,Cake slice,Bakery,1,120,0,120
+2026-07-14,Eastleigh,R14038,Cooking oil 1L,Household,3,340,0,1020
+2026-07-14,Eastleigh,R14053,Mandazi pack,Bakery,3,100,0,300
+2026-07-14,Westlands,R14067,Onions 1kg,Produce,2,110,0,220
+2026-07-14,Kasarani,R14089,Washing powder 1kg,Household,2,320,5,608
+2026-07-14,Eastleigh,R14112,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-14,Kasarani,R14213,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-14,Kilimani,R14430,Cake slice,Bakery,2,120,0,240
+2026-07-14,Eastleigh,R14519,Maize flour 2kg,Grains,1,175,0,175
+2026-07-14,Thika Road,R14625,Cake slice,Bakery,3,120,0,360
+2026-07-14,Kasarani,R14635,Butter 250g,Dairy,5,290,0,1450
+2026-07-14,Ngong Road,R14852,Milk 500ml,Dairy,5,65,0,325
+2026-07-14,Eastleigh,R14985,Rice 1kg,Grains,1,190,0,190
+2026-07-14,Eastleigh ,R15350,Bananas 1kg,Produce,1,90,0,90
+2026-07-14,Kilimani,R15427,Tomatoes 1kg,Produce,4,120,0,480
+2026-07-14,Kilimani,R15563,Butter 250g,Dairy,3,290,5,827
+2026-07-14,Kasarani,R15566,Bar soap,Household,1,120,0,120
+2026-07-14,Ngong Road,R15581,Cake slice,Bakery,4,120,0,480
+2026-07-14,Kasarani,R15720,Water 1L,Beverages,1,,0,60
+2026-07-14,Thika Road,R15754,Soda 500ml,Beverages,2,70,0,140
+2026-07-14,Kilimani,R15806,Tissue 10 pack,Household,1,450,0,450
+2026-07-14,Eastleigh,R15894,Onions 1kg,Produce,2,110,0,220
+2026-07-15,Westlands,R13330,Milk 500ml,Dairy,3,65,0,195
+2026-07-15,Westlands,R13701,Water 1L,Beverages,1,60,0,60
+2026-07-15,Kasarani,R13710,Butter 250g,Dairy,1,290,0,290
+2026-07-15,Kasarani,R13710,Butter 250g,Dairy,1,290,0,290
+2026-07-15,Kasarani,R13830,Water 1L,Beverages,5,60,0,300
+2026-07-15,Eastleigh,R13832,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-15,Thika Road,R13855,Rice 1kg,Grains,2,190,0,380
+2026-07-15,Eastleigh ,R13987,Onions 1kg,Produce,1,110,0,110
+2026-07-15,Ngong Road,R14196,Bananas 1kg,Produce,3,90,0,270
+2026-07-15,Thika Road,R14207,Beans 1kg,Grains,4,220,0,880
+2026-07-15,Kilimani,R14282,Maize flour 2kg,Grains,2,175,0,350
+2026-07-15,Kilimani,R14540,Cake slice,Bakery,2,120,0,240
+2026-07-15,Ngong Road,R14716,Tomatoes 1kg,Produce,5,120,25,450
+2026-07-15,Eastleigh,R14719,Beans 1kg,Grains,4,220,0,880
+2026-07-15,Thika Road,R14753,Bananas 1kg,Produce,4,90,0,360
+2026-07-15,Eastleigh,R14825,Mandazi pack,Bakery,1,100,0,100
+2026-07-15,westlands,R14838,Rice 1kg,Grains,2,190,0,380
+2026-07-15,Westlands,R14865,Bananas 1kg,Produce,1,90,0,90
+2026-07-15,Ngong Rd,R15074,Tomatoes 1kg,Produce,3,120,20,288
+2026-07-15,Westlands,R15100,Soda 500ml,Beverages,2,70,0,140
+2026-07-15,Eastleigh,R15193,Bananas 1kg,Produce,3,90,0,270
+2026-07-15,Kasarani,R15269,Beans 1kg,Grains,3,,0,660
+2026-07-15,Kilimani,R15289,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-15,Thika Road,R15336,Rice 1kg,Grains,1,190,0,190
+2026-07-15,Eastleigh,R15392,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-15,Thika Road,R15540,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-15,Kasarani,R15673,Soda 500ml,Beverages,3,70,0,210
+2026-07-15,Thika Road,R15689,Bar soap,Household,1,120,0,120
+2026-07-15,Kilimani,R15824,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-15,Kasarani,R15891,Tea leaves 250g,Beverages,1,160,0,160
+2026-07-16,Kasarani,R13402,Bar soap,Household,2,120,0,240
+2026-07-16,Kilimani,R13548,Tissue 10 pack,Household,5,450,0,2250
+2026-07-16,Thika Road,R13625,Tissue 10 pack,Household,2,450,0,900
+2026-07-16,eastleigh,R13686,Soda 500ml,Beverages,1,70,0,70
+2026-07-16,Eastleigh,R13750,Bar soap,Household,3,120,0,360
+2026-07-16,Ngong Road,R13821,Tea leaves 250g,Beverages,2,160,25,240
+2026-07-16,Thika Road,R13873,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-16,Westlands,R13918,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-16,Eastleigh,R14040,Soda 500ml,Beverages,5,70,0,350
+2026-07-16,Westlands,R14077,Tissue 10 pack,Household,1,450,0,450
+2026-07-16,Eastleigh,R14157,Soda 500ml,Beverages,3,70,0,210
+2026-07-16,Westlands,R14221,Bar soap,Household,5,120,0,600
+2026-07-16,Kilimani,R14328,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-16,Westlands,R14380,Cooking oil 1L,Household,2,340,0,680
+2026-07-16,Eastleigh,R14409,Cake slice,Bakery,5,120,5,570
+2026-07-16,Westlands,R14446,Water 1L,Beverages,3,60,0,180
+2026-07-16,Thika Road,R14532,Tissue 10 pack,Household,4,450,0,1800
+2026-07-16,Kilimani,R14620,Onions 1kg,Produce,5,110,0,550
+2026-07-16,Kilimani,R14698,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-16,Kilimani,R14799,Bar soap,Household,3,120,0,360
+2026-07-16,Eastleigh,R14801,Butter 250g,Dairy,1,290,0,290
+2026-07-16,KASARANI,R14812,Bread 400g,Bakery,4,65,0,260
+2026-07-16,Ngong Road,R14909,Rice 1kg,Grains,2,190,0,380
+2026-07-16,Thika Road,R15328,Bread 400g,Bakery,5,65,0,325
+2026-07-16,Kilimani,R15496,Tissue 10 pack,Household,5,450,0,2250
+2026-07-16,Westlands,R15537,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-16,Kilimani,R15669,Juice 1L,Beverages,3,250,0,750
+2026-07-16,Ngong Road,R15791,Onions 1kg,Produce,1,110,30,77
+2026-07-16,Kasarani,R15842,Cooking oil 1L,Household,4,340,0,1360
+2026-07-16,Kasarani,R15896,Water 1L,Beverages,1,60,0,60
+2026-07-17,Kasarani,R13570,Water 1L,Beverages,4,60,0,240
+2026-07-17,Westlands,R13698,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-17,Westlands,R14065,Water 1L,Beverages,2,60,0,120
+2026-07-17,Westlands,R14244,Bar soap,Household,1,120,0,120
+2026-07-17,Ngong Road,R14249,Mandazi pack,Bakery,2,100,0,200
+2026-07-17,Ngong Road,R14294,Butter 250g,Dairy,4,290,10,1044
+2026-07-17,Kilimani,R14352,Rice 1kg,Grains,5,190,0,950
+2026-07-17,Kasarani,R14489,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-17,Westlands,R14564,Cooking oil 1L,Household,5,340,0,1700
+2026-07-17,Kasarani,R14596,Tissue 10 pack,Household,1,450,0,450
+2026-07-17,Thika Road,R15027,Mandazi pack,Bakery,5,100,0,500
+2026-07-17,Thika Road,R15107,Beans 1kg,Grains,5,220,0,1100
+2026-07-17,Thika Road,R15151,Water 1L,Beverages,3,60,5,171
+2026-07-17,Eastleigh,R15433,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-17,Kasarani,R15573,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-17,Kilimani,R15593,Onions 1kg,Produce,1,110,0,110
+2026-07-17,Eastleigh ,R15848,Soda 500ml,Beverages,4,70,0,280
+2026-07-18,Thika Road,R13314,Tissue 10 pack,Household,4,450,5,1710
+2026-07-18,Ngong Road,R13467,Mandazi pack,Bakery,2,100,0,200
+2026-07-18,westlands,R13485,Bar soap,Household,5,120,5,570
+2026-07-18,Kasarani,R13632,Cooking oil 1L,Household,5,340,0,1700
+2026-07-18,Eastleigh ,R13726,Cooking oil 1L,Household,5,340,0,1700
+2026-07-18,Kilimani,R13775,Water 1L,Beverages,1,60,0,60
+2026-07-18,Eastleigh,R13843,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-18,Westlands,R13859,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-18,Kilimani,R13904,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-18,Eastleigh,R14054,Bread 400g,Bakery,1,65,0,65
+2026-07-18,Kilimani,R14208,Soda 500ml,Beverages,2,70,0,140
+2026-07-18,Eastleigh,R14424,Tissue 10 pack,Household,1,450,0,450
+2026-07-18,Thika Road,R14517,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-18,Kasarani,R14554,Cake slice,Bakery,4,120,0,480
+2026-07-18,thika road,R14869,Milk 500ml,Dairy,3,65,0,195
+2026-07-18,Westlands,R14907,Tissue 10 pack,Household,1,450,0,450
+2026-07-18,Kilimani,R15054,Milk 500ml,Dairy,2,65,0,130
+2026-07-18,Eastleigh,R15076,Onions 1kg,Produce,1,110,0,110
+2026-07-18,Kasarani,R15132,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-18,Kilimani,R15320,Cake slice,Bakery,2,120,0,240
+2026-07-18,Eastleigh,R15351,Wheat flour 2kg,Grains,3,210,5,599
+2026-07-18,Thika Road,R15356,Milk 500ml,Dairy,3,65,0,195
+2026-07-18,Westlands,R15450,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-18,Kilimani,R15513,Washing powder 1kg,Household,2,320,0,640
+2026-07-18,Kilimani,R15529,Mandazi pack,Bakery,5,100,0,500
+2026-07-18,Ngong Road,R15545,Juice 1L,Beverages,3,250,0,750
+2026-07-18,Kasarani,R15737,Soda 500ml,Beverages,1,70,0,70
+2026-07-18,Westlands,R15838,Butter 250g,Dairy,5,290,0,1450
+2026-07-18,Ngong Road,R15899,Cake slice,Bakery,2,120,10,216
+2026-07-19,kilimani,R13368,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-19,Thika Road,R13600,Beans 1kg,Grains,5,220,0,1100
+2026-07-19,Westlands,R13708,Bar soap,Household,4,120,0,480
+2026-07-19,Kilimani,R13871,Tissue 10 pack,Household,2,450,0,900
+2026-07-19,Westlands,R14082,Bar soap,Household,4,120,0,480
+2026-07-19,Kasarani,R14098,Cooking oil 1L,Household,1,340,5,323
+2026-07-19,Ngong road,R14124,Cooking oil 1L,Household,2,340,0,680
+2026-07-19,Ngong Road,R14144,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-19,Ngong Road,R14218,Soda 500ml,Beverages,3,70,0,210
+2026-07-19,Thika Road,R14285,Juice 1L,Beverages,1,250,0,250
+2026-07-19,Ngong Road,R14551,Washing powder 1kg,Household,2,320,30,448
+2026-07-19,Kasarani,R14576,Butter 250g,Dairy,3,290,0,870
+2026-07-19,Eastleigh,R14653,Water 1L,Beverages,5,60,0,300
+2026-07-19,Westlands,R14657,Washing powder 1kg,Household,4,320,0,1280
+2026-07-19,Westlands,R14794,Maize flour 2kg,Grains,5,175,0,875
+2026-07-19,Thika Road,R14814,Water 1L,Beverages,4,60,0,240
+2026-07-19,Kilimani,R14998,Butter 250g,Dairy,1,290,0,290
+2026-07-19,Thika Rd,R15033,Juice 1L,Beverages,5,250,0,1250
+2026-07-19,Thika Road,R15177,Bar soap,Household,5,120,0,600
+2026-07-19,Ngong Road,R15327,Bread 400g,Bakery,2,65,0,130
+2026-07-19,Kasarani,R15353,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-19,Kilimani,R15377,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-19,Westlands,R15657,Butter 250g,Dairy,1,290,0,290
+2026-07-19,Eastleigh,R15716,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-20,Kilimani,R13433,Rice 1kg,Grains,4,190,5,722
+2026-07-20,Kasarani,R13458,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-20,Westlands,R13491,Yoghurt 1L,Dairy,1,180,0,180
+2026-07-20,Thika Road,R13519,Bread 400g,Bakery,1,65,0,65
+2026-07-20,Kasarani,R13534,Milk 500ml,Dairy,3,65,0,195
+2026-07-20,Kilimani,R13574,Wheat flour 2kg,Grains,1,210,0,210
+2026-07-20,Eastleigh,R13782,Rice 1kg,Grains,4,190,0,760
+2026-07-20,Thika Road,R13807,Washing powder 1kg,Household,4,320,0,1280
+2026-07-20,Thika Road,R14161,Water 1L,Beverages,5,60,0,300
+2026-07-20,Kilimani,R14283,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-20,Westlands,R14314,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-20,Ngong Road,R14458,Bananas 1kg,Produce,2,90,30,126
+2026-07-20,Kilimani,R14471,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-20,Thika Road,R14726,Onions 1kg,Produce,1,110,5,105
+2026-07-20,Kilimani,R14778,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-20,Kilimani,R14805,Maize flour 2kg,Grains,5,175,0,875
+2026-07-20,Kasarani,R14837,Water 1L,Beverages,2,60,0,120
+2026-07-20,Eastleigh,R14903,Washing powder 1kg,Household,4,320,0,1280
+2026-07-20,Eastleigh,R14940,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-20,Ngong Road,R15091,Bananas 1kg,Produce,3,90,20,216
+2026-07-20,Kasarani,R15169,Yoghurt 1L,Dairy,5,180,0,900
+2026-07-20,Thika Road,R15178,Tissue 10 pack,Household,1,450,0,450
+2026-07-20,Thika Road,R15247,Bread 400g,Bakery,1,65,0,65
+2026-07-20,Ngong Road,R15590,Tissue 10 pack,Household,1,450,30,315
+2026-07-20,Westlands,R15679,Bananas 1kg,Produce,1,90,0,90
+2026-07-20,Kasarani,R15718,Tissue 10 pack,Household,2,450,0,900
+2026-07-20,eastleigh,R15817,Juice 1L,Beverages,3,250,0,750
+2026-07-20,Thika Road,R15835,Tissue 10 pack,Household,5,450,0,2250
+2026-07-21,Kasarani,R13370,Rice 1kg,Grains,2,190,0,380
+2026-07-21,Ngong Road,R13595,Cooking oil 1L,Household,1,340,20,272
+2026-07-21,Thika Road,R13627,Cooking oil 1L,Household,2,340,0,680
+2026-07-21,Kasarani,R13705,Bread 400g,Bakery,1,65,0,65
+2026-07-21,Kilimani,R13880,Cake slice,Bakery,1,120,0,120
+2026-07-21,Westlands,R13931,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-21,Eastleigh,R14010,Water 1L,Beverages,5,60,0,300
+2026-07-21,Westlands,R14015,Rice 1kg,Grains,5,190,0,950
+2026-07-21,Ngong Road,R14234,Washing powder 1kg,Household,2,320,0,640
+2026-07-21,Ngong Road,R14237,Bar soap,Household,5,120,10,540
+2026-07-21,Westlands,R14287,Bananas 1kg,Produce,3,90,0,270
+2026-07-21,Westlands,R14427,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-21,Westlands,R14674,Maize flour 2kg,Grains,1,175,5,166
+2026-07-21,Thika Road,R14693,Cooking oil 1L,Household,5,340,0,1700
+2026-07-21,Ngong Road,R14771,Soda 500ml,Beverages,1,70,20,56
+2026-07-21,Kilimani,R14774,Soda 500ml,Beverages,2,70,0,140
+2026-07-21,Kilimani,R14808,Mandazi pack,Bakery,4,100,0,400
+2026-07-21,Kilimani,R14855,Cooking oil 1L,Household,4,340,0,1360
+2026-07-21,Westlands,R14941,Rice 1kg,Grains,2,190,0,380
+2026-07-21,Kasarani,R14997,Cooking oil 1L,Household,4,340,0,1360
+2026-07-21,Ngong Road,R15056,Mandazi pack,Bakery,5,100,0,500
+2026-07-21,Kilimani,R15068,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-21,Westlands,R15293,Butter 250g,Dairy,5,290,0,1450
+2026-07-21,Westlands,R15548,Butter 250g,Dairy,3,290,0,870
+2026-07-21,Westlands,R15605,Mandazi pack,Bakery,2,100,0,200
+2026-07-21,Ngong Road,R15619,Soda 500ml,Beverages,5,70,0,350
+2026-07-21,Kilimani,R15693,Mandazi pack,Bakery,5,100,5,475
+2026-07-21,Eastleigh,R15694,Cake slice,Bakery,5,120,0,600
+2026-07-21,Kilimani,R15801,Maize flour 2kg,Grains,3,175,0,525
+2026-07-21,Kilimani,R15801,Maize flour 2kg,Grains,3,175,0,525
+2026-07-21,Westlands,R15855,Butter 250g,Dairy,3,290,0,870
+2026-07-22,Eastleigh,R13483,Milk 500ml,Dairy,2,65,0,130
+2026-07-22,Thika Road,R13500,Washing powder 1kg,Household,2,320,0,640
+2026-07-22,Kasarani,R13503,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-22,Westlands,R13553,Beans 1kg,Grains,4,220,0,880
+2026-07-22,Thika Road,R13585,Tea leaves 250g,Beverages,1,160,5,152
+2026-07-22,Thika Road,R13657,Tissue 10 pack,Household,1,450,0,450
+2026-07-22,Thika Road,R13755,Bread 400g,Bakery,3,65,0,195
+2026-07-22,Ngong Road,R13831,Cooking oil 1L,Household,5,340,0,1700
+2026-07-22,Kasarani,R13834,Mandazi pack,Bakery,1,100,0,100
+2026-07-22,Westlands,R13842,Rice 1kg,Grains,1,190,0,190
+2026-07-22,Eastleigh,R13897,Maize flour 2kg,Grains,5,175,0,875
+2026-07-22,Westlands,R13963,Sukuma wiki bunch,Produce,2,30,0,60
+2026-07-22,Westlands,R14045,Bananas 1kg,Produce,5,90,0,450
+2026-07-22,Eastleigh,R14059,Butter 250g,Dairy,2,290,0,580
+2026-07-22,Westlands,R14129,Bread 400g,Bakery,1,65,0,65
+2026-07-22,Kasarani,R14233,Rice 1kg,Grains,3,190,0,570
+2026-07-22,Thika Road,R14259,Maize flour 2kg,Grains,1,175,0,175
+2026-07-22,KASARANI,R14277,Bananas 1kg,Produce,2,90,0,180
+2026-07-22,Eastleigh,R14312,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-22,Ngong Road,R14443,Tomatoes 1kg,Produce,4,120,25,360
+2026-07-22,Ngong Road,R14443,Tomatoes 1kg,Produce,4,120,25,360
+2026-07-22,Kilimani,R14505,Cooking oil 1L,Household,2,340,0,680
+2026-07-22,Ngong Road,R14665,Bananas 1kg,Produce,1,90,30,63
+2026-07-22,Westlands,R14680,Maize flour 2kg,Grains,2,175,0,350
+2026-07-22,Kilimani,R14822,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-22,Ngong Road,R14872,Cake slice,Bakery,4,120,30,336
+2026-07-22,Ngong Road,R15202,Maize flour 2kg,Grains,4,175,10,630
+2026-07-22,Thika Road,R15237,Maize flour 2kg,Grains,3,175,0,525
+2026-07-22,Thika Road,R15305,Cooking oil 1L,Household,2,340,0,680
+2026-07-22,Eastleigh,R15424,Juice 1L,Beverages,1,250,0,250
+2026-07-22,Kilimani,R15516,Bread 400g,Bakery,1,65,0,65
+2026-07-22,Eastleigh,R15652,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-23,Kilimani,R13530,Tissue 10 pack,Household,4,450,5,1710
+2026-07-23,Kilimani,R13532,Beans 1kg,Grains,4,220,0,880
+2026-07-23,Kilimani,R13610,Rice 1kg,Grains,5,190,0,950
+2026-07-23,Westlands,R13713,Water 1L,Beverages,3,60,0,180
+2026-07-23,Kasarani,R13783,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-23,Eastleigh,R13867,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-23,Ngong Road,R14016,Rice 1kg,Grains,1,190,0,190
+2026-07-23,kilimani,R14083,Cake slice,Bakery,5,120,0,600
+2026-07-23,Thika Road,R14116,Maize flour 2kg,Grains,4,175,0,700
+2026-07-23,Thika Road,R14131,Tea leaves 250g,Beverages,1,160,0,160
+2026-07-23,Kasarani,R14204,Water 1L,Beverages,4,60,0,240
+2026-07-23,Kilimani,R14210,Butter 250g,Dairy,5,290,0,1450
+2026-07-23,Kilimani,R14210,Butter 250g,Dairy,5,290,0,1450
+2026-07-23,Kasarani,R14215,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-23,Kasarani,R14545,Soda 500ml,Beverages,4,70,0,280
+2026-07-23,Eastleigh,R14581,Maize flour 2kg,Grains,3,175,0,525
+2026-07-23,Kilimani,R14623,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-23,Thika Road,R14834,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-23,Thika Road,R14839,Soda 500ml,Beverages,4,70,0,280
+2026-07-23,Ngong Road,R14841,Maize flour 2kg,Grains,3,175,0,525
+2026-07-23,Kilimani,R14975,Juice 1L,Beverages,3,250,0,750
+2026-07-23,Kasarani,R15121,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-23,Eastleigh,R15168,Maize flour 2kg,Grains,3,175,0,525
+2026-07-23,Thika Road,R15248,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-23,Kasarani,R15281,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-23,Thika Road,R15359,Bananas 1kg,Produce,5,90,0,450
+2026-07-23,Westlands,R15407,Rice 1kg,Grains,1,190,0,190
+2026-07-23,Ngong Road,R15526,Tissue 10 pack,Household,3,450,15,1148
+2026-07-23,Westlands,R15660,Bread 400g,Bakery,5,65,0,325
+2026-07-23,westlands,R15675,Milk 500ml,Dairy,5,65,0,325
+2026-07-23,Eastleigh,R15787,Rice 1kg,Grains,3,190,0,570
+2026-07-23,Kasarani,R15793,Milk 500ml,Dairy,2,65,0,130
+2026-07-23,Ngong Road,R15841,Yoghurt 1L,Dairy,4,180,30,504
+2026-07-24,Kasarani,R13806,Washing powder 1kg,Household,1,320,0,320
+2026-07-24,Thika Road,R13810,Bananas 1kg,Produce,1,90,0,90
+2026-07-24,Eastleigh,R13862,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-24,Kasarani,R13893,Mandazi pack,Bakery,2,100,0,200
+2026-07-24,Kilimani,R13894,Cooking oil 1L,Household,5,340,5,1615
+2026-07-24,Kasarani,R13902,Cooking oil 1L,Household,2,340,0,680
+2026-07-24,Kasarani,R13914,Tissue 10 pack,Household,3,450,0,1350
+2026-07-24,Westlands,R13948,Washing powder 1kg,Household,3,320,0,960
+2026-07-24,Thika Road,R14139,Bananas 1kg,Produce,2,90,0,180
+2026-07-24,Eastleigh,R14222,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-24,Eastleigh,R14242,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-24,Eastleigh,R14270,Juice 1L,Beverages,3,,0,750
+2026-07-24,Thika Road,R14397,Juice 1L,Beverages,1,250,0,250
+2026-07-24,Westlands,R14463,Maize flour 2kg,Grains,4,175,0,700
+2026-07-24,Kilimani,R14475,Maize flour 2kg,Grains,3,175,0,525
+2026-07-24,Eastleigh,R14490,Cooking oil 1L,Household,1,340,0,340
+2026-07-24,Eastleigh,R14536,Maize flour 2kg,Grains,4,175,0,700
+2026-07-24,Kasarani,R14851,Tissue 10 pack,Household,4,450,0,1800
+2026-07-24,Eastleigh,R14866,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-24,Kasarani ,R15073,Maize flour 2kg,Grains,5,175,0,875
+2026-07-24,Westlands ,R15153,Juice 1L,Beverages,5,250,0,1250
+2026-07-24,Thika Road,R15410,Milk 500ml,Dairy,2,65,0,130
+2026-07-24,Westlands,R15432,Juice 1L,Beverages,2,250,0,500
+2026-07-24,Westlands,R15505,Soda 500ml,Beverages,4,70,0,280
+2026-07-24,Eastleigh,R15520,Mandazi pack,Bakery,2,,0,200
+2026-07-24,Eastleigh,R15520,Mandazi pack,Bakery,2,,0,200
+2026-07-24,Ngong Road,R15562,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-24,Thika Road,R15596,Tissue 10 pack,Household,4,450,0,1800
+2026-07-24,Kilimani,R15630,Bar soap,Household,1,120,0,120
+2026-07-24,Westlands,R15777,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-25,Kasarani,R13307,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-25,Ngong Road,R13320,Tomatoes 1kg,Produce,2,120,0,240
+2026-07-25,Kasarani,R13373,Water 1L,Beverages,2,60,0,120
+2026-07-25,ngong road,R13484,Water 1L,Beverages,4,60,0,240
+2026-07-25,Ngong Road,R13551,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-25,Kilimani,R13688,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-25,Westlands,R13752,Beans 1kg,Grains,4,220,0,880
+2026-07-25,Eastleigh,R13772,Juice 1L,Beverages,2,250,0,500
+2026-07-25,Thika Road,R14048,Water 1L,Beverages,3,60,0,180
+2026-07-25,Kilimani,R14212,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-25,Kilimani,R14231,Cake slice,Bakery,5,120,0,600
+2026-07-25,Eastleigh,R14240,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-25,Ngong Road,R14304,Bananas 1kg,Produce,5,90,25,338
+2026-07-25,Westlands ,R14382,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-25,Ngong Road,R14473,Bananas 1kg,Produce,2,90,20,144
+2026-07-25,Thika Road,R14524,Mandazi pack,Bakery,4,100,0,400
+2026-07-25,Kilimani,R14550,Bananas 1kg,Produce,1,90,0,90
+2026-07-25,Kilimani,R14677,Bananas 1kg,Produce,4,90,0,360
+2026-07-25,eastleigh,R14809,Bananas 1kg,Produce,2,90,0,180
+2026-07-25,Thika Road,R14910,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-25,Kilimani,R14979,Cake slice,Bakery,4,120,0,480
+2026-07-25,Westlands,R15273,Mandazi pack,Bakery,4,100,0,400
+2026-07-25,Thika Road,R15282,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-25,Thika Road,R15292,Bananas 1kg,Produce,5,90,0,450
+2026-07-25,Kasarani,R15405,Mandazi pack,Bakery,3,100,0,300
+2026-07-25,Kilimani,R15416,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-25,Westlands ,R15457,Onions 1kg,Produce,5,110,0,550
+2026-07-25,Thika Road,R15533,Bar soap,Household,2,120,0,240
+2026-07-25,Westlands,R15570,Cake slice,Bakery,2,120,0,240
+2026-07-25,Thika Road,R15664,Cooking oil 1L,Household,5,340,0,1700
+2026-07-25,Westlands,R15674,Tissue 10 pack,Household,2,450,0,900
+2026-07-25,Thika Road,R15750,Cooking oil 1L,Household,2,340,0,680
+2026-07-25,Ngong Road,R15762,Sukuma wiki bunch,Produce,2,30,15,51
+2026-07-26,kilimani,R13438,Milk 500ml,Dairy,2,65,0,130
+2026-07-26,Ngong Road,R13618,Beans 1kg,Grains,1,220,25,165
+2026-07-26,Thika Road,R13738,Mandazi pack,Bakery,1,100,0,100
+2026-07-26,Westlands,R13905,Milk 500ml,Dairy,3,65,0,195
+2026-07-26,Thika Road,R14007,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-26,Ngong Road,R14269,Washing powder 1kg,Household,4,320,30,896
+2026-07-26,Thika Rd,R14300,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-26,Ngong Road,R14465,Bread 400g,Bakery,3,65,0,195
+2026-07-26,Ngong Road,R14465,Bread 400g,Bakery,3,65,0,195
+2026-07-26,Thika Road,R14608,Cooking oil 1L,Household,3,340,0,1020
+2026-07-26,Westlands,R14618,Bar soap,Household,3,120,0,360
+2026-07-26,Westlands,R14749,Rice 1kg,Grains,1,190,0,190
+2026-07-26,Kasarani,R14764,Juice 1L,Beverages,5,250,0,1250
+2026-07-26,Eastleigh,R14868,Water 1L,Beverages,2,60,0,120
+2026-07-26,Kasarani,R14881,Butter 250g,Dairy,2,290,0,580
+2026-07-26,Thika Road,R14958,Cooking oil 1L,Household,2,340,0,680
+2026-07-26,Kasarani,R14988,Yoghurt 1L,Dairy,1,180,0,180
+2026-07-26,Kasarani,R15014,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-26,Eastleigh,R15082,Wheat flour 2kg,Grains,4,210,0,840
+2026-07-26,Ngong Road,R15142,Washing powder 1kg,Household,4,320,30,896
+2026-07-26,Westlands,R15207,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-26,Thika Road,R15274,Bananas 1kg,Produce,2,90,0,180
+2026-07-26,Eastleigh,R15311,Washing powder 1kg,Household,4,320,0,1280
+2026-07-26,Westlands,R15338,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-26,Eastleigh,R15452,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-26,Kasarani,R15667,Water 1L,Beverages,1,60,0,60
+2026-07-26,kasarani,R15715,Washing powder 1kg,Household,3,320,0,960
+2026-07-26,Kasarani,R15739,Beans 1kg,Grains,1,220,0,220
+2026-07-27,Kilimani,R13434,Mandazi pack,Bakery,3,100,0,300
+2026-07-27,Ngong Road,R13533,Cooking oil 1L,Household,5,340,10,1530
+2026-07-27,Thika Road,R13605,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-27,Westlands,R13621,Bread 400g,Bakery,4,65,0,260
+2026-07-27,Westlands,R13647,Milk 500ml,Dairy,5,65,0,325
+2026-07-27,Ngong Road,R13711,Juice 1L,Beverages,4,250,20,800
+2026-07-27,Westlands,R13742,Rice 1kg,Grains,3,190,0,570
+2026-07-27,Kasarani,R13969,Tissue 10 pack,Household,4,450,0,1800
+2026-07-27,Thika Road,R14013,Cooking oil 1L,Household,1,340,0,340
+2026-07-27,Kilimani,R14104,Sukuma wiki bunch,Produce,3,30,0,90
+2026-07-27,Westlands,R14171,Juice 1L,Beverages,2,250,5,475
+2026-07-27,Thika Road,R14265,Bar soap,Household,2,120,0,240
+2026-07-27,Westlands,R14303,Milk 500ml,Dairy,1,65,0,65
+2026-07-27,Westlands,R14547,Cake slice,Bakery,2,120,0,240
+2026-07-27,Eastleigh,R14602,Milk 500ml,Dairy,5,65,0,325
+2026-07-27,Ngong Road,R14651,Soda 500ml,Beverages,2,70,30,98
+2026-07-27,Thika Road,R14761,Washing powder 1kg,Household,4,320,0,1280
+2026-07-27,Thika Road,R14796,Onions 1kg,Produce,3,110,0,330
+2026-07-27,Westlands,R15041,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-27,eastleigh,R15120,Cooking oil 1L,Household,1,,0,340
+2026-07-27,Eastleigh,R15137,Bread 400g,Bakery,2,65,0,130
+2026-07-27,Eastleigh,R15187,Onions 1kg,Produce,2,110,0,220
+2026-07-27,Eastleigh,R15488,Bar soap,Household,5,120,0,600
+2026-07-27,thika road,R15507,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-27,Westlands,R15511,Washing powder 1kg,Household,4,320,0,1280
+2026-07-27,Ngong Road,R15685,Washing powder 1kg,Household,4,320,10,1152
+2026-07-27,Thika Road,R15721,Milk 500ml,Dairy,2,65,0,130
+2026-07-27,Thika Road,R15745,Bread 400g,Bakery,1,65,0,65
+2026-07-27,Ngong Road,R15803,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-27,Ngong Road,R15803,Tea leaves 250g,Beverages,5,160,0,800
+2026-07-27,Kilimani,R15867,Onions 1kg,Produce,5,110,0,550
+2026-07-27,Westlands,R15897,Onions 1kg,Produce,2,110,0,220
+2026-07-27,Eastleigh,R15898,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-28,Kilimani,R13342,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-28,kilimani,R13379,Yoghurt 1L,Dairy,5,180,0,900
+2026-07-28,Kasarani,R13523,Bar soap,Household,1,120,0,120
+2026-07-28,Kasarani,R13547,Maize flour 2kg,Grains,5,175,0,875
+2026-07-28,Eastleigh,R13591,Juice 1L,Beverages,3,250,0,750
+2026-07-28,Westlands,R13709,Washing powder 1kg,Household,3,320,0,960
+2026-07-28,Thika Road,R13725,Milk 500ml,Dairy,2,65,0,130
+2026-07-28,Kasarani,R13923,Juice 1L,Beverages,1,250,5,238
+2026-07-28,Kilimani,R14168,Butter 250g,Dairy,4,290,0,1160
+2026-07-28,Westlands,R14351,Yoghurt 1L,Dairy,2,180,0,360
+2026-07-28,Kasarani,R14361,Mandazi pack,Bakery,3,100,0,300
+2026-07-28,Kasarani,R14485,Yoghurt 1L,Dairy,5,180,0,900
+2026-07-28,Ngong Road,R14511,Bananas 1kg,Produce,3,90,0,270
+2026-07-28,Kilimani,R14515,Cooking oil 1L,Household,4,340,0,1360
+2026-07-28,Kilimani,R14626,Butter 250g,Dairy,1,290,0,290
+2026-07-28,Ngong Road,R14631,Tea leaves 250g,Beverages,1,160,0,160
+2026-07-28,Thika Road,R14931,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-28,Ngong Road,R14969,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-28,Ngong Road,R14969,Yoghurt 1L,Dairy,3,180,0,540
+2026-07-28,Thika Rd,R14984,Sukuma wiki bunch,Produce,2,30,0,60
+2026-07-28,Ngong Road,R15000,Tea leaves 250g,Beverages,5,160,30,560
+2026-07-28,Kilimani,R15066,Soda 500ml,Beverages,3,70,0,210
+2026-07-28,kilimani,R15220,Rice 1kg,Grains,1,190,0,190
+2026-07-28,Ngong Road,R15266,Bananas 1kg,Produce,3,90,0,270
+2026-07-28,Eastleigh,R15306,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-28,Ngong Road,R15442,Juice 1L,Beverages,4,250,10,900
+2026-07-28,Kilimani,R15530,Maize flour 2kg,Grains,3,175,0,525
+2026-07-28,Kasarani,R15531,Wheat flour 2kg,Grains,3,210,0,630
+2026-07-28,Kasarani,R15572,Washing powder 1kg,Household,4,320,0,1280
+2026-07-28,Westlands,R15616,Rice 1kg,Grains,5,190,0,950
+2026-07-28,Kilimani,R15744,Cake slice,Bakery,5,120,0,600
+2026-07-28,Kasarani,R15831,Mandazi pack,Bakery,2,100,0,200
+2026-07-28,Eastleigh,R15872,Bar soap,Household,3,120,0,360
+2026-07-29,Ngong Road,R13364,Bread 400g,Bakery,2,65,0,130
+2026-07-29,Eastleigh,R13594,Mandazi pack,Bakery,4,100,0,400
+2026-07-29,Kilimani,R13753,Maize flour 2kg,Grains,1,175,0,175
+2026-07-29,Kasarani,R13780,Bread 400g,Bakery,3,65,0,195
+2026-07-29,Thika Road,R13970,Bar soap,Household,2,120,0,240
+2026-07-29,Ngong road,R13976,Washing powder 1kg,Household,2,320,20,512
+2026-07-29,Thika Road,R14046,Water 1L,Beverages,2,60,5,114
+2026-07-29,Ngong Road,R14064,Butter 250g,Dairy,1,290,5,276
+2026-07-29,Kilimani,R14306,Sukuma wiki bunch,Produce,1,30,0,30
+2026-07-29,Ngong Road,R14334,Milk 500ml,Dairy,2,65,20,104
+2026-07-29,Eastleigh,R14392,Tissue 10 pack,Household,5,450,0,2250
+2026-07-29,Ngong Road,R14436,Wheat flour 2kg,Grains,2,210,10,378
+2026-07-29,Ngong Road,R14464,Tissue 10 pack,Household,4,450,0,1800
+2026-07-29,Ngong Road,R14464,Tissue 10 pack,Household,4,450,0,1800
+2026-07-29,Ngong Road,R14510,Juice 1L,Beverages,5,250,25,938
+2026-07-29,Thika Road,R14557,Bananas 1kg,Produce,4,90,0,360
+2026-07-29,Thika Road,R14603,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-29,Eastleigh,R14627,Tomatoes 1kg,Produce,1,120,0,120
+2026-07-29,Kilimani,R14770,Beans 1kg,Grains,5,220,0,1100
+2026-07-29,THIKA ROAD,R15051,Sukuma wiki bunch,Produce,2,30,5,57
+2026-07-29,Eastleigh,R15109,Mandazi pack,Bakery,5,100,0,500
+2026-07-29,Kilimani,R15212,Tomatoes 1kg,Produce,3,120,0,360
+2026-07-29,Ngong Road,R15229,Juice 1L,Beverages,5,250,25,938
+2026-07-29,Eastleigh,R15294,Water 1L,Beverages,5,60,0,300
+2026-07-29,kilimani,R15373,Sukuma wiki bunch,Produce,4,30,0,120
+2026-07-29,Thika Road,R15493,Milk 500ml,Dairy,2,65,0,130
+2026-07-29,Eastleigh,R15521,Tissue 10 pack,Household,1,450,0,450
+2026-07-29,Thika Road,R15611,Water 1L,Beverages,1,60,5,57
+2026-07-29,Westlands,R15755,Bananas 1kg,Produce,2,90,0,180
+2026-07-30,Kilimani,R13501,Juice 1L,Beverages,3,250,0,750
+2026-07-30,Eastleigh,R13790,Soda 500ml,Beverages,2,70,0,140
+2026-07-30,Westlands,R13812,Bread 400g,Bakery,5,65,0,325
+2026-07-30,Kasarani,R13882,Water 1L,Beverages,4,60,0,240
+2026-07-30,eastleigh,R13938,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-30,Kilimani,R14000,Juice 1L,Beverages,3,250,0,750
+2026-07-30,thika road,R14017,Wheat flour 2kg,Grains,2,210,0,420
+2026-07-30,Westlands,R14030,Onions 1kg,Produce,4,110,0,440
+2026-07-30,Kilimani,R14225,Juice 1L,Beverages,3,250,0,750
+2026-07-30,Kasarani,R14243,Bananas 1kg,Produce,5,90,0,450
+2026-07-30,Ngong Road,R14357,Maize flour 2kg,Grains,1,175,25,131
+2026-07-30,Eastleigh,R14486,Bananas 1kg,Produce,5,90,0,450
+2026-07-30,Eastleigh,R14646,Bread 400g,Bakery,4,65,0,260
+2026-07-30,Kilimani,R14683,Beans 1kg,Grains,5,220,5,1045
+2026-07-30,Kasarani,R14829,Tea leaves 250g,Beverages,4,160,0,640
+2026-07-30,Eastleigh,R14902,Butter 250g,Dairy,3,290,0,870
+2026-07-30,Westlands,R14943,Milk 500ml,Dairy,1,65,5,62
+2026-07-30,Westlands,R14974,Sukuma wiki bunch,Produce,2,30,5,57
+2026-07-30,Thika Road,R15097,Juice 1L,Beverages,1,250,0,250
+2026-07-30,Kilimani,R15613,Tea leaves 250g,Beverages,2,160,0,320
+2026-07-30,Ngong Road,R15621,Yoghurt 1L,Dairy,4,180,0,720
+2026-07-30,Eastleigh,R15662,Beans 1kg,Grains,1,,0,220
+2026-07-30,Kasarani,R15875,Wheat flour 2kg,Grains,5,210,0,1050
+2026-07-31,Kasarani,R13344,Rice 1kg,Grains,3,190,0,570
+2026-07-31,Westlands,R13537,Juice 1L,Beverages,4,250,0,1000
+2026-07-31,Thika Road,R13599,Cooking oil 1L,Household,1,340,0,340
+2026-07-31,Westlands,R13607,Beans 1kg,Grains,3,220,0,660
+2026-07-31,Kasarani,R13623,Tissue 10 pack,Household,3,,0,1350
+2026-07-31,Kilimani,R13717,Water 1L,Beverages,2,60,0,120
+2026-07-31,Westlands,R13779,Water 1L,Beverages,3,60,0,180
+2026-07-31,kilimani,R13851,Beans 1kg,Grains,1,220,0,220
+2026-07-31,Kasarani,R14026,Mandazi pack,Bakery,3,100,0,300
+2026-07-31,kilimani,R14078,Cooking oil 1L,Household,4,340,0,1360
+2026-07-31,Kilimani,R14097,Tomatoes 1kg,Produce,5,120,0,600
+2026-07-31,Kasarani,R14320,Juice 1L,Beverages,5,250,0,1250
+2026-07-31,Kasarani,R14321,Rice 1kg,Grains,3,190,0,570
+2026-07-31,Kasarani,R14321,Rice 1kg,Grains,3,190,0,570
+2026-07-31,Eastleigh,R14572,Water 1L,Beverages,3,60,0,180
+2026-07-31,Kasarani,R14652,Yoghurt 1L,Dairy,5,180,5,855
+2026-07-31,Eastleigh ,R14795,Tea leaves 250g,Beverages,3,160,0,480
+2026-07-31,Kasarani,R14879,Bananas 1kg,Produce,2,90,0,180
+2026-07-31,Kilimani,R14891,Onions 1kg,Produce,5,110,0,550
+2026-07-31,Kasarani,R14936,Milk 500ml,Dairy,1,65,0,65
+2026-07-31,Kilimani,R14986,Juice 1L,Beverages,5,250,0,1250
+2026-07-31,Kasarani,R15255,Butter 250g,Dairy,4,290,0,1160
+2026-07-31,Eastleigh,R15279,Sukuma wiki bunch,Produce,5,30,0,150
+2026-07-31,Eastleigh,R15453,Water 1L,Beverages,1,60,0,60
+2026-07-31,Westlands,R15476,Butter 250g,Dairy,3,290,5,827
+2026-07-31,Ngong Road,R15757,Washing powder 1kg,Household,4,320,10,1152
+2026-08-01,Kilimani,R13326,Bananas 1kg,Produce,3,90,0,270
+2026-08-01,Kasarani,R13546,Beans 1kg,Grains,4,220,0,880
+2026-08-01,Kasarani,R13609,Mandazi pack,Bakery,5,100,0,500
+2026-08-01,Thika Road,R13740,Tissue 10 pack,Household,4,450,0,1800
+2026-08-01,THIKA ROAD,R13794,Cake slice,Bakery,1,120,0,120
+2026-08-01,Kasarani,R13932,Water 1L,Beverages,3,60,5,171
+2026-08-01,Kasarani,R14190,Soda 500ml,Beverages,3,70,0,210
+2026-08-01,Eastleigh,R14353,Cooking oil 1L,Household,1,340,0,340
+2026-08-01,Westlands,R14403,Onions 1kg,Produce,4,110,0,440
+2026-08-01,Westlands,R14416,Bananas 1kg,Produce,5,90,0,450
+2026-08-01,Ngong Road,R14483,Mandazi pack,Bakery,1,100,0,100
+2026-08-01,Eastleigh,R14513,Maize flour 2kg,Grains,4,175,0,700
+2026-08-01,Kasarani,R14768,Bread 400g,Bakery,5,65,0,325
+2026-08-01,Thika Road,R14873,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-01,Kasarani,R14946,Maize flour 2kg,Grains,1,175,0,175
+2026-08-01,Ngong Road,R15103,Tomatoes 1kg,Produce,3,120,15,306
+2026-08-01,Ngong Road,R15103,Tomatoes 1kg,Produce,3,120,15,306
+2026-08-01,Ngong Road,R15136,Beans 1kg,Grains,3,220,30,462
+2026-08-01,Ngong Road,R15136,Beans 1kg,Grains,3,220,30,462
+2026-08-01,Ngong Road,R15341,Washing powder 1kg,Household,3,320,30,672
+2026-08-01,Westlands,R15431,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-01,Kilimani,R15549,Washing powder 1kg,Household,2,320,0,640
+2026-08-01,Eastleigh,R15656,Tissue 10 pack,Household,5,450,0,2250
+2026-08-01,Thika Road,R15752,Rice 1kg,Grains,5,190,0,950
+2026-08-02,Ngong Road,R13516,Tea leaves 250g,Beverages,5,160,10,720
+2026-08-02,Kilimani,R13577,Milk 500ml,Dairy,5,65,0,325
+2026-08-02,Westlands,R13641,Soda 500ml,Beverages,4,70,0,280
+2026-08-02,Ngong Road,R13879,Bar soap,Household,3,120,0,360
+2026-08-02,Thika Road,R14001,Rice 1kg,Grains,5,190,0,950
+2026-08-02,Kasarani,R14049,Rice 1kg,Grains,4,190,0,760
+2026-08-02,Kasarani,R14128,Washing powder 1kg,Household,5,320,0,1600
+2026-08-02,Ngong Road,R14138,Mandazi pack,Bakery,5,100,0,500
+2026-08-02,Kasarani,R14148,Bread 400g,Bakery,2,65,0,130
+2026-08-02,Kasarani,R14460,Beans 1kg,Grains,2,220,0,440
+2026-08-02,Eastleigh,R14539,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-02,Westlands,R14549,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-02,Westlands,R14549,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-02,Ngong Road,R14780,Washing powder 1kg,Household,5,320,25,1200
+2026-08-02,Ngong Road,R14780,Washing powder 1kg,Household,5,320,25,1200
+2026-08-02,Thika Road,R14847,Cake slice,Bakery,3,120,0,360
+2026-08-02,Kasarani,R14956,Bread 400g,Bakery,2,65,5,124
+2026-08-02,Kilimani,R15040,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-02,Westlands,R15057,Water 1L,Beverages,1,60,0,60
+2026-08-02,Kasarani,R15115,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-02,Kasarani,R15165,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-02,Thika Road,R15378,Cake slice,Bakery,5,120,0,600
+2026-08-02,Westlands,R15391,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-02,Kilimani,R15495,Washing powder 1kg,Household,4,320,0,1280
+2026-08-02,Kasarani,R15499,Beans 1kg,Grains,3,220,0,660
+2026-08-02,Ngong Road,R15601,Tea leaves 250g,Beverages,2,160,20,256
+2026-08-02,Kasarani,R15665,Cake slice,Bakery,5,120,0,600
+2026-08-02,Kasarani,R15681,Bread 400g,Bakery,4,65,0,260
+2026-08-02,Kilimani,R15697,Bread 400g,Bakery,4,65,0,260
+2026-08-02,Kasarani,R15702,Bananas 1kg,Produce,2,90,0,180
+2026-08-02,Kasarani,R15810,Bread 400g,Bakery,3,65,0,195
+2026-08-03,Thika Road,R13416,Bread 400g,Bakery,5,65,0,325
+2026-08-03,Ngong Road,R13517,Cooking oil 1L,Household,5,340,15,1445
+2026-08-03,Ngong Road,R13673,Tissue 10 pack,Household,1,450,0,450
+2026-08-03,Kilimani,R13721,Water 1L,Beverages,3,60,0,180
+2026-08-03,Eastleigh,R13778,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-03,Westlands,R13787,Milk 500ml,Dairy,4,65,0,260
+2026-08-03,Thika Road,R13844,Soda 500ml,Beverages,4,70,0,280
+2026-08-03,Thika Road,R14135,Tissue 10 pack,Household,5,450,0,2250
+2026-08-03,Thika Road,R14332,Cooking oil 1L,Household,1,340,0,340
+2026-08-03,Westlands,R14467,Rice 1kg,Grains,4,190,0,760
+2026-08-03,Kilimani,R14552,Water 1L,Beverages,4,60,5,228
+2026-08-03,Eastleigh,R14610,Milk 500ml,Dairy,5,65,0,325
+2026-08-03,Thika Road,R14614,Onions 1kg,Produce,2,110,0,220
+2026-08-03,kasarani,R14633,Mandazi pack,Bakery,4,100,0,400
+2026-08-03,THIKA ROAD,R14733,Cooking oil 1L,Household,3,340,0,1020
+2026-08-03,Kilimani,R14887,Onions 1kg,Produce,3,110,0,330
+2026-08-03,Kasarani,R14927,Onions 1kg,Produce,5,110,0,550
+2026-08-03,Eastleigh,R15034,Maize flour 2kg,Grains,5,175,0,875
+2026-08-03,Eastleigh,R15184,Bar soap,Household,1,120,0,120
+2026-08-03,Thika Road,R15208,Sukuma wiki bunch,Produce,3,30,0,90
+2026-08-03,Eastleigh,R15230,Maize flour 2kg,Grains,3,175,0,525
+2026-08-03,Eastleigh,R15263,Onions 1kg,Produce,3,110,0,330
+2026-08-03,Thika Road,R15460,Tomatoes 1kg,Produce,4,120,0,480
+2026-08-03,Kasarani,R15464,Bread 400g,Bakery,5,65,0,325
+2026-08-03,Eastleigh,R15556,Bread 400g,Bakery,1,65,0,65
+2026-08-03,Westlands,R15603,Juice 1L,Beverages,4,250,0,1000
+2026-08-03,Kilimani,R15706,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-03,Eastleigh,R15710,Cooking oil 1L,Household,4,340,0,1360
+2026-08-03,Ngong Road,R15781,Bread 400g,Bakery,2,65,10,117
+2026-08-03,Westlands,R15864,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-04,Westlands,R13456,Mandazi pack,Bakery,1,100,0,100
+2026-08-04,Eastleigh,R13544,Yoghurt 1L,Dairy,3,180,0,540
+2026-08-04,Thika Road,R13646,Bananas 1kg,Produce,2,90,0,180
+2026-08-04,Kilimani,R13661,Tissue 10 pack,Household,4,450,5,1710
+2026-08-04,Westlands,R13704,Tissue 10 pack,Household,2,450,0,900
+2026-08-04,Kilimani,R14232,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-04,Kasarani,R14247,Washing powder 1kg,Household,1,320,0,320
+2026-08-04,Thika Road,R14292,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-04,Kilimani,R14589,Cooking oil 1L,Household,2,340,0,680
+2026-08-04,Kasarani,R14662,Beans 1kg,Grains,4,220,0,880
+2026-08-04,Ngong Rd,R14711,Cake slice,Bakery,2,120,0,240
+2026-08-04,Thika Road,R14766,Bar soap,Household,5,120,0,600
+2026-08-04,Kasarani,R14813,Butter 250g,Dairy,5,290,0,1450
+2026-08-04,Kilimani,R14863,Soda 500ml,Beverages,1,70,0,70
+2026-08-04,Ngong Road,R14888,Wheat flour 2kg,Grains,2,210,0,420
+2026-08-04,Ngong Road,R14888,Wheat flour 2kg,Grains,2,210,0,420
+2026-08-04,Ngong road,R14916,Yoghurt 1L,Dairy,4,180,20,576
+2026-08-04,kilimani,R15036,Maize flour 2kg,Grains,5,175,0,875
+2026-08-04,Kilimani,R15116,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-04,Westlands,R15119,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-04,Kilimani,R15150,Soda 500ml,Beverages,3,70,0,210
+2026-08-04,Thika Road,R15235,Water 1L,Beverages,3,60,0,180
+2026-08-04,kilimani,R15437,Water 1L,Beverages,4,60,0,240
+2026-08-04,Ngong Road,R15484,Soda 500ml,Beverages,5,70,30,245
+2026-08-04,Thika Rd,R15494,Cooking oil 1L,Household,2,340,0,680
+2026-08-04,Kasarani,R15515,Yoghurt 1L,Dairy,1,180,0,180
+2026-08-04,Kilimani,R15517,Onions 1kg,Produce,5,110,0,550
+2026-08-04,Thika Road,R15822,Mandazi pack,Bakery,2,100,0,200
+2026-08-05,Ngong Road,R13303,Tissue 10 pack,Household,1,450,25,338
+2026-08-05,Eastleigh,R13358,Butter 250g,Dairy,2,290,0,580
+2026-08-05,Kasarani,R13447,Cake slice,Bakery,5,120,0,600
+2026-08-05,kilimani,R13450,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-05,eastleigh,R13550,Soda 500ml,Beverages,3,70,0,210
+2026-08-05,Thika Road,R13676,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-05,Ngong Road,R13744,Cooking oil 1L,Household,4,340,30,952
+2026-08-05,Ngong Road,R13744,Cooking oil 1L,Household,4,340,30,952
+2026-08-05,Kasarani,R13836,Yoghurt 1L,Dairy,1,180,0,180
+2026-08-05,Eastleigh,R13883,Washing powder 1kg,Household,3,320,5,912
+2026-08-05,Ngong Road,R13895,Sukuma wiki bunch,Produce,2,30,20,48
+2026-08-05,Westlands,R13907,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-05,Westlands,R13922,Bananas 1kg,Produce,1,90,0,90
+2026-08-05,Thika Road,R13937,Bananas 1kg,Produce,3,90,0,270
+2026-08-05,Eastleigh,R14055,Milk 500ml,Dairy,3,65,0,195
+2026-08-05,Thika Road,R14211,Bar soap,Household,3,120,0,360
+2026-08-05,Eastleigh,R14317,Beans 1kg,Grains,4,220,0,880
+2026-08-05,THIKA ROAD,R14574,Onions 1kg,Produce,5,110,0,550
+2026-08-05,Westlands,R14704,Tissue 10 pack,Household,3,450,0,1350
+2026-08-05,Westlands,R14901,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-05,Kasarani,R14954,Beans 1kg,Grains,4,220,0,880
+2026-08-05,thika road,R14982,Juice 1L,Beverages,3,250,0,750
+2026-08-05,Thika Road,R15059,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-05,Eastleigh,R15217,Milk 500ml,Dairy,2,65,0,130
+2026-08-05,Thika Road,R15371,Maize flour 2kg,Grains,4,175,0,700
+2026-08-05,Eastleigh,R15462,Washing powder 1kg,Household,1,320,0,320
+2026-08-05,Westlands,R15559,Juice 1L,Beverages,5,250,0,1250
+2026-08-05,Kilimani,R15574,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-05,Kasarani,R15722,Butter 250g,Dairy,1,290,0,290
+2026-08-05,ngong road,R15761,Milk 500ml,Dairy,1,65,30,46
+2026-08-05,Kasarani,R15825,Mandazi pack,Bakery,5,100,0,500
+2026-08-05,Kilimani,R15857,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-06,Westlands,R13312,Water 1L,Beverages,2,60,0,120
+2026-08-06,Ngong Road,R13381,Sukuma wiki bunch,Produce,3,30,20,72
+2026-08-06,Kilimani,R13425,Cooking oil 1L,Household,3,,0,1020
+2026-08-06,Westlands,R13578,Cooking oil 1L,Household,1,340,0,340
+2026-08-06,Westlands,R13638,Bread 400g,Bakery,4,65,0,260
+2026-08-06,Thika Road,R13643,Beans 1kg,Grains,5,220,0,1100
+2026-08-06,Kasarani,R13828,Water 1L,Beverages,3,60,0,180
+2026-08-06,Kilimani,R14009,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-06,Kilimani,R14023,Yoghurt 1L,Dairy,1,180,0,180
+2026-08-06,Kasarani,R14145,Mandazi pack,Bakery,2,100,0,200
+2026-08-06,Kasarani,R14216,Soda 500ml,Beverages,2,70,0,140
+2026-08-06,Kasarani,R14266,Tea leaves 250g,Beverages,2,,0,320
+2026-08-06,Eastleigh,R14322,Bananas 1kg,Produce,3,90,0,270
+2026-08-06,Ngong Road,R14355,Butter 250g,Dairy,5,290,15,1233
+2026-08-06,Kasarani,R14598,Cake slice,Bakery,3,120,0,360
+2026-08-06,Kasarani,R14637,Soda 500ml,Beverages,1,70,0,70
+2026-08-06,Thika Road,R14744,Milk 500ml,Dairy,4,65,0,260
+2026-08-06,Westlands,R14840,Sukuma wiki bunch,Produce,4,30,0,120
+2026-08-06,Kilimani,R14893,Juice 1L,Beverages,1,250,0,250
+2026-08-06,Ngong Road,R14900,Beans 1kg,Grains,1,220,30,154
+2026-08-06,Thika Road,R15159,Tomatoes 1kg,Produce,4,120,5,456
+2026-08-06,Ngong Road,R15236,Tomatoes 1kg,Produce,3,120,30,252
+2026-08-06,Kilimani,R15238,Maize flour 2kg,Grains,3,175,5,499
+2026-08-06,Thika Road,R15259,Yoghurt 1L,Dairy,3,180,0,540
+2026-08-06,Kasarani,R15393,Mandazi pack,Bakery,5,100,0,500
+2026-08-06,Eastleigh,R15440,Sukuma wiki bunch,Produce,3,30,0,90
+2026-08-06,Eastleigh,R15466,Bananas 1kg,Produce,2,90,0,180
+2026-08-06,Kasarani,R15528,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-06,Kilimani,R15700,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-07,Thika Road,R13355,Beans 1kg,Grains,4,220,0,880
+2026-08-07,Kilimani,R13369,Cake slice,Bakery,5,120,0,600
+2026-08-07,Thika Road,R13375,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-07,Westlands,R13560,Cooking oil 1L,Household,3,340,0,1020
+2026-08-07,Westlands,R13745,Onions 1kg,Produce,5,110,0,550
+2026-08-07,Ngong road,R13795,Rice 1kg,Grains,3,190,15,485
+2026-08-07,Thika Road,R13872,Cake slice,Bakery,2,120,5,228
+2026-08-07,Kasarani,R13876,Wheat flour 2kg,Grains,2,210,0,420
+2026-08-07,Kasarani,R13949,Rice 1kg,Grains,4,190,0,760
+2026-08-07,Thika Road,R14076,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-07,Kilimani,R14205,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-07,Kilimani,R14228,Bread 400g,Bakery,1,65,0,65
+2026-08-07,Eastleigh,R14281,Juice 1L,Beverages,1,250,0,250
+2026-08-07,Kasarani,R14298,Juice 1L,Beverages,4,250,0,1000
+2026-08-07,Thika Road,R14305,Bread 400g,Bakery,2,65,0,130
+2026-08-07,Ngong road,R14507,Onions 1kg,Produce,5,110,15,468
+2026-08-07,Ngong Road,R14634,Tissue 10 pack,Household,5,450,30,1575
+2026-08-07,Eastleigh,R14701,Cooking oil 1L,Household,2,340,0,680
+2026-08-07,Eastleigh,R14740,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-07,Ngong Road,R14784,Tea leaves 250g,Beverages,3,160,20,384
+2026-08-07,Thika Road,R15257,Cooking oil 1L,Household,5,340,0,1700
+2026-08-07,Kilimani,R15262,Cooking oil 1L,Household,2,340,0,680
+2026-08-07,Kilimani,R15314,Cooking oil 1L,Household,3,340,0,1020
+2026-08-07,Westlands,R15329,Soda 500ml,Beverages,2,70,0,140
+2026-08-07,Kilimani,R15414,Rice 1kg,Grains,4,190,0,760
+2026-08-07,Kilimani,R15592,Tissue 10 pack,Household,3,450,0,1350
+2026-08-07,Westlands,R15682,Bar soap,Household,3,120,0,360
+2026-08-07,Thika Road,R15808,Tissue 10 pack,Household,1,450,0,450
+2026-08-08,Kilimani,R13626,Cake slice,Bakery,5,120,0,600
+2026-08-08,Ngong Road,R13675,Onions 1kg,Produce,4,110,20,352
+2026-08-08,Ngong Road,R13947,Rice 1kg,Grains,3,190,20,456
+2026-08-08,Kilimani,R13950,Rice 1kg,Grains,3,190,0,570
+2026-08-08,Thika Road,R14003,Cake slice,Bakery,5,120,0,600
+2026-08-08,Eastleigh,R14039,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-08,Kilimani,R14289,Bar soap,Household,1,120,0,120
+2026-08-08,Eastleigh,R14354,Cooking oil 1L,Household,4,340,0,1360
+2026-08-08,Ngong Road,R14377,Bar soap,Household,3,120,10,324
+2026-08-08,Kilimani,R14479,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-08,Kilimani,R14521,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-08,Eastleigh,R14558,Tissue 10 pack,Household,5,450,0,2250
+2026-08-08,eastleigh,R14671,Juice 1L,Beverages,4,250,0,1000
+2026-08-08,Ngong Road,R14688,Milk 500ml,Dairy,5,65,0,325
+2026-08-08,Westlands,R14995,Bar soap,Household,4,120,0,480
+2026-08-08,Westlands,R15028,Bread 400g,Bakery,5,65,0,325
+2026-08-08,Westlands ,R15244,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-08,Kasarani ,R15380,Rice 1kg,Grains,5,190,0,950
+2026-08-08,Kasarani,R15463,Cooking oil 1L,Household,1,340,0,340
+2026-08-08,Westlands,R15503,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-08,Ngong Road,R15612,Water 1L,Beverages,1,60,0,60
+2026-08-08,Ngong road,R15643,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-08,kilimani,R15802,Bread 400g,Bakery,3,65,0,195
+2026-08-08,kilimani,R15802,Bread 400g,Bakery,3,65,0,195
+2026-08-08,Kilimani,R15871,Onions 1kg,Produce,5,110,0,550
+2026-08-09,Eastleigh,R13316,Washing powder 1kg,Household,4,320,0,1280
+2026-08-09,Eastleigh,R13401,Bread 400g,Bakery,4,65,0,260
+2026-08-09,Kasarani,R13471,Water 1L,Beverages,4,60,0,240
+2026-08-09,Eastleigh,R13521,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-09,Kasarani,R13622,Milk 500ml,Dairy,3,65,0,195
+2026-08-09,Thika Road,R13630,Juice 1L,Beverages,5,250,0,1250
+2026-08-09,Westlands,R13761,Tissue 10 pack,Household,5,450,0,2250
+2026-08-09,Westlands,R14028,Soda 500ml,Beverages,4,70,0,280
+2026-08-09,Kilimani,R14062,Mandazi pack,Bakery,3,100,0,300
+2026-08-09,Thika Road,R14181,Bananas 1kg,Produce,4,90,0,360
+2026-08-09,Westlands ,R14333,Maize flour 2kg,Grains,4,175,0,700
+2026-08-09,Kilimani,R14404,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-09,Ngong Road,R14504,Cake slice,Bakery,4,120,25,360
+2026-08-09,Westlands,R14528,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-09,Kasarani,R14593,Cake slice,Bakery,4,120,0,480
+2026-08-09,Thika Road,R14696,Beans 1kg,Grains,4,220,0,880
+2026-08-09,Kasarani,R14697,Milk 500ml,Dairy,4,65,0,260
+2026-08-09,Ngong Road,R14792,Bananas 1kg,Produce,4,90,0,360
+2026-08-09,Eastleigh,R14844,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-09,Thika Road,R14874,Mandazi pack,Bakery,3,100,0,300
+2026-08-09,Kilimani,R14989,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-09,kilimani,R14999,Maize flour 2kg,Grains,2,175,0,350
+2026-08-09,Westlands,R15010,Soda 500ml,Beverages,4,70,0,280
+2026-08-09,Ngong Road,R15023,Water 1L,Beverages,2,60,20,96
+2026-08-09,Ngong Road,R15023,Water 1L,Beverages,2,60,20,96
+2026-08-09,Kasarani,R15038,Washing powder 1kg,Household,3,320,0,960
+2026-08-09,Thika Road,R15064,Onions 1kg,Produce,5,110,0,550
+2026-08-09,Thika Road,R15125,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-09,Kilimani,R15190,Tomatoes 1kg,Produce,4,120,0,480
+2026-08-09,Thika Road,R15308,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-09,Ngong Road,R15352,Cooking oil 1L,Household,5,340,30,1190
+2026-08-09,Westlands,R15426,Bananas 1kg,Produce,4,90,0,360
+2026-08-09,Eastleigh,R15430,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-09,Eastleigh,R15489,Cake slice,Bakery,3,120,0,360
+2026-08-09,Kasarani,R15532,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-09,Eastleigh,R15536,Beans 1kg,Grains,1,220,0,220
+2026-08-09,Thika Road,R15576,Cake slice,Bakery,1,120,0,120
+2026-08-09,Eastleigh ,R15597,Onions 1kg,Produce,1,110,0,110
+2026-08-09,Ngong Road,R15641,Rice 1kg,Grains,3,190,30,399
+2026-08-09,Kasarani,R15756,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-10,Thika Road,R13338,Cake slice,Bakery,3,120,0,360
+2026-08-10,Kilimani,R13371,Tissue 10 pack,Household,2,450,0,900
+2026-08-10,Eastleigh,R13410,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-10,kilimani,R13422,Washing powder 1kg,Household,4,320,5,1216
+2026-08-10,Eastleigh,R13531,Maize flour 2kg,Grains,2,175,0,350
+2026-08-10,Kasarani ,R13616,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-10,Ngong Road,R13620,Sukuma wiki bunch,Produce,1,30,20,24
+2026-08-10,Eastleigh,R13687,Bread 400g,Bakery,1,65,0,65
+2026-08-10,Eastleigh,R13714,Juice 1L,Beverages,1,250,0,250
+2026-08-10,Ngong Road,R13838,Bar soap,Household,1,120,25,90
+2026-08-10,Westlands,R14018,Milk 500ml,Dairy,1,65,0,65
+2026-08-10,Westlands,R14058,Beans 1kg,Grains,1,220,0,220
+2026-08-10,Ngong Road,R14079,Bananas 1kg,Produce,3,90,25,203
+2026-08-10,Eastleigh,R14095,Bar soap,Household,2,120,0,240
+2026-08-10,Kasarani,R14149,Washing powder 1kg,Household,3,320,0,960
+2026-08-10,kilimani,R14174,Sukuma wiki bunch,Produce,3,30,0,90
+2026-08-10,Westlands,R14261,Milk 500ml,Dairy,5,65,0,325
+2026-08-10,Ngong Road,R14365,Bananas 1kg,Produce,5,90,25,338
+2026-08-10,Thika Road,R14366,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-10,Kilimani,R14367,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-10,Thika Road,R14401,Milk 500ml,Dairy,5,65,0,325
+2026-08-10,Westlands,R14428,Butter 250g,Dairy,2,290,0,580
+2026-08-10,kilimani,R14567,Water 1L,Beverages,3,60,0,180
+2026-08-10,Thika Road,R14640,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-10,Thika Road,R14908,Juice 1L,Beverages,4,250,0,1000
+2026-08-10,Thika Road,R14912,Bananas 1kg,Produce,5,90,0,450
+2026-08-10,Westlands,R15020,Washing powder 1kg,Household,1,320,0,320
+2026-08-10,Kilimani,R15083,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-10,Ngong Road,R15130,Bananas 1kg,Produce,2,90,15,153
+2026-08-10,Ngong road,R15148,Water 1L,Beverages,4,60,0,240
+2026-08-10,Ngong Road,R15163,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-10,Eastleigh,R15246,Maize flour 2kg,Grains,5,175,0,875
+2026-08-10,Kasarani,R15283,Maize flour 2kg,Grains,2,,0,350
+2026-08-10,Westlands,R15584,Mandazi pack,Bakery,1,100,0,100
+2026-08-10,thika road,R15638,Bananas 1kg,Produce,5,90,0,450
+2026-08-10,kasarani,R15653,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-10,Kilimani,R15736,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-10,Westlands,R15743,Soda 500ml,Beverages,1,70,0,70
+2026-08-10,Kasarani,R15771,Cake slice,Bakery,5,120,5,570
+2026-08-11,Ngong Road,R13644,Soda 500ml,Beverages,5,70,25,263
+2026-08-11,Ngong Road,R13699,Beans 1kg,Grains,2,220,15,374
+2026-08-11,Kasarani,R13824,Washing powder 1kg,Household,2,320,0,640
+2026-08-11,Westlands,R13900,Bread 400g,Bakery,2,65,5,124
+2026-08-11,Westlands,R13955,Bread 400g,Bakery,1,,0,65
+2026-08-11,Westlands,R13974,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-11,Eastleigh,R14154,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-11,Thika Road,R14162,Cake slice,Bakery,4,120,5,456
+2026-08-11,Kilimani,R14441,Maize flour 2kg,Grains,4,175,0,700
+2026-08-11,Westlands,R14535,Onions 1kg,Produce,5,110,0,550
+2026-08-11,Westlands,R14639,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-11,Westlands,R14684,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-11,Kilimani,R14723,Rice 1kg,Grains,5,190,0,950
+2026-08-11,Kilimani,R14739,Tea leaves 250g,Beverages,5,160,0,800
+2026-08-11,Thika Road,R15188,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-11,Eastleigh ,R15632,Mandazi pack,Bakery,1,100,0,100
+2026-08-11,Kasarani ,R15709,Butter 250g,Dairy,5,290,0,1450
+2026-08-12,Thika Road,R13367,Cake slice,Bakery,3,120,0,360
+2026-08-12,Kilimani,R13395,Cooking oil 1L,Household,1,340,0,340
+2026-08-12,Kilimani,R13439,Bananas 1kg,Produce,5,90,0,450
+2026-08-12,Westlands,R13444,Cake slice,Bakery,4,120,0,480
+2026-08-12,Ngong Road,R13486,Mandazi pack,Bakery,3,100,10,270
+2026-08-12,KASARANI,R13527,Soda 500ml,Beverages,3,70,0,210
+2026-08-12,Thika Road,R13580,Maize flour 2kg,Grains,5,175,5,831
+2026-08-12,Kasarani,R13633,Bread 400g,Bakery,3,65,5,185
+2026-08-12,Eastleigh,R13682,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-12,Eastleigh,R14051,Maize flour 2kg,Grains,5,175,0,875
+2026-08-12,Kasarani,R14071,Beans 1kg,Grains,2,220,0,440
+2026-08-12,Kilimani,R14478,Soda 500ml,Beverages,3,70,0,210
+2026-08-12,Thika Road,R14612,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-12,Thika Road,R14616,Cooking oil 1L,Household,2,340,5,646
+2026-08-12,Eastleigh,R14643,Beans 1kg,Grains,4,220,0,880
+2026-08-12,Kilimani,R14667,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-12,Ngong Road,R14673,Yoghurt 1L,Dairy,2,180,15,306
+2026-08-12,Ngong Road,R14673,Yoghurt 1L,Dairy,2,180,15,306
+2026-08-12,Ngong Road,R14676,Onions 1kg,Produce,5,110,5,523
+2026-08-12,Kilimani,R14871,Beans 1kg,Grains,2,220,0,440
+2026-08-12,Thika Road,R14884,Beans 1kg,Grains,4,220,0,880
+2026-08-12,Kasarani,R15071,Washing powder 1kg,Household,2,320,0,640
+2026-08-12,Ngong Road,R15138,Water 1L,Beverages,2,60,0,120
+2026-08-12,Thika Road,R15222,Washing powder 1kg,Household,2,320,0,640
+2026-08-12,Kasarani,R15256,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-12,Kasarani,R15333,Bananas 1kg,Produce,5,90,0,450
+2026-08-12,Thika Road,R15335,Beans 1kg,Grains,1,220,0,220
+2026-08-12,Westlands,R15398,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-12,Ngong Road,R15510,Yoghurt 1L,Dairy,3,180,5,513
+2026-08-12,Westlands,R15579,Bananas 1kg,Produce,4,90,0,360
+2026-08-12,Kasarani,R15783,Bread 400g,Bakery,3,65,0,195
+2026-08-13,Westlands,R13328,Bread 400g,Bakery,5,65,0,325
+2026-08-13,Thika Road,R13376,Maize flour 2kg,Grains,3,175,0,525
+2026-08-13,Westlands,R13397,Maize flour 2kg,Grains,5,175,0,875
+2026-08-13,Kilimani,R13478,Cake slice,Bakery,4,120,0,480
+2026-08-13,Ngong Road,R13665,Maize flour 2kg,Grains,5,175,30,613
+2026-08-13,Westlands,R13766,Bread 400g,Bakery,5,65,0,325
+2026-08-13,Westlands,R13811,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-13,Ngong Road,R13951,Mandazi pack,Bakery,3,100,20,240
+2026-08-13,Kasarani,R14068,Maize flour 2kg,Grains,1,175,0,175
+2026-08-13,Ngong Road,R14107,Sukuma wiki bunch,Produce,3,30,0,90
+2026-08-13,Ngong Road,R14151,Bread 400g,Bakery,5,65,30,227
+2026-08-13,Kilimani,R14169,Butter 250g,Dairy,3,290,5,827
+2026-08-13,Ngong Road,R14200,Milk 500ml,Dairy,1,65,15,55
+2026-08-13,Westlands,R14223,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-13,Kilimani,R14268,Tomatoes 1kg,Produce,4,120,0,480
+2026-08-13,Ngong Road,R14398,Maize flour 2kg,Grains,5,175,10,788
+2026-08-13,Eastleigh,R14421,Tissue 10 pack,Household,1,450,0,450
+2026-08-13,Kilimani,R14727,Rice 1kg,Grains,1,190,0,190
+2026-08-13,Eastleigh,R14760,Milk 500ml,Dairy,2,65,0,130
+2026-08-13,Westlands,R14970,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-13,Kasarani,R15026,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-13,Kasarani,R15123,Cooking oil 1L,Household,3,340,0,1020
+2026-08-13,Eastleigh,R15170,Butter 250g,Dairy,1,290,0,290
+2026-08-13,Thika Road,R15180,Bananas 1kg,Produce,2,90,0,180
+2026-08-13,Kasarani,R15265,Cake slice,Bakery,5,120,0,600
+2026-08-13,Thika Road,R15362,Tea leaves 250g,Beverages,5,160,0,800
+2026-08-13,Kilimani,R15508,Onions 1kg,Produce,2,110,0,220
+2026-08-13,Kilimani,R15676,Maize flour 2kg,Grains,2,175,0,350
+2026-08-13,Eastleigh,R15733,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-13,Westlands ,R15764,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-13,Eastleigh,R15889,Beans 1kg,Grains,5,220,0,1100
+2026-08-14,Westlands,R13305,Butter 250g,Dairy,1,290,0,290
+2026-08-14,Kilimani,R13386,Butter 250g,Dairy,3,290,0,870
+2026-08-14,Kasarani,R13573,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-14,Kasarani,R13695,Cooking oil 1L,Household,4,340,0,1360
+2026-08-14,Thika Road,R13848,Butter 250g,Dairy,5,290,0,1450
+2026-08-14,Eastleigh,R14006,Rice 1kg,Grains,3,190,0,570
+2026-08-14,Westlands,R14025,Maize flour 2kg,Grains,3,175,0,525
+2026-08-14,Kasarani,R14037,Maize flour 2kg,Grains,4,175,0,700
+2026-08-14,Eastleigh,R14160,Milk 500ml,Dairy,4,65,0,260
+2026-08-14,Kasarani,R14435,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-14,Kasarani,R14457,Tea leaves 250g,Beverages,2,160,0,320
+2026-08-14,Thika Road,R14516,Maize flour 2kg,Grains,1,175,0,175
+2026-08-14,Eastleigh,R15025,Onions 1kg,Produce,4,110,0,440
+2026-08-14,Kasarani,R15175,Soda 500ml,Beverages,2,70,0,140
+2026-08-14,Kilimani,R15444,Onions 1kg,Produce,4,110,0,440
+2026-08-14,Kasarani,R15446,Mandazi pack,Bakery,2,100,0,200
+2026-08-14,Thika Road,R15458,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-14,Eastleigh,R15567,Beans 1kg,Grains,2,220,0,440
+2026-08-14,Thika Road,R15594,Mandazi pack,Bakery,5,100,0,500
+2026-08-15,Kilimani,R13737,Tissue 10 pack,Household,5,450,0,2250
+2026-08-15,Eastleigh,R13820,Beans 1kg,Grains,4,220,0,880
+2026-08-15,Eastleigh,R13825,Butter 250g,Dairy,2,290,0,580
+2026-08-15,Eastleigh,R13896,Maize flour 2kg,Grains,3,175,0,525
+2026-08-15,kilimani,R14066,Bananas 1kg,Produce,1,90,0,90
+2026-08-15,Eastleigh,R14081,Rice 1kg,Grains,2,190,0,380
+2026-08-15,Thika Road,R14122,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-15,Ngong Road,R14127,Cooking oil 1L,Household,3,340,0,1020
+2026-08-15,Kilimani,R14209,Bread 400g,Bakery,3,65,0,195
+2026-08-15,Eastleigh,R14343,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-15,Kasarani,R14472,Onions 1kg,Produce,3,110,0,330
+2026-08-15,Thika Road,R14661,Beans 1kg,Grains,2,220,0,440
+2026-08-15,Thika Road,R14679,Butter 250g,Dairy,5,290,0,1450
+2026-08-15,Ngong Road,R14835,Yoghurt 1L,Dairy,2,180,10,324
+2026-08-15,Westlands,R14846,Bar soap,Household,5,120,0,600
+2026-08-15,Eastleigh,R14861,Water 1L,Beverages,5,60,0,300
+2026-08-15,Thika Road,R14878,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-15,Westlands,R15139,Rice 1kg,Grains,1,190,0,190
+2026-08-15,Westlands,R15154,Sukuma wiki bunch,Produce,4,30,0,120
+2026-08-15,Kilimani,R15216,Tomatoes 1kg,Produce,1,120,0,120
+2026-08-15,Thika Road,R15242,Tissue 10 pack,Household,5,450,0,2250
+2026-08-15,Westlands,R15339,Onions 1kg,Produce,4,110,5,418
+2026-08-15,Thika Road,R15525,Rice 1kg,Grains,2,190,0,380
+2026-08-15,thika road,R15599,Cooking oil 1L,Household,1,340,0,340
+2026-08-15,Thika Road,R15666,Milk 500ml,Dairy,3,65,0,195
+2026-08-15,Kilimani,R15843,Cooking oil 1L,Household,4,340,0,1360
+2026-08-16,Eastleigh,R13404,Rice 1kg,Grains,5,190,0,950
+2026-08-16,westlands,R13428,Bar soap,Household,4,120,0,480
+2026-08-16,Westlands,R13680,Mandazi pack,Bakery,1,100,0,100
+2026-08-16,Eastleigh,R13734,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-16,Kasarani,R13793,Butter 250g,Dairy,4,290,0,1160
+2026-08-16,Westlands,R14004,Butter 250g,Dairy,2,290,0,580
+2026-08-16,Kasarani,R14137,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-16,Kasarani,R14158,Soda 500ml,Beverages,3,,0,210
+2026-08-16,Thika Road,R14186,Bananas 1kg,Produce,3,90,0,270
+2026-08-16,Eastleigh ,R14359,Beans 1kg,Grains,3,220,0,660
+2026-08-16,Kasarani,R14394,Juice 1L,Beverages,1,250,0,250
+2026-08-16,Eastleigh,R14702,Soda 500ml,Beverages,4,70,0,280
+2026-08-16,Ngong Road,R14710,Mandazi pack,Bakery,1,100,0,100
+2026-08-16,Westlands,R14949,Maize flour 2kg,Grains,1,175,0,175
+2026-08-16,Thika Road,R15122,Bread 400g,Bakery,4,65,0,260
+2026-08-16,Eastleigh,R15129,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-16,Kasarani,R15478,Soda 500ml,Beverages,5,70,0,350
+2026-08-16,Thika Road,R15539,Cooking oil 1L,Household,4,340,0,1360
+2026-08-16,Eastleigh,R15598,Milk 500ml,Dairy,2,65,0,130
+2026-08-16,Westlands,R15687,Bar soap,Household,2,120,0,240
+2026-08-16,Thika Road,R15701,Washing powder 1kg,Household,3,320,0,960
+2026-08-16,kasarani,R15746,Washing powder 1kg,Household,3,320,0,960
+2026-08-16,Thika Road,R15882,Cake slice,Bakery,3,120,0,360
+2026-08-17,Kasarani,R13754,Tissue 10 pack,Household,1,450,0,450
+2026-08-17,Eastleigh,R13763,Juice 1L,Beverages,1,250,0,250
+2026-08-17,Ngong Road,R13817,Onions 1kg,Produce,4,110,0,440
+2026-08-17,Kasarani,R13818,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-17,Kasarani,R13860,Maize flour 2kg,Grains,1,175,0,175
+2026-08-17,Westlands,R13887,Mandazi pack,Bakery,4,100,0,400
+2026-08-17,Thika Road,R14031,Onions 1kg,Produce,5,110,0,550
+2026-08-17,Westlands,R14130,Bread 400g,Bakery,2,65,0,130
+2026-08-17,Kilimani,R14295,Tea leaves 250g,Beverages,2,160,0,320
+2026-08-17,Kilimani,R14556,Cake slice,Bakery,2,120,0,240
+2026-08-17,Eastleigh,R14560,Cake slice,Bakery,5,120,0,600
+2026-08-17,Ngong Road,R14689,Juice 1L,Beverages,4,250,0,1000
+2026-08-17,Kasarani,R14692,Milk 500ml,Dairy,2,65,0,130
+2026-08-17,Kilimani,R14713,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-17,Eastleigh,R15321,Cake slice,Bakery,5,120,0,600
+2026-08-17,Eastleigh,R15471,Butter 250g,Dairy,1,290,0,290
+2026-08-17,Eastleigh,R15558,Milk 500ml,Dairy,1,65,0,65
+2026-08-17,Eastleigh,R15558,Milk 500ml,Dairy,1,65,0,65
+2026-08-17,Ngong Road,R15732,Juice 1L,Beverages,3,250,10,675
+2026-08-17,Kilimani,R15784,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-18,Thika Road,R13429,Rice 1kg,Grains,4,190,0,760
+2026-08-18,Ngong Road,R13506,Juice 1L,Beverages,4,250,10,900
+2026-08-18,Ngong Road,R13518,Tea leaves 250g,Beverages,3,160,25,360
+2026-08-18,Ngong Road,R13669,Rice 1kg,Grains,2,190,20,304
+2026-08-18,Ngong Road,R13751,Bread 400g,Bakery,3,65,10,176
+2026-08-18,Kilimani,R13758,Onions 1kg,Produce,2,110,0,220
+2026-08-18,Westlands,R13789,Juice 1L,Beverages,4,250,0,1000
+2026-08-18,Ngong Road,R13977,Tea leaves 250g,Beverages,3,160,15,408
+2026-08-18,Kasarani,R14214,Cooking oil 1L,Household,4,340,0,1360
+2026-08-18,Kilimani,R14378,Tissue 10 pack,Household,2,450,0,900
+2026-08-18,Kasarani,R14381,Tissue 10 pack,Household,1,450,0,450
+2026-08-18,Westlands,R14503,Washing powder 1kg,Household,1,320,0,320
+2026-08-18,Thika Road,R14591,Soda 500ml,Beverages,1,70,0,70
+2026-08-18,Ngong Road,R14729,Tomatoes 1kg,Produce,4,120,5,456
+2026-08-18,Westlands,R14765,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-18,Eastleigh,R14803,Onions 1kg,Produce,1,110,0,110
+2026-08-18,Thika Road,R14828,Washing powder 1kg,Household,3,320,0,960
+2026-08-18,Westlands,R14877,Yoghurt 1L,Dairy,1,180,0,180
+2026-08-18,Kasarani,R15030,Bananas 1kg,Produce,4,90,0,360
+2026-08-18,Kasarani,R15072,Maize flour 2kg,Grains,4,175,0,700
+2026-08-18,Thika Road,R15106,Onions 1kg,Produce,1,110,0,110
+2026-08-18,Eastleigh,R15249,Milk 500ml,Dairy,4,65,0,260
+2026-08-18,Kilimani,R15285,Mandazi pack,Bakery,5,100,0,500
+2026-08-18,Thika Road,R15369,Juice 1L,Beverages,4,250,0,1000
+2026-08-18,Thika Road,R15691,Washing powder 1kg,Household,2,320,0,640
+2026-08-18,Eastleigh,R15826,Onions 1kg,Produce,3,110,0,330
+2026-08-18,Ngong Rd,R15856,Maize flour 2kg,Grains,4,175,10,630
+2026-08-19,Kilimani,R13301,Maize flour 2kg,Grains,4,175,0,700
+2026-08-19,Ngong Road,R13340,Tea leaves 250g,Beverages,4,160,30,448
+2026-08-19,Kilimani,R13380,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-19,Thika Road,R13388,Cooking oil 1L,Household,1,340,0,340
+2026-08-19,Westlands,R13406,Rice 1kg,Grains,3,190,0,570
+2026-08-19,Eastleigh,R13441,Bread 400g,Bakery,1,65,0,65
+2026-08-19,Kasarani,R13639,Butter 250g,Dairy,5,290,0,1450
+2026-08-19,Kasarani,R13683,Tissue 10 pack,Household,4,450,0,1800
+2026-08-19,Kilimani,R13706,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-19,Westlands,R13784,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-19,Eastleigh,R13875,Rice 1kg,Grains,4,190,0,760
+2026-08-19,Ngong Road,R14034,Bananas 1kg,Produce,4,90,25,270
+2026-08-19,Eastleigh,R14072,Water 1L,Beverages,5,60,0,300
+2026-08-19,Westlands,R14113,Bananas 1kg,Produce,2,90,5,171
+2026-08-19,Kilimani,R14119,Bar soap,Household,1,120,0,120
+2026-08-19,Ngong Road,R14199,Beans 1kg,Grains,5,220,0,1100
+2026-08-19,Ngong Road,R14199,Beans 1kg,Grains,5,220,0,1100
+2026-08-19,Kilimani,R14315,Tissue 10 pack,Household,3,450,5,1283
+2026-08-19,Westlands,R14319,Milk 500ml,Dairy,2,65,0,130
+2026-08-19,Kilimani,R14374,Water 1L,Beverages,5,60,0,300
+2026-08-19,Westlands,R14725,Water 1L,Beverages,3,60,5,171
+2026-08-19,Thika Road,R14731,Soda 500ml,Beverages,5,70,0,350
+2026-08-19,Kasarani,R14750,Juice 1L,Beverages,2,250,5,475
+2026-08-19,Kasarani,R14756,Tissue 10 pack,Household,2,450,0,900
+2026-08-19,westlands,R14926,Bananas 1kg,Produce,2,90,0,180
+2026-08-19,Thika Road,R14967,Milk 500ml,Dairy,2,65,0,130
+2026-08-19,Kasarani,R14977,Washing powder 1kg,Household,2,320,0,640
+2026-08-19,Thika Road,R15080,Tea leaves 250g,Beverages,3,160,5,456
+2026-08-19,Kasarani,R15158,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-19,Kilimani,R15199,Tissue 10 pack,Household,1,450,0,450
+2026-08-19,Thika Road,R15382,Bananas 1kg,Produce,2,90,0,180
+2026-08-19,Ngong Road,R15399,Cooking oil 1L,Household,4,340,0,1360
+2026-08-19,Kilimani,R15436,Butter 250g,Dairy,2,290,5,551
+2026-08-19,Kilimani,R15479,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-19,Kasarani,R15580,Tissue 10 pack,Household,5,450,0,2250
+2026-08-19,Kilimani,R15629,Yoghurt 1L,Dairy,3,180,0,540
+2026-08-19,Eastleigh,R15704,Rice 1kg,Grains,2,190,0,380
+2026-08-19,Kasarani,R15776,Bar soap,Household,2,120,5,228
+2026-08-19,Thika Road,R15844,Bar soap,Household,3,120,0,360
+2026-08-19,Ngong Road,R15862,Sukuma wiki bunch,Produce,5,30,25,113
+2026-08-19,Ngong Road,R15877,Wheat flour 2kg,Grains,2,210,0,420
+2026-08-20,Eastleigh,R13417,Onions 1kg,Produce,4,110,0,440
+2026-08-20,Eastleigh ,R13498,Bar soap,Household,1,120,0,120
+2026-08-20,Ngong Road,R13541,Cooking oil 1L,Household,2,340,0,680
+2026-08-20,Ngong Road,R13741,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-20,Thika Road,R13756,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-20,Eastleigh,R13757,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-20,Kasarani,R13940,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-20,Kilimani,R13971,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-20,Westlands,R14106,Juice 1L,Beverages,2,250,0,500
+2026-08-20,Ngong Road,R14274,Bananas 1kg,Produce,2,90,10,162
+2026-08-20,Ngong Road,R14274,Bananas 1kg,Produce,2,90,10,162
+2026-08-20,Ngong Road,R14296,Soda 500ml,Beverages,2,70,15,119
+2026-08-20,Eastleigh,R14388,Maize flour 2kg,Grains,2,175,0,350
+2026-08-20,kasarani,R14728,Cake slice,Bakery,2,120,0,240
+2026-08-20,Ngong Road,R14785,Tomatoes 1kg,Produce,1,120,0,120
+2026-08-20,Kasarani,R14886,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-20,Westlands ,R15094,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-20,Kilimani,R15195,Washing powder 1kg,Household,3,320,0,960
+2026-08-20,kasarani,R15276,Rice 1kg,Grains,4,190,0,760
+2026-08-20,Thika Road,R15358,Tissue 10 pack,Household,5,450,0,2250
+2026-08-20,Kasarani,R15473,Tissue 10 pack,Household,2,450,0,900
+2026-08-21,Kilimani,R13334,Bread 400g,Bakery,4,65,0,260
+2026-08-21,Thika Road,R13365,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-21,Ngong Road,R13493,Mandazi pack,Bakery,4,100,30,280
+2026-08-21,Kasarani,R13566,Water 1L,Beverages,4,60,0,240
+2026-08-21,Eastleigh,R13667,Bananas 1kg,Produce,4,90,0,360
+2026-08-21,Ngong Road,R13829,Milk 500ml,Dairy,1,65,30,46
+2026-08-21,Ngong Road,R13999,Cooking oil 1L,Household,4,340,20,1088
+2026-08-21,Westlands,R14032,Juice 1L,Beverages,3,250,0,750
+2026-08-21,Eastleigh,R14073,Yoghurt 1L,Dairy,5,180,5,855
+2026-08-21,Kasarani,R14201,Maize flour 2kg,Grains,4,,0,700
+2026-08-21,Thika Road,R14364,Bananas 1kg,Produce,1,90,0,90
+2026-08-21,Kilimani,R14412,Juice 1L,Beverages,2,250,0,500
+2026-08-21,Kilimani,R14743,Cooking oil 1L,Household,1,340,0,340
+2026-08-21,Ngong Road,R14763,Cake slice,Bakery,3,120,15,306
+2026-08-21,Kasarani,R14880,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-21,Kilimani,R14921,Mandazi pack,Bakery,3,100,0,300
+2026-08-21,Ngong Road,R15061,Bar soap,Household,1,120,10,108
+2026-08-21,Ngong Road,R15079,Cake slice,Bakery,4,120,25,360
+2026-08-21,Eastleigh,R15090,Tissue 10 pack,Household,4,450,0,1800
+2026-08-21,Thika Road,R15099,Bananas 1kg,Produce,2,90,0,180
+2026-08-21,Kilimani,R15192,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-21,Westlands,R15210,Butter 250g,Dairy,4,290,0,1160
+2026-08-21,Eastleigh,R15388,Tissue 10 pack,Household,5,450,0,2250
+2026-08-21,Westlands,R15534,Mandazi pack,Bakery,3,100,0,300
+2026-08-21,Kilimani,R15586,Bananas 1kg,Produce,4,90,0,360
+2026-08-21,Eastleigh,R15591,Butter 250g,Dairy,1,290,0,290
+2026-08-21,Thika Road,R15892,Butter 250g,Dairy,4,290,0,1160
+2026-08-22,Kilimani,R13300,Cake slice,Bakery,3,120,0,360
+2026-08-22,THIKA ROAD,R13318,Juice 1L,Beverages,5,250,0,1250
+2026-08-22,Ngong Road,R13337,Maize flour 2kg,Grains,1,175,20,140
+2026-08-22,Ngong Road,R13377,Juice 1L,Beverages,2,250,25,375
+2026-08-22,Thika Road,R13432,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-22,Eastleigh,R13589,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-22,Kilimani,R13636,Butter 250g,Dairy,5,290,0,1450
+2026-08-22,Thika Road,R13972,Rice 1kg,Grains,4,190,0,760
+2026-08-22,Eastleigh,R14047,Tissue 10 pack,Household,2,450,0,900
+2026-08-22,Ngong Road,R14164,Butter 250g,Dairy,2,290,0,580
+2026-08-22,Kasarani,R14248,Cooking oil 1L,Household,3,340,0,1020
+2026-08-22,Kilimani,R14455,Bananas 1kg,Produce,4,90,0,360
+2026-08-22,kilimani,R14493,Onions 1kg,Produce,1,110,0,110
+2026-08-22,kilimani,R14493,Onions 1kg,Produce,1,110,0,110
+2026-08-22,Eastleigh,R14595,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-22,Thika Road,R14777,Mandazi pack,Bakery,1,100,0,100
+2026-08-22,Ngong Road,R14832,Soda 500ml,Beverages,2,70,0,140
+2026-08-22,Ngong Road,R14857,Washing powder 1kg,Household,3,320,30,672
+2026-08-22,Eastleigh,R14951,Beans 1kg,Grains,3,220,0,660
+2026-08-22,Westlands,R15102,Juice 1L,Beverages,3,250,0,750
+2026-08-22,Eastleigh,R15166,Juice 1L,Beverages,2,250,0,500
+2026-08-22,Thika Road,R15223,Cooking oil 1L,Household,5,340,0,1700
+2026-08-22,Westlands,R15226,Mandazi pack,Bakery,4,100,0,400
+2026-08-22,Ngong Road,R15252,Bread 400g,Bakery,3,65,15,166
+2026-08-22,Kasarani,R15390,Onions 1kg,Produce,3,110,0,330
+2026-08-22,Thika Road,R15409,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-22,Eastleigh,R15415,Bar soap,Household,3,120,0,360
+2026-08-22,Westlands,R15428,Tissue 10 pack,Household,4,450,0,1800
+2026-08-22,Ngong Road,R15527,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-22,Ngong Road,R15769,Cooking oil 1L,Household,1,340,0,340
+2026-08-22,Kilimani,R15805,Bread 400g,Bakery,4,65,0,260
+2026-08-23,eastleigh,R13323,Bananas 1kg,Produce,2,90,0,180
+2026-08-23,Westlands,R13324,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-23,Ngong Road,R13356,Soda 500ml,Beverages,3,70,0,210
+2026-08-23,Kasarani,R13383,Maize flour 2kg,Grains,5,175,0,875
+2026-08-23,Eastleigh,R13418,Washing powder 1kg,Household,5,320,0,1600
+2026-08-23,Kilimani,R13545,Cooking oil 1L,Household,4,340,0,1360
+2026-08-23,Kilimani,R13729,Washing powder 1kg,Household,3,320,0,960
+2026-08-23,Ngong road,R13743,Water 1L,Beverages,3,60,0,180
+2026-08-23,Thika Road,R13748,Mandazi pack,Bakery,1,100,0,100
+2026-08-23,Eastleigh,R13799,Soda 500ml,Beverages,4,70,0,280
+2026-08-23,Kilimani,R13863,Maize flour 2kg,Grains,1,175,0,175
+2026-08-23,Kilimani,R14267,Water 1L,Beverages,5,60,0,300
+2026-08-23,Eastleigh,R14288,Juice 1L,Beverages,3,250,0,750
+2026-08-23,Ngong Road,R14339,Sukuma wiki bunch,Produce,5,30,20,120
+2026-08-23,Eastleigh,R14452,Tissue 10 pack,Household,2,450,5,855
+2026-08-23,Thika Road,R14543,Butter 250g,Dairy,3,290,0,870
+2026-08-23,Kilimani,R14586,Tomatoes 1kg,Produce,3,120,0,360
+2026-08-23,Kilimani,R14776,Butter 250g,Dairy,4,290,0,1160
+2026-08-23,Ngong Road,R14845,Milk 500ml,Dairy,5,65,30,227
+2026-08-23,Eastleigh,R14913,Tomatoes 1kg,Produce,4,120,0,480
+2026-08-23,Thika Road,R14944,Beans 1kg,Grains,3,220,0,660
+2026-08-23,Ngong Road,R14961,Washing powder 1kg,Household,4,320,30,896
+2026-08-23,Westlands,R15008,Beans 1kg,Grains,2,220,0,440
+2026-08-23,Kasarani,R15086,Maize flour 2kg,Grains,5,175,0,875
+2026-08-23,Kilimani,R15133,Butter 250g,Dairy,5,290,0,1450
+2026-08-23,Kilimani,R15363,Tea leaves 250g,Beverages,2,160,0,320
+2026-08-23,Thika Road,R15389,Mandazi pack,Bakery,2,100,0,200
+2026-08-23,Kilimani,R15423,Maize flour 2kg,Grains,3,175,0,525
+2026-08-23,Kilimani,R15454,Maize flour 2kg,Grains,5,175,0,875
+2026-08-23,Ngong Road,R15624,Butter 250g,Dairy,2,290,0,580
+2026-08-23,Ngong Road,R15626,Rice 1kg,Grains,3,190,20,456
+2026-08-23,Kilimani,R15747,Tomatoes 1kg,Produce,1,120,0,120
+2026-08-23,Kasarani,R15795,Butter 250g,Dairy,2,290,5,551
+2026-08-24,Westlands,R13347,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-24,Kilimani,R13552,Cooking oil 1L,Household,1,340,0,340
+2026-08-24,Thika Road,R13760,Sukuma wiki bunch,Produce,2,30,0,60
+2026-08-24,Eastleigh,R13803,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-24,Ngong Road,R13805,Tea leaves 250g,Beverages,4,160,10,576
+2026-08-24,Kasarani,R13946,Beans 1kg,Grains,5,220,0,1100
+2026-08-24,Kasarani,R14140,Soda 500ml,Beverages,3,70,0,210
+2026-08-24,Kilimani,R14254,Mandazi pack,Bakery,2,100,0,200
+2026-08-24,Eastleigh,R14308,Tea leaves 250g,Beverages,3,160,0,480
+2026-08-24,Westlands,R14529,Mandazi pack,Bakery,5,100,0,500
+2026-08-24,Kasarani,R14530,Washing powder 1kg,Household,5,320,0,1600
+2026-08-24,Kasarani,R14588,Cooking oil 1L,Household,1,340,0,340
+2026-08-24,Ngong Road,R14629,Cooking oil 1L,Household,4,340,0,1360
+2026-08-24,Kilimani,R14647,Cake slice,Bakery,1,120,0,120
+2026-08-24,Kilimani,R14664,Rice 1kg,Grains,5,190,0,950
+2026-08-24,Eastleigh,R14745,Washing powder 1kg,Household,3,320,0,960
+2026-08-24,kilimani,R14769,Onions 1kg,Produce,1,110,0,110
+2026-08-24,Kasarani,R14935,Onions 1kg,Produce,1,110,0,110
+2026-08-24,Eastleigh,R15022,Maize flour 2kg,Grains,2,175,0,350
+2026-08-24,Westlands,R15084,Soda 500ml,Beverages,5,70,0,350
+2026-08-24,Kasarani,R15087,Mandazi pack,Bakery,4,100,0,400
+2026-08-24,Eastleigh,R15134,Soda 500ml,Beverages,1,70,0,70
+2026-08-24,Ngong Road,R15219,Milk 500ml,Dairy,1,65,30,46
+2026-08-24,Kilimani,R15240,Tissue 10 pack,Household,1,450,0,450
+2026-08-24,Kasarani,R15309,Cake slice,Bakery,2,120,0,240
+2026-08-24,Eastleigh,R15340,Tissue 10 pack,Household,3,450,0,1350
+2026-08-24,kilimani,R15420,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-24,Kilimani,R15451,Onions 1kg,Produce,1,110,0,110
+2026-08-24,Kasarani,R15602,Onions 1kg,Produce,5,110,0,550
+2026-08-24,Ngong Road,R15642,Juice 1L,Beverages,2,250,10,450
+2026-08-24,Ngong Road,R15734,Tissue 10 pack,Household,4,450,10,1620
+2026-08-24,Kasarani,R15839,Maize flour 2kg,Grains,4,175,0,700
+2026-08-24,Kilimani,R15854,Water 1L,Beverages,4,60,0,240
+2026-08-25,Ngong Road,R13308,Cake slice,Bakery,1,120,0,120
+2026-08-25,Eastleigh,R13424,Cake slice,Bakery,2,120,0,240
+2026-08-25,Eastleigh,R13453,Beans 1kg,Grains,3,220,0,660
+2026-08-25,Westlands,R13496,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-25,Ngong Road,R13510,Beans 1kg,Grains,3,220,20,528
+2026-08-25,Ngong Road,R13601,Wheat flour 2kg,Grains,2,210,25,315
+2026-08-25,Kilimani,R13658,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-25,Kasarani,R13684,Beans 1kg,Grains,4,220,0,880
+2026-08-25,Eastleigh,R13771,Butter 250g,Dairy,2,290,0,580
+2026-08-25,Eastleigh,R13930,Cake slice,Bakery,2,120,0,240
+2026-08-25,Ngong Rd,R14103,Butter 250g,Dairy,3,290,0,870
+2026-08-25,westlands,R14125,Maize flour 2kg,Grains,2,175,0,350
+2026-08-25,Westlands,R14309,Sukuma wiki bunch,Produce,3,30,5,86
+2026-08-25,Eastleigh,R14311,Wheat flour 2kg,Grains,3,210,5,599
+2026-08-25,Ngong Road,R14337,Maize flour 2kg,Grains,2,175,0,350
+2026-08-25,Kasarani,R14370,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-25,Kilimani,R14405,Tomatoes 1kg,Produce,1,120,0,120
+2026-08-25,Kilimani,R14482,Yoghurt 1L,Dairy,1,180,0,180
+2026-08-25,Eastleigh,R14506,Bananas 1kg,Produce,2,90,0,180
+2026-08-25,Ngong Road,R14563,Bar soap,Household,4,120,0,480
+2026-08-25,Ngong Road,R14563,Bar soap,Household,4,120,0,480
+2026-08-25,Westlands,R14594,Wheat flour 2kg,Grains,2,210,0,420
+2026-08-25,Kilimani,R14597,Bread 400g,Bakery,1,65,0,65
+2026-08-25,Kasarani,R14896,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-25,Ngong Road,R14976,Butter 250g,Dairy,2,,0,580
+2026-08-25,Kasarani,R15075,Rice 1kg,Grains,3,190,0,570
+2026-08-25,Kilimani,R15156,Cooking oil 1L,Household,2,340,0,680
+2026-08-25,Westlands,R15173,Juice 1L,Beverages,5,250,0,1250
+2026-08-25,Thika Road,R15213,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-25,Kilimani,R15387,Maize flour 2kg,Grains,3,175,0,525
+2026-08-25,Kasarani,R15422,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-25,Kilimani,R15690,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-25,Eastleigh,R15823,Juice 1L,Beverages,1,250,0,250
+2026-08-25,Kasarani,R15869,Maize flour 2kg,Grains,4,175,0,700
+2026-08-26,Ngong Road,R13302,Water 1L,Beverages,2,60,0,120
+2026-08-26,Kilimani,R13333,Tissue 10 pack,Household,2,450,5,855
+2026-08-26,Kilimani,R13349,Water 1L,Beverages,2,60,0,120
+2026-08-26,Westlands,R13414,Butter 250g,Dairy,3,290,0,870
+2026-08-26,westlands,R13565,Tissue 10 pack,Household,2,450,0,900
+2026-08-26,Kilimani,R13568,Beans 1kg,Grains,5,220,0,1100
+2026-08-26,Kasarani,R13654,Cake slice,Bakery,1,120,0,120
+2026-08-26,Kasarani ,R13672,Mandazi pack,Bakery,2,,0,200
+2026-08-26,Eastleigh,R13678,Water 1L,Beverages,1,60,0,60
+2026-08-26,Thika Road,R13908,Bar soap,Household,1,120,0,120
+2026-08-26,Westlands,R13929,Tissue 10 pack,Household,3,450,0,1350
+2026-08-26,Thika Road,R13944,Butter 250g,Dairy,5,290,0,1450
+2026-08-26,Thika Road,R14002,Washing powder 1kg,Household,4,320,0,1280
+2026-08-26,Westlands,R14152,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-26,Ngong Road,R14166,Cake slice,Bakery,2,120,10,216
+2026-08-26,Kasarani,R14187,Sukuma wiki bunch,Produce,4,30,0,120
+2026-08-26,Ngong Road,R14559,Mandazi pack,Bakery,5,100,10,450
+2026-08-26,Westlands,R14644,Butter 250g,Dairy,4,290,0,1160
+2026-08-26,Thika Road,R14655,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-26,Eastleigh ,R14754,Tissue 10 pack,Household,2,450,0,900
+2026-08-26,Thika Road,R14833,Water 1L,Beverages,4,60,0,240
+2026-08-26,Kasarani,R14906,Cake slice,Bakery,1,120,0,120
+2026-08-26,Eastleigh,R14942,Washing powder 1kg,Household,2,320,0,640
+2026-08-26,Ngong Road,R14968,Wheat flour 2kg,Grains,5,210,20,840
+2026-08-26,Eastleigh,R15113,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-26,Westlands,R15181,Rice 1kg,Grains,2,190,0,380
+2026-08-26,Thika Road,R15205,Rice 1kg,Grains,5,190,0,950
+2026-08-26,Westlands,R15271,Tissue 10 pack,Household,5,450,0,2250
+2026-08-26,Kasarani,R15277,Washing powder 1kg,Household,2,320,0,640
+2026-08-26,Westlands,R15705,Butter 250g,Dairy,3,290,0,870
+2026-08-26,Kasarani,R15863,Soda 500ml,Beverages,4,70,5,266
+2026-08-26,Ngong Road,R15886,Maize flour 2kg,Grains,3,175,20,420
+2026-08-26,Ngong Road,R15886,Maize flour 2kg,Grains,3,175,20,420
+2026-08-27,Eastleigh,R13509,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-27,Kilimani,R13720,Tea leaves 250g,Beverages,5,160,0,800
+2026-08-27,Ngong Road,R13768,Cooking oil 1L,Household,5,340,0,1700
+2026-08-27,Eastleigh,R13792,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-27,Westlands,R13796,Water 1L,Beverages,5,60,0,300
+2026-08-27,Kasarani,R13801,Sukuma wiki bunch,Produce,2,,5,57
+2026-08-27,Ngong Road,R13822,Tomatoes 1kg,Produce,4,120,25,360
+2026-08-27,Kilimani,R13861,Washing powder 1kg,Household,5,320,0,1600
+2026-08-27,Ngong Rd,R13869,Yoghurt 1L,Dairy,5,180,10,810
+2026-08-27,Kasarani,R14014,Beans 1kg,Grains,2,220,0,440
+2026-08-27,Thika Road,R14029,Beans 1kg,Grains,2,220,0,440
+2026-08-27,Thika Road,R14035,Cooking oil 1L,Household,3,340,0,1020
+2026-08-27,Thika Road,R14044,Bananas 1kg,Produce,1,90,0,90
+2026-08-27,Thika Road,R14060,Beans 1kg,Grains,3,220,0,660
+2026-08-27,Kasarani,R14100,Water 1L,Beverages,4,60,0,240
+2026-08-27,Westlands,R14179,Onions 1kg,Produce,2,110,0,220
+2026-08-27,Kilimani,R14363,Sukuma wiki bunch,Produce,4,30,0,120
+2026-08-27,Thika Road,R14387,Sukuma wiki bunch,Produce,3,30,0,90
+2026-08-27,Thika Road,R14453,Juice 1L,Beverages,2,250,0,500
+2026-08-27,Eastleigh,R14480,Rice 1kg,Grains,5,190,5,903
+2026-08-27,Westlands,R14523,Beans 1kg,Grains,3,220,0,660
+2026-08-27,Westlands,R14569,Tissue 10 pack,Household,5,,0,2250
+2026-08-27,kilimani,R14687,Tissue 10 pack,Household,1,450,0,450
+2026-08-27,Kasarani,R14690,Mandazi pack,Bakery,5,100,0,500
+2026-08-27,Thika Road,R14818,Bar soap,Household,2,120,0,240
+2026-08-27,Kasarani,R14905,Onions 1kg,Produce,5,110,0,550
+2026-08-27,Ngong Road,R15105,Rice 1kg,Grains,3,190,15,485
+2026-08-27,Ngong Road,R15105,Rice 1kg,Grains,3,190,15,485
+2026-08-27,Westlands,R15542,Milk 500ml,Dairy,1,65,0,65
+2026-08-27,Kilimani,R15703,Butter 250g,Dairy,1,290,0,290
+2026-08-27,Thika Road,R15738,Milk 500ml,Dairy,1,65,0,65
+2026-08-27,Kilimani,R15846,Maize flour 2kg,Grains,2,175,0,350
+2026-08-28,kasarani,R13329,Tomatoes 1kg,Produce,5,120,5,570
+2026-08-28,Westlands,R13389,Bananas 1kg,Produce,2,90,0,180
+2026-08-28,Kasarani,R13479,Rice 1kg,Grains,1,190,0,190
+2026-08-28,Ngong Road,R13535,Yoghurt 1L,Dairy,1,180,15,153
+2026-08-28,Kilimani,R13555,Rice 1kg,Grains,3,190,0,570
+2026-08-28,Thika Road,R13576,Tea leaves 250g,Beverages,2,160,0,320
+2026-08-28,Westlands,R13597,Milk 500ml,Dairy,2,65,0,130
+2026-08-28,Ngong Road,R13975,Water 1L,Beverages,2,60,0,120
+2026-08-28,Ngong Road,R13975,Water 1L,Beverages,2,60,0,120
+2026-08-28,Westlands,R13983,Wheat flour 2kg,Grains,3,210,5,599
+2026-08-28,Westlands,R14086,Rice 1kg,Grains,5,190,0,950
+2026-08-28,Eastleigh,R14246,Tissue 10 pack,Household,3,450,0,1350
+2026-08-28,Westlands,R14263,Butter 250g,Dairy,5,290,0,1450
+2026-08-28,THIKA ROAD,R14279,Cooking oil 1L,Household,4,340,0,1360
+2026-08-28,Kilimani,R14301,Rice 1kg,Grains,4,190,0,760
+2026-08-28,Westlands,R14372,Mandazi pack,Bakery,5,100,0,500
+2026-08-28,Thika Road,R14395,Yoghurt 1L,Dairy,5,180,0,900
+2026-08-28,Kilimani,R14508,Bananas 1kg,Produce,3,90,0,270
+2026-08-28,Thika Road,R14742,Bananas 1kg,Produce,4,,0,360
+2026-08-28,Kilimani,R14862,Tissue 10 pack,Household,4,450,0,1800
+2026-08-28,Westlands,R14937,Maize flour 2kg,Grains,2,175,0,350
+2026-08-28,Eastleigh,R15349,Milk 500ml,Dairy,1,65,0,65
+2026-08-28,Eastleigh,R15385,Washing powder 1kg,Household,3,320,0,960
+2026-08-28,Westlands,R15487,Yoghurt 1L,Dairy,2,180,0,360
+2026-08-28,Thika Road,R15623,Cooking oil 1L,Household,5,340,0,1700
+2026-08-28,Eastleigh,R15813,Water 1L,Beverages,5,60,0,300
+2026-08-29,Thika Road,R13528,Tomatoes 1kg,Produce,2,120,0,240
+2026-08-29,Kilimani,R13762,Bar soap,Household,3,120,0,360
+2026-08-29,Thika Road,R13774,Bar soap,Household,2,120,0,240
+2026-08-29,Thika Road,R13781,Wheat flour 2kg,Grains,3,210,5,599
+2026-08-29,Ngong Road,R13846,Bananas 1kg,Produce,5,90,25,338
+2026-08-29,Kilimani,R13853,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-29,Kilimani,R13853,Sukuma wiki bunch,Produce,1,30,0,30
+2026-08-29,Ngong Road,R13911,Bread 400g,Bakery,3,65,0,195
+2026-08-29,Thika Road,R13941,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-29,Westlands,R14257,Butter 250g,Dairy,2,290,0,580
+2026-08-29,Eastleigh,R14383,Maize flour 2kg,Grains,5,175,0,875
+2026-08-29,Kasarani,R14408,Maize flour 2kg,Grains,2,175,0,350
+2026-08-29,Kasarani,R14732,Maize flour 2kg,Grains,1,175,0,175
+2026-08-29,Eastleigh,R14849,Tissue 10 pack,Household,1,450,0,450
+2026-08-29,Thika Road,R14859,Beans 1kg,Grains,4,220,0,880
+2026-08-29,Thika Road,R14885,Tea leaves 250g,Beverages,1,160,0,160
+2026-08-29,Ngong Road,R14987,Tea leaves 250g,Beverages,3,160,30,336
+2026-08-29,Thika Road,R14990,Onions 1kg,Produce,1,110,0,110
+2026-08-29,Eastleigh,R15018,Rice 1kg,Grains,5,190,0,950
+2026-08-29,Kasarani,R15078,Mandazi pack,Bakery,3,100,0,300
+2026-08-29,Eastleigh ,R15108,Milk 500ml,Dairy,1,65,0,65
+2026-08-29,Kasarani,R15302,Rice 1kg,Grains,5,190,0,950
+2026-08-29,Kilimani,R15364,Sukuma wiki bunch,Produce,5,30,0,150
+2026-08-29,Westlands,R15386,Rice 1kg,Grains,5,190,0,950
+2026-08-29,Westlands,R15386,Rice 1kg,Grains,5,190,0,950
+2026-08-29,Eastleigh,R15421,Beans 1kg,Grains,3,220,0,660
+2026-08-29,Eastleigh,R15541,Cooking oil 1L,Household,3,340,5,969
+2026-08-29,Ngong Road,R15646,Tissue 10 pack,Household,3,450,10,1215
+2026-08-29,Ngong Road,R15661,Yoghurt 1L,Dairy,2,180,5,342
+2026-08-29,Kilimani,R15688,Sukuma wiki bunch,Produce,3,30,5,86
+2026-08-29,Ngong Road,R15711,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-29,Kilimani,R15765,Onions 1kg,Produce,3,110,0,330
+2026-08-29,Kasarani,R15766,Milk 500ml,Dairy,3,65,0,195
+2026-08-30,Kasarani,R13348,Tea leaves 250g,Beverages,4,160,5,608
+2026-08-30,Eastleigh,R13403,Bar soap,Household,1,120,0,120
+2026-08-30,Kasarani ,R13405,Tomatoes 1kg,Produce,5,120,0,600
+2026-08-30,Westlands,R13443,Bananas 1kg,Produce,2,90,0,180
+2026-08-30,Eastleigh,R13468,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-30,ngong road,R13587,Maize flour 2kg,Grains,1,175,0,175
+2026-08-30,Kasarani,R13598,Cake slice,Bakery,4,120,5,456
+2026-08-30,Ngong Road,R13656,Cooking oil 1L,Household,5,,25,1275
+2026-08-30,Eastleigh,R13679,Tissue 10 pack,Household,3,450,0,1350
+2026-08-30,Ngong Road,R13696,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-30,Thika Road,R13826,Sukuma wiki bunch,Produce,4,30,0,120
+2026-08-30,Eastleigh,R13845,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-30,Eastleigh,R14022,Milk 500ml,Dairy,2,65,0,130
+2026-08-30,Ngong Road,R14041,Washing powder 1kg,Household,1,320,0,320
+2026-08-30,Westlands,R14056,Washing powder 1kg,Household,5,320,0,1600
+2026-08-30,Eastleigh,R14063,Milk 500ml,Dairy,5,65,0,325
+2026-08-30,Thika Road,R14120,Yoghurt 1L,Dairy,4,180,0,720
+2026-08-30,Eastleigh ,R14141,Bananas 1kg,Produce,2,90,0,180
+2026-08-30,Eastleigh,R14356,Juice 1L,Beverages,1,250,0,250
+2026-08-30,Kilimani,R14393,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-30,Westlands,R14432,Washing powder 1kg,Household,1,320,0,320
+2026-08-30,Kasarani,R14438,Bananas 1kg,Produce,3,90,0,270
+2026-08-30,Kasarani,R14636,Mandazi pack,Bakery,4,100,0,400
+2026-08-30,Kasarani,R14658,Wheat flour 2kg,Grains,4,210,0,840
+2026-08-30,Ngong Road,R14904,Maize flour 2kg,Grains,3,175,0,525
+2026-08-30,Kasarani,R15135,Maize flour 2kg,Grains,5,175,0,875
+2026-08-30,Eastleigh,R15209,Tea leaves 250g,Beverages,5,160,0,800
+2026-08-30,Ngong Road,R15419,Beans 1kg,Grains,3,220,0,660
+2026-08-30,kilimani,R15448,Bar soap,Household,4,120,0,480
+2026-08-30,Kilimani,R15509,Juice 1L,Beverages,5,250,5,1188
+2026-08-30,Eastleigh,R15684,Bananas 1kg,Produce,3,90,0,270
+2026-08-30,Westlands,R15707,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-30,Thika Road,R15742,Tea leaves 250g,Beverages,2,160,0,320
+2026-08-30,Eastleigh,R15798,Cake slice,Bakery,5,120,0,600
+2026-08-31,Westlands,R13431,Beans 1kg,Grains,1,220,5,209
+2026-08-31,Ngong Road,R13575,Bar soap,Household,3,120,5,342
+2026-08-31,Thika Road,R13749,Cake slice,Bakery,2,120,5,228
+2026-08-31,Kasarani,R13958,Cake slice,Bakery,3,120,0,360
+2026-08-31,Westlands,R14080,Washing powder 1kg,Household,1,320,0,320
+2026-08-31,Westlands,R14220,Tissue 10 pack,Household,3,450,0,1350
+2026-08-31,Eastleigh,R14302,Beans 1kg,Grains,3,220,0,660
+2026-08-31,Thika Road,R14390,Tea leaves 250g,Beverages,4,160,0,640
+2026-08-31,Ngong Road,R14449,Soda 500ml,Beverages,3,70,0,210
+2026-08-31,Ngong Road,R14449,Soda 500ml,Beverages,3,70,0,210
+2026-08-31,Ngong Road,R14538,Water 1L,Beverages,1,60,0,60
+2026-08-31,Westlands,R14542,Wheat flour 2kg,Grains,1,210,0,210
+2026-08-31,Eastleigh,R14767,Cake slice,Bakery,2,120,0,240
+2026-08-31,Eastleigh,R14890,Water 1L,Beverages,2,60,0,120
+2026-08-31,Kilimani,R14924,Tea leaves 250g,Beverages,5,160,0,800
+2026-08-31,Kilimani,R15060,Wheat flour 2kg,Grains,3,210,0,630
+2026-08-31,Kilimani,R15147,Bar soap,Household,3,120,0,360
+2026-08-31,Kasarani,R15253,Water 1L,Beverages,3,60,0,180
+2026-08-31,Ngong Road,R15439,Onions 1kg,Produce,1,110,10,99
+2026-08-31,kilimani,R15490,Water 1L,Beverages,2,60,0,120
+2026-08-31,Westlands,R15588,Wheat flour 2kg,Grains,5,210,0,1050
+2026-08-31,Westlands,R15829,Juice 1L,Beverages,3,250,0,750
+2026-09-01,Thika Road,R13360,Milk 500ml,Dairy,4,65,0,260
+2026-09-01,Ngong Road,R13436,Bread 400g,Bakery,5,65,15,276
+2026-09-01,Eastleigh,R13461,Soda 500ml,Beverages,4,70,0,280
+2026-09-01,Thika Road,R13584,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-01,Eastleigh,R13649,Bar soap,Household,2,120,0,240
+2026-09-01,Kilimani,R13767,Bananas 1kg,Produce,2,90,0,180
+2026-09-01,Westlands,R13800,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-01,Westlands,R14019,Butter 250g,Dairy,4,290,0,1160
+2026-09-01,kilimani,R14099,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-01,Kasarani,R14414,Juice 1L,Beverages,5,250,0,1250
+2026-09-01,Eastleigh,R14420,Mandazi pack,Bakery,1,100,0,100
+2026-09-01,Kasarani,R14492,Bread 400g,Bakery,5,65,0,325
+2026-09-01,Ngong Road,R14537,Mandazi pack,Bakery,3,100,20,240
+2026-09-01,Westlands,R14553,Butter 250g,Dairy,1,290,0,290
+2026-09-01,kilimani,R14571,Cooking oil 1L,Household,1,340,5,323
+2026-09-01,Ngong Road,R14613,Wheat flour 2kg,Grains,2,210,10,378
+2026-09-01,Kilimani,R14622,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-01,Eastleigh,R14748,Yoghurt 1L,Dairy,2,180,0,360
+2026-09-01,Eastleigh,R14960,Milk 500ml,Dairy,3,65,0,195
+2026-09-01,Ngong Road,R15013,Yoghurt 1L,Dairy,3,180,30,378
+2026-09-01,Ngong Road,R15045,Juice 1L,Beverages,2,250,20,400
+2026-09-01,Eastleigh,R15050,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-01,Ngong Road,R15267,Juice 1L,Beverages,3,250,0,750
+2026-09-01,Thika Road,R15300,Water 1L,Beverages,5,60,0,300
+2026-09-01,Ngong Road,R15357,Bar soap,Household,4,120,0,480
+2026-09-01,Westlands,R15370,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-01,Thika Road,R15394,Juice 1L,Beverages,4,250,0,1000
+2026-09-01,Kilimani,R15408,Water 1L,Beverages,2,60,0,120
+2026-09-01,Westlands,R15604,Butter 250g,Dairy,3,290,0,870
+2026-09-01,Eastleigh,R15723,Juice 1L,Beverages,4,250,0,1000
+2026-09-01,THIKA ROAD,R15767,Soda 500ml,Beverages,4,70,0,280
+2026-09-01,Kasarani,R15849,Water 1L,Beverages,5,60,0,300
+2026-09-02,Eastleigh,R13409,Butter 250g,Dairy,2,290,0,580
+2026-09-02,Ngong Road,R13445,Washing powder 1kg,Household,2,320,0,640
+2026-09-02,Kasarani,R13507,Washing powder 1kg,Household,4,320,5,1216
+2026-09-02,Westlands,R13554,Mandazi pack,Bakery,5,100,0,500
+2026-09-02,Kilimani,R13716,Tea leaves 250g,Beverages,3,160,0,480
+2026-09-02,Kasarani,R13746,Cake slice,Bakery,1,120,0,120
+2026-09-02,Thika Road,R13815,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-02,Eastleigh ,R13968,Soda 500ml,Beverages,5,70,5,333
+2026-09-02,Westlands,R14256,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-02,Kilimani,R14264,Mandazi pack,Bakery,4,100,0,400
+2026-09-02,Eastleigh,R14415,Cake slice,Bakery,3,120,0,360
+2026-09-02,Thika Road,R14605,Cooking oil 1L,Household,1,340,0,340
+2026-09-02,Westlands,R14630,Bananas 1kg,Produce,4,90,0,360
+2026-09-02,Thika Road,R14734,Bread 400g,Bakery,3,65,5,185
+2026-09-02,Ngong Road,R15019,Bananas 1kg,Produce,5,90,30,315
+2026-09-02,KASARANI,R15162,Onions 1kg,Produce,2,110,0,220
+2026-09-02,Eastleigh,R15174,Milk 500ml,Dairy,1,65,5,62
+2026-09-02,Ngong Road,R15278,Maize flour 2kg,Grains,3,175,30,368
+2026-09-02,Kasarani,R15465,Water 1L,Beverages,4,60,0,240
+2026-09-02,Kasarani,R15519,Tissue 10 pack,Household,4,450,0,1800
+2026-09-02,Eastleigh,R15550,Washing powder 1kg,Household,1,320,0,320
+2026-09-02,Ngong Road,R15609,Cake slice,Bakery,4,120,0,480
+2026-09-02,Ngong Road,R15609,Cake slice,Bakery,4,120,0,480
+2026-09-02,Eastleigh,R15622,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-02,Westlands,R15634,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-02,Kasarani,R15789,Cooking oil 1L,Household,3,340,0,1020
+2026-09-02,Westlands,R15880,Juice 1L,Beverages,2,250,0,500
+2026-09-03,Eastleigh,R13612,Cake slice,Bakery,3,120,5,342
+2026-09-03,Westlands,R13619,Bar soap,Household,5,120,0,600
+2026-09-03,Westlands,R13666,Cake slice,Bakery,2,120,0,240
+2026-09-03,Thika Road,R13727,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-03,Westlands,R13732,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-03,Thika Road,R13858,Maize flour 2kg,Grains,5,175,0,875
+2026-09-03,Westlands,R13889,Soda 500ml,Beverages,2,70,0,140
+2026-09-03,Kasarani,R13912,Cooking oil 1L,Household,2,340,0,680
+2026-09-03,Kilimani,R14024,Tissue 10 pack,Household,1,450,0,450
+2026-09-03,Kasarani,R14084,Bananas 1kg,Produce,1,90,0,90
+2026-09-03,Eastleigh,R14091,Bar soap,Household,3,120,0,360
+2026-09-03,Westlands,R14142,Bread 400g,Bakery,5,65,0,325
+2026-09-03,Kasarani,R14156,Juice 1L,Beverages,4,250,0,1000
+2026-09-03,Kilimani,R14239,Bananas 1kg,Produce,5,90,0,450
+2026-09-03,Thika Road,R14327,Water 1L,Beverages,2,60,0,120
+2026-09-03,Eastleigh,R14349,Rice 1kg,Grains,4,190,5,722
+2026-09-03,Eastleigh,R14498,Tea leaves 250g,Beverages,3,160,0,480
+2026-09-03,Kasarani,R14502,Bananas 1kg,Produce,4,90,0,360
+2026-09-03,Thika Road,R14518,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-03,Eastleigh ,R14548,Cooking oil 1L,Household,2,340,0,680
+2026-09-03,Westlands,R14650,Rice 1kg,Grains,4,190,0,760
+2026-09-03,Eastleigh,R14656,Cake slice,Bakery,5,120,0,600
+2026-09-03,Kasarani,R15037,Bananas 1kg,Produce,4,90,0,360
+2026-09-03,Thika Road,R15303,Beans 1kg,Grains,3,220,0,660
+2026-09-03,Ngong Road,R15319,Cake slice,Bakery,4,120,25,360
+2026-09-03,Westlands,R15401,Butter 250g,Dairy,5,290,0,1450
+2026-09-03,Kilimani,R15412,Maize flour 2kg,Grains,1,175,0,175
+2026-09-03,Westlands,R15686,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-03,Eastleigh,R15713,Bread 400g,Bakery,5,65,0,325
+2026-09-03,Kasarani,R15730,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-03,Kilimani,R15788,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-03,Westlands,R15807,Cooking oil 1L,Household,4,340,0,1360
+2026-09-03,Kilimani,R15881,Bar soap,Household,5,120,0,600
+2026-09-04,Ngong Road,R13317,Tissue 10 pack,Household,3,450,0,1350
+2026-09-04,Eastleigh,R13361,Bananas 1kg,Produce,1,90,0,90
+2026-09-04,Eastleigh,R13407,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-04,Westlands,R13421,Tea leaves 250g,Beverages,5,160,0,800
+2026-09-04,Thika Road,R13473,Maize flour 2kg,Grains,4,175,0,700
+2026-09-04,Thika Road,R13567,Tissue 10 pack,Household,3,450,0,1350
+2026-09-04,Kasarani,R13586,Washing powder 1kg,Household,2,320,0,640
+2026-09-04,Kasarani,R13628,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-04,Westlands,R13776,Bananas 1kg,Produce,1,90,5,86
+2026-09-04,Ngong Road,R13898,Beans 1kg,Grains,3,220,0,660
+2026-09-04,Kasarani,R13981,Tissue 10 pack,Household,3,450,0,1350
+2026-09-04,Ngong Road,R14020,Tissue 10 pack,Household,4,450,0,1800
+2026-09-04,Ngong Road,R14185,Cake slice,Bakery,5,120,15,510
+2026-09-04,Eastleigh,R14369,Juice 1L,Beverages,5,250,0,1250
+2026-09-04,Westlands,R14402,Rice 1kg,Grains,3,190,0,570
+2026-09-04,Kilimani,R14437,Onions 1kg,Produce,4,110,0,440
+2026-09-04,Ngong Road,R14520,Milk 500ml,Dairy,1,65,25,49
+2026-09-04,Ngong Road,R14520,Milk 500ml,Dairy,1,65,25,49
+2026-09-04,Thika Road,R14619,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-04,Thika Road,R14694,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-04,Thika Road,R14772,Beans 1kg,Grains,5,220,0,1100
+2026-09-04,Kilimani,R14824,Water 1L,Beverages,1,60,0,60
+2026-09-04,Eastleigh,R14963,Bar soap,Household,3,120,0,360
+2026-09-04,Kilimani,R15127,Water 1L,Beverages,1,60,0,60
+2026-09-04,Kilimani,R15140,Cooking oil 1L,Household,4,340,0,1360
+2026-09-04,Ngong Road,R15160,Soda 500ml,Beverages,3,70,20,168
+2026-09-04,Eastleigh ,R15164,Rice 1kg,Grains,2,190,0,380
+2026-09-04,Kasarani,R15191,Cooking oil 1L,Household,4,340,0,1360
+2026-09-04,Kasarani,R15201,Onions 1kg,Produce,5,110,0,550
+2026-09-04,Westlands,R15342,Rice 1kg,Grains,2,190,0,380
+2026-09-04,Westlands,R15344,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-04,Kilimani,R15367,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-04,Ngong Road,R15523,Bread 400g,Bakery,3,65,0,195
+2026-09-04,Kilimani,R15538,Bread 400g,Bakery,5,65,0,325
+2026-09-04,Kilimani,R15561,Sukuma wiki bunch,Produce,2,30,0,60
+2026-09-04,Kasarani,R15645,Sukuma wiki bunch,Produce,2,30,0,60
+2026-09-04,Eastleigh,R15672,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-04,Kasarani,R15868,Bread 400g,Bakery,1,65,0,65
+2026-09-04,Kilimani,R15888,Water 1L,Beverages,5,60,0,300
+2026-09-05,Kilimani,R13331,Washing powder 1kg,Household,3,320,0,960
+2026-09-05,Eastleigh,R13351,Mandazi pack,Bakery,4,100,0,400
+2026-09-05,Ngong Road,R13653,Tea leaves 250g,Beverages,5,160,15,680
+2026-09-05,Ngong Road,R13653,Tea leaves 250g,Beverages,5,160,15,680
+2026-09-05,Eastleigh,R13919,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-05,KASARANI,R13965,Maize flour 2kg,Grains,2,175,0,350
+2026-09-05,Thika Road,R14126,Bar soap,Household,2,120,0,240
+2026-09-05,Kasarani,R14178,Cake slice,Bakery,1,120,0,120
+2026-09-05,Kasarani,R14182,Cake slice,Bakery,1,120,0,120
+2026-09-05,Eastleigh,R14358,Soda 500ml,Beverages,4,70,0,280
+2026-09-05,Eastleigh,R14444,Rice 1kg,Grains,3,190,0,570
+2026-09-05,Thika Road,R14668,Maize flour 2kg,Grains,5,175,0,875
+2026-09-05,Ngong Road,R14721,Water 1L,Beverages,5,60,10,270
+2026-09-05,Eastleigh,R14736,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-05,Ngong Road,R14804,Soda 500ml,Beverages,2,70,20,112
+2026-09-05,Kasarani ,R14889,Bar soap,Household,5,120,0,600
+2026-09-05,Westlands,R15003,Milk 500ml,Dairy,1,65,0,65
+2026-09-05,Ngong Road,R15096,Tissue 10 pack,Household,3,450,30,945
+2026-09-05,Westlands ,R15104,Bananas 1kg,Produce,3,90,0,270
+2026-09-05,eastleigh,R15203,Bread 400g,Bakery,2,65,0,130
+2026-09-05,Ngong Road,R15224,Tissue 10 pack,Household,2,450,10,810
+2026-09-05,Eastleigh,R15245,Beans 1kg,Grains,5,220,0,1100
+2026-09-05,Westlands,R15258,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-05,Eastleigh,R15310,Rice 1kg,Grains,3,190,5,542
+2026-09-05,Ngong Road,R15383,Mandazi pack,Bakery,1,100,0,100
+2026-09-05,Thika Road,R15467,Butter 250g,Dairy,3,290,0,870
+2026-09-05,Kilimani,R15546,Mandazi pack,Bakery,1,100,0,100
+2026-09-05,Kasarani,R15600,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-05,Westlands,R15639,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-05,Westlands,R15692,Washing powder 1kg,Household,5,320,0,1600
+2026-09-05,Thika Road,R15714,Tissue 10 pack,Household,3,450,0,1350
+2026-09-05,Westlands ,R15779,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-05,Thika Road,R15785,Soda 500ml,Beverages,4,70,0,280
+2026-09-05,Eastleigh,R15811,Cooking oil 1L,Household,1,340,0,340
+2026-09-05,Kasarani,R15816,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-05,Kasarani,R15853,Juice 1L,Beverages,2,250,0,500
+2026-09-06,Thika Road,R13336,Beans 1kg,Grains,4,220,0,880
+2026-09-06,Eastleigh,R13353,Tissue 10 pack,Household,3,450,0,1350
+2026-09-06,Ngong Rd,R13411,Tomatoes 1kg,Produce,2,120,25,180
+2026-09-06,Ngong Road,R13466,Bread 400g,Bakery,2,65,20,104
+2026-09-06,Ngong Road,R13466,Bread 400g,Bakery,2,65,20,104
+2026-09-06,Kilimani,R13564,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-06,Ngong Road,R13569,Butter 250g,Dairy,3,290,15,740
+2026-09-06,Ngong Road,R13702,Mandazi pack,Bakery,2,100,0,200
+2026-09-06,Eastleigh,R13841,Soda 500ml,Beverages,3,70,0,210
+2026-09-06,Eastleigh,R13874,Cake slice,Bakery,3,120,0,360
+2026-09-06,Kasarani,R13942,Maize flour 2kg,Grains,1,175,0,175
+2026-09-06,Westlands,R14180,Butter 250g,Dairy,4,290,0,1160
+2026-09-06,Kasarani,R14252,Cooking oil 1L,Household,4,340,5,1292
+2026-09-06,Thika Road,R14669,Bread 400g,Bakery,3,65,0,195
+2026-09-06,Westlands,R14735,Onions 1kg,Produce,2,110,0,220
+2026-09-06,Kilimani,R14759,Cooking oil 1L,Household,3,340,0,1020
+2026-09-06,Kasarani,R14860,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-06,eastleigh,R14962,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-06,thika road,R15015,Beans 1kg,Grains,4,220,0,880
+2026-09-06,Westlands,R15322,Bread 400g,Bakery,2,65,0,130
+2026-09-06,Kilimani,R15434,Rice 1kg,Grains,5,190,0,950
+2026-09-06,Westlands,R15498,Yoghurt 1L,Dairy,4,180,5,684
+2026-09-06,Westlands,R15522,Rice 1kg,Grains,5,190,0,950
+2026-09-06,Thika Road,R15618,Bar soap,Household,5,120,0,600
+2026-09-06,Eastleigh,R15741,Bread 400g,Bakery,3,65,0,195
+2026-09-06,Westlands,R15804,Bananas 1kg,Produce,3,90,0,270
+2026-09-06,Ngong Road,R15859,Tea leaves 250g,Beverages,4,160,15,544
+2026-09-07,Ngong Road,R13400,Mandazi pack,Bakery,3,100,0,300
+2026-09-07,Kasarani,R13454,Bread 400g,Bakery,4,65,0,260
+2026-09-07,Kasarani,R13463,Bananas 1kg,Produce,3,90,0,270
+2026-09-07,Kilimani,R13504,Soda 500ml,Beverages,5,70,5,333
+2026-09-07,Westlands,R13556,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-07,Westlands,R13563,Bar soap,Household,5,120,0,600
+2026-09-07,Eastleigh ,R13611,Bananas 1kg,Produce,3,90,0,270
+2026-09-07,Westlands,R13614,Milk 500ml,Dairy,3,65,0,195
+2026-09-07,Eastleigh,R13747,Cake slice,Bakery,4,120,0,480
+2026-09-07,thika road,R13877,Water 1L,Beverages,2,60,0,120
+2026-09-07,Ngong Road,R13953,Bananas 1kg,Produce,1,90,20,72
+2026-09-07,Ngong Road,R13953,Bananas 1kg,Produce,1,90,20,72
+2026-09-07,Eastleigh,R13994,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-07,Ngong Road,R14153,Onions 1kg,Produce,5,110,25,413
+2026-09-07,ngong road,R14165,Mandazi pack,Bakery,3,100,10,270
+2026-09-07,Ngong Road,R14273,Bread 400g,Bakery,3,65,0,195
+2026-09-07,Kasarani,R14346,Washing powder 1kg,Household,1,320,0,320
+2026-09-07,Westlands,R14522,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-07,Thika Road,R14747,Milk 500ml,Dairy,5,65,0,325
+2026-09-07,Westlands,R14918,Bananas 1kg,Produce,5,90,0,450
+2026-09-07,Westlands,R15024,Milk 500ml,Dairy,2,65,0,130
+2026-09-07,Westlands,R15112,Washing powder 1kg,Household,3,320,0,960
+2026-09-07,Eastleigh,R15143,Milk 500ml,Dairy,2,65,0,130
+2026-09-07,Kilimani,R15197,Tissue 10 pack,Household,4,450,0,1800
+2026-09-07,Westlands,R15565,Juice 1L,Beverages,3,250,0,750
+2026-09-07,Westlands,R15608,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-07,Ngong Road,R15628,Rice 1kg,Grains,2,190,10,342
+2026-09-07,Kilimani,R15695,Juice 1L,Beverages,5,250,0,1250
+2026-09-07,Kilimani,R15800,Cooking oil 1L,Household,4,340,0,1360
+2026-09-07,Eastleigh,R15832,Cake slice,Bakery,4,120,0,480
+2026-09-08,Ngong Road,R13482,Butter 250g,Dairy,4,290,5,1102
+2026-09-08,Eastleigh,R13559,Bar soap,Household,5,120,0,600
+2026-09-08,Westlands,R13602,Bananas 1kg,Produce,2,90,0,180
+2026-09-08,Kasarani,R13603,Washing powder 1kg,Household,4,320,0,1280
+2026-09-08,Eastleigh,R13604,Bread 400g,Bakery,4,65,0,260
+2026-09-08,Kilimani,R13733,Bread 400g,Bakery,4,65,0,260
+2026-09-08,Thika Road,R13739,Milk 500ml,Dairy,1,65,0,65
+2026-09-08,Eastleigh,R13765,Beans 1kg,Grains,2,220,0,440
+2026-09-08,Kasarani,R13964,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-08,Westlands,R13989,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-08,Eastleigh,R14090,Wheat flour 2kg,Grains,2,210,5,399
+2026-09-08,Westlands,R14184,Washing powder 1kg,Household,2,320,0,640
+2026-09-08,Kilimani,R14236,Water 1L,Beverages,1,60,0,60
+2026-09-08,Ngong Road,R14250,Onions 1kg,Produce,4,110,15,374
+2026-09-08,Thika Rd,R14484,Tissue 10 pack,Household,3,450,0,1350
+2026-09-08,Westlands,R14487,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-08,Kilimani,R14587,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-08,Ngong Road,R14930,Bananas 1kg,Produce,3,90,30,189
+2026-09-08,Eastleigh,R14992,Yoghurt 1L,Dairy,2,180,0,360
+2026-09-08,Ngong Road,R15182,Bread 400g,Bakery,2,65,5,124
+2026-09-08,Eastleigh,R15316,Bread 400g,Bakery,1,65,0,65
+2026-09-08,Ngong Road,R15445,Tomatoes 1kg,Produce,5,120,25,450
+2026-09-08,Kasarani,R15455,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-08,Thika Road,R15461,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-08,Eastleigh,R15543,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-08,Eastleigh,R15724,Butter 250g,Dairy,3,290,5,827
+2026-09-09,Thika Road,R13469,Maize flour 2kg,Grains,5,175,0,875
+2026-09-09,Westlands,R13513,Bread 400g,Bakery,1,65,0,65
+2026-09-09,Kilimani,R13514,Tissue 10 pack,Household,2,450,0,900
+2026-09-09,Thika Road,R13592,Cake slice,Bakery,4,120,0,480
+2026-09-09,Ngong Road,R13662,Washing powder 1kg,Household,1,320,30,224
+2026-09-09,Kasarani,R13681,Milk 500ml,Dairy,2,65,0,130
+2026-09-09,kasarani,R14307,Maize flour 2kg,Grains,4,175,0,700
+2026-09-09,Westlands,R14454,Cake slice,Bakery,5,120,0,600
+2026-09-09,Westlands,R14514,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-09,Thika Road,R14566,Cake slice,Bakery,2,120,0,240
+2026-09-09,Kasarani,R14678,Onions 1kg,Produce,4,110,0,440
+2026-09-09,Kasarani,R14709,Cake slice,Bakery,2,120,0,240
+2026-09-09,Kasarani,R14724,Cake slice,Bakery,5,120,0,600
+2026-09-09,Thika Road,R14791,Beans 1kg,Grains,3,220,0,660
+2026-09-09,Thika Road,R15307,Juice 1L,Beverages,4,250,0,1000
+2026-09-09,Eastleigh,R15315,Tissue 10 pack,Household,1,450,5,428
+2026-09-09,Eastleigh,R15396,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-09,Kilimani,R15418,Maize flour 2kg,Grains,1,175,5,166
+2026-09-09,Kasarani,R15470,Cake slice,Bakery,2,120,0,240
+2026-09-09,Eastleigh,R15475,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-09,Kilimani,R15481,Cooking oil 1L,Household,1,340,5,323
+2026-09-09,Kilimani,R15485,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-09,Kilimani,R15547,Bananas 1kg,Produce,5,90,0,450
+2026-09-09,Thika Road,R15583,Tea leaves 250g,Beverages,3,160,0,480
+2026-09-09,Thika Road,R15668,Maize flour 2kg,Grains,3,175,0,525
+2026-09-09,Westlands,R15677,Butter 250g,Dairy,4,290,0,1160
+2026-09-09,Westlands,R15870,Mandazi pack,Bakery,1,100,0,100
+2026-09-10,Kilimani,R13310,Tissue 10 pack,Household,1,450,0,450
+2026-09-10,Eastleigh,R13446,Bread 400g,Bakery,2,65,0,130
+2026-09-10,Ngong Road,R13850,Bar soap,Household,5,120,30,420
+2026-09-10,Kilimani,R13870,Tissue 10 pack,Household,2,450,0,900
+2026-09-10,Kilimani,R13886,Tissue 10 pack,Household,5,450,0,2250
+2026-09-10,Eastleigh,R13926,Milk 500ml,Dairy,4,65,5,247
+2026-09-10,Eastleigh,R14012,Milk 500ml,Dairy,2,65,0,130
+2026-09-10,Westlands,R14163,Milk 500ml,Dairy,3,65,0,195
+2026-09-10,Eastleigh,R14440,Bar soap,Household,4,120,0,480
+2026-09-10,Ngong Road,R14469,Rice 1kg,Grains,4,190,5,722
+2026-09-10,Kilimani,R14611,Juice 1L,Beverages,1,250,0,250
+2026-09-10,Westlands,R14782,Maize flour 2kg,Grains,1,175,0,175
+2026-09-10,Kasarani,R14798,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-10,Eastleigh,R14807,Bananas 1kg,Produce,1,90,0,90
+2026-09-10,Westlands,R14823,Soda 500ml,Beverages,3,70,0,210
+2026-09-10,kilimani,R14892,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-10,Eastleigh,R15095,Bananas 1kg,Produce,3,90,0,270
+2026-09-10,Westlands,R15101,Cake slice,Bakery,2,120,0,240
+2026-09-10,kasarani,R15144,Bar soap,Household,1,120,0,120
+2026-09-10,Ngong Road,R15366,Washing powder 1kg,Household,3,320,20,768
+2026-09-10,Thika Road,R15403,Mandazi pack,Bakery,2,100,0,200
+2026-09-10,Kasarani,R15501,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-10,Kilimani,R15585,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-10,Thika Road,R15648,Beans 1kg,Grains,3,220,0,660
+2026-09-10,Kasarani,R15659,Rice 1kg,Grains,4,190,0,760
+2026-09-10,Kilimani,R15796,Milk 500ml,Dairy,3,65,0,195
+2026-09-10,Kilimani,R15809,Bar soap,Household,1,120,0,120
+2026-09-10,Thika Road,R15820,Mandazi pack,Bakery,1,100,0,100
+2026-09-10,Ngong Road,R15834,Cooking oil 1L,Household,5,340,30,1190
+2026-09-10,Eastleigh,R15845,Mandazi pack,Bakery,3,100,0,300
+2026-09-10,Kasarani,R15873,Soda 500ml,Beverages,5,70,0,350
+2026-09-10,ngong road,R15884,Bread 400g,Bakery,1,65,0,65
+2026-09-11,Eastleigh,R13363,Bananas 1kg,Produce,2,90,0,180
+2026-09-11,Kasarani,R13423,Maize flour 2kg,Grains,1,175,0,175
+2026-09-11,Westlands,R13474,Washing powder 1kg,Household,2,320,0,640
+2026-09-11,Westlands,R13488,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-11,Westlands,R13536,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-11,Thika Road,R13543,Cooking oil 1L,Household,4,340,0,1360
+2026-09-11,Westlands,R13640,Beans 1kg,Grains,2,220,0,440
+2026-09-11,westlands,R13966,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-11,Ngong Road,R14176,Mandazi pack,Bakery,2,100,10,180
+2026-09-11,Eastleigh,R14183,Beans 1kg,Grains,2,220,0,440
+2026-09-11,Westlands,R14197,Tea leaves 250g,Beverages,4,,0,640
+2026-09-11,Ngong Road,R14293,Wheat flour 2kg,Grains,5,210,5,998
+2026-09-11,Thika Road,R14347,Tissue 10 pack,Household,4,450,0,1800
+2026-09-11,Eastleigh,R14399,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-11,Kasarani ,R14431,Water 1L,Beverages,1,60,0,60
+2026-09-11,Kasarani,R14481,Bread 400g,Bakery,1,65,0,65
+2026-09-11,Westlands,R14555,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-11,Thika Road,R15029,Bar soap,Household,4,120,0,480
+2026-09-11,Kasarani,R15049,Cooking oil 1L,Household,1,340,0,340
+2026-09-11,Westlands,R15077,Cake slice,Bakery,1,120,0,120
+2026-09-11,Westlands ,R15126,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-11,Ngong Road,R15323,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-11,Kilimani,R15355,Mandazi pack,Bakery,3,100,0,300
+2026-09-11,Thika Road,R15456,Tea leaves 250g,Beverages,3,160,0,480
+2026-09-11,Thika Road,R15524,Bread 400g,Bakery,3,65,0,195
+2026-09-11,Thika Road,R15524,Bread 400g,Bakery,3,65,0,195
+2026-09-11,Eastleigh,R15553,Tissue 10 pack,Household,1,450,0,450
+2026-09-11,Kasarani,R15644,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-11,Thika Road,R15727,Soda 500ml,Beverages,4,70,5,266
+2026-09-11,Westlands,R15729,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-11,Kasarani,R15735,Beans 1kg,Grains,4,220,0,880
+2026-09-12,Westlands,R13412,Rice 1kg,Grains,2,190,0,380
+2026-09-12,Eastleigh,R13472,Cake slice,Bakery,5,120,0,600
+2026-09-12,Kasarani,R13487,Soda 500ml,Beverages,4,70,0,280
+2026-09-12,Kasarani,R13582,Mandazi pack,Bakery,4,100,0,400
+2026-09-12,Kilimani,R13596,Onions 1kg,Produce,2,110,0,220
+2026-09-12,Kasarani,R13608,Rice 1kg,Grains,4,190,0,760
+2026-09-12,kilimani,R13617,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-12,Ngong Road,R13685,Tissue 10 pack,Household,2,450,0,900
+2026-09-12,Thika Road,R13816,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-12,Kilimani,R13854,Rice 1kg,Grains,1,190,0,190
+2026-09-12,eastleigh,R13928,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-12,Thika Road,R14114,Bar soap,Household,2,120,0,240
+2026-09-12,Ngong Road,R14203,Beans 1kg,Grains,2,220,25,330
+2026-09-12,Ngong Road,R14203,Beans 1kg,Grains,2,220,25,330
+2026-09-12,Westlands,R14476,Onions 1kg,Produce,5,110,0,550
+2026-09-12,Eastleigh,R14561,Maize flour 2kg,Grains,4,175,5,665
+2026-09-12,Kilimani,R14579,Bananas 1kg,Produce,3,90,0,270
+2026-09-12,Kasarani,R14641,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-12,Ngong Road,R14706,Butter 250g,Dairy,3,290,0,870
+2026-09-12,Ngong Road,R14810,Juice 1L,Beverages,2,250,15,425
+2026-09-12,Kilimani,R14914,Onions 1kg,Produce,4,110,0,440
+2026-09-12,Kasarani,R15035,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-12,Thika Rd,R15042,Bar soap,Household,5,120,0,600
+2026-09-12,Kasarani,R15118,Bread 400g,Bakery,3,65,0,195
+2026-09-12,Ngong Road,R15221,Rice 1kg,Grains,2,190,20,304
+2026-09-12,Ngong Road,R15343,Soda 500ml,Beverages,4,70,30,196
+2026-09-12,Eastleigh,R15402,Onions 1kg,Produce,5,110,0,550
+2026-09-12,Ngong Road,R15447,Bananas 1kg,Produce,5,90,25,338
+2026-09-12,Ngong Road,R15447,Bananas 1kg,Produce,5,90,25,338
+2026-09-12,Kasarani,R15678,Soda 500ml,Beverages,5,70,0,350
+2026-09-12,Kasarani,R15726,Tissue 10 pack,Household,3,450,0,1350
+2026-09-12,Ngong Road,R15753,Milk 500ml,Dairy,3,65,10,176
+2026-09-12,Westlands,R15879,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-13,ngong road,R13313,Yoghurt 1L,Dairy,3,180,0,540
+2026-09-13,Thika Road,R13390,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-13,Westlands,R13460,Juice 1L,Beverages,3,250,5,713
+2026-09-13,Kasarani,R13465,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-13,Thika Road,R13499,Cooking oil 1L,Household,2,340,0,680
+2026-09-13,Westlands,R13538,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-13,Kasarani,R13579,Soda 500ml,Beverages,2,70,0,140
+2026-09-13,Ngong Road,R13581,Bananas 1kg,Produce,5,90,0,450
+2026-09-13,Kilimani,R13606,Bread 400g,Bakery,5,65,0,325
+2026-09-13,Kasarani,R13652,Mandazi pack,Bakery,4,100,0,400
+2026-09-13,Eastleigh,R13663,Soda 500ml,Beverages,5,70,0,350
+2026-09-13,Eastleigh,R13690,Beans 1kg,Grains,3,220,0,660
+2026-09-13,Westlands,R13759,Beans 1kg,Grains,1,220,0,220
+2026-09-13,Eastleigh,R13791,Water 1L,Beverages,4,60,0,240
+2026-09-13,Ngong Road,R13802,Bread 400g,Bakery,4,65,0,260
+2026-09-13,Thika Road,R14027,Washing powder 1kg,Household,3,320,0,960
+2026-09-13,Thika Road,R14043,Washing powder 1kg,Household,5,320,0,1600
+2026-09-13,Kilimani,R14258,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-13,Westlands,R14276,Cake slice,Bakery,2,120,5,228
+2026-09-13,Thika Road,R14299,Water 1L,Beverages,4,60,0,240
+2026-09-13,Westlands,R14313,Washing powder 1kg,Household,3,320,0,960
+2026-09-13,Kasarani,R14340,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-13,Thika Road,R14410,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-13,Westlands,R14425,Cake slice,Bakery,4,120,0,480
+2026-09-13,Thika Road,R14468,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-13,Kasarani,R14488,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-13,Thika Road,R14495,Onions 1kg,Produce,3,110,5,314
+2026-09-13,Kilimani,R14686,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-13,Kasarani,R14762,Butter 250g,Dairy,1,290,0,290
+2026-09-13,Thika Road,R14779,Tissue 10 pack,Household,1,450,0,450
+2026-09-13,Westlands,R15021,Tissue 10 pack,Household,2,450,0,900
+2026-09-13,Westlands,R15218,Milk 500ml,Dairy,5,65,0,325
+2026-09-13,Kasarani ,R15251,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-13,Eastleigh,R15502,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-13,Westlands,R15575,Tissue 10 pack,Household,4,450,0,1800
+2026-09-13,Ngong Road,R15587,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-14,Kilimani,R13393,Milk 500ml,Dairy,3,65,0,195
+2026-09-14,Thika Road,R13637,Cake slice,Bakery,1,120,5,114
+2026-09-14,Thika Road,R13857,Bananas 1kg,Produce,1,90,0,90
+2026-09-14,Kasarani,R13881,Soda 500ml,Beverages,2,70,0,140
+2026-09-14,Kasarani,R13995,Bar soap,Household,3,120,0,360
+2026-09-14,THIKA ROAD,R14146,Soda 500ml,Beverages,2,70,0,140
+2026-09-14,kasarani,R14173,Soda 500ml,Beverages,2,70,0,140
+2026-09-14,Ngong Road,R14241,Beans 1kg,Grains,4,220,0,880
+2026-09-14,Ngong Road,R14685,Tomatoes 1kg,Produce,2,120,30,168
+2026-09-14,Kasarani,R14722,Butter 250g,Dairy,1,290,0,290
+2026-09-14,Kasarani,R14815,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-14,Eastleigh,R14911,Cooking oil 1L,Household,3,340,0,1020
+2026-09-14,Kasarani,R15280,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-14,Westlands,R15404,Sukuma wiki bunch,Produce,2,30,0,60
+2026-09-14,Kasarani,R15491,Maize flour 2kg,Grains,1,175,0,175
+2026-09-14,Westlands,R15633,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-14,Eastleigh,R15671,Rice 1kg,Grains,1,190,0,190
+2026-09-15,Eastleigh ,R13492,Mandazi pack,Bakery,3,100,0,300
+2026-09-15,Westlands,R13494,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-15,Ngong Road,R13659,Bar soap,Household,4,120,30,336
+2026-09-15,kasarani,R13693,Washing powder 1kg,Household,5,320,0,1600
+2026-09-15,Westlands,R13697,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-15,Kasarani,R13736,Washing powder 1kg,Household,5,320,0,1600
+2026-09-15,Westlands,R13808,Juice 1L,Beverages,4,250,0,1000
+2026-09-15,Kasarani,R13920,Washing powder 1kg,Household,4,320,0,1280
+2026-09-15,Westlands,R14021,Rice 1kg,Grains,3,190,0,570
+2026-09-15,Eastleigh ,R14121,Milk 500ml,Dairy,4,65,0,260
+2026-09-15,Ngong Road,R14297,Tomatoes 1kg,Produce,2,120,20,192
+2026-09-15,Kilimani,R14345,Beans 1kg,Grains,5,220,0,1100
+2026-09-15,Thika Road,R14578,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-15,Eastleigh,R14675,Yoghurt 1L,Dairy,3,180,0,540
+2026-09-15,Thika Road,R14783,Mandazi pack,Bakery,5,100,0,500
+2026-09-15,Thika Road,R14787,Juice 1L,Beverages,4,250,0,1000
+2026-09-15,Kasarani,R14826,Bar soap,Household,5,120,0,600
+2026-09-15,Kasarani,R14830,Bread 400g,Bakery,1,65,0,65
+2026-09-15,Westlands,R14883,Soda 500ml,Beverages,1,70,0,70
+2026-09-15,eastleigh,R15128,Rice 1kg,Grains,1,190,0,190
+2026-09-15,Thika Road,R15146,Water 1L,Beverages,3,60,0,180
+2026-09-15,Kasarani,R15270,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-15,Eastleigh ,R15354,Tea leaves 250g,Beverages,5,160,0,800
+2026-09-15,kilimani,R15435,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-15,Kasarani,R15636,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-15,Kasarani,R15812,Mandazi pack,Bakery,1,100,5,95
+2026-09-16,Westlands,R13396,Juice 1L,Beverages,3,250,0,750
+2026-09-16,Eastleigh,R13415,Onions 1kg,Produce,3,110,0,330
+2026-09-16,Eastleigh,R13655,Tissue 10 pack,Household,5,450,0,2250
+2026-09-16,Thika Road,R13719,Water 1L,Beverages,5,60,0,300
+2026-09-16,Ngong Road,R13962,Milk 500ml,Dairy,2,65,0,130
+2026-09-16,Kilimani,R14251,Maize flour 2kg,Grains,5,175,0,875
+2026-09-16,kilimani,R14280,Bar soap,Household,2,120,0,240
+2026-09-16,Westlands,R14451,Soda 500ml,Beverages,3,70,0,210
+2026-09-16,Thika Road,R14494,Bar soap,Household,3,120,0,360
+2026-09-16,Eastleigh,R14584,Soda 500ml,Beverages,5,70,0,350
+2026-09-16,Thika Rd,R14592,Water 1L,Beverages,5,60,0,300
+2026-09-16,THIKA ROAD,R14700,Maize flour 2kg,Grains,4,175,0,700
+2026-09-16,Eastleigh,R14996,Bread 400g,Bakery,5,65,0,325
+2026-09-16,Eastleigh,R15001,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-16,Westlands,R15039,Milk 500ml,Dairy,2,65,5,124
+2026-09-16,Westlands,R15052,Water 1L,Beverages,4,60,0,240
+2026-09-16,Thika Road,R15067,Cake slice,Bakery,4,120,0,480
+2026-09-16,Westlands,R15179,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-16,Westlands,R15582,Bananas 1kg,Produce,2,90,0,180
+2026-09-16,Kilimani,R15649,Bar soap,Household,1,120,0,120
+2026-09-16,Ngong Road,R15740,Tomatoes 1kg,Produce,2,120,25,180
+2026-09-17,Kasarani,R13480,Washing powder 1kg,Household,5,320,0,1600
+2026-09-17,Westlands,R13590,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-17,Kasarani,R13827,Mandazi pack,Bakery,4,100,0,400
+2026-09-17,Ngong Road,R13997,Tomatoes 1kg,Produce,1,120,25,90
+2026-09-17,Westlands,R14159,Butter 250g,Dairy,1,290,0,290
+2026-09-17,Ngong Road,R14202,Beans 1kg,Grains,2,220,25,330
+2026-09-17,Kasarani,R14255,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-17,Ngong Road,R14384,Washing powder 1kg,Household,4,320,30,896
+2026-09-17,Thika Road,R14422,Tissue 10 pack,Household,4,450,0,1800
+2026-09-17,Kasarani,R14442,Bananas 1kg,Produce,3,90,0,270
+2026-09-17,Kasarani,R14691,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-17,Kasarani,R14757,Sukuma wiki bunch,Produce,2,30,0,60
+2026-09-17,KASARANI,R14950,Washing powder 1kg,Household,4,320,0,1280
+2026-09-17,Kilimani,R14972,Milk 500ml,Dairy,4,65,0,260
+2026-09-17,Ngong Road,R15046,Rice 1kg,Grains,1,190,0,190
+2026-09-17,Ngong Road,R15117,Yoghurt 1L,Dairy,5,180,10,810
+2026-09-17,Thika Rd,R15225,Soda 500ml,Beverages,4,70,0,280
+2026-09-17,Ngong Road,R15287,Butter 250g,Dairy,5,290,0,1450
+2026-09-17,Thika Road,R15291,Bar soap,Household,4,120,0,480
+2026-09-18,Westlands,R13448,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-18,Westlands,R13885,Butter 250g,Dairy,3,290,0,870
+2026-09-18,Westlands ,R13925,Tea leaves 250g,Beverages,2,160,5,304
+2026-09-18,Kasarani,R13973,Beans 1kg,Grains,2,220,0,440
+2026-09-18,Kasarani,R14102,Mandazi pack,Bakery,5,100,0,500
+2026-09-18,Kasarani,R14262,Washing powder 1kg,Household,1,320,0,320
+2026-09-18,Ngong Road,R14331,Bar soap,Household,2,120,30,168
+2026-09-18,westlands,R14376,Rice 1kg,Grains,5,190,0,950
+2026-09-18,Kasarani,R14434,Water 1L,Beverages,4,60,0,240
+2026-09-18,Ngong Road,R14527,Bananas 1kg,Produce,5,90,0,450
+2026-09-18,Ngong road,R14894,Cake slice,Bakery,5,120,20,480
+2026-09-18,Kasarani,R14929,Bread 400g,Bakery,5,65,0,325
+2026-09-18,Ngong Road,R14965,Butter 250g,Dairy,3,290,0,870
+2026-09-18,Kilimani,R15092,Rice 1kg,Grains,4,190,0,760
+2026-09-18,Kilimani,R15131,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-18,Westlands,R15234,Beans 1kg,Grains,3,220,0,660
+2026-09-18,Eastleigh,R15301,Beans 1kg,Grains,1,220,0,220
+2026-09-18,Kasarani,R15334,Juice 1L,Beverages,4,250,0,1000
+2026-09-18,Westlands,R15569,Water 1L,Beverages,3,60,0,180
+2026-09-18,Kilimani,R15589,Cooking oil 1L,Household,3,340,0,1020
+2026-09-18,Thika Road,R15827,Sukuma wiki bunch,Produce,2,30,5,57
+2026-09-18,Westlands,R15833,Onions 1kg,Produce,4,110,0,440
+2026-09-18,Kilimani,R15895,Cooking oil 1L,Household,5,340,0,1700
+2026-09-19,Ngong Road,R13352,Bar soap,Household,5,120,15,510
+2026-09-19,Eastleigh,R13391,Bananas 1kg,Produce,1,90,0,90
+2026-09-19,Thika Road,R13394,Water 1L,Beverages,1,60,0,60
+2026-09-19,Kilimani,R13462,Cake slice,Bakery,1,120,0,120
+2026-09-19,Kilimani,R13477,Juice 1L,Beverages,2,250,0,500
+2026-09-19,Kasarani,R13490,Maize flour 2kg,Grains,5,175,0,875
+2026-09-19,Kilimani,R13634,Milk 500ml,Dairy,1,65,0,65
+2026-09-19,Kilimani,R13650,Soda 500ml,Beverages,4,70,5,266
+2026-09-19,Thika Road,R13773,Cooking oil 1L,Household,2,340,0,680
+2026-09-19,Thika Road,R13998,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-19,Kasarani,R14110,Milk 500ml,Dairy,5,65,0,325
+2026-09-19,Kilimani,R14189,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-19,Kilimani,R14324,Milk 500ml,Dairy,3,65,0,195
+2026-09-19,Kasarani,R14793,Washing powder 1kg,Household,2,320,0,640
+2026-09-19,Eastleigh,R15048,Water 1L,Beverages,5,60,0,300
+2026-09-19,Ngong Road,R15189,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-19,Ngong Road,R15239,Bananas 1kg,Produce,5,90,30,315
+2026-09-19,Thika Road,R15288,Yoghurt 1L,Dairy,2,180,0,360
+2026-09-19,Thika Road,R15318,Water 1L,Beverages,3,60,0,180
+2026-09-19,Thika Road,R15348,Tissue 10 pack,Household,3,450,0,1350
+2026-09-19,Eastleigh,R15441,Milk 500ml,Dairy,4,65,0,260
+2026-09-19,Eastleigh,R15627,Water 1L,Beverages,5,60,0,300
+2026-09-19,Eastleigh,R15699,Yoghurt 1L,Dairy,3,180,0,540
+2026-09-19,Kasarani,R15772,Washing powder 1kg,Household,4,320,0,1280
+2026-09-19,Westlands,R15782,Cake slice,Bakery,3,120,0,360
+2026-09-20,Eastleigh ,R13426,Milk 500ml,Dairy,4,65,0,260
+2026-09-20,Eastleigh ,R13549,Bar soap,Household,3,120,0,360
+2026-09-20,Kasarani,R13615,Tissue 10 pack,Household,2,450,0,900
+2026-09-20,Westlands,R13735,Beans 1kg,Grains,3,220,0,660
+2026-09-20,Kasarani,R13788,Bread 400g,Bakery,5,65,0,325
+2026-09-20,Eastleigh ,R13835,Rice 1kg,Grains,3,190,0,570
+2026-09-20,Kasarani,R13943,Juice 1L,Beverages,4,250,0,1000
+2026-09-20,Eastleigh,R13967,Rice 1kg,Grains,4,190,0,760
+2026-09-20,Eastleigh,R13993,Washing powder 1kg,Household,5,320,0,1600
+2026-09-20,Kasarani,R14172,Tea leaves 250g,Beverages,3,160,0,480
+2026-09-20,kilimani,R14316,Beans 1kg,Grains,1,220,0,220
+2026-09-20,Thika Road,R14323,Beans 1kg,Grains,1,220,0,220
+2026-09-20,Thika Road,R14423,Bread 400g,Bakery,5,,0,325
+2026-09-20,Thika Road,R14599,Onions 1kg,Produce,2,110,0,220
+2026-09-20,Kasarani,R14624,Mandazi pack,Bakery,2,100,0,200
+2026-09-20,kasarani,R14718,Washing powder 1kg,Household,2,320,0,640
+2026-09-20,Kilimani,R14781,Cooking oil 1L,Household,3,340,0,1020
+2026-09-20,Ngong Road,R14870,Water 1L,Beverages,5,60,20,240
+2026-09-20,Kasarani,R14895,Tissue 10 pack,Household,1,450,0,450
+2026-09-20,Thika Rd,R14915,Bread 400g,Bakery,1,65,5,62
+2026-09-20,Kilimani,R14955,Cake slice,Bakery,2,120,0,240
+2026-09-20,Kilimani,R15055,Washing powder 1kg,Household,3,320,0,960
+2026-09-20,Westlands,R15176,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-20,Westlands,R15243,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-20,Thika Road,R15254,Bread 400g,Bakery,2,65,0,130
+2026-09-20,Kasarani,R15438,Bananas 1kg,Produce,2,90,0,180
+2026-09-20,Thika Road,R15560,Water 1L,Beverages,3,60,0,180
+2026-09-20,Ngong Road,R15780,Rice 1kg,Grains,4,190,30,532
+2026-09-20,Kilimani,R15840,Milk 500ml,Dairy,2,65,0,130
+2026-09-21,Westlands,R13309,Cake slice,Bakery,1,120,0,120
+2026-09-21,Westlands,R13311,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-21,Thika Road,R13345,Maize flour 2kg,Grains,4,175,0,700
+2026-09-21,Thika Road,R13562,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-21,Eastleigh,R13588,Rice 1kg,Grains,5,190,0,950
+2026-09-21,Kasarani,R13668,Water 1L,Beverages,5,60,5,285
+2026-09-21,Ngong Road,R13813,Cooking oil 1L,Household,3,340,20,816
+2026-09-21,Ngong Road,R13813,Cooking oil 1L,Household,3,340,20,816
+2026-09-21,Kasarani,R13935,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-21,Thika Road,R13936,Bar soap,Household,1,120,0,120
+2026-09-21,Ngong Road,R13992,Soda 500ml,Beverages,5,70,0,350
+2026-09-21,KASARANI,R14008,Butter 250g,Dairy,3,290,0,870
+2026-09-21,Ngong Road,R14096,Bar soap,Household,2,120,20,192
+2026-09-21,Kilimani,R14143,Juice 1L,Beverages,2,250,0,500
+2026-09-21,Westlands,R14348,Cake slice,Bakery,3,120,0,360
+2026-09-21,Eastleigh,R14389,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-21,Thika Road,R14391,Cake slice,Bakery,1,120,0,120
+2026-09-21,Westlands,R14418,Soda 500ml,Beverages,3,70,0,210
+2026-09-21,Thika Road,R14426,Maize flour 2kg,Grains,4,175,5,665
+2026-09-21,Westlands,R14456,Water 1L,Beverages,5,60,0,300
+2026-09-21,Kilimani,R14606,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-21,eastleigh,R14659,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-21,Kasarani,R14682,Tissue 10 pack,Household,5,450,0,2250
+2026-09-21,Kasarani,R14737,Cooking oil 1L,Household,5,340,0,1700
+2026-09-21,Kilimani,R14738,Cooking oil 1L,Household,5,340,0,1700
+2026-09-21,Kasarani,R15012,Rice 1kg,Grains,1,190,0,190
+2026-09-21,Eastleigh,R15098,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-21,Kilimani,R15157,Cake slice,Bakery,2,120,0,240
+2026-09-21,Kasarani ,R15232,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-21,Westlands,R15312,Bread 400g,Bakery,1,65,0,65
+2026-09-21,Eastleigh,R15337,Rice 1kg,Grains,5,190,0,950
+2026-09-21,Thika Road,R15459,Bread 400g,Bakery,2,65,0,130
+2026-09-21,Kasarani,R15518,Milk 500ml,Dairy,1,65,0,65
+2026-09-21,Westlands,R15631,Butter 250g,Dairy,5,290,0,1450
+2026-09-21,Eastleigh,R15878,Washing powder 1kg,Household,1,320,0,320
+2026-09-21,Westlands,R15883,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-22,Eastleigh ,R13670,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-22,Westlands,R13769,Maize flour 2kg,Grains,4,175,0,700
+2026-09-22,Ngong Road,R13770,Water 1L,Beverages,1,60,0,60
+2026-09-22,Eastleigh,R13785,Water 1L,Beverages,1,60,0,60
+2026-09-22,Ngong Road,R13849,Bananas 1kg,Produce,3,90,15,230
+2026-09-22,Thika Road,R13864,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-22,Kilimani,R14105,Butter 250g,Dairy,3,290,0,870
+2026-09-22,Westlands,R14108,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-22,Thika Road,R14192,Bar soap,Household,3,120,0,360
+2026-09-22,Westlands ,R14600,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-22,Ngong Road,R14708,Cooking oil 1L,Household,1,340,15,289
+2026-09-22,Eastleigh,R14875,Juice 1L,Beverages,3,250,0,750
+2026-09-22,Kasarani,R14919,Washing powder 1kg,Household,5,320,0,1600
+2026-09-22,Eastleigh,R14925,Bread 400g,Bakery,3,65,0,195
+2026-09-22,Kasarani,R14947,Yoghurt 1L,Dairy,5,180,0,900
+2026-09-22,Thika Road,R15004,Cake slice,Bakery,1,120,0,120
+2026-09-22,Eastleigh,R15006,Cake slice,Bakery,1,120,5,114
+2026-09-22,Eastleigh,R15053,Rice 1kg,Grains,5,190,0,950
+2026-09-22,Eastleigh,R15198,Bread 400g,Bakery,5,65,5,309
+2026-09-22,Kilimani,R15227,Water 1L,Beverages,3,60,0,180
+2026-09-22,Kilimani,R15368,Maize flour 2kg,Grains,3,175,0,525
+2026-09-22,Kilimani,R15468,Butter 250g,Dairy,5,290,0,1450
+2026-09-22,Kilimani,R15606,Tissue 10 pack,Household,5,450,0,2250
+2026-09-22,Ngong Road,R15712,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-22,Thika Road,R15858,Tissue 10 pack,Household,2,450,0,900
+2026-09-23,Thika Road,R13343,Bananas 1kg,Produce,4,90,0,360
+2026-09-23,Thika Road,R13413,Soda 500ml,Beverages,5,70,0,350
+2026-09-23,Kilimani,R13419,Juice 1L,Beverages,3,250,0,750
+2026-09-23,Thika Road,R13718,Water 1L,Beverages,5,60,0,300
+2026-09-23,Ngong Road,R13724,Milk 500ml,Dairy,1,65,25,49
+2026-09-23,Ngong Road,R13728,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-23,kilimani,R13814,Beans 1kg,Grains,5,220,0,1100
+2026-09-23,Kilimani,R13865,Butter 250g,Dairy,3,290,0,870
+2026-09-23,Kilimani,R13915,Rice 1kg,Grains,3,190,0,570
+2026-09-23,Westlands,R13927,Juice 1L,Beverages,1,250,0,250
+2026-09-23,Westlands,R14074,Juice 1L,Beverages,3,250,0,750
+2026-09-23,Kilimani,R14219,Butter 250g,Dairy,4,290,0,1160
+2026-09-23,Kilimani,R14226,Juice 1L,Beverages,2,250,0,500
+2026-09-23,Thika Road,R14325,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-23,Eastleigh ,R14385,Bananas 1kg,Produce,5,90,0,450
+2026-09-23,Westlands,R14419,Beans 1kg,Grains,3,220,0,660
+2026-09-23,Thika Road,R14433,Beans 1kg,Grains,4,220,0,880
+2026-09-23,Westlands,R14459,Soda 500ml,Beverages,4,70,0,280
+2026-09-23,Eastleigh,R14565,Bread 400g,Bakery,4,65,5,247
+2026-09-23,thika road,R14575,Rice 1kg,Grains,4,190,0,760
+2026-09-23,Eastleigh,R15011,Milk 500ml,Dairy,3,65,5,185
+2026-09-23,Ngong Road,R15069,Mandazi pack,Bakery,1,100,20,80
+2026-09-23,Kasarani,R15268,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-23,Kilimani,R15290,Onions 1kg,Produce,3,110,0,330
+2026-09-23,Eastleigh,R15372,Bananas 1kg,Produce,5,90,0,450
+2026-09-23,Ngong Road,R15397,Yoghurt 1L,Dairy,3,180,0,540
+2026-09-23,Westlands,R15500,Soda 500ml,Beverages,1,70,0,70
+2026-09-23,Thika Road,R15773,Milk 500ml,Dairy,4,65,0,260
+2026-09-23,Kilimani,R15792,Water 1L,Beverages,5,60,0,300
+2026-09-23,Eastleigh,R15828,Cooking oil 1L,Household,2,340,0,680
+2026-09-24,Eastleigh,R13341,Rice 1kg,Grains,1,190,0,190
+2026-09-24,Eastleigh,R13385,Water 1L,Beverages,4,60,0,240
+2026-09-24,Thika Road,R13481,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-24,kasarani,R13731,Yoghurt 1L,Dairy,2,180,0,360
+2026-09-24,Ngong Road,R13924,Butter 250g,Dairy,1,290,0,290
+2026-09-24,Ngong Road,R14033,Washing powder 1kg,Household,2,320,0,640
+2026-09-24,ngong road,R14036,Soda 500ml,Beverages,3,70,0,210
+2026-09-24,Ngong Road,R14194,Juice 1L,Beverages,1,250,0,250
+2026-09-24,Ngong Road,R14198,Milk 500ml,Dairy,4,65,30,182
+2026-09-24,Westlands,R14235,Mandazi pack,Bakery,1,100,0,100
+2026-09-24,Eastleigh,R14621,Tissue 10 pack,Household,3,450,0,1350
+2026-09-24,Ngong Road,R14842,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-24,Westlands ,R14848,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-24,Westlands,R14882,Soda 500ml,Beverages,3,70,0,210
+2026-09-24,Westlands,R15196,Cake slice,Bakery,2,120,0,240
+2026-09-24,Kilimani,R15295,Cake slice,Bakery,4,120,0,480
+2026-09-24,Westlands,R15345,Maize flour 2kg,Grains,1,175,0,175
+2026-09-24,Ngong Road,R15374,Water 1L,Beverages,5,60,30,210
+2026-09-24,thika road,R15512,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-24,Westlands,R15607,Bananas 1kg,Produce,5,90,0,450
+2026-09-24,Kasarani,R15760,Soda 500ml,Beverages,4,70,0,280
+2026-09-24,Kasarani,R15760,Soda 500ml,Beverages,4,70,0,280
+2026-09-25,Westlands,R13322,Rice 1kg,Grains,1,190,0,190
+2026-09-25,Eastleigh,R13325,Maize flour 2kg,Grains,1,175,0,175
+2026-09-25,Kasarani,R13464,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-25,Kilimani,R13539,Bread 400g,Bakery,4,65,0,260
+2026-09-25,Westlands,R13730,Mandazi pack,Bakery,4,100,0,400
+2026-09-25,Kilimani,R13901,Sukuma wiki bunch,Produce,1,30,0,30
+2026-09-25,Kasarani,R13954,Mandazi pack,Bakery,3,100,0,300
+2026-09-25,Kilimani,R13957,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-25,Eastleigh ,R14069,Cooking oil 1L,Household,5,340,0,1700
+2026-09-25,Ngong Road,R14230,Juice 1L,Beverages,3,250,0,750
+2026-09-25,Eastleigh,R14260,Tissue 10 pack,Household,2,450,0,900
+2026-09-25,Thika Road,R14286,Tomatoes 1kg,Produce,2,120,0,240
+2026-09-25,Kasarani,R14291,Onions 1kg,Produce,2,110,0,220
+2026-09-25,Thika Road,R14330,Water 1L,Beverages,4,60,0,240
+2026-09-25,Ngong Road,R14344,Soda 500ml,Beverages,3,70,20,168
+2026-09-25,Ngong Road,R14445,Wheat flour 2kg,Grains,5,210,20,840
+2026-09-25,Ngong Road,R14695,Bread 400g,Bakery,3,65,30,137
+2026-09-25,Kasarani,R14755,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-25,Westlands,R14775,Bread 400g,Bakery,5,65,0,325
+2026-09-25,Kasarani,R14788,Butter 250g,Dairy,2,290,0,580
+2026-09-25,Kilimani,R14817,Washing powder 1kg,Household,4,320,0,1280
+2026-09-25,Ngong Road,R14850,Cake slice,Bakery,4,120,30,336
+2026-09-25,Ngong Road,R14920,Bread 400g,Bakery,1,65,30,46
+2026-09-25,Westlands,R14959,Rice 1kg,Grains,2,190,5,361
+2026-09-25,Westlands,R14981,Rice 1kg,Grains,1,190,0,190
+2026-09-25,Eastleigh,R14994,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-25,Thika Road,R15063,Beans 1kg,Grains,5,220,0,1100
+2026-09-25,Ngong Road,R15429,Tissue 10 pack,Household,3,450,0,1350
+2026-09-25,Ngong Road,R15472,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-25,Eastleigh,R15837,Bread 400g,Bakery,2,65,0,130
+2026-09-25,Westlands,R15893,Bananas 1kg,Produce,1,90,0,90
+2026-09-26,Thika Road,R13374,Washing powder 1kg,Household,4,320,0,1280
+2026-09-26,Ngong Road,R13437,Beans 1kg,Grains,5,220,15,935
+2026-09-26,Eastleigh,R13660,Bread 400g,Bakery,4,65,0,260
+2026-09-26,Thika Road,R13906,Beans 1kg,Grains,4,220,0,880
+2026-09-26,Eastleigh,R14109,Tissue 10 pack,Household,3,450,0,1350
+2026-09-26,Westlands,R14147,Juice 1L,Beverages,2,250,0,500
+2026-09-26,Westlands,R14379,Water 1L,Beverages,5,60,0,300
+2026-09-26,Thika Road,R14501,Bread 400g,Bakery,2,65,0,130
+2026-09-26,Westlands,R14856,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-26,Westlands,R14917,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-26,Thika Road,R14938,Tea leaves 250g,Beverages,2,160,0,320
+2026-09-26,Kasarani,R14952,Wheat flour 2kg,Grains,5,210,0,1050
+2026-09-26,Eastleigh,R15233,Juice 1L,Beverages,5,250,0,1250
+2026-09-26,Kasarani,R15317,Bread 400g,Bakery,4,65,0,260
+2026-09-26,Thika Road,R15384,Milk 500ml,Dairy,4,65,0,260
+2026-09-26,Westlands ,R15395,Butter 250g,Dairy,1,290,0,290
+2026-09-26,Eastleigh,R15655,Cooking oil 1L,Household,3,340,0,1020
+2026-09-26,Ngong Road,R15865,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-26,Ngong Road,R15865,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-27,Eastleigh,R13540,Maize flour 2kg,Grains,2,175,0,350
+2026-09-27,Ngong Road,R13764,Sukuma wiki bunch,Produce,5,30,20,120
+2026-09-27,Ngong Road,R13764,Sukuma wiki bunch,Produce,5,30,20,120
+2026-09-27,Kilimani,R13878,Juice 1L,Beverages,4,250,0,1000
+2026-09-27,westlands,R13986,Rice 1kg,Grains,1,190,0,190
+2026-09-27,Westlands,R14070,Cooking oil 1L,Household,4,340,0,1360
+2026-09-27,Thika Road,R14229,Maize flour 2kg,Grains,3,175,0,525
+2026-09-27,Kilimani,R14318,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-27,Kasarani,R14439,Bar soap,Household,1,120,0,120
+2026-09-27,Thika Road,R14462,Onions 1kg,Produce,3,110,0,330
+2026-09-27,Westlands,R14582,Bread 400g,Bakery,3,65,0,195
+2026-09-27,kilimani,R14717,Maize flour 2kg,Grains,1,175,0,175
+2026-09-27,Thika Road,R14758,Soda 500ml,Beverages,4,70,0,280
+2026-09-27,Kilimani,R14934,Tomatoes 1kg,Produce,3,120,0,360
+2026-09-27,Eastleigh,R15032,Maize flour 2kg,Grains,2,175,0,350
+2026-09-27,Kilimani,R15200,Onions 1kg,Produce,3,110,0,330
+2026-09-27,Kilimani,R15214,Bread 400g,Bakery,2,65,0,130
+2026-09-27,Ngong Road,R15286,Bar soap,Household,5,120,20,480
+2026-09-27,Kasarani,R15411,Rice 1kg,Grains,2,190,0,380
+2026-09-27,Westlands,R15635,Washing powder 1kg,Household,2,320,0,640
+2026-09-27,Kasarani,R15751,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-28,Westlands,R13321,Juice 1L,Beverages,4,250,0,1000
+2026-09-28,Thika Road,R13372,Soda 500ml,Beverages,2,70,0,140
+2026-09-28,Ngong Road,R13505,Tea leaves 250g,Beverages,5,160,10,720
+2026-09-28,Kasarani,R13642,Washing powder 1kg,Household,3,320,0,960
+2026-09-28,Westlands,R13916,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-28,Thika Road,R14087,Cooking oil 1L,Household,4,340,0,1360
+2026-09-28,Westlands,R14117,Bar soap,Household,1,120,5,114
+2026-09-28,Kasarani,R14132,Mandazi pack,Bakery,4,100,0,400
+2026-09-28,Eastleigh,R14284,Tissue 10 pack,Household,3,450,0,1350
+2026-09-28,Westlands,R14350,Butter 250g,Dairy,2,290,5,551
+2026-09-28,Eastleigh,R14411,Bananas 1kg,Produce,5,90,0,450
+2026-09-28,Kasarani,R14583,Cake slice,Bakery,2,120,0,240
+2026-09-28,Eastleigh,R14585,Wheat flour 2kg,Grains,4,210,0,840
+2026-09-28,Westlands,R14751,Tea leaves 250g,Beverages,1,160,0,160
+2026-09-28,Eastleigh,R14821,Tomatoes 1kg,Produce,4,120,0,480
+2026-09-28,Kilimani,R14898,Soda 500ml,Beverages,4,70,0,280
+2026-09-28,Westlands,R14899,Juice 1L,Beverages,3,250,0,750
+2026-09-28,Kilimani,R14923,Sukuma wiki bunch,Produce,4,30,0,120
+2026-09-28,Kilimani,R14953,Soda 500ml,Beverages,3,70,0,210
+2026-09-28,Kilimani,R15161,Rice 1kg,Grains,2,190,0,380
+2026-09-28,Ngong Road,R15206,Tissue 10 pack,Household,1,450,0,450
+2026-09-28,Kilimani,R15215,Bananas 1kg,Produce,5,90,0,450
+2026-09-28,Ngong Road,R15272,Water 1L,Beverages,4,60,25,180
+2026-09-28,Eastleigh,R15313,Mandazi pack,Bakery,3,100,0,300
+2026-09-28,Ngong Road,R15571,Bar soap,Household,2,120,0,240
+2026-09-28,Ngong Road,R15571,Bar soap,Household,2,120,0,240
+2026-09-28,Westlands,R15654,Maize flour 2kg,Grains,2,175,0,350
+2026-09-28,Thika Road,R15774,Tissue 10 pack,Household,5,450,0,2250
+2026-09-28,Ngong Road,R15794,Sukuma wiki bunch,Produce,4,30,20,96
+2026-09-28,Ngong Road,R15794,Sukuma wiki bunch,Produce,4,30,20,96
+2026-09-29,Kasarani,R13357,Mandazi pack,Bakery,5,100,0,500
+2026-09-29,Eastleigh,R13459,Cake slice,Bakery,3,120,0,360
+2026-09-29,Westlands,R13629,Washing powder 1kg,Household,2,320,0,640
+2026-09-29,Eastleigh,R13689,Onions 1kg,Produce,5,110,0,550
+2026-09-29,Eastleigh,R13692,Sukuma wiki bunch,Produce,5,30,0,150
+2026-09-29,Kilimani,R13722,Wheat flour 2kg,Grains,4,210,5,798
+2026-09-29,Ngong Road,R13723,Rice 1kg,Grains,1,190,20,152
+2026-09-29,Thika Road,R13823,Mandazi pack,Bakery,1,100,0,100
+2026-09-29,Eastleigh,R13833,Bananas 1kg,Produce,4,90,0,360
+2026-09-29,Eastleigh,R13840,Soda 500ml,Beverages,5,70,0,350
+2026-09-29,eastleigh,R13888,Juice 1L,Beverages,5,250,0,1250
+2026-09-29,Thika Road,R13890,Yoghurt 1L,Dairy,3,180,0,540
+2026-09-29,Ngong Road,R13984,Tissue 10 pack,Household,4,450,10,1620
+2026-09-29,Ngong Road,R14341,Maize flour 2kg,Grains,3,175,0,525
+2026-09-29,Kasarani ,R14512,Juice 1L,Beverages,1,250,0,250
+2026-09-29,Kasarani,R14525,Milk 500ml,Dairy,3,65,5,185
+2026-09-29,Thika Road,R14562,Onions 1kg,Produce,4,110,0,440
+2026-09-29,kilimani,R14638,Beans 1kg,Grains,1,220,0,220
+2026-09-29,Ngong Road,R14836,Yoghurt 1L,Dairy,1,180,10,162
+2026-09-29,kasarani,R14939,Sukuma wiki bunch,Produce,3,30,0,90
+2026-09-29,Thika Road,R14973,Juice 1L,Beverages,5,250,0,1250
+2026-09-29,kilimani,R15043,Mandazi pack,Bakery,3,100,0,300
+2026-09-29,Kilimani,R15047,Tissue 10 pack,Household,3,450,0,1350
+2026-09-29,Thika Road,R15088,Washing powder 1kg,Household,4,320,0,1280
+2026-09-29,Eastleigh,R15093,Beans 1kg,Grains,4,220,0,880
+2026-09-29,Kasarani,R15149,Washing powder 1kg,Household,4,320,0,1280
+2026-09-29,Ngong Road,R15330,Maize flour 2kg,Grains,2,175,15,298
+2026-09-29,Thika Road,R15375,Wheat flour 2kg,Grains,2,210,0,420
+2026-09-29,Ngong Road,R15381,Cake slice,Bakery,3,120,20,288
+2026-09-29,Ngong Road,R15615,Cake slice,Bakery,2,120,25,180
+2026-09-29,Westlands,R15637,Bananas 1kg,Produce,4,90,0,360
+2026-09-29,Thika Road,R15759,Cooking oil 1L,Household,1,340,0,340
+2026-09-29,Eastleigh,R15821,Bananas 1kg,Produce,3,90,0,270
+2026-09-29,Kasarani,R15866,Beans 1kg,Grains,5,220,0,1100
+2026-09-30,Thika Road,R13335,Rice 1kg,Grains,1,190,0,190
+2026-09-30,Thika Road,R13398,Mandazi pack,Bakery,1,100,0,100
+2026-09-30,Kilimani,R13430,Bananas 1kg,Produce,2,90,0,180
+2026-09-30,Ngong road,R13852,Bread 400g,Bakery,2,65,0,130
+2026-09-30,Ngong Road,R13991,Milk 500ml,Dairy,2,65,30,91
+2026-09-30,Thika Road,R14115,Maize flour 2kg,Grains,1,175,0,175
+2026-09-30,Thika Road,R14191,Washing powder 1kg,Household,5,320,0,1600
+2026-09-30,Thika Road,R14193,Bread 400g,Bakery,2,65,0,130
+2026-09-30,Ngong Road,R14290,Cooking oil 1L,Household,5,340,0,1700
+2026-09-30,Kilimani,R14477,Bread 400g,Bakery,5,65,0,325
+2026-09-30,Eastleigh,R14491,Wheat flour 2kg,Grains,3,210,0,630
+2026-09-30,Eastleigh,R14533,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-30,Eastleigh,R14533,Tomatoes 1kg,Produce,1,120,0,120
+2026-09-30,Kilimani,R14672,Wheat flour 2kg,Grains,1,210,0,210
+2026-09-30,Kilimani,R14752,Bread 400g,Bakery,4,65,0,260
+2026-09-30,kilimani,R14786,Bar soap,Household,2,120,0,240
+2026-09-30,Kasarani,R14897,Milk 500ml,Dairy,4,65,0,260
+2026-09-30,Thika Road,R15089,Yoghurt 1L,Dairy,1,180,0,180
+2026-09-30,Westlands,R15261,Tomatoes 1kg,Produce,5,120,0,600
+2026-09-30,Westlands,R15264,Yoghurt 1L,Dairy,4,180,0,720
+2026-09-30,Thika Road,R15298,Beans 1kg,Grains,4,220,0,880
+2026-09-30,Kasarani,R15557,Tea leaves 250g,Beverages,4,160,0,640
+2026-09-30,Kasarani,R15614,Water 1L,Beverages,3,60,0,180
+2026-09-30,Kasarani,R15640,Bread 400g,Bakery,2,65,0,130
+2026-09-30,Eastleigh,R15708,Bread 400g,Bakery,1,65,5,62
+2026-09-30,Kilimani,R15719,Cake slice,Bakery,3,120,0,360
+2026-09-30,Thika Road,R15763,Tomatoes 1kg,Produce,2,120,0,240

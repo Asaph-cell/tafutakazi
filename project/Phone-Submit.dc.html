@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Submit work on phone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 1300px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.5; padding: 20px 20px 120px; display: flex; flex-direction: column; gap: 24px">
+  <a href="Phone-Brief.dc.html" style="font-size: 15px; text-decoration: none; min-height: 44px; display: flex; align-items: center">← Loan arrears summary</a>
+
+  <div style="display: flex; flex-direction: column; gap: 4px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Submit your work</h1>
+    <span style="color: #5C5C57">Due in 4 days · {{doneCount}} of 3 done</span>
+  </div>
+
+  <section style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+      <h2 style="margin: 0; font-size: 17px; font-weight: 600">1. Your work</h2>
+      <sc-if value="{{work}}" hint-placeholder-val="{{ false }}"><span style="color: #0E5C45; font-size: 14px; font-weight: 600">Added</span></sc-if>
+    </div>
+    <sc-if value="{{noWork}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <label for="worklink" style="font-size: 14px; color: #5C5C57">Link to your full work</label>
+        <input id="worklink" type="url" placeholder="Google Drive, Canva, Figma, GitHub…" style="font: inherit; min-height: 48px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 10px">
+        <span style="color: #5C5C57; font-size: 13px">Set it to "view only." Recruiters only see this link after they invite you.</span>
+        <button onClick="{{addWork}}" style="font: inherit; min-height: 48px; border-radius: 10px; border: 1px dashed #BDBDB6; background: #FAFAF8; color: #141414; cursor: pointer">Add a preview: image or PDF, max 5 MB</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{work}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="padding: 12px; border-radius: 10px; background: #F6F6F3">drive.google.com/… · full work</span>
+        <span style="padding: 12px; border-radius: 10px; background: #F6F6F3">arrears_summary.pdf · 1.8 MB · preview</span>
+      </div>
+    </sc-if>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+      <h2 style="margin: 0; font-size: 17px; font-weight: 600">2. Your video</h2>
+      <sc-if value="{{video}}" hint-placeholder-val="{{ false }}"><span style="color: #0E5C45; font-size: 14px; font-weight: 600">Added</span></sc-if>
+    </div>
+    <span style="color: #5C5C57; font-size: 14px">2–3 minutes. Show your screen and explain what you did and why.</span>
+    <sc-if value="{{noVideo}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <button onClick="{{addVideo}}" style="font: inherit; font-weight: 600; min-height: 48px; border-radius: 10px; border: 1px solid #141414; background: #141414; color: #FFFFFF; cursor: pointer">Record now</button>
+        <button onClick="{{addVideo}}" style="font: inherit; min-height: 48px; border-radius: 10px; border: 1px solid #D6D6D0; background: #FFFFFF; color: #141414; cursor: pointer">Paste a Loom or YouTube link</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{video}}" hint-placeholder-val="{{ false }}">
+      <span style="padding: 12px; border-radius: 10px; background: #F6F6F3">loom.com/share/… · 2:37</span>
+    </sc-if>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+      <label for="writeup" style="font-size: 17px; font-weight: 600">3. How you did it</label>
+      <span style="color: #5C5C57; font-size: 14px">{{words}} / 250 words</span>
+    </div>
+    <textarea id="writeup" rows="9" onChange="{{onText}}" placeholder="What was messy in the data? What did you check first? Why did you choose these charts?" style="font: inherit; padding: 12px; border: 1px solid #D6D6D0; border-radius: 10px; resize: vertical"></textarea>
+    <div style="height: 4px; border-radius: 999px; background: #EEEEE9; overflow: hidden">
+      <div style="height: 4px; width: 100%; background: #0E5C45; transform: scaleX({{barScale}}); transform-origin: left; transition: transform 200ms cubic-bezier(0.23,1,0.32,1)"></div>
+    </div>
+  </section>
+
+  <span style="color: #5C5C57; font-size: 14px">Only signed-in recruiters can see your work. Other grads can't.</span>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 20px; background: #FFFFFF; border-top: 1px solid #E3E3DE; display: flex; flex-direction: column; gap: 6px">
+    <sc-if value="{{ready}}" hint-placeholder-val="{{ false }}">
+      <button style="font: inherit; font-weight: 600; min-height: 52px; border-radius: 10px; border: 0; background: #0E5C45; color: #FFFFFF; cursor: pointer">Submit</button>
+    </sc-if>
+    <sc-if value="{{notReady}}" hint-placeholder-val="{{ true }}">
+      <button disabled style="font: inherit; font-weight: 600; min-height: 52px; border-radius: 10px; border: 0; background: #DADAD4; color: #6B6B66">Submit</button>
+      <span style="color: #5C5C57; font-size: 13px; text-align: center">Add all three to submit</span>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { work: false, video: false, words: 0 };
+  }
+  renderVals() {
+    const s = this.state;
+    const textOk = s.words >= 250;
+    const done = (s.work ? 1 : 0) + (s.video ? 1 : 0) + (textOk ? 1 : 0);
+    return {
+      work: s.work,
+      noWork: !s.work,
+      video: s.video,
+      noVideo: !s.video,
+      words: s.words,
+      barScale: Math.min(1, s.words / 250),
+      doneCount: done,
+      ready: done === 3,
+      notReady: done !== 3,
+      addWork: () => this.setState({ work: true }),
+      addVideo: () => this.setState({ video: true }),
+      onText: (e) => {
+        const t = (e && e.target && e.target.value) || '';
+        const n = t.trim() ? t.trim().split(/\s+/).length : 0;
+        this.setState({ words: n });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

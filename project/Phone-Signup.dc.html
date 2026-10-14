@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grad sign up</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="width: 390px; height: 1000px; box-sizing: border-box; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.5; padding: 24px 20px 32px; display: flex; flex-direction: column; gap: 28px">
+  <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <h1 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em">Show your work. Get hired.</h1>
+    <p style="margin: 0; color: #5C5C57">Do real tasks from Kenyan companies. Recruiters see what you can do, not just your CV.</p>
+  </div>
+
+  <button style="font: inherit; font-weight: 600; min-height: 52px; border-radius: 10px; border: 1px solid #D6D6D0; background: #FFFFFF; color: #141414; display: flex; align-items: center; justify-content: center; gap: 10px">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 12h8"></path></svg>
+    Continue with Google
+  </button>
+
+  <div style="display: flex; align-items: center; gap: 12px; color: #8A8A84; font-size: 14px">
+    <div style="flex: 1; height: 1px; background: #E3E3DE"></div>or<div style="flex: 1; height: 1px; background: #E3E3DE"></div>
+  </div>
+
+  <form style="display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="name" style="font-weight: 600; font-size: 15px">Full name</label>
+      <input id="name" style="font: inherit; min-height: 48px; padding: 0 14px; border: 1px solid #D6D6D0; border-radius: 10px; background: #FFFFFF">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="email" style="font-weight: 600; font-size: 15px">Email</label>
+      <input id="email" type="email" placeholder="you@gmail.com" style="font: inherit; min-height: 48px; padding: 0 14px; border: 1px solid #D6D6D0; border-radius: 10px; background: #FFFFFF">
+      <span style="color: #5C5C57; font-size: 13px">New tasks and recruiter comments come here. We'll send a link to confirm it.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="pw" style="font-weight: 600; font-size: 15px">Password</label>
+      <input id="pw" type="password" style="font: inherit; min-height: 48px; padding: 0 14px; border: 1px solid #D6D6D0; border-radius: 10px; background: #FFFFFF">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="course" style="font-weight: 600; font-size: 15px">Course and university</label>
+      <input id="course" placeholder="e.g. BSc Statistics, JKUAT" style="font: inherit; min-height: 48px; padding: 0 14px; border: 1px solid #D6D6D0; border-radius: 10px; background: #FFFFFF">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="track" style="font-weight: 600; font-size: 15px">What job do you want?</label>
+      <select id="track" style="font: inherit; min-height: 48px; padding: 0 12px; border: 1px solid #D6D6D0; border-radius: 10px; background: #FFFFFF">
+        <option>Data Analyst</option>
+        <option>Graphic Designer</option>
+        <option>Digital Marketer</option>
+        <option>Accountant</option>
+        <option>Software Developer</option>
+      </select>
+    </div>
+    <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px">
+      <input type="checkbox" required style="width: 20px; height: 20px; margin-top: 2px; accent-color: #0E5C45">
+      <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>, and I'll keep other people's work confidential.</span>
+    </label>
+    <button type="button" style="font: inherit; font-weight: 600; min-height: 52px; margin-top: 8px; border-radius: 10px; border: 0; background: #0E5C45; color: #FFFFFF">Create account</button>
+  </form>
+
+  <div style="display: flex; flex-direction: column; gap: 6px; text-align: center; font-size: 15px">
+    <span style="color: #5C5C57">Already have an account? <a href="#">Log in</a></span>
+    <span style="color: #5C5C57">Hiring? <a href="RecruiterSignup.dc.html">Recruiter sign up</a></span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

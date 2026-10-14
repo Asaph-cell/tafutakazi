@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Support Tafutakazi</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F3}
+a{color:#0E5C45}a:hover{color:#093F30}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button:active:not(:disabled){transform:scale(0.97)}
+a:active{transform:scale(0.98)}
+@media (prefers-reduced-motion: reduce){button,a{transition:none}}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F6F6F3; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.55">
+  <header style="border-bottom: 1px solid #E3E3DE; background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
+      <a href="Main.dc.html" style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #141414; text-decoration: none"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></a>
+    </div>
+  </header>
+
+  <main style="max-width: 720px; margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-direction: column; gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <h1 style="margin: 0; font-size: 40px; line-height: 1.1; font-weight: 600; letter-spacing: -0.03em">Tafutakazi is free. For graduates and for recruiters.</h1>
+      <p style="margin: 0; color: #2E2E2B; font-size: 18px">It exists to help reduce graduate unemployment in Kenya. Employers ask for experience that fresh graduates can't get without a job, so Tafutakazi gives them a chance to prove what they can do. If it helped you, or you believe in it, here's how to keep it going.</p>
+    </div>
+
+    <section style="display: flex; flex-direction: column; gap: 14px; padding-top: 28px; border-top: 1px solid #E3E3DE">
+      <h2 style="margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em">Buy us a chai</h2>
+      <p style="margin: 0; color: #2E2E2B">Any amount helps pay for the website, emails and storage. Nothing changes on your account either way.</p>
+      <div style="align-self: flex-start; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 16px 20px; background: #FFFFFF; border: 1px solid #E3E3DE; border-radius: 12px">
+        <span style="display: flex; flex-direction: column">
+          <span style="color: #5C5C57; font-size: 14px">Send money with M-Pesa to</span>
+          <span style="font-size: 26px; font-weight: 700; letter-spacing: 0.02em; font-variant-numeric: tabular-nums">0790 793 213</span>
+        </span>
+        <button onClick="{{copy}}" style="font: inherit; font-weight: 600; min-height: 44px; padding: 0 18px; border-radius: 8px; border: 1px solid #141414; background: #FFFFFF; color: #141414; cursor: pointer">{{copyLabel}}</button>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 18px; padding-top: 28px; border-top: 1px solid #E3E3DE">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h2 style="margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em">Partner with us</h2>
+        <p style="margin: 0; color: #2E2E2B">We work with organisations that want more young Kenyans in work.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span style="font-weight: 600">Companies</span>
+        <span style="color: #2E2E2B">Hire from Tafutakazi, write practice tasks from your industry, or sponsor a track like data or marketing.</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span style="font-weight: 600">Universities and colleges</span>
+        <span style="color: #2E2E2B">Bring your final-year students on early, and see how many of them get hired.</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span style="font-weight: 600">NGOs and foundations</span>
+        <span style="color: #2E2E2B">Fund a group of graduates, design tasks with us, or help us reach more counties.</span>
+      </div>
+
+      <a href="mailto:partners@tafutakazi.co.ke" style="align-self: flex-start; display: flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid #141414; color: #141414; font-weight: 600; text-decoration: none">Email partners@tafutakazi.co.ke</a>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { copied: false };
+  }
+  renderVals() {
+    return {
+      copyLabel: this.state.copied ? 'Copied' : 'Copy number',
+      copy: () => {
+        try { navigator.clipboard.writeText('0790793213'); } catch (e) {}
+        this.setState({ copied: true });
+        setTimeout(() => this.setState({ copied: false }), 2000);
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

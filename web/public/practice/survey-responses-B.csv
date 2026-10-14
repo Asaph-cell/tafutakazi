@@ -1,0 +1,601 @@
+response_id,submitted,store,age,gender,visits_per_month,rating_overall,rating_price,rating_staff,rating_queue_time,would_recommend,comment
+S202-1,2026-08-13,Ruaka,45,,2,2,2,2,1,no,waited 25 mins to pay
+S202-2,2026-09-07,rongai,25-34,,4,,4,4,5,Yes,bread finished by 7pm
+S202-3,2026-08-21,rongai,35+,F,5,3,2,2,4,No,promo prices not on shelf
+S202-4,2026-08-21,Juja,35+,Male,9,,4,2,2 stars,No,Queues too long on weekends
+S202-5,2026-09-02,Juja,38 years,F,4,5,3,5,5,Yes,Friendly staff
+S202-6,2026-08-07,Kitengela,29 yrs,F,2,4,2,5,4,Y,promo prices not on shelf
+S202-7,2026-08-04,Juja,20,F,3,2,2,2,2,No,
+S202-8,2026-09-08,Rongai,44,Male,1,3,2,3,4,Yes,charged more at till than shelf price
+S202-9,2026-09-01,Rongai,,m,6,3,2,3,3,Yes,promo prices not on shelf
+S202-10,2026-08-05,Rongai,38,Male,3,3,3,2,5,Maybe,cashier was on phone
+S202-11,2026-09-05,Ruaka,34,m,3,3,3,2,3,No,No flour again
+S202-12,2026-08-19,Ruaka,30,m,12,3,2,4,3,Yes,promo prices not on shelf
+S202-13,2026-08-09,Ruaka,47,M,3,3,4,2,2,Maybe,Queues too long on weekends
+S202-14,2026-08-07,Kitengela,44 years,,9,3,4,4,2 stars,Yes,Queues too long on weekends
+S202-15,2026-08-02,Ruaka,39 years,,11,3,4,2,2,Yes,Queues too long on weekends
+S202-16,2026-08-21,Rongai,35 yrs,m,12,3,4,5,2,Yes,Tills are slow
+S202-17,2026-09-05,Rongai,57 years,F,3,3,3,2,3,No,love the bakery
+S202-18,2026-09-02,Ruaka,35+,female,12,,2,4,1,no,only 2 tills open at 6pm
+S202-19,2026-08-11,Kitengela,23,m,8,4,3,4,4,Yes,milk always out of stock
+S202-20,2026-08-20,Kitengela,59 yrs,Male,11,3,3,3,5,No,good fresh produce
+S202-21,2026-08-11,Kitengela,37,m,6,4,2,5,4,yes,cooking oil too expensive
+S202-22,2026-08-03,Kitengela,55 yrs,Female,5,4,4,5,4,Yes,good fresh produce
+S202-23,2026-08-04,Juja,27,Female,5,4,2 stars,3,5,Yes,Prices higher than Naivas
+S202-24,2026-09-12,kitengela,35+,F,4,3,4,3,4,Maybe,
+S202-25,2026-08-28,Juja,31,female,3,4,2,5,4,Yes,promo prices not on shelf
+S202-26,2026-08-01,Rongai,23,Male,12,3,2,2,5,No,cooking oil too expensive
+S202-27,2026-08-26,Ruaka,39,Male,8,2,4,3,1,no,Tills are slow
+S202-28,2026-09-06,Rongai,18,M,6,3,4,2,4,Maybe,cashier was on phone
+S202-29,2026-08-04,Juja,60 yrs,F,4,4,4,4,5,Yes,love the bakery
+S202-30,2026-08-05,Juja,61 years,female,10,4,3,5,5,Yes,Clean store
+S202-31,2026-08-30,Ruaka,61 yrs,female,11,3,4,4,2,No,Friendly staff
+S202-32,2026-08-15,Kitengela,51 years,M,11,4,3,3,4,Yes,Friendly staff
+S202-33,2026-09-05,Kitengela,47,m,4,3,2,5,3,Yes,Good service
+S202-34,2026-08-25,Rongai,47,Male,9,3,3,2,5,No,Staff were rude
+S202-35,2026-08-10,Juja,25 yrs,female,9,3,4,4 stars,2,Yes,Queues too long on weekends
+S202-36,2026-08-22,Juja,55,Female,9,4,4,5,5,Y,empty shelves on sunday
+S202-37,2026-09-02,Ruaka,57,Female,7,3,4,2,2,No,waited 25 mins to pay
+S202-38,2026-08-19,Rongai,34,m,3,4,2,4,4,yes,cooking oil too expensive
+S202-39,2026-09-04,Rongai,35+,F,3,4,2,4,5,yes,cooking oil too expensive
+S202-40,2026-08-09,Kitengela,35+,Male,4,4,3,5,4,Y,
+S202-41,2026-08-30,Ruaka,,Female,4,3,4,5,2,Yes,Tills are slow
+S202-42,2026-08-01,Kitengela,39 years,F,1,4,4,4,2,yes,only 2 tills open at 6pm
+S202-43,2026-08-28,Juja,34,female,7,4,3,4,4,yes,love the bakery
+S202-44,2026-08-14,Kitengela,59 yrs,,2,4,4,4,4,yes,Friendly staff
+S202-45,2026-08-26,kitengela,35+,female,2,4,2,5,5,yes,cooking oil too expensive
+S202-46,2026-09-05,Juja,22,F,3,4,4,3,3,yes,No flour again
+S202-47,2026-08-11,Rongai,24 yrs,Female,11,5,3,5,5,Y,Good service
+S202-48,2026-08-05,Ruaka,52,,12,2,3,2,1,No,Queues too long on weekends
+S202-49,2026-08-02,Kitengela,61 yrs,Male,9,3,2,5,2,Yes,only 2 tills open at 6pm
+S202-50,2026-08-03,Kitengela,41 years,F,9,5,2,5,5,Yes,promo prices not on shelf
+S202-51,2026-09-01,Rongai,35+,F,6,3,4,4 stars,2,Maybe,parking is easy
+S202-52,2026-08-16,Ruaka,46 years,F,7,3,3,5,2,Maybe,Tills are slow
+S202-53,2026-09-12,Rongai,22 years,,12,2,3,4,2,No,Tills are slow
+S202-54,2026-09-14,Kitengela,30 years,F,8,4,4,4,3,Yes,love the bakery
+S202-55,2026-09-14,Juja,32 years,,4,5,4,5,5,yes,Good service
+S202-56,2026-08-22,Juja,46 years,F,12,2,3,2,2,No,Tills are slow
+S202-57,2026-08-27,Juja,47,F,3,4,2/5,5,4,Yes,cooking oil too expensive
+S202-58,2026-08-17,Kitengela,18-24,F,9,3,4,2,3,No,nobody to help find items
+S202-59,2026-08-05,Kitengela,35+,Male,2,2,3/5,2,2,No,waited 25 mins to pay
+S202-60,2026-08-05,Juja,41,m,7,2,2,3,2,no,only 2 tills open at 6pm
+S202-61,2026-08-03,Juja,24 years,Male,1,4,3,5,3,Yes,No flour again
+S202-62,2026-08-11,Juja,57,m,6,4,4,4,5,Yes,
+S202-63,2026-09-04,Juja,60 yrs,,10,3,3,3,2,No,Tills are slow
+S202-64,2026-08-09,Juja,18-24,female,2,4,4,5,2,Y,Tills are slow
+S202-65,2026-08-16,Rongai,57 yrs,m,3,4,2,3,5,yes,cooking oil too expensive
+S202-66,2026-09-04,Rongai,24 yrs,Female,7,3,3,3,3,Yes,milk always out of stock
+S202-67,2026-08-26,Juja,23,,4,,3,5,5,Yes,Clean store
+S202-68,2026-08-07,Ruaka,58 years,female,4,2,2,5,1,No,only 2 tills open at 6pm
+S202-69,2026-08-14,Juja,58,Female,9,3,2,5,3,Yes,promo prices not on shelf
+S202-70,2026-09-12,Ruaka,47 years,m,2,2,3,3,2,no,only 2 tills open at 6pm
+S202-71,2026-08-15,Ruaka,53,m,6,3,3 stars,2,2 stars,Yes,Good service
+S202-72,2026-09-03,Kitengela,36 years,Male,2,3,2,5,3,Maybe,Prices higher than Naivas
+S202-73,2026-08-06,Kitengela,29,M,7,4,3,4,3,yes,Good service
+S202-74,2026-08-26,Ruaka,56,M,10,3,3,3,3,Maybe,
+S202-75,2026-09-01,Ruaka,49,female,4,3,2,5,3,Maybe,promo prices not on shelf
+S202-76,2026-09-12,Kitengela,35+,,12,4,4,3,3,yes,parking is easy
+S202-77,2026-08-21,Rongai,,Female,3,4,2,5,5,Yes,Prices higher than Naivas
+S202-78,2026-09-09,Juja,49 years,Male,1,3,2,2,5,Maybe,Prices higher than Naivas
+S202-79,2026-08-03,Rongai,42,Male,4,4,4,2,5,Y,Staff were rude
+S202-80,2026-09-07,juja,44 years,F,10,3,3,2,3,Maybe,
+S202-81,2026-09-04,Kitengela,23 years,m,8,3,3,2,5,Maybe,Clean store
+S202-82,2026-08-27,Ruaka,24 yrs,,10,2,2,3,1,no,waited 25 mins to pay
+S202-83,2026-08-19,Rongai,28 years,m,12,4,3,3,5,yes,Friendly staff
+S202-84,2026-09-04,Kitengela,54 yrs,Female,12,3,4,2,4,Maybe,No flour again
+S202-85,2026-08-08,Ruaka,49 yrs,,1,2 stars,3,2,2,no,Tills are slow
+S202-86,2026-08-02,Juja,19 years,Male,11,4,3,2,5,Yes,cashier was on phone
+S202-87,2026-09-08,Ruaka,60,m,8,2,3,3,2,No,Good service
+S202-88,2026-09-02,Kitengela,46 yrs,M,9,3,2,4,3,Maybe,cooking oil too expensive
+S202-89,2026-09-01,ruaka,40 yrs,F,10,,3,5,3,Yes,Clean store
+S202-90,2026-09-09,Kitengela,35+,Male,8,3,4,2,3,Yes,nobody to help find items
+S202-91,2026-08-30,Rongai,38,,4,4,4,2,4,Yes,cashier was on phone
+S202-92,2026-09-11,rongai,35+,female,1,3/5,3,5,2,No,waited 25 mins to pay
+S202-93,2026-08-22,Ruaka,,M,1,2,2,3,2,no,Queues too long on weekends
+S202-94,2026-08-09,Ruaka,23 years,Male,7,3,4,3,2,Yes,waited 25 mins to pay
+S202-95,2026-08-09,Kitengela,35+,M,4,4,4,3,3,Y,Friendly staff
+S202-96,2026-09-14,Kitengela,41 yrs,M,12,3,2,5,3,Yes,charged more at till than shelf price
+S202-97,2026-08-05,Rongai,35+,,3,2,2,4,2,No,Tills are slow
+S202-98,2026-08-16,Kitengela,35+,,2,3,3 stars,4,2,No,only 2 tills open at 6pm
+S202-99,2026-09-06,Rongai,52 years,F,11,3,2,3,3,Maybe,Prices higher than Naivas
+S202-100,2026-09-04,Rongai,38,Female,5,3,3,3,4,Maybe,No flour again
+S202-101,2026-08-28,Kitengela,20,Female,5,4,4,4,5,Y,milk always out of stock
+S202-102,2026-08-26,Kitengela,35+,Female,9,4,3,5,2,Y,only 2 tills open at 6pm
+S202-103,2026-08-21,Kitengela,35+,,6,,4,5/5,5,Yes,good fresh produce
+S202-104,2026-09-10,Rongai,47 yrs,M,7,3,3,4,3,No,
+S202-105,2026-08-13,Rongai,,female,11,5,4,5,5,Yes,Clean store
+S202-106,2026-09-12,Ruaka,58,Male,8,3,2,4,3,No,good fresh produce
+S202-107,2026-08-27,Ruaka,57,,12,2,4,2/5,1,no,Queues too long on weekends
+S202-108,2026-08-19,Juja,,F,12,4,4,3,4,Yes,Friendly staff
+S202-109,2026-09-09,Juja,29 years,,2,3,2,5,2,Yes,waited 25 mins to pay
+S202-110,2026-08-16,Kitengela,29,,11,3,3,2,4,Maybe,Friendly staff
+S202-111,2026-09-07,Juja,30 years,female,6,4,2,4,5,yes,promo prices not on shelf
+S202-112,2026-09-10,Kitengela,29,female,1,3,3,3/5,4,No,No flour again
+S202-113,2026-08-31,Juja,56 yrs,m,11,4,3,3,5,Y,
+S202-114,2026-08-29,Juja,35+,female,7,3,4/5,3,3,Yes,Clean store
+S202-115,2026-09-11,Rongai,55,M,7,4,3,2,5,yes,milk always out of stock
+S202-116,2026-08-27,Ruaka,49 years,female,1,3,4,3 stars,3,No,No flour again
+S202-117,2026-08-30,Kitengela,41,Male,4,4,3,5,5,Yes,No flour again
+S202-118,2026-09-06,Kitengela,21,M,10,2,2,3,2,No,only 2 tills open at 6pm
+S202-119,2026-08-26,kitengela,35+,F,9,3,2/5,5,4,Maybe,charged more at till than shelf price
+S202-120,2026-09-14,Juja,22 yrs,m,5,3,4,5,2,No,waited 25 mins to pay
+S202-121,2026-08-02,Juja,21 yrs,F,5,3,3,5,2,Maybe,waited 25 mins to pay
+S202-122,2026-08-20,Rongai,43,,11,3,2,3,3,Maybe,cooking oil too expensive
+S202-123,2026-08-26,Ruaka,49 yrs,Female,1,3,4,4,3,No,bread finished by 7pm
+S202-124,2026-08-13,kitengela,29 yrs,female,2,3,4,2,3,Maybe,parking is easy
+S202-125,2026-08-26,Ruaka,29,female,2,3,4,2,3,No,bread finished by 7pm
+S202-126,2026-08-27,Ruaka,46,female,2,2 stars,3,3,1,No,Tills are slow
+S202-127,2026-09-07,Ruaka,19,Male,7,3,2,4,3,Yes,Prices higher than Naivas
+S202-128,2026-08-17,Rongai,42,m,4,4,3,5,5,Y,Clean store
+S202-129,2026-08-17,Kitengela,58,M,6,3,3,4,2,No,only 2 tills open at 6pm
+S202-130,2026-08-24,rongai,18,Female,8,3,2/5,2,3,No,Friendly staff
+S202-131,2026-08-29,Ruaka,47 yrs,female,8,3,4,3,2,No,Good service
+S202-132,2026-08-21,Ruaka,22,Female,3,2,3,2,2,no,only 2 tills open at 6pm
+S202-133,2026-09-01,Rongai,25-34,female,7,3,2,2/5,3,Yes,charged more at till than shelf price
+S202-134,2026-08-25,Rongai,52,M,8,4,4,2,5,yes,
+S202-135,2026-08-18,Kitengela,39 years,female,4,3,2,5,3,Yes,Good service
+S202-136,2026-09-10,Rongai,35+,F,7,3,4,2,2,No,Tills are slow
+S202-137,2026-08-05,Juja,28 yrs,M,8,4,4,5,3,yes,bread finished by 7pm
+S202-138,2026-08-05,Ruaka,62 years,m,3,3,4,5,3,No,Clean store
+S202-139,2026-09-09,Kitengela,35+,female,8,3,3,4,2,Maybe,waited 25 mins to pay
+S202-140,2026-08-17,Rongai,25,female,10,3,3,2,4,Maybe,No flour again
+S202-141,2026-08-14,Juja,32,F,11,3,3,3,5,Yes,parking is easy
+S202-142,2026-08-09,Rongai,52,m,4,,4,5,2,Maybe,only 2 tills open at 6pm
+S202-143,2026-09-06,juja,35+,,2,5,4,4,5,yes,good fresh produce
+S202-144,2026-08-03,Juja,35+,,3,5,4,3,5,yes,milk always out of stock
+S202-145,2026-08-05,Ruaka,47 years,m,11,2,2,3,1,no,Queues too long on weekends
+S202-146,2026-08-02,Rongai,35+,Male,7,3/5,3,3,5,Yes,No flour again
+S202-147,2026-08-22,ruaka,18 yrs,Male,8,3,3,2,2,No,only 2 tills open at 6pm
+S202-148,2026-08-20,Rongai,21 years,Female,2,3,4,3,2,No,good fresh produce
+S202-149,2026-08-19,Juja,30 yrs,female,1,3,4,2,3,Maybe,bread finished by 7pm
+S202-150,2026-09-10,Rongai,35+,Male,5,2,2,2,3 stars,no,Prices higher than Naivas
+S202-151,2026-08-18,Kitengela,30,,5,,4,3,3,No,
+S202-152,2026-09-11,Rongai,56,F,5,3,2,4,4,Maybe,Prices higher than Naivas
+S202-153,2026-08-04,Juja,37 years,F,12,3,4,2,4,Yes,cashier was on phone
+S202-154,2026-08-07,Ruaka,32,,2,3,4,3,1,Yes,parking is easy
+S202-155,2026-08-24,Juja,37,m,10,4,4,3,5,Y,Friendly staff
+S202-156,2026-08-17,Ruaka,45,female,2,4,3,5,3,yes,love the bakery
+S202-157,2026-08-27,Kitengela,45,M,2,3 stars,2,4,3,Yes,cooking oil too expensive
+S202-158,2026-09-05,Kitengela,60,female,4,3,2,3,4,Yes,promo prices not on shelf
+S202-159,2026-08-15,Juja,24,,6,2,2,2,2/5,No,Queues too long on weekends
+S202-160,2026-08-06,Kitengela,22 years,F,8,3 stars,3,4,3,Maybe,
+S202-161,2026-09-11,Juja,49 yrs,female,2,3,3,3,2,Maybe,Queues too long on weekends
+S202-162,2026-09-03,Juja,18-24,m,7,4,3,5,4,Yes,parking is easy
+S202-163,2026-08-12,Juja,25-34,,8,3,4,3,3,Maybe,Friendly staff
+S202-164,2026-09-02,Rongai,61 years,m,7,3,2,3,3,Yes,charged more at till than shelf price
+S202-165,2026-08-20,Kitengela,62,Female,6,4,2,5,4,Yes,cooking oil too expensive
+S202-166,2026-08-21,Kitengela,46,M,6,4,3,4,3,yes,Friendly staff
+S202-167,2026-09-02,Juja,,Male,4,2,3,2,2,no,Queues too long on weekends
+S202-168,2026-08-31,Rongai,60 yrs,F,2,4,4,5,3,Y,bread finished by 7pm
+S202-169,2026-08-08,Kitengela,40 years,M,8,4,2,5,5,yes,cooking oil too expensive
+S202-170,2026-08-21,Juja,56,F,6,4,3,2,4,Yes,Staff were rude
+S202-171,2026-09-09,Ruaka,52,,9,4,3,5,3,yes,good fresh produce
+S202-172,2026-09-02,Rongai,25 years,Male,7,3,2,5,2,No,parking is easy
+S202-173,2026-09-09,Juja,28,female,5,4,4,2,4,Y,empty shelves on sunday
+S202-174,2026-09-04,Kitengela,25,M,1,3,3,4,3,No,milk always out of stock
+S202-175,2026-09-11,Juja,18-24,Female,7,4,4,3,5,Y,Clean store
+S202-176,2026-08-06,Rongai,31,M,5,3,2,3,5,No,promo prices not on shelf
+S202-177,2026-09-13,Juja,39 years,M,7,3,3,4,3,Yes,empty shelves on sunday
+S202-178,2026-08-27,Juja,55 yrs,M,12,5,4,4,5,yes,Clean store
+S202-179,2026-08-16,Ruaka,,M,10,3,3,5,1,Yes,Friendly staff
+S202-180,2026-08-11,Rongai,48 yrs,F,8,4,2,4,4,Y,Prices higher than Naivas
+S202-181,2026-09-14,Rongai,25-34,,12,3,3,2,5,No,cashier was on phone
+S202-182,2026-08-04,Kitengela,21 yrs,Male,8,4,2,5,5,yes,promo prices not on shelf
+S202-183,2026-08-25,Rongai,26 years,,7,3,3,4,4,Yes,love the bakery
+S202-184,2026-09-08,Rongai,57 yrs,Female,10,3,3,4,2,Maybe,waited 25 mins to pay
+S202-185,2026-08-14,Juja,52 years,m,2,3,3,3,3,Maybe,No flour again
+S202-186,2026-09-03,Kitengela,35+,M,10,4,4,2,5/5,Yes,milk always out of stock
+S202-187,2026-09-05,rongai,55,F,7,4,4,5/5,2,Y,Queues too long on weekends
+S202-188,2026-08-11,Kitengela,33 yrs,M,1,3,4 stars,2,3,Yes,Clean store
+S202-189,2026-08-20,Kitengela,52 years,Female,4,4,2,5,4,yes,
+S202-190,2026-08-12,Kitengela,25-34,Male,11,3,2,2,3,No,charged more at till than shelf price
+S202-191,2026-08-17,Ruaka,59,female,4,3,3,4,1,No,Queues too long on weekends
+S202-192,2026-08-30,Juja,18-24,Female,12,4,3,5,5,Yes,love the bakery
+S202-193,2026-08-08,Rongai,25-34,m,7,2,2,2,2,No,waited 25 mins to pay
+S202-194,2026-08-13,Ruaka,23,F,10,4,4,5,3,yes,love the bakery
+S202-195,2026-08-12,Kitengela,57 years,,5,4,3,2,4,yes,
+S202-196,2026-08-22,Rongai,62,Female,3,4,4,3,4,Yes,Friendly staff
+S202-197,2026-08-22,Juja,35+,Female,4,3,3,5,2,No,Queues too long on weekends
+S202-198,2026-08-10,Kitengela,38 yrs,F,4,4,3,2,5,Yes,Staff were rude
+S202-199,2026-09-10,Rongai,31 yrs,Female,10,3,3,3,4,No,
+S202-200,2026-08-06,Rongai,30 yrs,Female,12,3,2,4,3,Yes,charged more at till than shelf price
+S202-201,2026-09-06,Kitengela,25-34,F,8,5,4,4,5,yes,milk always out of stock
+S202-202,2026-08-05,Rongai,53 yrs,Female,9,4,3,3,4,Y,Clean store
+S202-203,2026-08-13,Kitengela,49 yrs,F,11,4,3,4,4,Yes,Clean store
+S202-204,2026-08-01,Rongai,18-24,M,1,3,4,4,3,No,parking is easy
+S202-205,2026-09-06,Ruaka,27,m,9,3,2,5,2,No,waited 25 mins to pay
+S202-206,2026-08-07,Rongai,,,12,2,2,2,2,no,Friendly staff
+S202-207,2026-08-07,Rongai,29,M,2,4,4,5,2,yes,waited 25 mins to pay
+S202-208,2026-08-31,Kitengela,37,F,3,2,4,3,2,no,Tills are slow
+S202-209,2026-08-03,Ruaka,,female,4,3,4,3,3,No,good fresh produce
+S202-210,2026-08-31,rongai,38,female,12,3,4,3,2,Yes,Queues too long on weekends
+S202-211,2026-08-07,Ruaka,32 yrs,,1,3,3 stars,3,2,Yes,Tills are slow
+S202-212,2026-08-01,Rongai,,M,2,2,2,2,4,No,Prices higher than Naivas
+S202-213,2026-08-23,Ruaka,,m,4,3,3,2,2,Yes,only 2 tills open at 6pm
+S202-214,2026-08-16,Ruaka,35+,,10,2,2,2,2,No,Tills are slow
+S202-215,2026-09-08,Kitengela,34 years,female,6,3,2,3,5,Yes,promo prices not on shelf
+S202-216,2026-09-04,Juja,18-24,,11,3,4,2,2,Maybe,parking is easy
+S202-217,2026-08-23,Rongai,35+,m,11,3,3,5,2,No,waited 25 mins to pay
+S202-218,2026-09-11,Rongai,55,M,3,2,3,2,3,no,cashier was on phone
+S202-219,2026-08-26,Ruaka,25 yrs,Male,8,3,3,3,3,Yes,Friendly staff
+S202-220,2026-08-24,Juja,44,female,1,4,3,3,5,yes,Friendly staff
+S202-221,2026-08-06,Kitengela,54,female,10,4 stars,3,4,4,Y,Clean store
+S202-222,2026-08-21,Rongai,40,m,10,4,3,2,5/5,Y,nobody to help find items
+S202-223,2026-08-21,Rongai,35,Female,12,3,2,3,3,Maybe,love the bakery
+S202-224,2026-09-02,Juja,44 yrs,M,7,3,3,4,4,Yes,Friendly staff
+S202-225,2026-09-05,Ruaka,27 yrs,Male,4,2,2,5,1,no,parking is easy
+S202-226,2026-08-20,Rongai,35+,Male,4,2,2,2,2,no,only 2 tills open at 6pm
+S202-227,2026-09-09,Kitengela,51,Male,5,3,2,4,4,Yes,charged more at till than shelf price
+S202-228,2026-09-06,Rongai,29 years,female,8,,3,4,4,Maybe,parking is easy
+S202-229,2026-08-21,Kitengela,53,F,6,4,2,5/5,3,Yes,promo prices not on shelf
+S202-230,2026-09-11,Ruaka,29 years,,4,2,3,2,2,no,Tills are slow
+S202-231,2026-08-11,Rongai,39 yrs,M,5,3,3,5,3,Yes,bread finished by 7pm
+S202-232,2026-08-02,Kitengela,35+,,5,4,3 stars,4,3,Y,Friendly staff
+S202-233,2026-08-02,Rongai,27 years,Male,11,3,2,4,2,Maybe,Tills are slow
+S202-234,2026-08-07,Ruaka,18 yrs,Female,9,1,2,3,1,No,love the bakery
+S202-235,2026-08-30,rongai,46 yrs,Male,3,3,2/5,3,4,Yes,charged more at till than shelf price
+S202-236,2026-08-08,Kitengela,60,F,5,3,3,3,3,Maybe,Friendly staff
+S202-237,2026-09-11,Ruaka,25-34,F,12,,4,3,2,Yes,Queues too long on weekends
+S202-238,2026-09-11,Rongai,35+,Male,5,2,2,2,3,no,promo prices not on shelf
+S202-239,2026-08-14,Rongai,42 years,Female,12,3,3,2,4,Maybe,milk always out of stock
+S202-240,2026-08-25,Rongai,35+,F,7,2,2,5,2,no,waited 25 mins to pay
+S202-241,2026-08-14,Juja,32 yrs,,11,4,4,5,3,Yes,Clean store
+S202-242,2026-09-07,Ruaka,25-34,m,7,3 stars,2,5,2,No,waited 25 mins to pay
+S202-243,2026-08-19,Kitengela,21 years,,8,3,4,3,3,Maybe,good fresh produce
+S202-244,2026-08-08,Ruaka,25 yrs,,12,4,4,5,3,Yes,Friendly staff
+S202-245,2026-09-03,Ruaka,43,F,6,3,3,4,3 stars,Maybe,good fresh produce
+S202-246,2026-08-27,ruaka,35+,M,5,2,3,3,1,no,good fresh produce
+S202-247,2026-09-14,Rongai,35+,,4,3,4,4,2,No,waited 25 mins to pay
+S202-248,2026-09-02,Rongai,35 years,M,1,4,2,4,5,Y,Prices higher than Naivas
+S202-249,2026-09-12,Rongai,42 years,F,12,3,2,2,4,Maybe,Good service
+S202-250,2026-08-18,Ruaka,37,,11,1,3,2,1,no,good fresh produce
+S202-251,2026-08-04,Kitengela,50,female,10,4,3,4,4,Y,empty shelves on sunday
+S202-252,2026-08-11,Juja,35+,Female,6,3,2,4,4,No,cooking oil too expensive
+S202-253,2026-08-08,Juja,42 yrs,Female,4,3,3,4,3,No,Clean store
+S202-254,2026-09-13,juja,25-34,F,3,2,2,2 stars,4,no,Clean store
+S202-255,2026-08-19,Juja,41 yrs,F,12,5,4,5,4,yes,Friendly staff
+S202-256,2026-09-13,Rongai,54,female,7,4,4,5,3,yes,love the bakery
+S202-257,2026-08-28,Juja,,M,8,,2,4,2,Yes,Queues too long on weekends
+S202-258,2026-08-07,Kitengela,35+,female,5,4,4,5,3,Y,
+S202-259,2026-08-15,Ruaka,30,female,7,2,4,3,1,no,Tills are slow
+S202-260,2026-08-23,Ruaka,35+,female,2,4,3,5,3,Y,good fresh produce
+S202-261,2026-08-08,Rongai,44 years,Male,5,4,4,2,4,yes,empty shelves on sunday
+S202-262,2026-08-22,Juja,25-34,F,11,4,4,5,5,Y,parking is easy
+S202-263,2026-08-11,Rongai,25-34,Female,2,3,2,3,2,Maybe,waited 25 mins to pay
+S202-264,2026-09-02,Kitengela,,m,8,4,2,5,3,Yes,promo prices not on shelf
+S202-265,2026-09-03,Juja,18 years,F,8,3,4,4,3,Yes,Friendly staff
+S202-266,2026-08-20,Ruaka,46 yrs,Male,7,3,4,3,2,Maybe,only 2 tills open at 6pm
+S202-267,2026-09-09,Ruaka,28 yrs,M,12,2 stars,3,5,1,no,waited 25 mins to pay
+S202-268,2026-08-10,Kitengela,28,female,11,4,4,3,5,Y,good fresh produce
+S202-269,2026-09-06,Ruaka,25-34,Male,9,3,2,5,3,No,promo prices not on shelf
+S202-270,2026-08-15,Juja,27 yrs,,10,2,3,2,2,No,Queues too long on weekends
+S202-271,2026-08-09,Rongai,44,Female,2,4,4,5,3,yes,milk always out of stock
+S202-272,2026-08-13,Juja,62 years,F,2,3,3,2,4,No,Staff were rude
+S202-273,2026-09-01,Juja,35+,Female,2,4,4,3,4,Yes,Good service
+S202-274,2026-08-04,Ruaka,19 yrs,female,8,3 stars,4,4,2,Yes,Queues too long on weekends
+S202-275,2026-09-08,Kitengela,19,female,11,4,3,5,5,Yes,Clean store
+S202-276,2026-08-14,Kitengela,39,female,11,3,2,4,3,No,promo prices not on shelf
+S202-277,2026-08-08,Rongai,22 yrs,m,1,3,4,2,2,No,Queues too long on weekends
+S202-278,2026-08-28,Ruaka,41 yrs,Male,2,3,4,2,2,No,Tills are slow
+S202-279,2026-08-15,Juja,62,Male,10,3,2,2,5,Maybe,Prices higher than Naivas
+S202-280,2026-08-29,Rongai,53 years,F,7,4,3,5,4,Yes,Good service
+S202-281,2026-09-12,Ruaka,31,Female,5,3,2,4,3,No,charged more at till than shelf price
+S202-282,2026-09-05,Juja,41,Female,11,3,3,4,3,Yes,
+S202-283,2026-08-07,Kitengela,,,8,4,4,4,2,Y,Queues too long on weekends
+S202-284,2026-08-22,Ruaka,30,Male,2,2,2,3,2,No,waited 25 mins to pay
+S202-285,2026-08-23,Juja,62 years,m,4,3,3,2,3,Maybe,Staff were rude
+S202-286,2026-08-11,Kitengela,41 yrs,m,10,4,2,5,5,yes,Prices higher than Naivas
+S202-287,2026-08-19,Juja,48 years,M,12,3,3,4,2,Maybe,Tills are slow
+S202-288,2026-08-01,Ruaka,29 yrs,Male,9,3,4,3,1,Yes,waited 25 mins to pay
+S202-289,2026-09-09,rongai,25 yrs,Male,8,3,3,5,3,Maybe,empty shelves on sunday
+S202-290,2026-08-04,ruaka,35,female,5,3,4,3,3,Yes,Clean store
+S202-291,2026-08-31,Ruaka,,,2,4,4,4,2,yes,waited 25 mins to pay
+S202-292,2026-08-31,Kitengela,38,F,10,3,2,2,4,Yes,promo prices not on shelf
+S202-293,2026-09-05,Ruaka,20,female,1,2,2,5,1,No,
+S202-294,2026-09-04,Rongai,35+,,11,,3,5,3,Maybe,good fresh produce
+S202-295,2026-08-01,Kitengela,23 yrs,M,4,5,3 stars,4,5/5,Y,good fresh produce
+S202-296,2026-08-07,Juja,37 yrs,M,3,3,3,2,4,Yes,Staff were rude
+S202-297,2026-08-25,Kitengela,35+,F,10,3,2,5,3,Maybe,charged more at till than shelf price
+S202-298,2026-08-09,Juja,35+,,5,4,2,4,4,Y,Prices higher than Naivas
+S202-299,2026-08-31,Kitengela,40,,12,3,3,3 stars,4,Maybe,
+S202-300,2026-08-18,Kitengela,42 yrs,M,1,4,4,2,4,Yes,Friendly staff
+S202-301,2026-08-21,rongai,20 yrs,m,5,3,2,4,2,Maybe,waited 25 mins to pay
+S202-302,2026-08-03,Rongai,25-34,F,6,,2,2,4,No,promo prices not on shelf
+S202-303,2026-08-06,Rongai,35+,m,4,2,2,2,2,No,Tills are slow
+S202-304,2026-08-01,Rongai,18-24,m,4,4,3,4,5,Y,milk always out of stock
+S202-305,2026-09-12,Kitengela,21,Female,8,4,4,2,4,yes,Staff were rude
+S202-306,2026-08-24,Rongai,32 years,,8,2,2,3,2,no,Tills are slow
+S202-307,2026-08-14,Kitengela,21,m,12,3,2,3,4,No,cooking oil too expensive
+S202-308,2026-08-17,Rongai,57,M,11,4,2,5,4,yes,cooking oil too expensive
+S202-309,2026-08-16,kitengela,62,Male,1,3,2,2,4,Yes,
+S202-310,2026-08-27,Juja,57,m,12,,2,4,5,Yes,charged more at till than shelf price
+S202-311,2026-09-12,Rongai,46,Male,9,3,2,2,4,Yes,Clean store
+S202-312,2026-08-30,Juja,25-34,female,7,3,4,2,2,Yes,Friendly staff
+S202-313,2026-08-07,Rongai,18,Female,11,4,2,3,5,yes,Prices higher than Naivas
+S202-314,2026-09-07,Kitengela,56,M,4,3,3,5,2,No,only 2 tills open at 6pm
+S202-315,2026-08-21,Juja,59,,9,2,2,3,2,No,Queues too long on weekends
+S202-316,2026-09-13,Rongai,39 yrs,m,1,4,4,5,5,Yes,empty shelves on sunday
+S202-317,2026-09-11,Ruaka,27 years,m,4,2,4,2,1,no,only 2 tills open at 6pm
+S202-318,2026-08-28,kitengela,18 yrs,M,10,3,4,3,4,Maybe,Clean store
+S202-319,2026-08-22,Juja,35+,Male,11,3 stars,3,2,4,Yes,empty shelves on sunday
+S202-320,2026-08-07,Juja,19 yrs,Male,4,3,3,4,2,Maybe,Tills are slow
+S202-321,2026-08-27,Rongai,37 years,female,4,4,3,5,3,Y,love the bakery
+S202-322,2026-08-02,ruaka,45 yrs,m,10,3,2,2,3,Yes,cooking oil too expensive
+S202-323,2026-09-05,Rongai,57 years,Female,8,4,3,5,2,Yes,Queues too long on weekends
+S202-324,2026-08-11,Rongai,41 yrs,Female,3,4,3,4,4,yes,empty shelves on sunday
+S202-325,2026-08-13,Juja,57 years,M,3,4,4,5,3,Y,love the bakery
+S202-326,2026-08-18,Juja,47,Female,4,3,3,4,2,No,waited 25 mins to pay
+S202-327,2026-08-02,Juja,21 yrs,female,7,,4,4,4,yes,
+S202-328,2026-09-03,rongai,35+,,8,4,4,5,4,Y,Friendly staff
+S202-329,2026-09-02,Ruaka,32,m,12,3,3,2,3,Yes,Staff were rude
+S202-330,2026-08-01,Kitengela,26,,7,3,3,2,2,Yes,good fresh produce
+S202-331,2026-09-01,Juja,37 years,Male,12,4,4,3/5,4,yes,parking is easy
+S202-332,2026-08-16,juja,19,Male,10,3,3,2,3,Maybe,parking is easy
+S202-333,2026-08-05,Ruaka,,,5,3/5,2,5 stars,1,No,Queues too long on weekends
+S202-334,2026-08-16,Kitengela,35+,female,1,,2,2,4,Yes,promo prices not on shelf
+S202-335,2026-08-24,Kitengela,35+,M,1,4,2,4,4,yes,Prices higher than Naivas
+S202-336,2026-08-24,Juja,25,F,10,3,3,4,2,Yes,waited 25 mins to pay
+S202-337,2026-08-30,Kitengela,61 yrs,Male,6,3,2,4,2,No,only 2 tills open at 6pm
+S202-338,2026-08-06,Rongai,22,F,7,3,3,3,3,Yes,parking is easy
+S202-339,2026-08-26,Rongai,61,M,6,3,2,3 stars,2,Maybe,Tills are slow
+S202-340,2026-08-19,Juja,50,,8,3,3,4,3,Yes,Clean store
+S202-341,2026-09-05,Rongai,52,Female,5,4 stars,4,5,3,yes,love the bakery
+S202-342,2026-09-08,Ruaka,23 years,Male,9,4,4,5,3,Y,Clean store
+S202-343,2026-09-07,Juja,35+,M,12,3,3,4,4,Yes,empty shelves on sunday
+S202-344,2026-09-13,Juja,23 yrs,female,4,4,2,5,3,yes,promo prices not on shelf
+S202-345,2026-08-30,Rongai,35+,Female,1,,3,2,2,no,Queues too long on weekends
+S202-346,2026-08-07,Ruaka,35+,Male,12,3,3,5,2,No,Tills are slow
+S202-347,2026-08-30,Kitengela,50,m,5,4,3,4,4,Y,parking is easy
+S202-348,2026-09-13,Juja,62,m,12,3,4,2,2,Yes,Tills are slow
+S202-349,2026-09-11,Ruaka,48,m,2,2,2,2,2,No,only 2 tills open at 6pm
+S202-350,2026-09-03,Kitengela,41,m,4,3,4,5,2,Yes,love the bakery
+S202-351,2026-09-09,juja,35+,M,5,2,2,3,2,No,waited 25 mins to pay
+S202-352,2026-08-25,Kitengela,42,m,4,4,4,5,4,Y,parking is easy
+S202-353,2026-09-09,Kitengela,32 yrs,m,4,4,3,5,4,Yes,
+S202-354,2026-08-28,kitengela,32 yrs,,5,4,4,4,3,yes,empty shelves on sunday
+S202-355,2026-09-01,Juja,35+,,5,4,4,3,3,Yes,good fresh produce
+S202-356,2026-09-10,Rongai,35+,female,2,4,4,3,5,Yes,parking is easy
+S202-357,2026-08-06,Kitengela,43,F,8,4,4,5,3,Y,parking is easy
+S202-358,2026-09-03,Juja,35,female,6,4,4,2,5,yes,empty shelves on sunday
+S202-359,2026-09-04,Kitengela,18 yrs,F,2,4,4,4,4,Y,
+S202-360,2026-09-01,Juja,42 yrs,m,7,3,2,3,5,Yes,cooking oil too expensive
+S202-361,2026-09-01,Ruaka,54 years,F,12,3,3,4,2,Yes,waited 25 mins to pay
+S202-362,2026-08-01,rongai,35+,,3,5,3,4,5,yes,Good service
+S202-363,2026-08-17,Juja,24,M,2,3,2,3,3,No,parking is easy
+S202-364,2026-09-12,Kitengela,35+,female,2,4,3,4,5,yes,bread finished by 7pm
+S202-365,2026-08-27,Juja,60,,8,4,4,5,5,yes,Friendly staff
+S202-366,2026-09-05,Kitengela,29 yrs,F,6,3,3,2,4,Yes,nobody to help find items
+S202-367,2026-09-04,Rongai,61,female,9,4,4,3,4 stars,yes,milk always out of stock
+S202-368,2026-08-03,Rongai,33 years,Male,12,4,4,2,4,Y,empty shelves on sunday
+S202-369,2026-08-11,Rongai,41,F,5,3,2,2,3,Yes,Prices higher than Naivas
+S202-370,2026-08-01,Kitengela,24 yrs,M,5,4,4,2,5,Yes,cashier was on phone
+S202-371,2026-08-07,Juja,43,Male,3,4,3,4,5,yes,bread finished by 7pm
+S202-372,2026-08-02,Ruaka,62,Male,1,2,2,4,2,No,waited 25 mins to pay
+S202-373,2026-08-20,Ruaka,31 years,,6,3,3,3,2,Maybe,love the bakery
+S202-374,2026-08-30,Kitengela,46,,10,2,2,2,3,no,promo prices not on shelf
+S202-375,2026-09-10,Juja,47,M,11,4,2,4,4,Yes,Good service
+S202-376,2026-09-02,Juja,18-24,m,9,4,4,5,3,Y,love the bakery
+S202-377,2026-08-28,Rongai,18-24,Male,5,4,4,2,4,Yes,empty shelves on sunday
+S202-378,2026-09-05,Juja,46 yrs,,11,4,4,4,3,yes,
+S202-379,2026-08-20,Juja,24,F,2,4,3,5,5,yes,No flour again
+S202-380,2026-08-31,Ruaka,52,Female,2,1,2,2,1,no,only 2 tills open at 6pm
+S202-381,2026-08-14,Ruaka,40,female,5,3,4,3,1,Maybe,Tills are slow
+S202-382,2026-08-17,Ruaka,18-24,Male,10,3,2,5,2,Yes,Queues too long on weekends
+S202-383,2026-09-02,Kitengela,59 yrs,,12,3,3,2,4,Maybe,love the bakery
+S202-384,2026-08-19,Rongai,44 years,M,1,4,4,5,3,Y,Friendly staff
+S202-385,2026-09-06,Rongai,39 yrs,Female,4,4,2,5,4,yes,Prices higher than Naivas
+S202-386,2026-09-12,Ruaka,22,M,5,3,3 stars,4,2,Yes,only 2 tills open at 6pm
+S202-387,2026-08-06,Ruaka,28 yrs,F,3,3,3,3,3,Yes,parking is easy
+S202-388,2026-09-04,Rongai,21 yrs,,4,4,2,5,5,yes,Prices higher than Naivas
+S202-389,2026-08-19,Juja,25 years,Male,4,5,4,5,4,yes,good fresh produce
+S202-390,2026-08-01,Rongai,58 years,m,2,3,3,2,4/5,No,Staff were rude
+S202-391,2026-08-17,Kitengela,,Male,8,2 stars,2,3,2,No,Tills are slow
+S202-392,2026-08-11,Rongai,18-24,M,12,3/5,2,5,2,Yes,Queues too long on weekends
+S202-393,2026-08-07,Ruaka,33,m,8,2/5,3,2,2,no,waited 25 mins to pay
+S202-394,2026-08-16,Juja,34,female,5,3,3,3,2,Maybe,parking is easy
+S202-395,2026-09-09,Juja,44,Male,9,4,4,3,5,Yes,No flour again
+S202-396,2026-08-30,Rongai,25,M,4,4,4,5,4,Y,parking is easy
+S202-397,2026-08-28,Rongai,22,Male,7,,3,5,4,Yes,Clean store
+S202-398,2026-09-14,Juja,49 years,female,9,3,3,3,5,Yes,Friendly staff
+S202-399,2026-08-25,Juja,25-34,Male,7,4,4/5,4,4,Y,bread finished by 7pm
+S202-400,2026-08-28,Rongai,41,,3,4,4,3,4,Yes,Good service
+S202-401,2026-09-07,Ruaka,40 yrs,Female,8,4,3,5,3,yes,parking is easy
+S202-402,2026-09-06,Kitengela,,M,11,3,2,5,2,No,Tills are slow
+S202-403,2026-08-21,Juja,58 years,Male,4,4,3,3,5,Yes,empty shelves on sunday
+S202-404,2026-08-28,Juja,58,Male,1,3,3,4,3,Maybe,
+S202-405,2026-08-25,Ruaka,56 yrs,Female,7,2,2,2,3,no,Prices higher than Naivas
+S202-406,2026-08-03,Juja,62,Male,3,4,4,5,2,Yes,Queues too long on weekends
+S202-407,2026-08-14,Rongai,,female,4,5,4,4,5,yes,Friendly staff
+S202-408,2026-09-14,Rongai,49,,5,3,2,5,2,No,waited 25 mins to pay
+S202-409,2026-09-05,Rongai,,female,3,4,4,4,5,yes,No flour again
+S202-410,2026-08-02,Juja,35+,Female,5,3,4,3,2 stars,Maybe,waited 25 mins to pay
+S202-411,2026-08-15,Juja,55,m,11,3,3,4/5,3,Yes,bread finished by 7pm
+S202-412,2026-08-09,Ruaka,61 years,m,9,3/5,3,2,3,No,Staff were rude
+S202-413,2026-09-03,rongai,28 years,Female,8,3,4,4,2,Maybe,Tills are slow
+S202-414,2026-09-12,Ruaka,52,m,3,3,4,3,2,Maybe,waited 25 mins to pay
+S202-415,2026-08-17,Ruaka,32 yrs,M,1,4,4,5,2,Yes,only 2 tills open at 6pm
+S202-416,2026-08-11,Juja,29,M,9,4 stars,4,5,3,yes,No flour again
+S202-417,2026-09-13,Kitengela,46 years,F,5,4,2,4,5,Y,charged more at till than shelf price
+S202-418,2026-08-08,Rongai,35+,,4,4,4,5,3,Yes,parking is easy
+S202-419,2026-08-05,Ruaka,40 yrs,F,6,3,3,5,2,No,only 2 tills open at 6pm
+S202-420,2026-08-15,Juja,35+,Male,2,3,4,3,2,Yes,parking is easy
+S202-421,2026-08-14,Rongai,32,m,3,5,4,4,5,Yes,Clean store
+S202-422,2026-08-14,Kitengela,25-34,Female,3,,2,3,5,yes,Good service
+S202-423,2026-09-11,Kitengela,37 years,,2,4,3,4,3,Yes,parking is easy
+S202-424,2026-08-24,Juja,18-24,m,10,4,2,2,5,yes,Prices higher than Naivas
+S202-425,2026-08-24,Kitengela,,m,5,3,4,5,2,Maybe,Tills are slow
+S202-426,2026-08-09,Juja,26,Female,9,3,2,4,4,Yes,Prices higher than Naivas
+S202-427,2026-09-06,Juja,42,Female,6,3,3,4,2,Yes,waited 25 mins to pay
+S202-428,2026-08-04,Ruaka,45,Female,5,3,4,5,1,Maybe,Tills are slow
+S202-429,2026-08-15,Kitengela,57 years,F,1,3,3,2,3,Yes,empty shelves on sunday
+S202-430,2026-09-14,Juja,56 yrs,F,3,4,4,5,4,yes,Friendly staff
+S202-431,2026-08-25,Kitengela,55 yrs,Male,2,3,2,3,4,Yes,cooking oil too expensive
+S202-432,2026-08-16,Juja,32 yrs,Male,4,3,2,3 stars,5,Yes,charged more at till than shelf price
+S202-433,2026-08-23,Kitengela,33,Male,8,4,2,2,5,Y,promo prices not on shelf
+S202-434,2026-08-07,Rongai,35+,female,10,4,4,4,4,Y,Good service
+S202-435,2026-09-05,Juja,42 years,F,3,2,3,2,2,No,Tills are slow
+S202-436,2026-09-11,Kitengela,55 yrs,Male,12,3,2,3,2,Maybe,waited 25 mins to pay
+S202-437,2026-08-04,Ruaka,35+,female,2,3,3,3,3,Maybe,
+S202-438,2026-09-02,Juja,32,m,12,2,2,2,2,No,only 2 tills open at 6pm
+S202-439,2026-08-29,Rongai,35+,M,10,2,3,4,2,No,Friendly staff
+S202-440,2026-08-23,Kitengela,18-24,female,10,4,3,3,4,yes,Clean store
+S202-441,2026-08-09,Ruaka,53,m,6,2,3,2,2,No,Queues too long on weekends
+S202-442,2026-08-26,Kitengela,27 yrs,,11,5,4,5,5/5,Yes,good fresh produce
+S202-443,2026-08-31,Ruaka,58 yrs,Male,3,3,3,2,3,No,Staff were rude
+S202-444,2026-09-11,Rongai,27 yrs,Male,4,4,4,3,5,Y,Clean store
+S202-445,2026-08-18,Juja,28 yrs,Male,10,3,3,2,3/5,No,nobody to help find items
+S202-446,2026-08-20,Juja,,Female,4,4,4,3,4,Y,good fresh produce
+S202-447,2026-08-26,Juja,42 years,Male,8,4,3,3,5,Yes,love the bakery
+S202-448,2026-08-01,Kitengela,33,m,10,4,2,2,5,yes,cooking oil too expensive
+S202-449,2026-09-07,Ruaka,27 years,M,4,1,2,2,1,no,Tills are slow
+S202-450,2026-09-14,Juja,31,Female,9,4,4 stars,4,3,Y,empty shelves on sunday
+S202-451,2026-08-23,Rongai,40,female,4,5,3,5,5,yes,love the bakery
+S202-452,2026-08-08,Ruaka,59 years,F,8,2,4,4,1,no,waited 25 mins to pay
+S202-453,2026-08-22,Ruaka,50 years,female,3,3,3,2,2,Maybe,waited 25 mins to pay
+S202-454,2026-09-07,Juja,46 years,,3,3,2,5,3,Maybe,cooking oil too expensive
+S202-455,2026-08-23,Rongai,53 years,Male,9,3,2,2,5,No,charged more at till than shelf price
+S202-456,2026-09-07,Kitengela,41 years,m,2,3,3,4,2,Maybe,waited 25 mins to pay
+S202-457,2026-08-17,Ruaka,50,F,10,2,2/5,2,1/5,no,love the bakery
+S202-458,2026-08-05,Juja,43,Female,10,,3,3,4,No,Clean store
+S202-459,2026-08-11,Juja,56 yrs,female,12,2,3,2,2,No,only 2 tills open at 6pm
+S202-460,2026-08-24,Juja,31,F,7,2,2,2,3,no,Prices higher than Naivas
+S202-461,2026-09-13,Juja,48 years,female,6,3,4,3,4,Maybe,parking is easy
+S202-462,2026-08-14,Kitengela,35+,M,6,,2,2,2,no,Tills are slow
+S202-463,2026-08-12,Kitengela,54 years,F,1,3,3,3,4,Maybe,Good service
+S202-464,2026-08-23,Rongai,40,female,11,3,2,5,3,Yes,promo prices not on shelf
+S202-465,2026-08-02,Ruaka,,Male,11,2,4,4,1,No,Clean store
+S202-466,2026-08-11,Juja,35+,m,1,3,3,4,4,Yes,
+S202-467,2026-08-11,Juja,62,m,10,2,3,2,2,no,only 2 tills open at 6pm
+S202-468,2026-09-09,Rongai,25-34,Female,10,4,3,2,5,Y,Friendly staff
+S202-469,2026-09-03,Rongai,45,,1,4,2,5,4/5,yes,promo prices not on shelf
+S202-470,2026-09-01,Kitengela,44,F,3,3,2,4,3,No,promo prices not on shelf
+S202-471,2026-08-20,Kitengela,38 years,Male,12,4,4,3,4/5,Yes,parking is easy
+S202-472,2026-08-08,Ruaka,31,Male,6,2,2,2,3,no,cooking oil too expensive
+S202-473,2026-08-24,ruaka,,Female,3,3,4,4,2,No,Tills are slow
+S202-474,2026-08-17,Juja,52,M,5,3,2,3,4/5,No,Clean store
+S202-475,2026-09-14,Rongai,27,m,8,3,4,4/5,2,No,only 2 tills open at 6pm
+S202-476,2026-08-26,Rongai,43,,1,3,2,3,4,No,charged more at till than shelf price
+S202-477,2026-09-05,Juja,18-24,m,9,3,3,4,3,No,Friendly staff
+S202-478,2026-09-05,Kitengela,59,Male,12,3,2,5,3 stars,Yes,Prices higher than Naivas
+S202-479,2026-08-20,Ruaka,25-34,M,5,3,4,2,3,No,Staff were rude
+S202-480,2026-08-27,Juja,18 years,female,8,4,3,5,4,Yes,
+S202-481,2026-08-29,Rongai,59 yrs,m,11,4/5,3,4,5,yes,bread finished by 7pm
+S202-482,2026-08-21,Ruaka,60,F,10,,3,3,3,Maybe,good fresh produce
+S202-483,2026-08-03,Kitengela,40,Female,3,5,3,4,5,Y,No flour again
+S202-484,2026-09-04,Juja,30 years,M,5,4,3,3,5,Yes,parking is easy
+S202-485,2026-08-05,Juja,35+,Male,8,3,2,5,2,Yes,waited 25 mins to pay
+S202-486,2026-08-31,Ruaka,30 years,female,8,3,4 stars,4,2,Yes,only 2 tills open at 6pm
+S202-487,2026-08-26,Juja,57,Female,2,2,3,2,3,No,nobody to help find items
+S202-488,2026-08-12,juja,44,F,2,3,4,2,4,No,milk always out of stock
+S202-489,2026-08-24,Ruaka,35+,female,7,4,3,5,3,yes,good fresh produce
+S202-490,2026-08-08,Rongai,18,female,1,4,4,3,4 stars,Y,good fresh produce
+S202-491,2026-09-05,Rongai,35+,F,9,4,4,3,5,Y,milk always out of stock
+S202-492,2026-08-17,Rongai,22,female,12,4,4,5,4,Yes,parking is easy
+S202-493,2026-08-08,Ruaka,19 yrs,female,7,2,2,2,2,no,Friendly staff
+S202-494,2026-08-12,Ruaka,35+,m,7,2,4 stars,3,2,no,Tills are slow
+S202-495,2026-08-31,Kitengela,52 years,m,3,4,3,5,3,yes,empty shelves on sunday
+S202-496,2026-08-02,Rongai,26,F,8,3,3,4/5,2,Maybe,only 2 tills open at 6pm
+S202-497,2026-08-20,Juja,19,Male,8,4,3,5,4,Y,love the bakery
+S202-498,2026-08-06,kitengela,60,,11,3,2 stars,4,4,No,promo prices not on shelf
+S202-499,2026-08-17,Ruaka,57 yrs,F,5,3,2,5,2,No,Queues too long on weekends
+S202-500,2026-08-22,Juja,18-24,F,11,3,4,3,3,Yes,bread finished by 7pm
+S202-501,2026-08-05,Rongai,30,m,7,3,2,4,3,Yes,promo prices not on shelf
+S202-502,2026-08-01,Juja,18,Female,8,3,4,2,3,Maybe,Staff were rude
+S202-503,2026-08-14,Kitengela,30 years,female,8,2,2,2,2,No,Tills are slow
+S202-504,2026-08-06,Rongai,18 years,female,1,4,4,4/5,3,Y,
+S202-505,2026-08-29,Kitengela,24 yrs,M,10,3,2,3/5,3,No,
+S202-506,2026-09-12,Kitengela,60 yrs,m,4,3,3,4,4,No,milk always out of stock
+S202-507,2026-08-05,Kitengela,32,,1,3,4,3,4/5,No,love the bakery
+S202-508,2026-09-08,Rongai,55 years,,3,3,2,5,3,Yes,charged more at till than shelf price
+S202-509,2026-08-08,Rongai,36,Male,4,3,4,5,2,Maybe,Queues too long on weekends
+S202-510,2026-09-11,Juja,25,female,6,3,3,3,4,No,bread finished by 7pm
+S202-511,2026-08-08,Ruaka,58 years,Male,8,2,2,2,2,no,only 2 tills open at 6pm
+S202-512,2026-09-07,Kitengela,18-24,Male,10,3,2,5,3,No,
+S202-513,2026-09-10,Kitengela,47,F,5,3,4,3,2,Maybe,Clean store
+S202-514,2026-09-08,Ruaka,35+,,10,4,3,5,3,Y,Clean store
+S202-515,2026-08-20,Kitengela,53 years,,12,2,2,3,2,no,Tills are slow
+S202-516,2026-08-03,Ruaka,18,Male,5,3,4,5,1,Yes,Tills are slow
+S202-517,2026-08-20,Kitengela,43,Female,5,2,3,3,2,no,only 2 tills open at 6pm
+S202-518,2026-09-05,Ruaka,24,M,1,2,3,3,1,No,Queues too long on weekends
+S202-519,2026-08-26,Rongai,26 years,female,9,3,2,2,4,No,promo prices not on shelf
+S202-520,2026-08-09,rongai,47 yrs,Male,8,3,2,2,5,No,Prices higher than Naivas
+S202-521,2026-09-01,Rongai,23 yrs,,12,2,2,2,2,no,only 2 tills open at 6pm
+S202-522,2026-08-31,Kitengela,32,F,6,4,4,5,3,Yes,parking is easy
+S202-523,2026-08-25,Rongai,48,female,2,2,3,3,2,no,waited 25 mins to pay
+S202-524,2026-08-04,Ruaka,59,female,8,3,4,5,1,Maybe,parking is easy
+S202-525,2026-08-26,Ruaka,49,m,12,3,3,5,1,Yes,Tills are slow
+S202-526,2026-08-02,Kitengela,45,F,8,4,3,4,5,Yes,
+S202-527,2026-08-15,Ruaka,47 years,Male,6,4,4,4,3,yes,Clean store
+S202-528,2026-08-03,Kitengela,37,F,10,3,2,4,2,Yes,Tills are slow
+S202-529,2026-09-10,Kitengela,25-34,Female,7,4,4,3,3,yes,Clean store
+S202-530,2026-08-03,Kitengela,50,F,7,3,3,3,3,Yes,
+S202-531,2026-09-06,Juja,,Male,2,4,3,3,4,Y,Clean store
+S202-532,2026-08-22,Juja,62 years,Female,1,3,2,3,5,No,cooking oil too expensive
+S202-533,2026-08-13,Juja,33,,6,3,2,5,3,Maybe,Prices higher than Naivas
+S202-534,2026-08-13,Ruaka,43 years,m,5,3,3,3,2,No,Tills are slow
+S202-535,2026-09-11,Rongai,35+,Male,6,3,2,5,4,Maybe,love the bakery
+S202-536,2026-09-09,Ruaka,37 yrs,F,7,3,4,4,2,Yes,
+S202-537,2026-08-02,Ruaka,35+,,11,,4,4,1,No,waited 25 mins to pay
+S202-538,2026-08-17,Juja,59,m,4,3,4,2,2,Yes,only 2 tills open at 6pm
+S202-539,2026-08-15,Rongai,62 years,female,2,3,3,5,2,Maybe,
+S202-540,2026-08-19,Kitengela,36,F,8,4,2,5,4,Yes,charged more at till than shelf price
+S202-541,2026-08-17,Ruaka,35+,M,4,3,4,4,2,Yes,waited 25 mins to pay
+S202-542,2026-08-16,Kitengela,62,M,3,,4,3,4,Maybe,Friendly staff
+S202-543,2026-08-07,Rongai,56 yrs,m,1,4,4,4,4/5,yes,No flour again
+S202-544,2026-08-04,Rongai,62,female,3,3,3,3,3,Maybe,No flour again
+S202-545,2026-08-06,Kitengela,35+,Male,10,2,2,2,3,No,Prices higher than Naivas
+S202-546,2026-09-01,Kitengela,56,Female,3,3,4,2,3,Yes,Staff were rude
+S202-547,2026-09-10,kitengela,35,,10,3,3,3,3,Maybe,bread finished by 7pm
+S202-548,2026-08-22,Juja,50 years,F,12,3,4,2,4,Yes,Staff were rude
+S202-549,2026-08-02,Kitengela,40 years,,6,4,4/5,4,4,yes,Clean store
+S202-550,2026-08-25,Juja,21 yrs,m,5,2,3,2,2,no,Tills are slow
+S202-551,2026-08-28,Ruaka,35,F,3,3,4,3,1,No,waited 25 mins to pay
+S202-552,2026-08-23,Juja,41 yrs,,12,4,4,3,5,Yes,
+S202-553,2026-09-07,Ruaka,48,Male,4,2,3,3,1,no,Good service
+S202-554,2026-08-01,Ruaka,,female,3,4,4,3,3,Y,parking is easy
+S202-555,2026-08-18,Juja,25 years,m,11,3,2,2,4,Maybe,charged more at till than shelf price
+S202-556,2026-09-04,ruaka,44 yrs,Female,12,2,3,2,1,No,only 2 tills open at 6pm
+S202-557,2026-09-11,Rongai,22 yrs,Female,6,3,4,3,3,No,good fresh produce
+S202-558,2026-08-10,Juja,29 yrs,M,2,4,3,2,5,Yes,cashier was on phone
+S202-559,2026-08-10,Ruaka,35+,Male,2,3,3 stars,5,2,Maybe,only 2 tills open at 6pm
+S202-560,2026-08-25,Ruaka,50,female,9,2,2,5,1,No,waited 25 mins to pay
+S202-561,2026-08-14,Kitengela,35+,F,12,3,4,3,2,No,only 2 tills open at 6pm
+S202-562,2026-08-24,Juja,35+,female,10,,3,5,3,Yes,Good service
+S202-563,2026-08-07,Kitengela,37,m,3,3,3,5,3,No,milk always out of stock
+S202-564,2026-08-31,Ruaka,60,m,8,3,4,4,3 stars,Yes,bread finished by 7pm
+S202-565,2026-08-01,Ruaka,31,F,7,2,4,4,1,No,Queues too long on weekends
+S202-566,2026-08-03,Rongai,50,,8,3,2,4,2,No,Tills are slow
+S202-567,2026-08-12,Juja,27,F,2,4,3,5,3,Yes,Friendly staff
+S202-568,2026-09-08,Rongai,35,Male,1,4,4,3,5,Yes,good fresh produce
+S202-569,2026-08-15,Rongai,25-34,Male,6,3,3,2,3,No,cashier was on phone
+S202-570,2026-09-02,Ruaka,62 years,F,8,3,4,4,1,Maybe,Friendly staff
+S202-571,2026-08-22,Juja,37 yrs,m,5,4,3,3,5,Y,
+S202-572,2026-08-03,Juja,21,M,9,5,4,4,5,Yes,Good service
+S202-573,2026-08-17,Rongai,56,Male,9,3,4,3,4,No,bread finished by 7pm
+S202-574,2026-08-12,Ruaka,53 yrs,female,6,3,4,5 stars,1,Yes,Tills are slow
+S202-575,2026-08-16,Rongai,59,Female,1,4,4,5,3,yes,Clean store
+S202-576,2026-09-06,Juja,29,female,10,3,2,5,2,Maybe,waited 25 mins to pay
+S202-577,2026-08-18,Kitengela,35+,F,9,3,2,3,5,Maybe,parking is easy
+S202-578,2026-08-24,Kitengela,18 years,female,9,4,4,4,3,Y,bread finished by 7pm
+S202-579,2026-08-12,Kitengela,27 years,M,4,3,3,4,3,Maybe,good fresh produce
+S202-580,2026-08-05,Juja,,m,7,3,4,5,2,No,
+S202-581,2026-09-06,Juja,22,,6,3,4,2,4,Maybe,cashier was on phone
+S202-582,2026-08-18,Ruaka,,female,10,3,4,4,2,Yes,Queues too long on weekends
+S202-583,2026-08-18,Juja,28,female,11,2,3,2,2,no,waited 25 mins to pay
+S202-584,2026-08-31,Kitengela,45,Female,12,2,2,3,2,no,waited 25 mins to pay
+S202-585,2026-08-03,Ruaka,,Male,6,2,4/5,2,1,No,waited 25 mins to pay
+S202-586,2026-08-11,Kitengela,35+,Female,4,2,2,2,2,no,Queues too long on weekends
+S202-587,2026-08-21,Rongai,52,female,2,3,2,3,5,Maybe,Friendly staff
+S202-588,2026-08-11,ruaka,45,Male,5,3,2,5,2,Maybe,Queues too long on weekends
+S202-589,2026-08-08,Ruaka,27,Male,4,3,3,3,2,Yes,waited 25 mins to pay
+S202-590,2026-08-04,Ruaka,57,Male,7,3,4,3,3,Yes,Good service
+S202-591,2026-08-11,Juja,21 yrs,m,7,4,3,5,2,Y,waited 25 mins to pay
+S202-592,2026-08-13,Juja,61 yrs,Male,3,3,4,2,4,No,nobody to help find items
+S202-593,2026-09-05,Ruaka,57 yrs,F,4,3,3,4,3,Yes,parking is easy
+S202-594,2026-08-21,Kitengela,56,female,3,3,4,3,2,Yes,Queues too long on weekends
+S202-595,2026-08-29,Kitengela,56 yrs,M,5,3,2,4,4,No,Prices higher than Naivas
+S202-596,2026-08-27,Ruaka,35+,m,11,2,2,3,3,no,cooking oil too expensive
+S202-597,2026-08-13,Ruaka,43,F,7,2,2,2,1,No,only 2 tills open at 6pm
+S202-598,2026-08-24,Rongai,52 years,M,11,3,2,4,4,Maybe,charged more at till than shelf price
+S202-599,2026-08-29,rongai,27 years,M,3,4,4,5,5,yes,Clean store
+S202-600,2026-08-18,Juja,35,Female,5,3,2,2,5,Yes,Prices higher than Naivas

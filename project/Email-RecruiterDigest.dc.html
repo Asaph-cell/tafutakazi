@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recruiter daily digest email</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0E5C45}a:hover{color:#093F30}
+</style>
+</helmet>
+<div style="width: 680px; height: 1280px; box-sizing: border-box; background: #FFFFFF; color: #141414; font-family: 'Instrument Sans', sans-serif; font-size: 16px; line-height: 1.55; display: flex; flex-direction: column">
+  <div style="padding: 16px 32px; border-bottom: 1px solid #E3E3DE; display: flex; flex-direction: column; gap: 2px; background: #F6F6F3">
+    <span style="font-size: 13px; color: #5C5C57">From: Tafutakazi &lt;hello@tafutakazi.co.ke&gt;</span>
+    <span style="font-weight: 600">6 new submissions on your tasks</span>
+  </div>
+
+  <div style="max-width: 600px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 32px 24px 40px; display: flex; flex-direction: column; gap: 32px">
+    <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.02em"><span role="img" aria-label="tafutakazi">tafutak<span style="color: #0E5C45">a</span>z<span style="position: relative; display: inline-block; line-height: 1">ı<span aria-hidden="true" style="position: absolute; left: 50%; top: 0.1em; width: 0.165em; height: 0.165em; margin-left: -0.0825em; background: #0E5C45"></span></span><span style="color: #0E5C45">.</span></span></span>
+
+    <p style="margin: 0">Hi Njeri, 6 graduates finished your tasks since yesterday.</p>
+
+    <section style="display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+        <h2 style="margin: 0; font-size: 18px; font-weight: 600">Delivery times dashboard</h2>
+        <span style="color: #5C5C57; font-size: 14px">5 new</span>
+      </div>
+      <div style="display: flex; flex-direction: column; border: 1px solid #E3E3DE; border-radius: 10px">
+        <sc-for list="{{subs}}" as="s" hint-placeholder-count="3">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #EEEEE9">
+            <span style="display: flex; flex-direction: column">
+              <span style="font-weight: 600">{{s.name}}</span>
+              <span style="color: #5C5C57; font-size: 14px">{{s.school}}</span>
+            </span>
+            <span style="color: #5C5C57; font-size: 14px; white-space: nowrap">{{s.video}}</span>
+          </div>
+        </sc-for>
+        <span style="padding: 12px 16px; color: #5C5C57; font-size: 14px">and 2 more</span>
+      </div>
+      <a href="Main.dc.html" style="align-self: flex-start; display: flex; align-items: center; min-height: 46px; padding: 0 20px; border-radius: 8px; background: #0E5C45; color: #FFFFFF; font-weight: 600; text-decoration: none">Review submissions</a>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+        <h2 style="margin: 0; font-size: 18px; font-weight: 600">Social media plan for a new route</h2>
+        <span style="color: #5C5C57; font-size: 14px">1 new</span>
+      </div>
+      <span>Grace Achieng · BCom Marketing, Strathmore 2026</span>
+      <a href="Main.dc.html" style="font-size: 15px">Review</a>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 6px; padding: 16px; background: #F6F6F3; border-radius: 10px">
+      <span style="font-weight: 600">You've given feedback on 12 of 14 submissions (86%)</span>
+      <span style="color: #2E2E2B; font-size: 15px">Stay above 80% to keep up to 7 tasks open. Graduates see your record next to your tasks.</span>
+    </section>
+
+    <p style="margin: 0; color: #2E2E2B">Hired someone? <a href="MyTasks.dc.html">Turn the task off</a> so graduates know.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 20px; border-top: 1px solid #E3E3DE; color: #5C5C57; font-size: 13px">
+      <span>One email a day at most, only when there's something new. Work is never attached: view it on Tafutakazi.</span>
+      <span><a href="#">Stop these emails</a> · You're a recruiter for Kamau &amp; Co. Logistics on Tafutakazi.</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":680,"height":1280}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      subs: [
+        { name: 'Kevin Mutua', school: 'IT, KCA 2025', video: 'Video 2:51' },
+        { name: 'Faith Chebet', school: 'Actuarial Science, Moi 2026', video: 'Video 2:20' },
+        { name: 'Daniel Kiprop', school: 'Economics, Egerton 2025', video: 'Video 3:02' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
