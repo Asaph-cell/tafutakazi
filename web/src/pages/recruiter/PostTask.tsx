@@ -5,7 +5,8 @@ import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { SectionTitle } from '../../components/GradLayout'
 import { Button, Field, LinkButton, Notice, Select } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
-import { ROLES } from '../../lib/lists'
+import { normRole } from '../../lib/lists'
+import { RoleInput } from '../../components/RoleInput'
 import { useAllowance, useRecruiter } from '../../lib/recruiter'
 import { supabase } from '../../lib/supabase'
 
@@ -34,7 +35,7 @@ export default function PostTask() {
     setBusy(true)
     const openings = Number(f.get('openings'))
     const { data, error } = await supabase.from('tasks').insert({
-      role: String(f.get('role')).trim().replace(/\s+/g, ' '),
+      role: normRole(String(f.get('role'))),
       title: String(f.get('title')).trim(),
       instructions: String(f.get('instructions')).trim(),
       minutes_estimate: Number(f.get('minutes')),
@@ -100,12 +101,7 @@ export default function PostTask() {
           )}
 
           <form onSubmit={onSubmit} className="flex flex-col gap-5">
-            <Field id="role" name="role" label="Role you're hiring for" required minLength={2} maxLength={60}
-              list="role-options" autoComplete="off" defaultValue={me?.roles?.[0] ?? ''}
-              placeholder="Start typing, e.g. Data Analyst" hint="Pick a suggestion or type any role." />
-            <datalist id="role-options">
-              {[...new Set([...(me?.roles ?? []), ...ROLES])].map((r) => <option key={r} value={r} />)}
-            </datalist>
+            <RoleInput id="role" name="role" label="Role you're hiring for" required defaultValue={me?.roles?.[0] ?? ''} extra={me?.roles ?? []} />
 
             <div className="flex flex-wrap gap-4">
               <div className="flex-[1_1_100px]"><Field id="openings" name="openings" type="number" min={1} max={50} defaultValue={1} label="Openings" /></div>

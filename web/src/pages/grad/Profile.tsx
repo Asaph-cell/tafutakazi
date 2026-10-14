@@ -6,7 +6,8 @@ import { OtherWorkEditor } from '../../components/OtherWork'
 import { Button, Field, Notice, Select } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { useGrad, useMyActivity, useMySubmissions } from '../../lib/grad'
-import { gradYears, ROLES } from '../../lib/lists'
+import { gradYears, normRole } from '../../lib/lists'
+import { RoleInput } from '../../components/RoleInput'
 import { supabase } from '../../lib/supabase'
 
 const SITE = 'tafutakazi.co.ke'
@@ -76,7 +77,7 @@ export default function Profile() {
         course: String(f.get('course')).trim(),
         institution: String(f.get('institution')).trim() || null,
         grad_year: Number(f.get('year')),
-        track: String(f.get('track')),
+        track: normRole(String(f.get('track'))),
       }).eq('id', session!.user.id),
     ])
     if (a.error || b.error) return setError("Couldn't save. Try again.")
@@ -197,9 +198,7 @@ export default function Profile() {
                 <Select id="year" name="year" label="Year you finished" defaultValue={String(grad.grad_year ?? gradYears()[0])}>
                   {gradYears().map((y) => <option key={y}>{y}</option>)}
                 </Select>
-                <Select id="track" name="track" label="What job do you want?" defaultValue={grad.track}>
-                  {ROLES.map((r) => <option key={r}>{r}</option>)}
-                </Select>
+                <RoleInput id="track" name="track" label="What job do you want?" defaultValue={grad.track} required />
                 <div className="flex gap-2">
                   <Button type="submit" className="min-h-11">Save</Button>
                   <Button type="button" variant="outline" onClick={() => setEditing(false)} className="min-h-11">Cancel</Button>

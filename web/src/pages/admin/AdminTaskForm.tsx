@@ -4,7 +4,8 @@ import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
 import { Button, Field, Notice, Select } from '../../components/ui'
-import { ROLES } from '../../lib/lists'
+import { normRole } from '../../lib/lists'
+import { RoleInput } from '../../components/RoleInput'
 import { supabase } from '../../lib/supabase'
 
 type TaskRow = { id: string; title: string; role: string; instructions: string; minutes_estimate: number; status: string; company_id: string | null }
@@ -66,7 +67,7 @@ export default function AdminTaskForm() {
     const f = new FormData(e.currentTarget)
     const fields = {
       title: String(f.get('title')).trim(),
-      role: String(f.get('role')),
+      role: normRole(String(f.get('role'))),
       instructions: instructions.trim(),
       minutes_estimate: Number(f.get('minutes')),
       status: String(f.get('status')),
@@ -130,10 +131,7 @@ export default function AdminTaskForm() {
             placeholder="e.g. SACCO loan arrears report" />
           <div className="flex flex-wrap gap-4">
             <div className="flex-[2_1_240px]">
-              <Select id="role" name="role" label="Role it's for" defaultValue={task?.role ?? request?.role ?? ''} key={request?.id ?? 'role'} required>
-                <option value="" disabled>Choose one</option>
-                {ROLES.map((r) => <option key={r}>{r}</option>)}
-              </Select>
+              <RoleInput id="role" name="role" label="Role it's for" defaultValue={task?.role ?? request?.role ?? ''} key={request?.id ?? 'role'} required />
             </div>
             <div className="flex-[1_1_160px]">
               <Select id="minutes" name="minutes" label="Time it should take" defaultValue={String(task?.minutes_estimate ?? 180)}>

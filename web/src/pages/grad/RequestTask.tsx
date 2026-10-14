@@ -3,10 +3,11 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { GradLayout, SectionTitle } from '../../components/GradLayout'
 import { ToolPicker } from '../../components/ToolPicker'
-import { Button, Notice, Select } from '../../components/ui'
+import { Button, Notice } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { useGrad } from '../../lib/grad'
-import { ROLES, toolsFor } from '../../lib/lists'
+import { normRole, toolsFor } from '../../lib/lists'
+import { RoleInput } from '../../components/RoleInput'
 import { supabase } from '../../lib/supabase'
 
 type Request = {
@@ -55,7 +56,7 @@ export default function RequestTask() {
     e.preventDefault()
     setError('')
     setBusy(true)
-    const { error } = await supabase.from('task_requests').insert({ grad_id: session!.user.id, role, tools, details: details.trim() })
+    const { error } = await supabase.from('task_requests').insert({ grad_id: session!.user.id, role: normRole(role), tools, details: details.trim() })
     setBusy(false)
     if (error) return setError(error.message.includes('up to 3') ? error.message : "Couldn't send your request. Try again.")
     setDetails('')
@@ -86,9 +87,7 @@ export default function RequestTask() {
         <Notice tone="info">You have 3 open requests. Wait for one to be answered, or remove one below to ask for something else.</Notice>
       ) : (
         <form onSubmit={onSubmit} className="flex flex-col gap-5 rounded-2xl border border-line bg-white p-5">
-          <Select id="role" label="Which role is it for?" value={role} onChange={(e) => { setRole(e.target.value); setTools([]) }} required>
-            {ROLES.map((r) => <option key={r}>{r}</option>)}
-          </Select>
+          <RoleInput id="role" label="Which role is it for?" value={role} onChange={(e) => setRole(e.target.value)} required />
 
           <div className="flex flex-col gap-2">
             <span className="font-semibold">Tools you want to show <span className="font-normal text-muted">(optional)</span></span>

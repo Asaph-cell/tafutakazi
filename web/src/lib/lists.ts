@@ -56,3 +56,9 @@ export function gradYears() {
   const now = new Date().getFullYear()
   return [now, now - 1, now - 2, now - 3]
 }
+
+// Tidy a typed role: trim, single spaces, and use the listed spelling when it matches one ("data analyst" → "Data Analyst").
+export function normRole(raw: string) {
+  const r = raw.trim().replace(/\s+/g, ' ')
+  return ROLES.find((x) => x.toLowerCase() === r.toLowerCase()) ?? r
+}

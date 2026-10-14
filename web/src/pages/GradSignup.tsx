@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AuthShell } from '../components/AuthShell'
 import { Seo } from '../components/Seo'
 import { Button, Field, Notice, Select } from '../components/ui'
-import { gradYears, ROLES } from '../lib/lists'
+import { gradYears, normRole } from '../lib/lists'
+import { RoleInput } from '../components/RoleInput'
 import { supabase, supabaseConfigured } from '../lib/supabase'
 
 export default function GradSignup() {
@@ -32,7 +33,7 @@ export default function GradSignup() {
           course: String(f.get('course')).trim(),
           institution: String(f.get('institution')).trim(),
           grad_year: String(f.get('year')),
-          track: String(f.get('track')),
+          track: normRole(String(f.get('track'))),
         },
       },
     })
@@ -68,10 +69,7 @@ export default function GradSignup() {
             </Select>
           </div>
         </div>
-        <Select id="track" name="track" label="What job do you want?" required defaultValue="">
-          <option value="" disabled>Choose one</option>
-          {ROLES.map((r) => <option key={r}>{r}</option>)}
-        </Select>
+        <RoleInput id="track" name="track" label="What job do you want?" required />
 
         <label className="mt-1 flex items-start gap-2.5 text-[15px]">
           <input type="checkbox" required className="mt-0.5 h-5 w-5 accent-brand" />

@@ -10,7 +10,7 @@ export default function Tasks() {
   const [all, setAll] = useState(false)
 
   const open = (tasks ?? []).filter((t) => t.status === 'live')
-  const shown = all || !grad ? open : open.filter((t) => t.role === grad.track)
+  const shown = all || !grad ? open : open.filter((t) => t.role.toLowerCase() === grad.track.toLowerCase())
   const company = shown.filter((t) => !t.is_practice)
   const practice = shown.filter((t) => t.is_practice)
 

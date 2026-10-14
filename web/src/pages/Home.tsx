@@ -4,15 +4,16 @@ import { PublicHeader } from '../components/PublicHeader'
 import { Seo } from '../components/Seo'
 import { LinkButton } from '../components/ui'
 import { SiteFooter } from '../components/SiteFooter'
+import { WorkScene, type SceneKind } from '../components/WorkScene'
 import { supabase } from '../lib/supabase'
 
 // Example people for the hero. Replace with real graduates (with their permission) before launch.
-const PEOPLE = [
-  { word: 'dashboard.', name: 'Wanjiru Kamau', role: 'Data analysis · Statistics, JKUAT 2026', quote: '"Caught duplicate receipts most people miss."', event: 'Invited to interview by Umoja SACCO', video: 'Grocery sales dashboard · 2:41' },
-  { word: 'campaign.', name: 'Grace Achieng', role: 'Marketing · BCom, Strathmore 2026', quote: '"A clear plan with a budget a small business could afford."', event: 'Invited to interview by Duka Bora', video: 'Social media plan · 2:15' },
-  { word: 'poster.', name: 'Ian Mwangi', role: 'Graphic design · Kenyatta University 2025', quote: '"Clean, readable from across a room, true to the brand."', event: '6 thumbs up from recruiters', video: 'Clinic open-day poster · 2:03' },
-  { word: 'spreadsheet.', name: 'Faith Chebet', role: 'Accounting · Diploma, KCA 2026', quote: '"Every number reconciles, and the summary fits on one page."', event: 'Invited to interview by Pwani Insurance', video: 'Fuel costs summary · 2:30' },
-  { word: 'code.', name: 'Kevin Mutua', role: 'Software · IT, Multimedia University 2025', quote: '"Simple, tested, and the README explains it in a minute."', event: 'Invited to interview by Kamau & Co.', video: 'Delivery tracker app · 2:51' },
+const PEOPLE: { kind: SceneKind; progress: number; word: string; name: string; role: string; quote: string; event: string; video: string }[] = [
+  { kind: 'dashboard', progress: 38, word: 'dashboard.', name: 'Wanjiru Kamau', role: 'Data analysis · Statistics, JKUAT 2026', quote: '"Caught duplicate receipts most people miss."', event: 'Invited to interview by Umoja SACCO', video: 'Grocery sales dashboard · 2:41' },
+  { kind: 'campaign', progress: 55, word: 'campaign.', name: 'Grace Achieng', role: 'Marketing · BCom, Strathmore 2026', quote: '"A clear plan with a budget a small business could afford."', event: 'Invited to interview by Duka Bora', video: 'Social media plan · 2:15' },
+  { kind: 'poster', progress: 27, word: 'poster.', name: 'Ian Mwangi', role: 'Graphic design · Kenyatta University 2025', quote: '"Clean, readable from across a room, true to the brand."', event: '6 thumbs up from recruiters', video: 'Clinic open-day poster · 2:03' },
+  { kind: 'spreadsheet', progress: 64, word: 'spreadsheet.', name: 'Faith Chebet', role: 'Accounting · Diploma, KCA 2026', quote: '"Every number reconciles, and the summary fits on one page."', event: 'Invited to interview by Pwani Insurance', video: 'Fuel costs summary · 2:30' },
+  { kind: 'code', progress: 46, word: 'code.', name: 'Kevin Mutua', role: 'Software · IT, Multimedia University 2025', quote: '"Simple, tested, and the README explains it in a minute."', event: 'Invited to interview by Kamau & Co.', video: 'Delivery tracker app · 2:51' },
 ]
 
 function useCycle(length: number, ms: number) {
@@ -48,7 +49,7 @@ function SwapWord({ i, still }: { i: number; still: boolean }) {
                   opacity: on ? 1 : 0,
                   transform: `translateY(${still || on ? '0' : gone ? '-0.45em' : '0.45em'})`,
                   filter: `blur(${still || on ? 0 : 8}px)`,
-                  transitionDelay: still ? '0ms' : on ? `${140 + j * 32}ms` : gone ? `${j * 16}ms` : '0ms',
+                  transitionDelay: still ? '0ms' : on ? `${200 + j * 45}ms` : gone ? `${j * 22}ms` : '0ms',
                 }}
               >
                 {t}
@@ -79,12 +80,10 @@ function CardDeck({ i, still }: { i: number; still: boolean }) {
             className="deck-card relative flex flex-col gap-3.5 overflow-hidden rounded-2xl border border-line bg-white p-[18px] shadow-[0_1px_2px_rgba(20,20,20,0.04),0_14px_36px_rgba(20,20,20,0.07)] [grid-area:1/1]"
             style={{ zIndex: z, opacity: o, transform: `translateY(${y}) scale(${s})`, filter: `blur(${b}px)`, transformOrigin: '50% 100%' }}
           >
-            <div className="relative flex aspect-video w-full items-center justify-center rounded-[10px] bg-[#1C1F1D]">
-              <span className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#141414"><path d="M8 5v14l11-7z" /></svg>
-              </span>
-              <span className="absolute bottom-2 left-3 text-[13px] text-[#E8E8E3]">{p.video}</span>
-              <span className="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-0.5 text-xs font-semibold text-ink">Example</span>
+            <div className="relative">
+              <WorkScene kind={p.kind} title={p.video} progress={p.progress} on={d === 0} still={still}
+                initials={p.name.split(' ').map((w) => w[0]).join('').slice(0, 2)} />
+              <span className="absolute right-4 top-4 rounded-full bg-ink/80 px-2.5 py-0.5 text-xs font-semibold text-white">Example</span>
             </div>
             <div className="flex flex-col gap-0.5">
               <span className="text-[17px] font-semibold">{p.name}</span>
@@ -96,7 +95,7 @@ function CardDeck({ i, still }: { i: number; still: boolean }) {
               style={{
                 opacity: d === 0 ? 1 : 0,
                 transform: `translateY(${d === 0 || still ? 0 : 6}px)`,
-                transitionDelay: d === 0 && !still ? '700ms' : '0ms',
+                transitionDelay: d === 0 && !still ? '1600ms' : '0ms',
               }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12.5 10 17 19 7" /></svg>
@@ -110,7 +109,7 @@ function CardDeck({ i, still }: { i: number; still: boolean }) {
 }
 
 export default function Home() {
-  const { i, still } = useCycle(PEOPLE.length, 3800)
+  const { i, still } = useCycle(PEOPLE.length, 7000)
   // Shown only once someone has actually been hired.
   const { data: hires = 0 } = useQuery({
     queryKey: ['hire-count'],
