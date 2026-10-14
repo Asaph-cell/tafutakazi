@@ -173,17 +173,13 @@ export function Terms() {
         <li>A company's record (how much of the work it receives gets feedback, and how many invited graduates it contacts) is shown to graduates.</li>
       </Ol>
 
-      <H2>9. Free to use, open tasks and support</H2>
+      <H2>9. Free to use, open tasks and partners</H2>
       <Ol>
         <li>Tafutakazi is free for graduates and recruiters. There are no paid plans. Graduates never pay.</li>
         <li>
           A company can have up to 4 open tasks. A company that gives feedback on at least 80% of the work it receives
           unlocks 3 more, up to 7 open at once. The limit is per company, however many recruiter accounts it has. Tasks
           that are off don't count.
-        </li>
-        <li>
-          Anyone may <Link to="/support">support Tafutakazi</Link> with a voluntary contribution ("buy us a chai"). It is
-          a gift: it buys no extra features, changes nothing on your account and is not refundable.
         </li>
         <li>
           Companies, universities, colleges and NGOs can partner with Tafutakazi by agreement. A partnership never gives
@@ -287,7 +283,6 @@ export function Privacy() {
           (the company name, role and instructions) before they go live. Nothing about graduates is ever sent to it. We
           use Google's free service, under which Google may use that task text to improve its products.
         </li>
-        <li><strong className="text-ink">Safaricom M-Pesa:</strong> only if you choose to send a chai, under Safaricom's own policy.</li>
       </Ul>
       <p className="m-0">
         Each handles data only to provide its service. Some store data outside Kenya, under the safeguards the Data

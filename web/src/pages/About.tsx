@@ -194,7 +194,7 @@ export default function About() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <LinkButton to="/join" variant="light">I just graduated</LinkButton>
             <LinkButton to="/hiring" variant="outlineLight">I'm hiring</LinkButton>
-            <LinkButton to="/support" variant="outlineLight">Partner or support us</LinkButton>
+            <LinkButton to="/partners" variant="outlineLight">Partner with us</LinkButton>
           </div>
         </section>
       </main>

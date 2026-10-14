@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { RequireRole } from './components/RequireRole'
 import Home from './pages/Home'
 
@@ -50,7 +50,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/check-email" element={<CheckEmail />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/support" element={<Support />} />
+        <Route path="/partners" element={<Support />} />
+        <Route path="/support" element={<Navigate to="/partners" replace />} />
         <Route path="/about" element={<About />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />

@@ -7,8 +7,7 @@ export function SiteFooter() {
       <Link to="/about" className="text-muted">About</Link>
       <Link to="/jobs" className="text-muted">Jobs</Link>
       <Link to="/hiring" className="text-muted">For employers</Link>
-      <Link to="/support" className="text-muted">Support us</Link>
-      <Link to="/support" className="text-muted">Partner with us</Link>
+      <Link to="/partners" className="text-muted">Partner with us</Link>
       <Link to="/terms" className="text-muted">Terms</Link>
       <Link to="/privacy" className="text-muted">Privacy</Link>
     </footer>
