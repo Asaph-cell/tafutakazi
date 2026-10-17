@@ -47,7 +47,7 @@ export default function Login() {
     <AuthShell title="Welcome back">
       <Seo title="Log in" />
       <form onSubmit={onSubmit} className="flex max-w-[440px] flex-col gap-4">
-        <Field id="email" type="email" label="Email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+        <Field id="email" name="email" type="email" label="Email" autoComplete="username email" required value={email} onChange={(e) => setEmail(e.target.value)} />
         <Field id="password" name="password" type="password" label="Password" autoComplete="current-password" required />
         {error && <Notice>{error}</Notice>}
         {info && <Notice tone="info">{info}</Notice>}

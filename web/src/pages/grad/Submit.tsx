@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { GradLayout } from '../../components/GradLayout'
@@ -9,6 +9,7 @@ import { toolsFor } from '../../lib/lists'
 import { ToolPicker } from '../../components/ToolPicker'
 import { supabase } from '../../lib/supabase'
 import { stampPreview, StampError } from '../../lib/stamp'
+import { useDraft } from '../../lib/draft'
 
 const MAX_PREVIEW = 5 * 1024 * 1024
 const PREVIEW_TYPES = ['image/png', 'image/jpeg', 'image/webp', 'application/pdf']
@@ -61,6 +62,8 @@ export default function Submit() {
   const [error, setError] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [answers, setAnswers] = useState<string[]>([])
+  // A preview file can't be kept in a draft; we remember its name to ask for it again.
+  const [draftFile, setDraftFile] = useState('')
   const questions = task?.questions ?? []
 
   // Answers already given, when editing.
@@ -69,12 +72,17 @@ export default function Submit() {
     enabled: Boolean(existing),
     queryFn: async () => ((await supabase.rpc('my_answers', { p_task: id })).data as string[] | null) ?? [],
   })
+  const filled = useRef({ answers: false, existing: false })
   useEffect(() => {
-    if (savedAnswers) setAnswers(savedAnswers)
+    if (savedAnswers && !filled.current.answers) {
+      filled.current.answers = true
+      setAnswers(savedAnswers)
+    }
   }, [savedAnswers])
 
   useEffect(() => {
-    if (existing) {
+    if (existing && !filled.current.existing) {
+      filled.current.existing = true
       setSummary(existing.summary)
       setWorkLink(existing.work_link ?? '')
       setVideoUrl(existing.video_url)
@@ -82,6 +90,43 @@ export default function Submit() {
       setTools(existing.tools ?? [])
     }
   }, [existing])
+
+  // Unfinished work is kept on this device until it's submitted.
+  type Draft = { summary: string; workLink: string; videoUrl: string; writeup: string; tools: string[]; answers: string[]; fileName: string }
+  const baseline: Omit<Draft, 'fileName'> = {
+    summary: existing?.summary ?? '', workLink: existing?.work_link ?? '', videoUrl: existing?.video_url ?? '',
+    writeup: existing?.writeup ?? '', tools: existing?.tools ?? [], answers: savedAnswers ?? [],
+  }
+  const current: Draft = { summary, workLink, videoUrl, writeup, tools, answers, fileName: file?.name ?? draftFile }
+  const sameAsSaved = (d: Draft) => !d.fileName && JSON.stringify({ ...d, fileName: undefined, answers: d.answers.filter(Boolean) })
+    === JSON.stringify({ ...baseline, fileName: undefined, answers: baseline.answers.filter(Boolean) })
+  const draft = useDraft<Draft>({
+    key: session ? `${session.user.id}:submit:${id}` : null,
+    value: current,
+    ready: !isLoading && (!existing || savedAnswers !== undefined),
+    isEmpty: sameAsSaved,
+    restore: (d) => {
+      if (sameAsSaved(d)) return
+      setSummary(d.summary)
+      setWorkLink(d.workLink)
+      setVideoUrl(d.videoUrl)
+      setWriteup(d.writeup)
+      setTools(d.tools)
+      setAnswers(d.answers)
+      setDraftFile(d.fileName)
+    },
+  })
+  function startOver() {
+    draft.clear()
+    setSummary(baseline.summary)
+    setWorkLink(baseline.workLink)
+    setVideoUrl(baseline.videoUrl)
+    setWriteup(baseline.writeup)
+    setTools(baseline.tools)
+    setAnswers(baseline.answers)
+    setDraftFile('')
+    setFile(null)
+  }
 
   const words = wordCount(writeup)
   const hasPreview = Boolean(file || existing?.preview_path)
@@ -110,6 +155,7 @@ export default function Submit() {
     if (!PREVIEW_TYPES.includes(f.type)) return setError('The preview must be a PDF, PNG, JPG or WebP file.')
     if (f.size > MAX_PREVIEW) return setError('The preview must be 5 MB or smaller. Export a smaller PDF or a screenshot.')
     setFile(f)
+    setDraftFile('')
   }
 
   async function onSubmit(e: FormEvent) {
@@ -141,6 +187,7 @@ export default function Submit() {
       : await supabase.from('submissions').insert({ ...fields, task_id: id, grad_id: session.user.id })
     setBusy(false)
     if (error) return setError(error.message.includes('live') || error.message.includes('security') ? 'This task is no longer open.' : error.message)
+    draft.clear()
     await queryClient.invalidateQueries()
     navigate('/me', { state: { submitted: task?.title } })
   }
@@ -153,6 +200,7 @@ export default function Submit() {
     const { error } = await supabase.from('submissions').delete().eq('id', existing.id)
     setBusy(false)
     if (error) return setError("Couldn't delete it. Try again.")
+    draft.clear()
     await queryClient.invalidateQueries()
     navigate('/me')
   }
@@ -167,6 +215,16 @@ export default function Submit() {
         <span className="text-muted">{doneCount} of {totalSteps} done</span>
       </div>
 
+      {draft.restoredAt && (
+        <div className="reveal flex flex-wrap items-center justify-between gap-3 rounded-xl border border-brand/30 bg-brand-soft px-4 py-3 text-[15px] text-ink-2">
+          <span>
+            <strong className="text-brand">Welcome back.</strong> We kept what you wrote on {new Date(draft.restoredAt).toLocaleDateString('en-KE', { day: 'numeric', month: 'long' })}.
+            {draftFile && <> Add your preview file again ({draftFile}).</>}
+          </span>
+          <button type="button" onClick={startOver} className="press min-h-9 cursor-pointer rounded-lg border border-line-strong bg-white px-3 text-sm font-semibold text-ink">Start over</button>
+        </div>
+      )}
+
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <Step n={1} title="Your work" done={done.work}>
           <label htmlFor="work" className="text-sm text-muted">Link to your full work</label>
@@ -176,7 +234,7 @@ export default function Submit() {
 
           <label className="press flex min-h-12 cursor-pointer items-center justify-center rounded-[10px] border border-dashed border-[#BDBDB6] bg-[#FAFAF8] px-3 text-center text-[15px]">
             <input type="file" accept={PREVIEW_TYPES.join(',')} className="sr-only" onChange={(e) => chooseFile(e.target.files?.[0])} />
-            {file ? `${file.name} · ${(file.size / 1048576).toFixed(1)} MB` : existing?.preview_path ? 'Preview added · tap to replace' : 'Add a preview: image or PDF, max 5 MB'}
+            {file ? `${file.name} · ${(file.size / 1048576).toFixed(1)} MB` : existing?.preview_path ? 'Preview added · tap to replace' : draftFile ? `Add ${draftFile} again` : 'Add a preview: image or PDF, max 5 MB'}
           </label>
           <span className="text-[13px] text-muted">This is what recruiters see first, so make it your best screenshot or a short PDF.</span>
 
@@ -240,6 +298,9 @@ export default function Submit() {
           <Button type="submit" busy={busy} fill busyLabel="Uploading…" disabled={doneCount < totalSteps} className="w-full sm:w-auto">
             {existing ? 'Save changes' : 'Submit'}
           </Button>
+          {draft.savedAt && (
+            <p className="m-0 mt-1.5 text-center text-[13px] text-muted sm:text-left">✓ Draft saved on this device. You can leave and finish later.</p>
+          )}
           {missing.length > 0 && (
             <p className="m-0 mt-1.5 text-center text-[13px] text-ink-2 sm:text-left">
               <span className="font-semibold">Still needed:</span> {missing.join(' · ')}

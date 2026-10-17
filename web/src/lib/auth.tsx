@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from './supabase'
+import { clearAllDrafts } from './draft'
 
 export type Role = 'grad' | 'recruiter' | 'admin'
 export type Profile = { id: string; role: Role; full_name: string }
@@ -66,6 +67,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (session) setProfile(await loadProfile(session.user.id))
     },
     signOut: async () => {
+      // Unfinished drafts stay with their owner, not the next person on a shared computer.
+      clearAllDrafts()
       await supabase.auth.signOut()
     },
   }
