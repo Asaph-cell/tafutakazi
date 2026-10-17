@@ -4,18 +4,18 @@
 import fs from 'node:fs'
 
 const SR = 44100
-const DUR = 41
+const DUR = 46
 const N = SR * DUR
 const L = new Float32Array(N)
 const R = new Float32Array(N)
 const BEAT = 0.5
 
 const fps = 30
-const CUTS = [150, 450, 600, 780, 930, 1050, 1110].map((f) => f / fps) // whooshes
-const LOGO = 330 / fps // 11s: impact
-const END = 1110 / fps // 37s: final hit
+const CUTS = [150, 300, 600, 750, 930, 1080, 1200, 1260].map((f) => f / fps) // whooshes
+const LOGO = 480 / fps // 16s: impact
+const END = 1260 / fps // 42s: final hit
 const GROOVE_FROM = LOGO
-const GROOVE_TO = 35
+const GROOVE_TO = 40
 
 let seed = 7
 const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 2 ** 32) * 2 - 1
@@ -142,17 +142,18 @@ function impact() {
 }
 
 // ── Opening (0–10s): tense pulse in A minor, clock ticks ────────────────────
-for (let t = 0; t < 10; t += BEAT) {
+for (let t = 0; t < LOGO - 1; t += BEAT) {
   add(t, bass(33, 0.45), 0.35)
-  add(t, tick(), 0.12, 0.3)
-  add(t + 0.25, tick(), 0.07, -0.3)
+  add(t, tick(), 0.05, 0.3)
+  add(t + 0.25, tick(), 0.03, -0.3)
 }
-add(0, pad([57, 60, 64], 10, 2, 1.2, 900), 0.6)
-add(5, pad([45], 5, 1, 1, 600), 0.5)
+add(0, pad([57, 60, 64], LOGO - 1, 2, 1.2, 900), 0.6)
+add(5, pad([45], LOGO - 6, 1, 1, 600), 0.5)
+add(5, pad([52], LOGO - 6, 2, 1, 700), 0.3)
 
 // Riser into the logo
-add(LOGO - 1.6, riser(1.6), 0.55)
-add(LOGO, impact(), 0.9)
+add(LOGO - 1.6, riser(1.6), 0.22)
+add(LOGO, impact(), 0.45)
 
 // ── Groove (11–35s): C – G – Am – F, one chord a bar ────────────────────────
 const chords = [[60, 64, 67], [55, 59, 62, 67], [57, 60, 64], [53, 57, 60, 65]]
@@ -178,12 +179,12 @@ for (let t = GROOVE_FROM, k = 0; t < GROOVE_TO; t += 4 * BEAT, k++) {
 }
 
 // ── Outro: warm chord, final hit on the end card, fade ──────────────────────
-add(35, pad([60, 64, 67, 72], 6, 0.6, 1.5, 1400), 0.6)
-add(END - 1, riser(1), 0.35)
-add(END, impact(), 0.7)
+add(40, pad([60, 64, 67, 72], 6, 0.6, 1.5, 1400), 0.6)
+add(END - 1, riser(1), 0.14)
+add(END, impact(), 0.35)
 add(END, pad([48, 55, 60, 64, 67], 3.5, 0.05, 1.5, 2200), 0.55)
 
-for (const c of CUTS) add(c - 0.35, whoosh(0.7), 0.3, c % 2 ? 0.4 : -0.4)
+for (const c of CUTS) add(c - 0.35, whoosh(0.7), 0.04, c % 2 ? 0.4 : -0.4)
 
 // ── Master: gentle limiter, fades, normalise ────────────────────────────────
 let peak = 0

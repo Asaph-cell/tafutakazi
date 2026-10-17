@@ -4,6 +4,7 @@ import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
 import { LinkButton } from '../../components/ui'
 import { supabase } from '../../lib/supabase'
+import { KIND_LABEL } from '../../lib/opportunity'
 
 type Row = {
   id: string
@@ -13,7 +14,8 @@ type Row = {
   check_notes: string | null
   created_at: string
   company_id: string | null
-  company: { name: string; website: string | null; linkedin: string | null; social: string | null; email_domain: string | null } | null
+  company: { name: string; website: string | null; linkedin: string | null; social: string | null; email_domain: string | null; is_nonprofit: boolean } | null
+  kind: 'job' | 'internship' | 'graduate_trainee' | 'volunteer'
   submissions: { id: string }[]
   ai_checks: { status: 'sent' | 'done' | 'failed'; verdict: 'pass' | 'review' | null; reason: string | null; sent_at: string }[]
 }
@@ -37,7 +39,7 @@ export default function AdminTasks() {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('tasks')
-        .select('id, title, role, status, check_notes, created_at, company_id, company:companies(name, website, linkedin, social, email_domain), submissions(id), ai_checks(status, verdict, reason, sent_at)')
+        .select('id, title, role, status, check_notes, created_at, company_id, kind, company:companies(name, website, linkedin, social, email_domain, is_nonprofit), submissions(id), ai_checks(status, verdict, reason, sent_at)')
         .order('created_at', { ascending: false })
       if (error) throw error
       return (data ?? []) as unknown as Row[]
@@ -63,6 +65,14 @@ export default function AdminTasks() {
 
   async function setStatus(id: string, status: Row['status'], note?: string) {
     await supabase.from('tasks').update({ status, check_notes: note ?? null }).eq('id', id)
+    queryClient.invalidateQueries({ queryKey: ['admin-tasks'] })
+  }
+
+  async function toggleNonprofit(t: Row) {
+    if (!t.company_id || !t.company) return
+    const next = !t.company.is_nonprofit
+    if (next && !window.confirm(`Mark ${t.company.name} as a checked non-profit? They'll be able to post volunteer roles.`)) return
+    await supabase.from('companies').update({ is_nonprofit: next }).eq('id', t.company_id)
     queryClient.invalidateQueries({ queryKey: ['admin-tasks'] })
   }
 
@@ -130,6 +140,13 @@ export default function AdminTasks() {
                       {t.company ? t.company.name : 'Practice task'} · {t.role} · {t.submissions.length} submissions
                     </span>
                     {links.length > 0 && <span className="break-all text-[13px] text-muted">Proof: {links.join(' · ')}</span>}
+                    {t.company && (
+                      <span className="text-[13px] text-muted">
+                        {t.kind !== 'job' && <strong className="text-ink">{KIND_LABEL[t.kind]} · </strong>}
+                        {t.company.is_nonprofit ? 'Checked non-profit' : 'Company'} ·{' '}
+                        <button onClick={() => toggleNonprofit(t)} className="press cursor-pointer border-0 bg-transparent p-0 text-[13px] text-brand underline">{t.company.is_nonprofit ? 'Undo non-profit' : 'Mark as non-profit'}</button>
+                      </span>
+                    )}
                     {t.check_notes && <span className="text-[13px] text-danger">{t.check_notes}</span>}
                     {t.status === 'checking' && <AiNote checks={t.ai_checks} />}
                   </div>

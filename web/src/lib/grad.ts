@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from './supabase'
 import { useAuth } from './auth'
+import type { Kind } from './opportunity'
 
 export type CompanyRecord = { received: number; viewed: number; feedback: number; invited?: number; contacted?: number }
 
@@ -23,6 +24,11 @@ export type TaskCard = {
   company_social: string | null
   record: CompanyRecord | null
   submitted: boolean
+  kind: Kind
+  stipend: string | null
+  duration_months: number | null
+  hours_per_week: number | null
+  questions: string[]
 }
 
 export type GradRow = {

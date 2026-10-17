@@ -171,6 +171,16 @@ export function Terms() {
           for money of any kind gets the company removed.
         </li>
         <li>A company's record (how much of the work it receives gets feedback, and how many invited graduates it contacts) is shown to graduates.</li>
+        <li>
+          A task can lead to a job, an internship, a graduate trainee role or a volunteer role. Internships and graduate
+          trainee roles must state their stipend or pay; unpaid internships are not allowed. Only organisations we have
+          checked as non-profits may post volunteer roles.
+        </li>
+        <li>
+          Employers may ask up to 3 short, fair screening questions, never about tribe, religion, age, marital status or
+          health. They may move a shortlist of up to 15 people to a second round: a short follow-up answered on video,
+          which should take under 2 hours.
+        </li>
       </Ol>
 
       <H2>9. Free to use, open tasks and partners</H2>
@@ -226,6 +236,8 @@ export function Privacy() {
     ['Name, job title, work email, company, website, LinkedIn or business social media page, roles hired for', 'Recruiters', 'Your account, and showing graduates your company is real'],
     ['Tasks posted', 'Recruiters', 'Showing them to graduates, and checking them before they go live'],
     ['Thumbs up, comments, invites and their status, views', 'Recruiters and graduates', 'Feedback for graduates, and each company\'s record'],
+    ['Answers to an employer\'s screening questions, and second-round answers', 'Graduates', 'Shown only to the employer who asked'],
+    ['Scores an employer gives to work on its own task', 'Recruiters', 'Seen only by that employer, to rank the work it received'],
     ['Who opened which work and when', 'Everyone signed in', 'Security, tracing leaks, fixing problems'],
   ]
   return (

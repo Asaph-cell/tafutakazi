@@ -60,6 +60,18 @@ export default function Submit() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
+  const [answers, setAnswers] = useState<string[]>([])
+  const questions = task?.questions ?? []
+
+  // Answers already given, when editing.
+  const { data: savedAnswers } = useQuery({
+    queryKey: ['my-answers', id],
+    enabled: Boolean(existing),
+    queryFn: async () => ((await supabase.rpc('my_answers', { p_task: id })).data as string[] | null) ?? [],
+  })
+  useEffect(() => {
+    if (savedAnswers) setAnswers(savedAnswers)
+  }, [savedAnswers])
 
   useEffect(() => {
     if (existing) {
@@ -77,7 +89,9 @@ export default function Submit() {
     work: isLink(workLink) && hasPreview && tools.length > 0,
     video: isLink(videoUrl),
     writeup: words >= MIN_WORDS && summary.trim().length >= 10,
+    ...(questions.length ? { answers: questions.every((_, i) => (answers[i] ?? '').trim().length > 0) } : {}),
   }
+  const totalSteps = Object.keys(done).length
   const doneCount = Object.values(done).filter(Boolean).length
   // Exactly what's still stopping the submission, in plain words.
   const missing = [
@@ -87,6 +101,7 @@ export default function Submit() {
     !isLink(videoUrl) && 'your video link (starting with https://)',
     summary.trim().length < 10 && 'your one-sentence summary',
     words < MIN_WORDS && `${MIN_WORDS - words} more ${MIN_WORDS - words === 1 ? 'word' : 'words'} in your write-up`,
+    questions.length > 0 && !done.answers && "answers to the employer's questions",
   ].filter(Boolean) as string[]
 
   function chooseFile(f: File | undefined) {
@@ -99,7 +114,7 @@ export default function Submit() {
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault()
-    if (doneCount < 3 || !session) return
+    if (doneCount < totalSteps || !session) return
     setBusy(true)
     setError('')
     let previewPath = existing?.preview_path ?? null
@@ -120,7 +135,7 @@ export default function Submit() {
       }
       if (existing?.preview_path) await supabase.storage.from('previews').remove([existing.preview_path])
     }
-    const fields = { summary: summary.trim(), work_link: workLink.trim(), preview_path: previewPath, video_url: videoUrl.trim(), writeup: writeup.trim(), tools }
+    const fields = { summary: summary.trim(), work_link: workLink.trim(), preview_path: previewPath, video_url: videoUrl.trim(), writeup: writeup.trim(), tools, answers: questions.map((_, i) => (answers[i] ?? '').trim()) }
     const { error } = existing
       ? await supabase.from('submissions').update(fields).eq('id', existing.id)
       : await supabase.from('submissions').insert({ ...fields, task_id: id, grad_id: session.user.id })
@@ -149,7 +164,7 @@ export default function Submit() {
       <Link to={`/tasks/${id}`} className="flex min-h-11 items-center self-start text-[15px] no-underline">← {task?.title ?? 'Back to the task'}</Link>
       <div className="-mt-4 flex flex-col gap-1">
         <h1 className="m-0 text-[28px] font-bold tracking-[-0.03em] sm:text-[34px]">{existing ? 'Edit your submission' : 'Submit your work'}</h1>
-        <span className="text-muted">{doneCount} of 3 done</span>
+        <span className="text-muted">{doneCount} of {totalSteps} done</span>
       </div>
 
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
@@ -204,11 +219,25 @@ export default function Submit() {
           </div>
         </Step>
 
+        {questions.length > 0 && (
+          <Step n={4} title="The employer's questions" done={Boolean(done.answers)}>
+            <span className="text-sm text-muted">Only this employer sees your answers.</span>
+            {questions.map((q, i) => (
+              <div key={i} className="flex flex-col gap-1.5">
+                <label htmlFor={`answer-${i}`} className="text-sm font-semibold">{q}</label>
+                <textarea id={`answer-${i}`} rows={2} maxLength={600} value={answers[i] ?? ''}
+                  onChange={(e) => setAnswers(questions.map((_, j) => (j === i ? e.target.value : answers[j] ?? '')))}
+                  className="w-full resize-y rounded-[10px] border border-line-strong bg-white p-3 text-base" />
+              </div>
+            ))}
+          </Step>
+        )}
+
         <span className="text-sm text-muted">Only signed-in recruiters can see your work. Other graduates can't.</span>
         {error && <Notice>{error}</Notice>}
 
         <div className="sticky bottom-[72px] -mx-5 border-t border-line bg-ground/95 px-5 py-3 backdrop-blur sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:p-0">
-          <Button type="submit" disabled={doneCount < 3 || busy} className="w-full sm:w-auto">
+          <Button type="submit" disabled={doneCount < totalSteps || busy} className="w-full sm:w-auto">
             {busy ? 'Submitting…' : existing ? 'Save changes' : 'Submit'}
           </Button>
           {missing.length > 0 && (

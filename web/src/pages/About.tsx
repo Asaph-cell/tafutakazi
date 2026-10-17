@@ -4,7 +4,14 @@ import { Seo, SITE_URL } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
 import { LinkButton } from '../components/ui'
 
-const SOURCE = 'https://www.businessdailyafrica.com/bd/economy/kenya-s-youth-joblessness-highest-in-the-region-5432820'
+// Revised operational validity estimates, Sackett et al. (2022), Table 3.
+const EVIDENCE: [string, number, boolean][] = [
+  ['A sample of their real work', 0.33, true],
+  ['A free-flowing, unstructured interview', 0.19, false],
+  ['How many years of experience they have', 0.07, false],
+]
+
+const SOURCE ='https://www.businessdailyafrica.com/bd/economy/kenya-s-youth-joblessness-highest-in-the-region-5432820'
 
 const stats = [
   ['286,695', 'graduates from universities and TVET colleges entered the job market in Kenya in 2024'],
@@ -148,6 +155,42 @@ export default function About() {
           </div>
         </Section>
 
+        <Section eyebrow="The evidence" title="Real work says more than years of experience">
+          <p className="m-0 max-w-[66ch] text-[17px] leading-relaxed text-ink-2">
+            Researchers have spent decades measuring which hiring methods actually predict how well someone will do the
+            job. The most thorough recent review of that research found that a
+            sample of a person's real work predicts their performance far better than how many years of experience
+            they have.
+          </p>
+          <div className="flex max-w-[720px] flex-col gap-4 rounded-2xl border border-line bg-white p-6">
+            {EVIDENCE.map(([label, value, highlight]) => (
+              <div key={label as string} className="flex flex-col gap-1.5">
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className={highlight ? 'font-semibold text-ink' : 'text-ink-2'}>{label as string}</span>
+                  <span className={`tabular-nums ${highlight ? 'font-semibold text-brand' : 'text-ink-2'}`}>{(value as number).toFixed(2)}</span>
+                </div>
+                <div className="h-2.5 rounded-full bg-[#EEEEE9]">
+                  <div className="h-full rounded-full" style={{ width: `${((value as number) / 0.5) * 100}%`, background: highlight ? '#0E5C45' : '#A9A9A2' }} />
+                </div>
+              </div>
+            ))}
+            <span className="text-[13px] text-muted">How strongly each method predicts job performance. 0 means no link, 1 a perfect one.</span>
+          </div>
+          <p className="m-0 max-w-[66ch] text-[17px] leading-relaxed text-ink-2">
+            Years of experience, the very thing most job ads ask for, turns out to be one of the weakest signals of how
+            well someone will work. A finished task is one of the strongest. That is why every opportunity on
+            Tafutakazi starts with one.
+          </p>
+          <span className="max-w-[80ch] text-sm leading-relaxed text-muted">
+            Sources: Sackett, P. R., Zhang, C., Berry, C. M., &amp; Lievens, F. (2022). Revisiting meta-analytic estimates of
+            validity in personnel selection. <em>Journal of Applied Psychology</em>, 107(11), 2040–2068.{' '}
+            <a href="https://doi.org/10.1037/apl0000994" target="_blank" rel="noopener noreferrer">doi.org/10.1037/apl0000994</a>.
+            Updating Schmidt, F. L., &amp; Hunter, J. E. (1998). The validity and utility of selection methods in personnel
+            psychology. <em>Psychological Bulletin</em>, 124(2), 262–274.{' '}
+            <a href="https://doi.org/10.1037/0033-2909.124.2.262" target="_blank" rel="noopener noreferrer">doi.org/10.1037/0033-2909.124.2.262</a>.
+          </span>
+        </Section>
+
         <Section eyebrow="What we believe" title="The principles behind every decision">
           <div className="grid gap-x-10 gap-y-7 md:grid-cols-2">
             {beliefs.map(([title, body]) => (
@@ -180,9 +223,8 @@ export default function About() {
 
         <Section eyebrow="Who runs it" title="An independent project, built in Kenya">
           <p className="m-0 max-w-[66ch] text-[17px] leading-relaxed text-ink-2">
-            Tafutakazi is an independent project, free for everyone who uses it. It is kept going by people who believe in it, through
-            small contributions and partnerships with companies, universities and organisations that want more young
-            Kenyans in work. Success is measured in one number: how many graduates get their first job.
+            Tafutakazi is an independent project, free for everyone who uses it. It is kept going by people who believe in it, and
+            by partnerships with companies, universities and organisations that want more young Kenyans in work. Success is measured in one number: how many graduates get their first job.
           </p>
           <p className="m-0 text-[17px] text-ink-2">
             Questions, ideas or partnerships: <a href="mailto:hello@tafutakazi.co.ke">hello@tafutakazi.co.ke</a>

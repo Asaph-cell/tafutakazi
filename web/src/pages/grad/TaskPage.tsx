@@ -5,6 +5,7 @@ import { GradLayout, SectionTitle } from '../../components/GradLayout'
 import { Button, LinkButton, Notice } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { minutesLabel, recordLine, useTask } from '../../lib/grad'
+import { KIND_LABEL } from '../../lib/opportunity'
 import { supabase } from '../../lib/supabase'
 
 type TaskFile = { id: string; variant: string; storage_path: string | null; public_url: string | null; file_name: string; size_bytes: number | null }
@@ -83,8 +84,12 @@ export default function TaskPage() {
       </div>
 
       <div className="-mt-2 flex flex-wrap gap-2 text-sm">
+        {task.kind && task.kind !== 'job' && <span className="rounded-full bg-ink px-3 py-1.5 font-semibold text-white">{KIND_LABEL[task.kind]}</span>}
         <span className="rounded-full border border-line bg-white px-3 py-1.5">{minutesLabel(task.minutes_estimate)}</span>
-        {task.openings && <span className="rounded-full bg-brand-soft px-3 py-1.5 font-semibold text-brand">{task.openings} {task.openings === 1 ? 'job' : 'jobs'} open</span>}
+        {task.stipend && <span className="rounded-full border border-line bg-white px-3 py-1.5">{task.stipend}</span>}
+        {task.duration_months && <span className="rounded-full border border-line bg-white px-3 py-1.5">{task.duration_months} {task.duration_months === 1 ? 'month' : 'months'}</span>}
+        {task.kind === 'volunteer' && task.hours_per_week && <span className="rounded-full border border-line bg-white px-3 py-1.5">{task.hours_per_week} hrs a week</span>}
+        {task.openings && <span className="rounded-full bg-brand-soft px-3 py-1.5 font-semibold text-brand">{task.openings} {task.kind === 'internship' ? (task.openings === 1 ? 'place' : 'places') : task.openings === 1 ? 'job' : 'jobs'} open</span>}
         {task.location && <span className="rounded-full border border-line bg-white px-3 py-1.5">{task.location}</span>}
         {task.salary_range && <span className="rounded-full border border-line bg-white px-3 py-1.5">{task.salary_range}</span>}
         {task.start_note && <span className="rounded-full border border-line bg-white px-3 py-1.5">Starts: {task.start_note}</span>}

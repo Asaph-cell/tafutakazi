@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { minutesLabel, recordLine, type TaskCard } from '../lib/grad'
+import { termsLine } from '../lib/opportunity'
 
 export function TaskCardLink({ task }: { task: TaskCard }) {
   const record = recordLine(task.record)
@@ -13,6 +14,7 @@ export function TaskCardLink({ task }: { task: TaskCard }) {
       <span className="text-sm text-muted">
         {task.is_practice ? 'Tafutakazi practice task' : task.company_name} · {minutesLabel(task.minutes_estimate)}
       </span>
+      {termsLine(task) && <span className="text-[13px] font-semibold text-ink-2">{termsLine(task)}</span>}
       {task.openings && (
         <span className="text-[13px] font-semibold text-brand">
           {task.openings} {task.openings === 1 ? 'job' : 'jobs'} open{task.location ? ` · ${task.location}` : ''}

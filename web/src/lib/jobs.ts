@@ -1,6 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from './supabase'
 import { SITE_URL } from '../components/Seo'
+import { KIND_LABEL, termsLine, type Kind } from './opportunity'
+
+// Google's employment types for each kind of opportunity.
+const EMPLOYMENT: Record<Kind, string | string[]> = { job: 'FULL_TIME', internship: 'INTERN', graduate_trainee: ['FULL_TIME', 'TEMPORARY'], volunteer: 'VOLUNTEER' }
 
 export type Job = {
   id: string
@@ -19,6 +23,10 @@ export type Job = {
   company_linkedin: string | null
   company_social: string | null
   industry: string
+  kind: Kind
+  stipend: string | null
+  duration_months: number | null
+  hours_per_week: number | null
 }
 
 export function useJobs(id?: string) {
@@ -55,9 +63,10 @@ export function jobPostingLd(job: Job) {
   return {
     '@context': 'https://schema.org/',
     '@type': 'JobPosting',
-    title: `${job.role}: ${job.title}`,
+    title: job.kind === 'job' ? `${job.role}: ${job.title}` : `${job.role} ${KIND_LABEL[job.kind].toLowerCase()}: ${job.title}`,
     description:
-      `<p>${job.company_name} is hiring a ${job.role} and is open to fresh graduates with no work experience. ` +
+      `<p>${job.company_name} ${job.kind === 'job' ? `is hiring a ${job.role}` : `is offering a ${job.role} ${KIND_LABEL[job.kind].toLowerCase()} role`} and is open to fresh graduates with no work experience. ` +
+      (termsLine(job) ? `${termsLine(job)}. ` : '') +
       `Do this short task on Tafutakazi (about ${Math.round(job.minutes_estimate / 60)} hours) to show what you can do. ` +
       `The company sees your work and invites the people it wants to interview.</p>` +
       paragraphs,
@@ -70,6 +79,7 @@ export function jobPostingLd(job: Job) {
       : { jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressCountry: 'KE' } } }),
     ...(job.openings ? { totalJobOpenings: job.openings } : {}),
     ...(salary(job.salary_range) ? { baseSalary: salary(job.salary_range) } : {}),
+    employmentType: EMPLOYMENT[job.kind] ?? 'FULL_TIME',
     experienceRequirements: { '@type': 'OccupationalExperienceRequirements', monthsOfExperience: 0 },
     directApply: false,
     url: `${SITE_URL}/jobs/${job.id}`,

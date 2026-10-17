@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
+import { Applicants } from '../../components/Applicants'
 import { LinkButton, Notice } from '../../components/ui'
 import { useAllowance, useMyTasks, type MyTask } from '../../lib/recruiter'
 import { supabase } from '../../lib/supabase'
@@ -11,36 +12,6 @@ const statusLabel: Record<MyTask['status'], string> = {
   live: 'Live',
   flagged: 'Paused',
   off: 'Off',
-}
-
-type Sub = { submission_id: string; grad_id: string; full_name: string; course: string; summary: string; created_at: string; answered: boolean; invited: boolean }
-
-function Submissions({ taskId }: { taskId: string }) {
-  const { data, isLoading } = useQuery({
-    queryKey: ['task-submissions', taskId],
-    queryFn: async () => {
-      const { data, error } = await supabase.rpc('task_submissions', { p_task: taskId })
-      if (error) throw error
-      return (data ?? []) as Sub[]
-    },
-  })
-  if (isLoading) return <p className="m-0 text-sm text-muted">Loading…</p>
-  if (!data?.length) return <p className="m-0 text-sm text-muted">No submissions yet. You'll get a daily email when work comes in.</p>
-  return (
-    <div className="flex flex-col divide-y divide-[#EEEEE9] rounded-lg border border-line">
-      {data.map((s) => (
-        <Link key={s.submission_id} to={`/browse/${s.grad_id}`} className="flex flex-wrap items-baseline justify-between gap-2 px-4 py-3 text-ink no-underline hover:bg-ground hover:text-ink">
-          <span className="flex min-w-0 flex-col">
-            <span className="font-semibold">{s.full_name} <span className="font-normal text-muted">· {s.course}</span></span>
-            <span className="text-sm text-ink-2">{s.summary}</span>
-          </span>
-          <span className={`text-sm ${s.invited ? 'font-semibold text-brand' : s.answered ? 'text-muted' : 'font-semibold text-ink'}`}>
-            {s.invited ? 'Invited' : s.answered ? 'Feedback given' : 'Needs your feedback'}
-          </span>
-        </Link>
-      ))}
-    </div>
-  )
 }
 
 export default function MyTasks() {
@@ -89,7 +60,7 @@ export default function MyTasks() {
                 </div>
                 <button onClick={() => setOpen(open === t.id ? null : t.id)} aria-expanded={open === t.id}
                   className="press min-h-11 cursor-pointer border-0 bg-transparent text-sm font-semibold text-brand">
-                  {open === t.id ? 'Hide submissions' : 'See submissions'}
+                  {open === t.id ? 'Hide applicants' : 'Review applicants'}
                 </button>
                 <div className="flex items-center gap-2.5">
                   <span className="min-w-7 text-sm text-ink-2">{on ? 'On' : 'Off'}</span>
@@ -102,7 +73,7 @@ export default function MyTasks() {
                 </div>
               </div>
               {!on && t.received > 0 && <span className="-mt-2 text-sm text-muted">Off · graduates who did it are told in their daily email.</span>}
-              {open === t.id && <Submissions taskId={t.id} />}
+              {open === t.id && <Applicants taskId={t.id} />}
             </div>
           )
         })}

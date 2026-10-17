@@ -14,8 +14,8 @@ const CORAL = '#E07A5F'
 const MUTED = '#77776F'
 
 // Scene starts (frames at 30fps). Music is timed to these.
-const S = { hook: 0, stats: 150, logo: 330, step1: 450, step2: 600, step3: 780, hiring: 930, free: 1050, end: 1110 }
-export const TOTAL = 1230
+const S = { hook: 0, loop: 150, stats: 300, logo: 480, step1: 600, step2: 750, step3: 930, hiring: 1080, free: 1200, end: 1260 }
+export const TOTAL = 1380
 
 const E = Easing.bezier(0.22, 1, 0.36, 1)
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const
@@ -132,6 +132,81 @@ function Hook() {
         <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', padding: v ? '0 70px' : 0 }}>
           <div style={{ fontSize: v ? 140 : 150, fontWeight: 700, letterSpacing: '-0.045em', textAlign: 'center', lineHeight: 1.02 }}>
             <Words text="But you just graduated." start={112} gap={5} color={(w) => (w === 'graduated.' ? MINT : undefined)} />
+          </div>
+        </AbsoluteFill>
+      </Camera>
+    </AbsoluteFill>
+  )
+}
+
+// ─── 1b. The loop ──────────────────────────────────────────────────────────
+// Two arrows chasing each other round a ring between "Job" and "Experience", speeding up.
+function LoopRing({ size }: { size: number }) {
+  const f = useCurrentFrame()
+  const { fps } = useVideoConfig()
+  const enter = spring({ frame: f - 4, fps, config: { damping: 15, stiffness: 110 } })
+  // Angle grows faster and faster, so the loop feels inescapable.
+  const angle = 40 * (f / fps) + 26 * (f / fps) ** 2
+  const r = 200
+  const arc = (from: number, to: number) => {
+    const a = (d: number) => [300 + r * Math.cos((d - 90) * Math.PI / 180), 300 + r * Math.sin((d - 90) * Math.PI / 180)]
+    const [x1, y1] = a(from)
+    const [x2, y2] = a(to)
+    return `M ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2}`
+  }
+  const pill = (label: string, y: number, color: string, at: number): ReactNode => {
+    const p = spring({ frame: f - at, fps, config: { damping: 12 } })
+    return (
+      <div style={{ position: 'absolute', left: '50%', top: y, transform: `translate(-50%,-50%) scale(${p})`, padding: '16px 34px', borderRadius: 99, background: color, color: color === MINT ? INK : '#fff', fontSize: 40, fontWeight: 700, whiteSpace: 'nowrap', boxShadow: '0 10px 30px rgba(0,0,0,0.35)' }}>
+        {label}
+      </div>
+    )
+  }
+  return (
+    <div style={{ position: 'relative', width: size, height: size, transform: `scale(${(size / 600) * (0.85 + enter * 0.15)})`, transformOrigin: 'top left', opacity: Math.min(1, enter) }}>
+      <div style={{ position: 'absolute', inset: 0, width: 600, height: 600 }}>
+        <svg width="600" height="600" viewBox="0 0 600 600" style={{ position: 'absolute', inset: 0 }}>
+          <defs>
+            <marker id="head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill={MINT} />
+            </marker>
+          </defs>
+          <circle cx="300" cy="300" r={r} fill="none" stroke="#2E312E" strokeWidth="18" />
+          <g style={{ transform: `rotate(${angle}deg)`, transformOrigin: '300px 300px' }}>
+            <path d={arc(20, 150)} fill="none" stroke={MINT} strokeWidth="14" strokeLinecap="round" markerEnd="url(#head)" />
+            <path d={arc(200, 330)} fill="none" stroke={MINT} strokeWidth="14" strokeLinecap="round" markerEnd="url(#head)" />
+          </g>
+        </svg>
+        {pill('Job', 100, '#2A2D2A', 12)}
+        {pill('Experience', 500, '#2A2D2A', 20)}
+        <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', fontSize: 28, fontWeight: 600, color: '#77776F', letterSpacing: '0.1em', textTransform: 'uppercase', opacity: t(f, 30, 45) }}>
+          The loop
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Loop() {
+  const f = useCurrentFrame()
+  const v = useV()
+  return (
+    <AbsoluteFill style={{ background: INK, color: '#fff' }}>
+      <Camera from={1.03} to={1.08} dur={150}>
+        <AbsoluteFill style={{ flexDirection: v ? 'column' : 'row', alignItems: 'center', justifyContent: 'center', gap: v ? 70 : 110, padding: v ? '0 70px' : '0 150px' }}>
+          <div style={{ flex: v ? '0 0 auto' : '0 0 600px', order: v ? 0 : 1 }}>
+            <LoopRing size={v ? 620 : 600} />
+          </div>
+          <div style={{ flex: v ? '0 0 auto' : 1, display: 'flex', flexDirection: 'column', gap: 30, textAlign: v ? 'center' : 'left' }}>
+            <div style={{ fontSize: v ? 78 : 76, fontWeight: 700, letterSpacing: '-0.035em', lineHeight: 1.05 }}>
+              <Words text="Huwezi pata job bila experience…" start={10} gap={5} style={{ justifyContent: v ? 'center' : 'flex-start' }} />
+            </div>
+            <div style={{ fontSize: v ? 78 : 76, fontWeight: 700, letterSpacing: '-0.035em', lineHeight: 1.05, color: MINT }}>
+              <Words text="…na huwezi pata experience bila job." start={52} gap={5} style={{ justifyContent: v ? 'center' : 'flex-start' }} />
+            </div>
+            <div style={{ fontSize: v ? 32 : 30, color: '#9A9A92', ...rise(f, 96, 20) }}>
+              No job without experience. No experience without a job.
+            </div>
           </div>
         </AbsoluteFill>
       </Camera>
@@ -449,7 +524,8 @@ function End() {
 
 // ─── Timeline ──────────────────────────────────────────────────────────────
 const scenes: [number, number, () => JSX.Element][] = [
-  [S.hook, S.stats, Hook],
+  [S.hook, S.loop, Hook],
+  [S.loop, S.stats, Loop],
   [S.stats, S.logo, Stats],
   [S.logo, S.step1, Logo],
   [S.step1, S.step2, PickTask],
@@ -464,7 +540,7 @@ export const Intro = () => (
   <AbsoluteFill style={{ fontFamily, background: INK }}>
     {scenes.map(([from, to, Scene], i) => (
       <Sequence key={i} from={from} durationInFrames={to - from} premountFor={10}>
-        {i < scenes.length - 1 && i !== 1 ? <Exit at={to - from}><Scene /></Exit> : <Scene />}
+        {i < scenes.length - 1 && Scene !== Stats ? <Exit at={to - from}><Scene /></Exit> : <Scene />}
       </Sequence>
     ))}
     <Audio src={staticFile('music.wav')} />

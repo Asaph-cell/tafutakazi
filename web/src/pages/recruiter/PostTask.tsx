@@ -9,6 +9,7 @@ import { normRole } from '../../lib/lists'
 import { RoleInput } from '../../components/RoleInput'
 import { useAllowance, useRecruiter } from '../../lib/recruiter'
 import { supabase } from '../../lib/supabase'
+import { KIND_LABEL, KINDS, STARTER_RUBRIC, type Kind, type RubricPart } from '../../lib/opportunity'
 
 const MINUTES = [60, 90, 120, 150, 180, 210, 240]
 const MAX_FILE = 20 * 1024 * 1024
@@ -22,6 +23,11 @@ export default function PostTask() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [posted, setPosted] = useState('')
+  const [kind, setKind] = useState<Kind>('job')
+  const [questions, setQuestions] = useState<string[]>([])
+  const [rubric, setRubric] = useState<RubricPart[]>([])
+  const rubricTotal = rubric.reduce((n, r) => n + (Number(r.weight) || 0), 0)
+  const rubricBad = rubric.length > 0 && (rubricTotal !== 100 || rubric.some((r) => r.name.trim().length < 2))
 
   const company = me?.company
   const industry = company?.industry.toLowerCase() ?? 'your industry'
@@ -32,6 +38,7 @@ export default function PostTask() {
     setError('')
     const f = new FormData(e.currentTarget)
     if (file && file.size > MAX_FILE) return setError('The data file must be 20 MB or smaller.')
+    if (rubricBad) return setError('Give every part of the scoring guide a name, and make the weights add up to 100.')
     setBusy(true)
     const openings = Number(f.get('openings'))
     const { data, error } = await supabase.from('tasks').insert({
@@ -42,7 +49,13 @@ export default function PostTask() {
       openings: openings > 0 ? openings : null,
       location: String(f.get('location')) || null,
       start_note: String(f.get('start')).trim() || null,
-      salary_range: String(f.get('salary')).trim() || null,
+      salary_range: kind === 'job' ? String(f.get('salary') ?? '').trim() || null : null,
+      kind,
+      stipend: kind === 'internship' || kind === 'graduate_trainee' ? String(f.get('stipend')).trim() || null : null,
+      duration_months: kind === 'job' ? null : Number(f.get('months')),
+      hours_per_week: kind === 'volunteer' ? Number(f.get('hours')) || null : null,
+      questions: questions.map((q) => q.trim()).filter(Boolean),
+      rubric: rubric.map((r) => ({ name: r.name.trim(), weight: Number(r.weight) })),
       status: 'checking',
       // Recruiters get their own company from the database anyway; this matters when an admin posts a test task.
       company_id: company?.id,
@@ -101,6 +114,42 @@ export default function PostTask() {
           )}
 
           <form onSubmit={onSubmit} className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
+              <span className="font-semibold">What is it for?</span>
+              <div className="flex flex-wrap gap-2" role="group" aria-label="Type">
+                {KINDS.map((k) => {
+                  const locked = k === 'volunteer' && !company?.is_nonprofit
+                  return (
+                    <button key={k} type="button" aria-pressed={kind === k} disabled={locked} onClick={() => setKind(k)}
+                      className={`press min-h-11 cursor-pointer rounded-full border px-4 text-sm disabled:cursor-not-allowed disabled:opacity-45 ${kind === k ? 'border-ink bg-ink text-white' : 'border-line-strong bg-white text-ink'}`}>
+                      {KIND_LABEL[k]}
+                    </button>
+                  )
+                })}
+              </div>
+              {!company?.is_nonprofit && (
+                <span className="text-[13px] text-muted">Volunteer roles are for checked non-profits only. Email hello@tafutakazi.co.ke to have your organisation checked.</span>
+              )}
+            </div>
+
+            {kind !== 'job' && (
+              <div className="flex flex-wrap gap-4">
+                <div className="flex-[1_1_160px]">
+                  <Select id="months" name="months" label="How long" defaultValue="6">
+                    {[1, 2, 3, 4, 5, 6, 9, 12, 18, 24].map((m) => <option key={m} value={m}>{m} {m === 1 ? 'month' : 'months'}</option>)}
+                  </Select>
+                </div>
+                {kind === 'volunteer' ? (
+                  <div className="flex-[1_1_160px]"><Field id="hours" name="hours" type="number" min={1} max={60} required defaultValue={10} label="Hours a week" /></div>
+                ) : (
+                  <div className="flex-[2_1_240px]">
+                    <Field id="stipend" name="stipend" required maxLength={80} label={kind === 'internship' ? 'Monthly stipend' : 'Pay'}
+                      placeholder="e.g. KSh 20,000 a month" hint="Shown to graduates. Unpaid internships are not allowed." />
+                  </div>
+                )}
+              </div>
+            )}
+
             <RoleInput id="role" name="role" label="Role you're hiring for" required defaultValue={me?.roles?.[0] ?? ''} extra={me?.roles ?? []} />
 
             <div className="flex flex-wrap gap-4">
@@ -128,9 +177,11 @@ export default function PostTask() {
                   {MINUTES.map((m) => <option key={m} value={m}>{m / 60} hours{m === 240 ? ' (max)' : ''}</option>)}
                 </Select>
               </div>
-              <div className="flex-[1_1_200px]">
-                <Field id="salary" name="salary" label={<>Salary range <span className="font-normal text-muted">(optional)</span></>} placeholder="e.g. KSh 40,000 – 55,000" />
-              </div>
+              {kind === 'job' && (
+                <div className="flex-[1_1_200px]">
+                  <Field id="salary" name="salary" label={<>Salary range <span className="font-normal text-muted">(optional)</span></>} placeholder="e.g. KSh 40,000 – 55,000" />
+                </div>
+              )}
             </div>
 
             <div className="flex flex-col gap-1.5">
@@ -140,6 +191,50 @@ export default function PostTask() {
                 <span className="truncate">{file ? file.name : 'Upload a CSV, Excel, PDF or ZIP file'}</span>
                 <span className="shrink-0 text-sm text-muted">{file ? 'Replace' : 'Choose'}</span>
               </label>
+            </div>
+
+            <div className="flex flex-col gap-2 rounded-xl border border-line bg-white p-4">
+              <span className="font-semibold">Screening questions <span className="font-normal text-muted">(optional, up to 3)</span></span>
+              <span className="text-[13px] text-muted">Short, fair questions about the role, answered when graduates submit. Never ask about tribe, religion, age, marital status or health.</span>
+              {questions.map((q, i) => (
+                <div key={i} className="flex gap-2">
+                  <input aria-label={`Question ${i + 1}`} value={q} maxLength={200} onChange={(e) => setQuestions(questions.map((x, j) => (j === i ? e.target.value : x)))}
+                    placeholder={['e.g. When could you start?', 'e.g. Are you based in Nairobi?', 'e.g. Why this role?'][i]}
+                    className="min-h-11 min-w-0 flex-1 rounded-[10px] border border-line-strong bg-white px-3 text-base" />
+                  <button type="button" onClick={() => setQuestions(questions.filter((_, j) => j !== i))} className="press min-h-11 cursor-pointer border-0 bg-transparent px-2 text-sm text-muted">Remove</button>
+                </div>
+              ))}
+              {questions.length < 3 && (
+                <button type="button" onClick={() => setQuestions([...questions, ''])} className="press min-h-10 cursor-pointer self-start border-0 bg-transparent p-0 font-semibold text-brand">+ Add a question</button>
+              )}
+            </div>
+
+            <div className="flex flex-col gap-2 rounded-xl border border-line bg-white p-4">
+              <span className="font-semibold">Scoring guide <span className="font-normal text-muted">(optional)</span></span>
+              <span className="text-[13px] text-muted">What you will judge the work on. You mark each part 1 to 5 and get a score out of 100, so you can rank everyone.</span>
+              {rubric.map((r, i) => (
+                <div key={i} className="flex gap-2">
+                  <input aria-label={`Part ${i + 1}`} value={r.name} maxLength={40} placeholder="e.g. Accuracy"
+                    onChange={(e) => setRubric(rubric.map((x, j) => (j === i ? { ...x, name: e.target.value } : x)))}
+                    className="min-h-11 min-w-0 flex-1 rounded-[10px] border border-line-strong bg-white px-3 text-base" />
+                  <input aria-label={`Weight of part ${i + 1}`} type="number" min={5} max={100} value={r.weight}
+                    onChange={(e) => setRubric(rubric.map((x, j) => (j === i ? { ...x, weight: Number(e.target.value) } : x)))}
+                    className="min-h-11 w-20 rounded-[10px] border border-line-strong bg-white px-3 text-base tabular-nums" />
+                  <span className="flex items-center text-sm text-muted">%</span>
+                  <button type="button" onClick={() => setRubric(rubric.filter((_, j) => j !== i))} className="press min-h-11 cursor-pointer border-0 bg-transparent px-2 text-sm text-muted">Remove</button>
+                </div>
+              ))}
+              <div className="flex flex-wrap items-center gap-4">
+                {rubric.length === 0 && (
+                  <button type="button" onClick={() => setRubric(STARTER_RUBRIC)} className="press min-h-10 cursor-pointer border-0 bg-transparent p-0 font-semibold text-brand">Use a starter guide</button>
+                )}
+                {rubric.length < 5 && (
+                  <button type="button" onClick={() => setRubric([...rubric, { name: '', weight: 10 }])} className="press min-h-10 cursor-pointer border-0 bg-transparent p-0 font-semibold text-brand">+ Add a part</button>
+                )}
+                {rubric.length > 0 && (
+                  <span className={`text-sm tabular-nums ${rubricTotal === 100 ? 'text-brand' : 'text-danger'}`}>Total {rubricTotal}% {rubricTotal === 100 ? '✓' : '(must be 100)'}</span>
+                )}
+              </div>
             </div>
 
             <label className="flex items-start gap-2.5">
@@ -153,7 +248,7 @@ export default function PostTask() {
               {industry}", never your company's name.
             </span>
             {error && <Notice>{error}</Notice>}
-            <Button type="submit" disabled={busy || !allowance?.can_post || full} className="self-start">
+            <Button type="submit" disabled={busy || !allowance?.can_post || full || rubricBad} className="self-start">
               {busy ? 'Sending…' : 'Send for a quick check'}
             </Button>
           </form>

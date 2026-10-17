@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Card, GradLayout, Stat } from '../../components/GradLayout'
 import { GradInviteCard } from '../../components/InviteCards'
+import { Round2Card, useMyRound2 } from '../../components/Round2Card'
 import { TaskCardLink } from '../../components/TaskCardLink'
 import { LinkButton, Notice } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
@@ -51,6 +52,7 @@ export default function MyWork() {
   const answered = (requests ?? []).filter((r) => r.status === 'done' && r.task_id && !work.some((s) => s.task_id === r.task_id))
   const comments = activity?.comments ?? []
   const invites = activity?.invites ?? []
+  const { data: round2 } = useMyRound2()
 
   return (
     <GradLayout>
@@ -85,6 +87,12 @@ export default function MyWork() {
 
       <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="flex flex-col gap-6">
+          {round2 && round2.length > 0 && (
+            <Card title="Round 2">
+              {round2.map((r) => <Round2Card key={r.id} r={r} />)}
+            </Card>
+          )}
+
           {invites.length > 0 && (
             <Card title="Interview invites">
               {invites.map((inv) => <GradInviteCard key={inv.id} invite={inv} />)}

@@ -6,6 +6,7 @@ import { LinkButton } from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { minutesLabel } from '../lib/grad'
 import { jobPostingLd, postedAgo, useJobs } from '../lib/jobs'
+import { termsLine } from '../lib/opportunity'
 
 export default function JobPage() {
   const { id = '' } = useParams()
@@ -51,6 +52,7 @@ export default function JobPage() {
           </span>
           <h1 className="m-0 text-[30px] font-bold leading-tight tracking-[-0.03em] sm:text-[40px]">{job.role}</h1>
           <span className="text-[17px] text-ink-2">The task: {job.title}</span>
+          {termsLine(job) && <span className="text-[15px] font-semibold text-brand">{termsLine(job)}</span>}
         </div>
 
         <div className="-mt-2 flex flex-wrap gap-2 text-sm">

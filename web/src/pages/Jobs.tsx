@@ -5,14 +5,22 @@ import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
 import { LinkButton } from '../components/ui'
 import { postedAgo, useJobs } from '../lib/jobs'
+import { KIND_PLURAL, KINDS, termsLine, type Kind } from '../lib/opportunity'
 
 export default function Jobs() {
   const [params, setParams] = useSearchParams()
   const role = params.get('role') ?? ''
+  const type = (params.get('type') ?? '') as Kind | ''
   const { data, isLoading } = useJobs()
   const roles = useMemo(() => [...new Set((data ?? []).map((j) => j.role))].sort(), [data])
-  const jobs = (data ?? []).filter((j) => !role || j.role === role)
-  const heading = role ? `${role} jobs for fresh graduates in Kenya` : 'Jobs for fresh graduates in Kenya'
+  const kinds = useMemo(() => KINDS.filter((k) => (data ?? []).some((j) => j.kind === k)), [data])
+  const jobs = (data ?? []).filter((j) => (!role || j.role === role) && (!type || j.kind === type))
+  const what = type && type !== 'job' ? KIND_PLURAL[type].toLowerCase() + (type === 'graduate_trainee' ? ' roles' : type === 'volunteer' ? ' roles' : '') : 'jobs'
+  const heading = role ? `${role} ${what} for fresh graduates in Kenya` : type ? `${what[0].toUpperCase()}${what.slice(1)} for fresh graduates in Kenya` : 'Jobs and internships for fresh graduates in Kenya'
+  const set = (next: { role?: string; type?: string }) => {
+    const r = next.role ?? role, ty = next.type ?? type
+    setParams({ ...(r ? { role: r } : {}), ...(ty ? { type: ty } : {}) })
+  }
 
   return (
     <div className="min-h-screen">
@@ -31,10 +39,21 @@ export default function Jobs() {
           </p>
         </div>
 
+        {kinds.length > 1 && (
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by type">
+            {(['', ...kinds] as (Kind | '')[]).map((k) => (
+              <button key={k || 'all'} aria-pressed={type === k} onClick={() => set({ type: k })}
+                className={`press min-h-11 cursor-pointer rounded-full border px-4 text-sm ${type === k ? 'border-ink bg-ink text-white' : 'border-line-strong bg-white text-ink'}`}>
+                {k ? KIND_PLURAL[k] : 'Everything'}
+              </button>
+            ))}
+          </div>
+        )}
+
         {roles.length > 1 && (
           <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by role">
             {['', ...roles].map((r) => (
-              <button key={r || 'all'} aria-pressed={role === r} onClick={() => setParams(r ? { role: r } : {})}
+              <button key={r || 'all'} aria-pressed={role === r} onClick={() => set({ role: r })}
                 className={`press min-h-11 cursor-pointer rounded-full border px-4 text-sm ${role === r ? 'border-ink bg-ink text-white' : 'border-line-strong bg-white text-ink'}`}>
                 {r || 'All roles'}
               </button>
@@ -60,6 +79,7 @@ export default function Jobs() {
               className="press flex flex-col gap-1 rounded-xl border border-line bg-white p-5 text-ink no-underline hover:border-line-strong hover:text-ink">
               <span className="text-lg font-semibold">{j.role} · {j.title}</span>
               <span className="text-muted">{j.company_name} · {j.industry}</span>
+              {termsLine(j) && <span className="text-sm font-semibold text-brand">{termsLine(j)}</span>}
               <span className="text-sm text-ink-2">
                 {[
                   j.openings ? `${j.openings} ${j.openings === 1 ? 'opening' : 'openings'}` : null,

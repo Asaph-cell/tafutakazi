@@ -11,6 +11,7 @@ export type Company = {
   linkedin: string | null
   social: string | null
   email_domain: string | null
+  is_nonprofit: boolean
 }
 export type RecruiterRow = { id: string; job_title: string | null; roles: string[]; digest_enabled: boolean; company: Company | null }
 
@@ -22,7 +23,7 @@ export function useRecruiter() {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('recruiters')
-        .select('id, job_title, roles, digest_enabled, company:companies(id, name, size, industry, website, linkedin, social, email_domain)')
+        .select('id, job_title, roles, digest_enabled, company:companies(id, name, size, industry, website, linkedin, social, email_domain, is_nonprofit)')
         .eq('id', session!.user.id)
         .maybeSingle()
       if (error) throw error
