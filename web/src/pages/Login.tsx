@@ -51,7 +51,7 @@ export default function Login() {
         <Field id="password" name="password" type="password" label="Password" autoComplete="current-password" required />
         {error && <Notice>{error}</Notice>}
         {info && <Notice tone="info">{info}</Notice>}
-        <Button type="submit" disabled={busy}>{busy ? 'Logging in…' : 'Log in'}</Button>
+        <Button type="submit" busy={busy} busyLabel="Logging in…">Log in</Button>
         <button type="button" onClick={forgot} className="press min-h-11 cursor-pointer self-start border-0 bg-transparent p-0 text-[15px] text-brand underline">
           Forgot your password?
         </button>

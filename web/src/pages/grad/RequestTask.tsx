@@ -103,7 +103,7 @@ export default function RequestTask() {
           </div>
 
           {error && <Notice>{error}</Notice>}
-          <Button type="submit" disabled={busy || details.trim().length < 10} className="self-start">{busy ? 'Sending…' : 'Send request'}</Button>
+          <Button type="submit" busy={busy} busyLabel="Sending…" done={sent && details.trim() === ''} doneLabel="Request sent" disabled={details.trim().length < 10} className="self-start">Send request</Button>
         </form>
       )}
 

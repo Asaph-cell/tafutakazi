@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
 import { supabase } from '../../lib/supabase'
+import { SkeletonCards } from '../../components/ui'
 
 type Row = {
   id: string
@@ -78,7 +79,7 @@ export default function AdminRequests() {
         </section>
       )}
 
-      {isLoading && <p className="text-muted">Loading…</p>}
+      {isLoading && <SkeletonCards count={3} />}
       {!isLoading && rows.length === 0 && <p className="text-muted">{show === 'open' ? 'No requests waiting.' : 'Nothing answered yet.'}</p>}
 
       <div className="flex flex-col gap-2.5">

@@ -4,7 +4,7 @@ import { Card, GradLayout, Stat } from '../../components/GradLayout'
 import { GradInviteCard } from '../../components/InviteCards'
 import { Round2Card, useMyRound2 } from '../../components/Round2Card'
 import { TaskCardLink } from '../../components/TaskCardLink'
-import { LinkButton, Notice } from '../../components/ui'
+import { LinkButton, Notice, Skeleton } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { plural, useGrad, useMyActivity, useMySubmissions, useTaskFeed } from '../../lib/grad'
 import { useMyRequests } from './RequestTask'
@@ -75,7 +75,7 @@ export default function MyWork() {
       ))}
 
       {isLoading ? (
-        <p className="text-muted">Loading…</p>
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-[92px] rounded-2xl" />)}</div>
       ) : (
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
           <Stat value={viewsThisMonth} label="views this month" />

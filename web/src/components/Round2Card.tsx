@@ -78,7 +78,7 @@ export function Round2Card({ r }: { r: MyRound2 }) {
             <textarea name="note" rows={2} maxLength={1000} className={inputClass} />
           </label>
           {error && <span className="text-sm text-danger">{error}</span>}
-          <Button type="submit" disabled={busy} className="self-start">{busy ? 'Sending…' : 'Send my answer'}</Button>
+          <Button type="submit" busy={busy} busyLabel="Sending…" className="self-start">Send my answer</Button>
         </form>
       )}
     </div>

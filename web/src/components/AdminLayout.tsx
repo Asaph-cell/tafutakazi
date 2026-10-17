@@ -19,10 +19,10 @@ export function AdminLayout({ children }: { children: ReactNode }) {
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-2 px-5 py-4 sm:px-6">
           <Link to="/admin" className="text-xl no-underline"><Logo /></Link>
           <span className="rounded-full bg-ink px-2.5 py-0.5 text-xs font-semibold uppercase tracking-[0.06em] text-white">Admin</span>
-          <nav className="order-last flex w-full gap-5 overflow-x-auto sm:order-none sm:w-auto sm:flex-1">
+          <nav className="order-last flex w-full gap-1 overflow-x-auto sm:order-none sm:w-auto sm:flex-1">
             {links.map((l) => (
               <NavLink key={l.to} to={l.to} end={l.end}
-                className={({ isActive }) => `flex min-h-11 shrink-0 items-center no-underline ${isActive ? 'font-semibold text-ink' : 'text-muted hover:text-ink'}`}>
+                className={({ isActive }) => `press flex min-h-10 shrink-0 items-center rounded-lg px-3 no-underline transition-colors ${isActive ? 'bg-brand-soft font-semibold text-brand' : 'text-muted hover:bg-ground hover:text-ink'}`}>
                 {l.label}
               </NavLink>
             ))}

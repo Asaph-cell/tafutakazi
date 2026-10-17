@@ -20,15 +20,15 @@ export function RecruiterLayout({ children }: { children: ReactNode }) {
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6 sm:py-4">
           <Link to="/browse" className="text-xl no-underline"><Logo /></Link>
-          <nav className="order-last flex w-full gap-5 sm:order-none sm:w-auto sm:flex-1">
+          <nav className="order-last flex w-full gap-1 sm:order-none sm:w-auto sm:flex-1">
             {links.map((l) => (
               <NavLink key={l.to} to={l.to}
-                className={({ isActive }) => `flex min-h-11 items-center no-underline ${isActive ? 'font-semibold text-ink' : 'text-muted hover:text-ink'}`}>
+                className={({ isActive }) => `press flex min-h-10 items-center rounded-lg px-3 no-underline transition-colors ${isActive ? 'bg-brand-soft font-semibold text-brand' : 'text-muted hover:bg-ground hover:text-ink'}`}>
                 {l.label}
               </NavLink>
             ))}
             {profile?.role === 'admin' && (
-              <Link to="/admin" className="flex min-h-11 items-center font-semibold text-brand no-underline">Admin</Link>
+              <Link to="/admin" className="flex min-h-10 items-center px-3 font-semibold text-brand no-underline">Admin</Link>
             )}
           </nav>
           <span className="ml-auto hidden text-sm text-muted sm:ml-0 sm:inline">{me?.company?.name}</span>

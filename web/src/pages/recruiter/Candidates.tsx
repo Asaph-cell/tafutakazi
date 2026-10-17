@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { useCandidates, type Candidate } from '../../lib/recruiter'
+import { SkeletonCards } from '../../components/ui'
 
 const stage: Record<NonNullable<Candidate['company_status']>, string> = {
   invited: 'Invited',
@@ -67,7 +68,7 @@ export default function Candidates() {
         <span className="text-ink-2">Everyone you invited or gave a thumbs up. Open a name to update where things stand.</span>
       </div>
 
-      {isLoading && <p className="text-muted">Loading…</p>}
+      {isLoading && <SkeletonCards count={3} />}
       {error && <p className="text-danger">Couldn't load your candidates. Try again.</p>}
 
       {!isLoading && !error && (

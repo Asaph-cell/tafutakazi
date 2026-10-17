@@ -3,11 +3,12 @@ import { useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { Card, GradLayout, initials } from '../../components/GradLayout'
 import { OtherWorkEditor } from '../../components/OtherWork'
-import { Button, Field, Notice, Select } from '../../components/ui'
+import { Button, Field, Notice, Select, SkeletonPage } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { useGrad, useMyActivity, useMySubmissions } from '../../lib/grad'
 import { gradYears, normRole } from '../../lib/lists'
 import { RoleInput } from '../../components/RoleInput'
+import { toast } from '../../lib/toast'
 import { supabase } from '../../lib/supabase'
 
 const SITE = 'tafutakazi.co.ke'
@@ -48,10 +49,11 @@ export default function Profile() {
   const { data: activity } = useMyActivity()
   const [editing, setEditing] = useState(false)
   const [saved, setSaved] = useState('')
+  const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
 
-  if (!grad || !profile || !session) return <GradLayout><p className="text-muted">Loading…</p></GradLayout>
+  if (!grad || !profile || !session) return <GradLayout><SkeletonPage cards={2} /></GradLayout>
 
   const link = `${SITE}/${grad.slug}`
   const work = subs ?? []
@@ -71,6 +73,7 @@ export default function Profile() {
     e.preventDefault()
     setError('')
     const f = new FormData(e.currentTarget)
+    setSaving(true)
     const [a, b] = await Promise.all([
       supabase.from('profiles').update({ full_name: String(f.get('name')).trim() }).eq('id', session!.user.id),
       supabase.from('grads').update({
@@ -80,11 +83,12 @@ export default function Profile() {
         track: normRole(String(f.get('track'))),
       }).eq('id', session!.user.id),
     ])
+    setSaving(false)
     if (a.error || b.error) return setError("Couldn't save. Try again.")
     await refreshProfile()
     await queryClient.invalidateQueries({ queryKey: ['grad'] })
     setEditing(false)
-    setSaved('Your details are saved.')
+    toast('Your details are saved')
   }
 
   async function toggleDigest() {
@@ -200,7 +204,7 @@ export default function Profile() {
                 </Select>
                 <RoleInput id="track" name="track" label="What job do you want?" defaultValue={grad.track} required />
                 <div className="flex gap-2">
-                  <Button type="submit" className="min-h-11">Save</Button>
+                  <Button type="submit" busy={saving} busyLabel="Saving…" className="min-h-11">Save</Button>
                   <Button type="button" variant="outline" onClick={() => setEditing(false)} className="min-h-11">Cancel</Button>
                 </div>
               </form>

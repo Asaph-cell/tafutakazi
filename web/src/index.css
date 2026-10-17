@@ -89,3 +89,99 @@
 @media (prefers-reduced-motion: reduce) {
   [class*="animate-[talk"] { animation: none; }
 }
+
+/* Every page slides in a little from the right when you open it. */
+html, body { overflow-x: clip; }
+@keyframes page-in {
+  from { opacity: 0; transform: translateX(20px); }
+}
+main {
+  animation: page-in 320ms var(--ease-out-strong) both;
+}
+
+/* Skeletons: green shapes in the layout of the content, with a light sweeping across. */
+.sk {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--color-brand-soft);
+}
+.sk::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: sk-sweep 1.3s infinite;
+}
+@keyframes sk-sweep {
+  to { transform: translateX(100%); }
+}
+/* Content fades up when it replaces a skeleton. */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(6px); }
+}
+.reveal { animation: reveal 380ms var(--ease-out-strong) both; }
+
+/* Ripple from where you press. */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.22;
+  transform: scale(0);
+  animation: ripple 550ms ease-out forwards;
+  pointer-events: none;
+}
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* Busy buttons: spinner, progress fill, and the label swap. */
+.spin {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  opacity: 0.85;
+  animation: spin 600ms linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.fill-bar {
+  position: absolute;
+  inset: 0;
+  background: var(--color-brand-dark);
+  transform-origin: left;
+  animation: fill-bar 6s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+}
+@keyframes fill-bar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(0.92); }
+}
+.swap { animation: swap 220ms var(--ease-out-strong) both; }
+@keyframes swap {
+  from { opacity: 0; transform: translateY(6px); filter: blur(2px); }
+}
+
+/* Toasts. */
+.toast { animation: toast 320ms var(--ease-out-strong) both; }
+@keyframes toast {
+  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+}
+
+/* A wrong field or an error message shakes once. */
+.shake { animation: shake 360ms ease-in-out; }
+@keyframes shake {
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main, .reveal, .swap, .toast, .shake, .ripple { animation: none; }
+  .sk::after { animation: none; }
+  .fill-bar { animation-duration: 0s; }
+}

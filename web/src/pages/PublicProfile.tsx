@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { Link, useParams } from 'react-router-dom'
 import { Logo } from '../components/Logo'
 import { Seo } from '../components/Seo'
-import { LinkButton } from '../components/ui'
+import { LinkButton, SkeletonPage } from '../components/ui'
 import { supabase } from '../lib/supabase'
 import { NotFound } from './SmallPages'
 
@@ -44,7 +44,7 @@ export default function PublicProfile() {
     },
   })
 
-  if (isLoading) return <div className="p-10 text-muted">Loading…</div>
+  if (isLoading) return <div className="mx-auto max-w-[1280px] px-5 py-10 sm:px-6"><SkeletonPage cards={2} /></div>
   if (!data) return <NotFound />
 
   const first = data.full_name.split(' ')[0]

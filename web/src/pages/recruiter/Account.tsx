@@ -3,10 +3,11 @@ import { useQueryClient } from '@tanstack/react-query'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { SectionTitle } from '../../components/GradLayout'
 import { RolePicker } from '../../components/RolePicker'
-import { Button, Field, Notice, Select } from '../../components/ui'
+import { Button, Field, Notice, Select, SkeletonPage } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { COMPANY_SIZES, INDUSTRIES } from '../../lib/lists'
 import { useRecruiter } from '../../lib/recruiter'
+import { toast } from '../../lib/toast'
 import { supabase } from '../../lib/supabase'
 
 export default function Account() {
@@ -15,9 +16,10 @@ export default function Account() {
   const { data: me } = useRecruiter()
   const [roles, setRoles] = useState<string[] | null>(null)
   const [saved, setSaved] = useState('')
+  const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
 
-  if (!me?.company || !session) return <RecruiterLayout><p className="text-muted">Loading…</p></RecruiterLayout>
+  if (!me?.company || !session) return <RecruiterLayout><SkeletonPage cards={2} /></RecruiterLayout>
   const company = me.company
   const currentRoles = roles ?? me.roles
 
@@ -27,6 +29,7 @@ export default function Account() {
     setError('')
     const f = new FormData(e.currentTarget)
     const clean = (k: string) => String(f.get(k)).trim() || null
+    setSaving(true)
     const [a, b] = await Promise.all([
       supabase.from('companies').update({
         name: String(f.get('company')).trim(),
@@ -38,9 +41,10 @@ export default function Account() {
       }).eq('id', company.id),
       supabase.from('recruiters').update({ job_title: clean('title'), roles: currentRoles }).eq('id', session!.user.id),
     ])
+    setSaving(false)
     if (a.error || b.error) return setError("Couldn't save. Try again.")
     await queryClient.invalidateQueries()
-    setSaved('Saved.')
+    toast('Saved')
   }
 
   async function toggleDigest() {
@@ -82,7 +86,7 @@ export default function Account() {
 
         {saved && <Notice tone="info">{saved}</Notice>}
         {error && <Notice>{error}</Notice>}
-        <Button type="submit" className="self-start">Save</Button>
+        <Button type="submit" busy={saving} busyLabel="Saving…" className="self-start">Save</Button>
       </form>
 
       <section className="flex max-w-[640px] flex-col gap-2.5">

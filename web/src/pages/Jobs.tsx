@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { PublicHeader } from '../components/PublicHeader'
 import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
-import { LinkButton } from '../components/ui'
+import { LinkButton, SkeletonCards } from '../components/ui'
 import { postedAgo, useJobs } from '../lib/jobs'
 import { KIND_PLURAL, KINDS, termsLine, type Kind } from '../lib/opportunity'
 
@@ -61,7 +61,7 @@ export default function Jobs() {
           </div>
         )}
 
-        {isLoading && <p className="text-muted">Loading jobs…</p>}
+        {isLoading && <SkeletonCards count={4} className="max-w-[860px]" />}
         {!isLoading && jobs.length === 0 && (
           <div className="flex max-w-[720px] flex-col gap-3 rounded-2xl border border-line bg-white p-6">
             <span className="text-lg font-semibold">No open jobs right now</span>

@@ -1,9 +1,10 @@
 import { useState, type FormEvent } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
+import { toast } from '../lib/toast'
 import { supabase } from '../lib/supabase'
 import type { RubricPart } from '../lib/opportunity'
-import { Button } from './ui'
+import { Button, SkeletonCards } from './ui'
 
 type Round2 = {
   id: string; status: 'invited' | 'submitted'; due_at: string; brief: string; questions: string[]
@@ -20,11 +21,15 @@ const inputClass = 'w-full rounded-[10px] border border-line-strong bg-white p-3
 function ScoreForm({ a, rubric, onSaved }: { a: Applicant; rubric: RubricPart[]; onSaved: () => void }) {
   const [marks, setMarks] = useState<Record<string, number>>(a.marks ?? {})
   const [error, setError] = useState('')
+  const [saving, setSaving] = useState(false)
   const complete = rubric.every((r) => marks[r.name])
   async function save() {
     setError('')
+    setSaving(true)
     const { error } = await supabase.rpc('score_submission', { p_submission: a.submission_id, p_marks: marks })
+    setSaving(false)
     if (error) return setError(error.message)
+    toast('Score saved')
     onSaved()
   }
   return (
@@ -43,7 +48,7 @@ function ScoreForm({ a, rubric, onSaved }: { a: Applicant; rubric: RubricPart[];
         </div>
       ))}
       <div className="flex items-center gap-3">
-        <Button type="button" onClick={save} disabled={!complete} className="min-h-10 px-4 text-sm">Save score</Button>
+        <Button type="button" onClick={save} busy={saving} busyLabel="Saving…" disabled={!complete} className="min-h-10 px-4 text-sm">Save score</Button>
         {a.score != null && <span className="text-sm text-muted">Saved: {Number(a.score)} / 100</span>}
       </div>
       {error && <span className="text-sm text-danger">{error}</span>}
@@ -98,7 +103,7 @@ function Round2Form({ a, onSent }: { a: Applicant; onSent: () => void }) {
       </label>
       {error && <span className="text-sm text-danger">{error}</span>}
       <div className="flex gap-2">
-        <Button type="submit" disabled={busy} className="min-h-10 px-4 text-sm">{busy ? 'Sending…' : 'Send round 2'}</Button>
+        <Button type="submit" busy={busy} busyLabel="Sending…" className="min-h-10 px-4 text-sm">Send round 2</Button>
         <Button type="button" variant="outline" onClick={() => setOpen(false)} className="min-h-10 px-4 text-sm">Cancel</Button>
       </div>
     </form>
@@ -191,7 +196,7 @@ export function Applicants({ taskId }: { taskId: string }) {
   })
   const refresh = () => queryClient.invalidateQueries({ queryKey: ['task-submissions', taskId] })
 
-  if (isLoading) return <p className="m-0 text-sm text-muted">Loading…</p>
+  if (isLoading) return <SkeletonCards count={2} />
   if (!data?.length) return <p className="m-0 text-sm text-muted">No submissions yet. You'll get a daily email when work comes in.</p>
   return (
     <div className="flex flex-col divide-y divide-[#EEEEE9] rounded-lg border border-line bg-white">

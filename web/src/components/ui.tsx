@@ -11,15 +11,47 @@ const variants: Record<Variant, string> = {
   outlineLight: 'border border-ground/70 bg-transparent text-ground hover:bg-white/10 hover:text-ground',
 }
 
-const base =
-  'press inline-flex min-h-[52px] items-center justify-center rounded-xl px-6 font-semibold no-underline disabled:cursor-not-allowed disabled:bg-[#DADAD4] disabled:text-[#6B6B66]'
+const shape = 'press relative inline-flex min-h-[52px] items-center justify-center overflow-hidden rounded-xl px-6 font-semibold no-underline'
+const base = `${shape} disabled:cursor-not-allowed disabled:bg-[#DADAD4] disabled:text-[#6B6B66]`
 
+// busy: a spinner (or, with `fill`, a bar filling the button, for uploads) and busyLabel.
+// done: a tick and doneLabel, for forms that stay on the page after sending.
 export function Button({
   variant = 'primary',
   className = '',
+  busy = false,
+  busyLabel,
+  fill = false,
+  done = false,
+  doneLabel,
+  children,
+  disabled,
   ...props
-}: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: Variant }) {
-  return <button className={`${base} ${variants[variant]} cursor-pointer ${className}`} {...props} />
+}: ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: Variant
+  busy?: boolean
+  busyLabel?: ReactNode
+  fill?: boolean
+  done?: boolean
+  doneLabel?: ReactNode
+}) {
+  // While busy or done the button keeps its colour (not the grey disabled look) but can't be pressed again.
+  const state = busy ? 'busy' : done ? 'done' : 'idle'
+  return (
+    <button
+      className={`${busy ? `${shape} cursor-progress` : done ? `${shape} cursor-default` : `${base} cursor-pointer`} ${variants[variant]} ${className}`}
+      disabled={disabled || busy || done}
+      aria-busy={busy || undefined}
+      {...props}
+    >
+      {busy && fill && <span aria-hidden="true" className="fill-bar" />}
+      <span key={state} className={`relative inline-flex items-center gap-2 ${state === 'idle' ? '' : 'swap'}`}>
+        {state === 'busy' && !fill && <span aria-hidden="true" className="spin" />}
+        {state === 'done' && <span aria-hidden="true">✓</span>}
+        {state === 'busy' ? (busyLabel ?? children) : state === 'done' ? (doneLabel ?? children) : children}
+      </span>
+    </button>
+  )
 }
 
 export function LinkButton({
@@ -69,10 +101,44 @@ export function Select({
 }
 
 export function Notice({ tone = 'error', children }: { tone?: 'error' | 'info'; children: ReactNode }) {
-  const style = tone === 'error' ? 'border-[#E8C9BF] bg-[#FBF1EE] text-danger' : 'border-line bg-white text-ink-2'
+  // Errors shake once when they appear, and again when the message changes.
+  const style = tone === 'error' ? 'shake border-[#E8C9BF] bg-[#FBF1EE] text-danger' : 'reveal border-line bg-white text-ink-2'
   return (
-    <p role={tone === 'error' ? 'alert' : 'status'} className={`m-0 rounded-[10px] border px-4 py-3 text-[15px] ${style}`}>
+    <p key={typeof children === 'string' ? children : undefined} role={tone === 'error' ? 'alert' : 'status'} className={`m-0 rounded-[10px] border px-4 py-3 text-[15px] ${style}`}>
       {children}
     </p>
+  )
+}
+
+// Loading placeholders in the shape of what's coming.
+export function Skeleton({ className = '' }: { className?: string }) {
+  return <div aria-hidden="true" className={`sk ${className}`} />
+}
+
+// A stack of card-shaped skeletons, for lists of tasks, jobs or people.
+export function SkeletonCards({ count = 3, className = '' }: { count?: number; className?: string }) {
+  return (
+    <div role="status" aria-label="Loading" className={`flex flex-col gap-3 ${className}`}>
+      {Array.from({ length: count }, (_, i) => (
+        <div key={i} className="flex flex-col gap-2.5 rounded-2xl border border-line bg-white p-5">
+          <Skeleton className="h-5 w-24 rounded-full" />
+          <Skeleton className="h-4 w-4/5" />
+          <Skeleton className="h-3.5 w-1/2" />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// A page-shaped skeleton: a heading, a line of text, then cards.
+export function SkeletonPage({ cards = 3 }: { cards?: number }) {
+  return (
+    <div role="status" aria-label="Loading" className="flex flex-col gap-6">
+      <div className="flex flex-col gap-3">
+        <Skeleton className="h-8 w-2/5 max-w-[320px]" />
+        <Skeleton className="h-4 w-3/5 max-w-[480px]" />
+      </div>
+      <SkeletonCards count={cards} />
+    </div>
   )
 }

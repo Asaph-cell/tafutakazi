@@ -248,8 +248,8 @@ export default function PostTask() {
               {industry}", never your company's name.
             </span>
             {error && <Notice>{error}</Notice>}
-            <Button type="submit" disabled={busy || !allowance?.can_post || full || rubricBad} className="self-start">
-              {busy ? 'Sending…' : 'Send for a quick check'}
+            <Button type="submit" busy={busy} busyLabel="Sending…" disabled={!allowance?.can_post || full || rubricBad} className="self-start">
+              Send for a quick check
             </Button>
           </form>
         </div>

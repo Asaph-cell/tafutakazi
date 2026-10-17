@@ -3,7 +3,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
-import { Button, Field, Notice, Select } from '../../components/ui'
+import { Button, Field, Notice, Select, SkeletonPage } from '../../components/ui'
 import { normRole } from '../../lib/lists'
 import { RoleInput } from '../../components/RoleInput'
 import { supabase } from '../../lib/supabase'
@@ -104,7 +104,7 @@ export default function AdminTaskForm() {
     navigate('/admin')
   }
 
-  if (id && isLoading) return <AdminLayout><p className="text-muted">Loading…</p></AdminLayout>
+  if (id && isLoading) return <AdminLayout><SkeletonPage cards={2} /></AdminLayout>
 
   return (
     <AdminLayout>
@@ -184,7 +184,7 @@ export default function AdminTaskForm() {
           </section>
 
           {error && <Notice>{error}</Notice>}
-          <Button type="submit" disabled={busy} className="self-start">{busy ? 'Saving…' : id ? 'Save changes' : 'Publish task'}</Button>
+          <Button type="submit" busy={busy} busyLabel="Saving…" className="self-start">{id ? 'Save changes' : 'Publish task'}</Button>
         </form>
       )}
     </AdminLayout>

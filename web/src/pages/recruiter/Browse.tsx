@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { ROLES } from '../../lib/lists'
 import { useBrowse, useRecruiter, useRolesWithWork, useRoleTools, type BrowseRow } from '../../lib/recruiter'
+import { SkeletonCards } from '../../components/ui'
 
 const NEW_DAYS = 5
 type Sort = 'recommended' | 'thumbs' | 'newest'
@@ -90,7 +91,7 @@ export default function Browse() {
 
       <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-3">
         <span className="text-muted">
-          {isLoading ? 'Loading…' : `${rows.length} ${rows.length === 1 ? 'graduate' : 'graduates'} with ${role.toLowerCase()} work${tools.length ? ` using ${tools.join(' + ')}` : ''}`}
+          {isLoading ? 'Finding graduates…' : `${rows.length} ${rows.length === 1 ? 'graduate' : 'graduates'} with ${role.toLowerCase()} work${tools.length ? ` using ${tools.join(' + ')}` : ''}`}
         </span>
         <label className="flex items-center gap-2 text-sm text-muted">
           Sort
@@ -103,6 +104,7 @@ export default function Browse() {
       </div>
 
       {error && <p className="text-danger">Couldn't load graduates. Try again.</p>}
+      {isLoading && <SkeletonCards count={4} />}
       {!isLoading && rows.length === 0 && (
         <div className="flex flex-col gap-3">
           <p className="m-0 max-w-[60ch] text-ink-2">

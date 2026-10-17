@@ -3,7 +3,7 @@ import { useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { Applicants } from '../../components/Applicants'
-import { LinkButton, Notice } from '../../components/ui'
+import { LinkButton, Notice, SkeletonCards } from '../../components/ui'
 import { useAllowance, useMyTasks, type MyTask } from '../../lib/recruiter'
 import { supabase } from '../../lib/supabase'
 
@@ -40,7 +40,7 @@ export default function MyTasks() {
       </div>
 
       {error && <Notice>{error}</Notice>}
-      {isLoading && <p className="text-muted">Loading…</p>}
+      {isLoading && <SkeletonCards count={3} />}
       {!isLoading && !tasks?.length && <p className="m-0 text-ink-2">You haven't posted a task yet. <Link to="/post">Post your first one</Link>. Graduates do it, and you invite the ones you want to interview.</p>}
 
       <div className="flex flex-col gap-3">

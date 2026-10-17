@@ -2,7 +2,7 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { GradLayout } from '../../components/GradLayout'
-import { Button, Notice } from '../../components/ui'
+import { Button, Notice, SkeletonPage } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { useTask, wordCount } from '../../lib/grad'
 import { toolsFor } from '../../lib/lists'
@@ -157,7 +157,7 @@ export default function Submit() {
     navigate('/me')
   }
 
-  if (isLoading) return <GradLayout narrow><p className="text-muted">Loading…</p></GradLayout>
+  if (isLoading) return <GradLayout narrow><SkeletonPage cards={2} /></GradLayout>
 
   return (
     <GradLayout narrow>
@@ -237,8 +237,8 @@ export default function Submit() {
         {error && <Notice>{error}</Notice>}
 
         <div className="sticky bottom-[72px] -mx-5 border-t border-line bg-ground/95 px-5 py-3 backdrop-blur sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:p-0">
-          <Button type="submit" disabled={doneCount < totalSteps || busy} className="w-full sm:w-auto">
-            {busy ? 'Submitting…' : existing ? 'Save changes' : 'Submit'}
+          <Button type="submit" busy={busy} fill busyLabel="Uploading…" disabled={doneCount < totalSteps} className="w-full sm:w-auto">
+            {existing ? 'Save changes' : 'Submit'}
           </Button>
           {missing.length > 0 && (
             <p className="m-0 mt-1.5 text-center text-[13px] text-ink-2 sm:text-left">
@@ -261,7 +261,7 @@ export default function Submit() {
                 interview invite. It can't be undone. You can do the task again afterwards.
               </span>
               <div className="flex flex-wrap gap-2">
-                <Button onClick={deleteWork} disabled={busy} className="min-h-11 bg-danger hover:bg-[#82290F]">{busy ? 'Deleting…' : 'Yes, delete it'}</Button>
+                <Button onClick={deleteWork} busy={busy} busyLabel="Deleting…" className="min-h-11 bg-danger hover:bg-[#82290F]">Yes, delete it</Button>
                 <Button variant="outline" onClick={() => setConfirmDelete(false)} className="min-h-11">Keep it</Button>
               </div>
             </div>

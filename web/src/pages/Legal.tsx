@@ -5,7 +5,7 @@ import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
 
 const EMAIL = 'hello@tafutakazi.co.ke'
-const UPDATED = '14 October 2026'
+const UPDATED = '17 October 2026'
 
 const Mail = () => <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
 
@@ -289,6 +289,12 @@ export function Privacy() {
       <Ul>
         <li><strong className="text-ink">Supabase:</strong> accounts, the database and uploaded previews.</li>
         <li><strong className="text-ink">Cloudflare:</strong> hosting the site, our domain and email forwarding, and visitor statistics that use no cookies.</li>
+        <li>
+          <strong className="text-ink">Google Analytics:</strong> only if you accept it. It tells us which pages people
+          visit, roughly where from (country or city), and what device they use. Before anything is sent, page
+          addresses that contain an account id or a graduate's profile name are replaced with placeholders, so Google
+          never receives your name or account details. Advertising features are switched off.
+        </li>
         <li><strong className="text-ink">Resend:</strong> sending our emails.</li>
         <li>
           <strong className="text-ink">Google Gemini:</strong> the automatic check reads the text of tasks companies post
@@ -300,6 +306,13 @@ export function Privacy() {
         Each handles data only to provide its service. Some store data outside Kenya, under the safeguards the Data
         Protection Act requires. Videos and full work stay where you put them (YouTube, Loom, Google Drive and so on),
         under those services' own policies.
+      </p>
+
+      <H2>Cookies</H2>
+      <p className="m-0">
+        Signing in uses your browser's storage to keep you logged in; that is needed for the site to work. Google
+        Analytics cookies are set only if you choose Accept all in the cookie bar. You can change your choice at any time
+        with Cookie settings at the bottom of every page.
       </p>
 
       <H2>Previews</H2>

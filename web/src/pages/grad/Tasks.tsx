@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { GradLayout, SectionTitle } from '../../components/GradLayout'
 import { TaskCardLink } from '../../components/TaskCardLink'
 import { useGrad, useTaskFeed } from '../../lib/grad'
+import { SkeletonCards } from '../../components/ui'
 
 export default function Tasks() {
   const { data: grad } = useGrad()
@@ -33,7 +34,7 @@ export default function Tasks() {
         )}
       </div>
 
-      {isLoading && <p className="text-muted">Loading tasks…</p>}
+      {isLoading && <SkeletonCards count={4} />}
       {error && <p className="text-danger">Couldn't load tasks. Check your connection and try again.</p>}
 
       {!isLoading && (

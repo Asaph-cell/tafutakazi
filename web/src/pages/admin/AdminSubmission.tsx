@@ -3,7 +3,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
-import { Button, Notice } from '../../components/ui'
+import { Button, Notice, SkeletonPage } from '../../components/ui'
 import { supabase } from '../../lib/supabase'
 import { useReviewList } from './AdminReview'
 
@@ -79,7 +79,7 @@ export default function AdminSubmission() {
     else navigate('/admin/review')
   }
 
-  if (isLoading || !s) return <AdminLayout><p className="text-muted">Loading…</p></AdminLayout>
+  if (isLoading || !s) return <AdminLayout><SkeletonPage cards={2} /></AdminLayout>
 
   const isPdf = s.preview_path?.toLowerCase().endsWith('.pdf')
 
@@ -142,7 +142,7 @@ export default function AdminSubmission() {
           </div>
           <span className="text-[13px] text-muted">Be specific and honest. Perfect scores make employers trust verdicts less.</span>
           {error && <Notice>{error}</Notice>}
-          <Button type="submit" disabled={busy}>{busy ? 'Saving…' : next ? 'Save and go to the next one' : 'Save verdict'}</Button>
+          <Button type="submit" busy={busy} busyLabel="Saving…">{next ? 'Save and go to the next one' : 'Save verdict'}</Button>
         </form>
       </div>
     </AdminLayout>

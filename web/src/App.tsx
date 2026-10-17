@@ -1,6 +1,9 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { RequireRole } from './components/RequireRole'
+import { ConsentBanner } from './components/ConsentBanner'
+import { Feedback } from './components/Feedback'
+import { SkeletonPage } from './components/ui'
 import Home from './pages/Home'
 
 // Every page except the homepage loads on demand, so the first visit stays fast on a phone.
@@ -40,11 +43,16 @@ const AdminReview = lazy(() => import('./pages/admin/AdminReview'))
 const AdminSubmission = lazy(() => import('./pages/admin/AdminSubmission'))
 const AdminRequests = lazy(() => import('./pages/admin/AdminRequests'))
 
+// Style samples: only in local development, never in the live build.
+const Samples = import.meta.env.DEV ? lazy(() => import('./pages/Samples').then((m) => ({ default: m.Samples }))) : null
+
 export default function App() {
   return (
-    <Suspense fallback={<div className="p-10 text-muted">Loading…</div>}>
+    <>
+    <Suspense fallback={<div className="mx-auto max-w-[1280px] px-5 py-10 sm:px-6"><SkeletonPage /></div>}>
       <Routes>
         <Route path="/" element={<Home />} />
+        {Samples && <Route path="/samples" element={<Samples />} />}
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/jobs/:id" element={<JobPage />} />
         <Route path="/join" element={<GradSignup />} />
@@ -86,5 +94,8 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
+    <ConsentBanner />
+    <Feedback />
+    </>
   )
 }

@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { supabase } from '../../lib/supabase'
+import { SkeletonCards } from '../../components/ui'
 
 export type ReviewRow = {
   id: string
@@ -50,7 +51,7 @@ export default function AdminReview() {
         </div>
       </div>
 
-      {isLoading && <p className="text-muted">Loading…</p>}
+      {isLoading && <SkeletonCards count={3} />}
       {!isLoading && rows.length === 0 && <p className="text-muted">{done ? 'No verdicts written yet.' : 'All caught up. Nothing waiting for a verdict.'}</p>}
 
       <div className="flex flex-col gap-2.5">

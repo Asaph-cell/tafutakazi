@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { PublicHeader } from '../components/PublicHeader'
 import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
-import { LinkButton } from '../components/ui'
+import { LinkButton, SkeletonPage } from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { minutesLabel } from '../lib/grad'
 import { jobPostingLd, postedAgo, useJobs } from '../lib/jobs'
@@ -14,7 +14,7 @@ export default function JobPage() {
   const { data, isLoading } = useJobs(id)
   const job = data?.[0]
 
-  if (isLoading) return <div className="p-10 text-muted">Loading…</div>
+  if (isLoading) return <div className="mx-auto max-w-[1280px] px-5 py-10 sm:px-6"><SkeletonPage cards={1} /></div>
   if (!job) {
     return (
       <div className="min-h-screen">

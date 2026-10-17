@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { OPEN_COOKIE_SETTINGS } from './ConsentBanner'
 
 export function SiteFooter() {
   return (
@@ -11,6 +12,7 @@ export function SiteFooter() {
       <Link to="/partners" className="text-muted">Partner with us</Link>
       <Link to="/terms" className="text-muted">Terms</Link>
       <Link to="/privacy" className="text-muted">Privacy</Link>
+      <button onClick={() => window.dispatchEvent(new Event(OPEN_COOKIE_SETTINGS))} className="cursor-pointer border-0 bg-transparent p-0 text-sm text-muted hover:text-ink">Cookie settings</button>
     </footer>
   )
 }

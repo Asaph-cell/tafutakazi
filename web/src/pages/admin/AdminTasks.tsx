@@ -2,7 +2,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { AdminLayout } from '../../components/AdminLayout'
 import { SectionTitle } from '../../components/GradLayout'
-import { LinkButton } from '../../components/ui'
+import { LinkButton, SkeletonCards } from '../../components/ui'
 import { supabase } from '../../lib/supabase'
 import { KIND_LABEL } from '../../lib/opportunity'
 
@@ -121,7 +121,7 @@ export default function AdminTasks() {
         </section>
       )}
 
-      {isLoading && <p className="text-muted">Loading…</p>}
+      {isLoading && <SkeletonCards count={3} />}
       {error && <p className="text-danger">Couldn't load tasks: {(error as { message?: string }).message ?? 'unknown error'}</p>}
 
       {data && groups.map((g) => {

@@ -7,6 +7,7 @@ import { BODIES, POSTS, postDate } from '../blog/posts'
 import { Photo, unsplash } from '../blog/ui'
 import { Sidebar } from '../blog/Sidebar'
 import { NotFound } from './SmallPages'
+import { Skeleton } from '../components/ui'
 
 export function BlogIndex() {
   return (
@@ -78,7 +79,7 @@ export function BlogPost() {
           <h1 className="m-0 text-[32px] font-bold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[46px]">{post.title}</h1>
           <span className="text-[15px] text-muted">By the Tafutakazi team · {postDate(post.date)} · {post.readMinutes} min read</span>
           {post.cover && <Photo photo={post.cover} ratio={16 / 9} priority />}
-          <Suspense fallback={<p className="text-muted">Loading…</p>}>
+          <Suspense fallback={<div className="flex flex-col gap-3"><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-11/12" /><Skeleton className="h-4 w-4/5" /></div>}>
             <Body />
           </Suspense>
         </article>

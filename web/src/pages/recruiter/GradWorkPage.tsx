@@ -3,7 +3,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { RecruiterLayout } from '../../components/RecruiterLayout'
 import { SectionTitle } from '../../components/GradLayout'
-import { Button, Notice } from '../../components/ui'
+import { Button, Notice, SkeletonPage } from '../../components/ui'
 import { CompanyInviteCard } from '../../components/InviteCards'
 import { OtherWorkList, useGradLinks } from '../../components/OtherWork'
 import { useAuth } from '../../lib/auth'
@@ -129,7 +129,7 @@ export default function GradWorkPage() {
     refresh()
   }
 
-  if (isLoading) return <RecruiterLayout><p className="text-muted">Loading…</p></RecruiterLayout>
+  if (isLoading) return <RecruiterLayout><SkeletonPage cards={2} /></RecruiterLayout>
   if (!work || !s) return <RecruiterLayout><p>This graduate's work isn't available.</p><Link to="/browse">Back to browse</Link></RecruiterLayout>
 
   const first = work.full_name.split(' ')[0]

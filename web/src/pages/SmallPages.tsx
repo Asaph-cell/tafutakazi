@@ -42,7 +42,7 @@ export function ResetPassword() {
       <form onSubmit={onSubmit} className="flex max-w-[440px] flex-col gap-4">
         <Field id="password" name="password" type="password" label="New password" autoComplete="new-password" required minLength={8} hint="At least 8 characters." />
         {error && <Notice>{error}</Notice>}
-        <Button type="submit" disabled={busy}>Save password</Button>
+        <Button type="submit" busy={busy} busyLabel="Saving…">Save password</Button>
       </form>
     </AuthShell>
   )

@@ -22,10 +22,10 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-[1280px] items-center gap-8 px-5 py-3.5 sm:px-6">
           <Link to="/me" className="flex-1 text-xl no-underline sm:flex-none"><Logo /></Link>
-          <nav className="hidden flex-1 gap-6 sm:flex">
+          <nav className="hidden flex-1 gap-1 sm:flex">
             {tabs.map((t) => (
               <NavLink key={t.to} to={t.to} end={t.end}
-                className={({ isActive }) => `relative flex min-h-11 items-center no-underline ${isActive ? 'font-semibold text-ink after:absolute after:inset-x-0 after:-bottom-[15px] after:h-0.5 after:bg-ink' : 'text-muted hover:text-ink'}`}>
+                className={({ isActive }) => `press flex min-h-10 items-center rounded-lg px-3 no-underline transition-colors ${isActive ? 'bg-brand-soft font-semibold text-brand' : 'text-muted hover:bg-ground hover:text-ink'}`}>
                 {t.label}
               </NavLink>
             ))}

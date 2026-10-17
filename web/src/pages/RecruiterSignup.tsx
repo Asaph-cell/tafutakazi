@@ -124,7 +124,7 @@ export default function RecruiterSignup() {
         </label>
 
         {error && <Notice>{error}</Notice>}
-        <Button type="submit" disabled={busy}>{busy ? 'Creating your account…' : 'Create recruiter account'}</Button>
+        <Button type="submit" busy={busy} busyLabel="Creating your account…">Create recruiter account</Button>
         <span className="text-[13px] text-muted">
           You can browse straight away. To post tasks you need a company email, or one of the links above.
         </span>

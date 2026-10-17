@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Link, useParams } from 'react-router-dom'
 import { GradLayout, SectionTitle } from '../../components/GradLayout'
-import { Button, LinkButton, Notice } from '../../components/ui'
+import { Button, LinkButton, Notice, SkeletonPage } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
 import { minutesLabel, recordLine, useTask } from '../../lib/grad'
 import { KIND_LABEL } from '../../lib/opportunity'
@@ -62,7 +62,7 @@ export default function TaskPage() {
     setReporting(false)
   }
 
-  if (isLoading) return <GradLayout narrow><p className="text-muted">Loading…</p></GradLayout>
+  if (isLoading) return <GradLayout narrow><SkeletonPage cards={2} /></GradLayout>
   if (!task) return <GradLayout narrow><p>This task isn't available any more.</p><Link to="/tasks">See open tasks</Link></GradLayout>
 
   const mine = session && files ? pickVariant(files, session.user.id, id) : []

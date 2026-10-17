@@ -80,7 +80,7 @@ export default function GradSignup() {
         </label>
 
         {error && <Notice>{error}</Notice>}
-        <Button type="submit" disabled={busy} className="mt-1">{busy ? 'Creating your account…' : 'Create account'}</Button>
+        <Button type="submit" busy={busy} busyLabel="Creating your account…" className="mt-1">Create account</Button>
 
         <div className="flex flex-col gap-1 text-[15px] text-muted">
           <span>Already have an account? <Link to="/login">Log in</Link></span>
