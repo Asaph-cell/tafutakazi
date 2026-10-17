@@ -6,6 +6,7 @@ export function SiteFooter() {
       <span className="flex-1">tafutakazi.co.ke</span>
       <Link to="/about" className="text-muted">About</Link>
       <Link to="/jobs" className="text-muted">Jobs</Link>
+      <Link to="/blog" className="text-muted">Blog</Link>
       <Link to="/hiring" className="text-muted">For employers</Link>
       <Link to="/partners" className="text-muted">Partner with us</Link>
       <Link to="/terms" className="text-muted">Terms</Link>

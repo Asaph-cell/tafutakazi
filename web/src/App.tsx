@@ -9,6 +9,8 @@ const RecruiterSignup = lazy(() => import('./pages/RecruiterSignup'))
 const Login = lazy(() => import('./pages/Login'))
 const Support = lazy(() => import('./pages/Support'))
 const About = lazy(() => import('./pages/About'))
+const BlogIndex = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogIndex })))
+const BlogPost = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogPost })))
 const Jobs = lazy(() => import('./pages/Jobs'))
 const JobPage = lazy(() => import('./pages/JobPage'))
 const PublicProfile = lazy(() => import('./pages/PublicProfile'))
@@ -53,6 +55,8 @@ export default function App() {
         <Route path="/partners" element={<Support />} />
         <Route path="/support" element={<Navigate to="/partners" replace />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
 

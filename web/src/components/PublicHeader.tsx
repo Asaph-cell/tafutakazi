@@ -8,6 +8,7 @@ export function PublicHeader() {
     <header className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-5 sm:px-6">
       <Link to="/" className="flex-1 text-[22px] no-underline"><Logo /></Link>
       <Link to="/about" className="hidden min-h-11 items-center text-ink no-underline sm:flex">About</Link>
+      <Link to="/blog" className="hidden min-h-11 items-center text-ink no-underline sm:flex">Blog</Link>
       <Link to="/jobs" className="flex min-h-11 items-center text-ink no-underline">Jobs</Link>
       {session && profile ? (
         <Link to={homeFor(profile.role)} className="flex min-h-11 items-center font-semibold text-ink no-underline">{profile.role === 'admin' ? 'Admin' : 'My account'}</Link>
