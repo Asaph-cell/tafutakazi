@@ -1,6 +1,7 @@
 // What search engines see before the app's code runs: each public page's own title, description
 // and a short summary. Keep in step with the <Seo> props in src/pages.
-import posts from '../src/blog/posts.json' with { type: 'json' }
+// Plain JSON import: Cloudflare's bundler reads it; the newer "with { type: 'json' }" form breaks its build.
+import posts from '../src/blog/posts.json'
 
 const HOME_DESC = 'Fresh graduates in Kenya do short tasks set by real companies, explain their work on video, and get seen by people who are hiring. Free.'
 

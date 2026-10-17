@@ -1,7 +1,8 @@
 // Shared by the Cloudflare Pages Functions: which addresses are real pages, and the sitemap.
 // Keep STATIC in step with the routes in src/App.tsx.
 
-import posts from '../src/blog/posts.json' with { type: 'json' }
+// Plain JSON import: Cloudflare's bundler reads it; the newer "with { type: 'json' }" form breaks its build.
+import posts from '../src/blog/posts.json'
 
 export const SITE = 'https://tafutakazi.co.ke'
 const BLOG = new Set(posts.map((post) => post.slug))
