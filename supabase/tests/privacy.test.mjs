@@ -450,5 +450,14 @@ ok((await as(grad2, () => fails(q(`select public.respond_round2($1, 'https://you
 const pj = await as('anon', () => q(`select kind, stipend, duration_months from public.public_jobs($1)`, [intern.id]))
 ok(pj[0]?.kind === 'internship' && pj[0]?.stipend === 'KSh 20,000 a month', 'the job board shows the type and stipend')
 
+// Impact numbers
+const impact = (await as(admin, () => q(`select public.impact_stats() as s`)))[0].s
+ok(impact.graduates >= 3 && impact.graduates_hired >= 1 && impact.monthly.length === 12, 'admins see the impact numbers')
+ok(impact.graduates_invited >= impact.graduates_hired && impact.graduates_with_work >= impact.graduates_invited, 'the funnel adds up')
+ok(!JSON.stringify(impact).includes('Wanjiru'), 'impact numbers never include names')
+ok((await as(grad1, () => fails(q(`select public.impact_stats()`)))) !== null, 'graduates cannot see impact numbers')
+ok((await as(recA, () => fails(q(`select public.impact_stats()`)))) !== null, 'recruiters cannot see impact numbers')
+ok((await as('anon', () => fails(q(`select public.impact_stats()`)))) !== null, 'visitors cannot see impact numbers')
+
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)

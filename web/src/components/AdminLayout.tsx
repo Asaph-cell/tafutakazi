@@ -8,6 +8,7 @@ const links = [
   { to: '/admin/new', label: 'New practice task', end: false },
   { to: '/admin/review', label: 'Review work', end: false },
   { to: '/admin/requests', label: 'Requests', end: false },
+  { to: '/admin/impact', label: 'Impact', end: false },
   { to: '/browse', label: 'Recruiter view', end: false },
 ]
 

@@ -42,6 +42,7 @@ const AdminTaskForm = lazy(() => import('./pages/admin/AdminTaskForm'))
 const AdminReview = lazy(() => import('./pages/admin/AdminReview'))
 const AdminSubmission = lazy(() => import('./pages/admin/AdminSubmission'))
 const AdminRequests = lazy(() => import('./pages/admin/AdminRequests'))
+const AdminImpact = lazy(() => import('./pages/admin/AdminImpact'))
 
 // Style samples: only in local development, never in the live build.
 const Samples = import.meta.env.DEV ? lazy(() => import('./pages/Samples').then((m) => ({ default: m.Samples }))) : null
@@ -86,6 +87,7 @@ export default function App() {
         <Route path="/admin/new" element={<RequireRole role="admin"><AdminTaskForm /></RequireRole>} />
         <Route path="/admin/tasks/:id" element={<RequireRole role="admin"><AdminTaskForm /></RequireRole>} />
         <Route path="/admin/requests" element={<RequireRole role="admin"><AdminRequests /></RequireRole>} />
+        <Route path="/admin/impact" element={<RequireRole role="admin"><AdminImpact /></RequireRole>} />
         <Route path="/admin/review" element={<RequireRole role="admin"><AdminReview /></RequireRole>} />
         <Route path="/admin/review/:id" element={<RequireRole role="admin"><AdminSubmission /></RequireRole>} />
 
