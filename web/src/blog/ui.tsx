@@ -2,8 +2,12 @@ import type { ReactNode } from 'react'
 
 // Building blocks for blog posts, so every post reads the same.
 
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
+// Section heading. Gets an id so the contents list can link to it.
 export function H2({ children }: { children: ReactNode }) {
-  return <h2 className="m-0 mt-8 text-[24px] font-semibold leading-tight tracking-[-0.02em] text-ink sm:text-[28px]">{children}</h2>
+  const id = typeof children === 'string' ? slugify(children) : undefined
+  return <h2 id={id} className="m-0 mt-8 scroll-mt-24 text-[24px] font-semibold leading-tight tracking-[-0.02em] text-ink sm:text-[28px]">{children}</h2>
 }
 
 export function P({ children }: { children: ReactNode }) {
