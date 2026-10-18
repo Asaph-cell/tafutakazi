@@ -18,7 +18,7 @@ export function initials(name: string | undefined) {
 export function GradLayout({ children, narrow = false }: { children: ReactNode; narrow?: boolean }) {
   const { profile } = useAuth()
   return (
-    <div className="min-h-screen pb-24 sm:pb-0">
+    <div data-clarity-mask="true" className="min-h-screen pb-24 sm:pb-0">
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-[1280px] items-center gap-8 px-5 py-3.5 sm:px-6">
           <Link to="/me" className="flex-1 text-xl no-underline sm:flex-none"><Logo /></Link>

@@ -1,14 +1,17 @@
-// Google Analytics, only with the visitor's consent (Kenya's Data Protection Act: non-essential cookies need it).
-// Page addresses are cleaned before they are sent: ids and graduates' profile names never reach Google.
+// Google Analytics and Microsoft Clarity, only with the visitor's consent (Kenya's Data Protection Act:
+// non-essential cookies need it). Page addresses sent to Google are cleaned: ids and graduates' profile names
+// never reach it. Clarity records visits (clicks, scrolls); typed text and private pages are masked.
 
 const GA_ID = 'G-61HWR8P71E'
+const CLARITY_ID = 'yzrezrrmaq'
 const KEY = 'tafutakazi-analytics'
 
 export type Choice = 'granted' | 'denied'
 
 type Gtag = (...args: unknown[]) => void
+type Clarity = ((...args: unknown[]) => void) & { q?: unknown[] }
 declare global {
-  interface Window { dataLayer?: unknown[]; gtag?: Gtag }
+  interface Window { dataLayer?: unknown[]; gtag?: Gtag; clarity?: Clarity }
 }
 
 export function savedChoice(): Choice | null {
@@ -23,7 +26,11 @@ export function savedChoice(): Choice | null {
 export function saveChoice(choice: Choice) {
   try { localStorage.setItem(KEY, choice) } catch { /* private mode: ask again next visit */ }
   if (choice === 'granted') load()
-  else if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'denied' })
+  else {
+    if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'denied' })
+    // Stops Clarity and clears its cookies.
+    if (window.clarity) window.clarity('consent', false)
+  }
 }
 
 // The site's own public pages; anything else is sent as a placeholder.
@@ -64,6 +71,18 @@ function load() {
   s.async = true
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
   document.head.appendChild(s)
+  loadClarity()
+}
+
+function loadClarity() {
+  const c: Clarity = window.clarity || function (...args: unknown[]) { (c.q = c.q || []).push(args) }
+  window.clarity = c
+  const s = document.createElement('script')
+  s.async = true
+  s.src = `https://www.clarity.ms/tag/${CLARITY_ID}`
+  document.head.appendChild(s)
+  // The visitor said yes in our cookie bar, so Clarity may set its cookies.
+  c('consent')
 }
 
 export function startIfAllowed() {

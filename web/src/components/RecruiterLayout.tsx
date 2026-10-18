@@ -16,7 +16,7 @@ export function RecruiterLayout({ children }: { children: ReactNode }) {
   const { data: me } = useRecruiter()
   const { profile } = useAuth()
   return (
-    <div className="min-h-screen">
+    <div data-clarity-mask="true" className="min-h-screen">
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6 sm:py-4">
           <Link to="/browse" className="text-xl no-underline"><Logo /></Link>

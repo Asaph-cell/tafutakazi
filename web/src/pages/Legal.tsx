@@ -5,7 +5,7 @@ import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
 
 const EMAIL = 'hello@tafutakazi.co.ke'
-const UPDATED = '17 October 2026'
+const UPDATED = '18 October 2026'
 
 const Mail = () => <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
 
@@ -295,6 +295,11 @@ export function Privacy() {
           addresses that contain an account id or a graduate's profile name are replaced with placeholders, so Google
           never receives your name or account details. Advertising features are switched off.
         </li>
+        <li>
+          <strong className="text-ink">Microsoft Clarity:</strong> only if you accept it. It records how visitors move
+          through the site (clicks, scrolling, pages) so we can see where people get stuck. Anything you type is hidden,
+          and pages you see after logging in are masked, so it never records your name, details or work.
+        </li>
         <li><strong className="text-ink">Resend:</strong> sending our emails.</li>
         <li>
           <strong className="text-ink">Google Gemini:</strong> the automatic check reads the text of tasks companies post
@@ -311,7 +316,7 @@ export function Privacy() {
       <H2>Cookies</H2>
       <p className="m-0">
         Signing in uses your browser's storage to keep you logged in; that is needed for the site to work. Google
-        Analytics cookies are set only if you choose Accept all in the cookie bar. You can change your choice at any time
+        Analytics and Microsoft Clarity cookies are set only if you choose Accept all in the cookie bar. You can change your choice at any time
         with Cookie settings at the bottom of every page.
       </p>
 

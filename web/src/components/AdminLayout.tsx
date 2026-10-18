@@ -15,7 +15,7 @@ const links = [
 export function AdminLayout({ children }: { children: ReactNode }) {
   const { signOut } = useAuth()
   return (
-    <div className="min-h-screen">
+    <div data-clarity-mask="true" className="min-h-screen">
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-2 px-5 py-4 sm:px-6">
           <Link to="/admin" className="text-xl no-underline"><Logo /></Link>
