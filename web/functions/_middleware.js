@@ -6,7 +6,7 @@
 //    the page's own title, description and links, plus a short readable summary, so search engines
 //    describe each page correctly.
 import { classify, exists } from '../server/routing.js'
-import { pageFor, summaryHtml } from '../server/pages.js'
+import { contentKey, fullHtml, pageFor, summaryHtml } from '../server/pages.js'
 
 export async function onRequest(ctx) {
   const res = await ctx.next()
@@ -29,7 +29,18 @@ export async function onRequest(ctx) {
   if (!page || typeof HTMLRewriter === 'undefined') return res
   const href = `https://tafutakazi.co.ke${page.path === '/' ? '/' : page.path}`
   const set = (attr, value) => ({ element: (el) => el.setAttribute(attr, value) })
+
+  // 3. The page's full text and structured data, rendered at build time, so crawlers that don't run
+  //    JavaScript (most AI crawlers) can read the whole page. Falls back to the short summary.
+  let built = null
+  try {
+    const r = await ctx.env.ASSETS.fetch(new URL(`/_content/${contentKey(page.path)}.json`, url))
+    if (r.ok && (r.headers.get('content-type') || '').includes('json')) built = await r.json()
+  } catch { /* the summary is enough */ }
+  const schema = (built?.jsonLd || []).map((j) => `<script type="application/ld+json">${j}</script>`).join('')
+
   return new HTMLRewriter()
+    .on('head', { element: (el) => { if (schema) el.append(schema, { html: true }) } })
     .on('title', { element: (el) => el.setInnerContent(page.title) })
     .on('meta[name="description"]', set('content', page.description))
     .on('meta[property="og:title"]', set('content', page.title))
@@ -38,7 +49,7 @@ export async function onRequest(ctx) {
     .on('meta[name="twitter:title"]', set('content', page.title))
     .on('meta[name="twitter:description"]', set('content', page.description))
     .on('link[rel="canonical"]', set('href', href))
-    .on('noscript', { element: (el) => el.setInnerContent(summaryHtml(page), { html: true }) })
+    .on('noscript', { element: (el) => el.setInnerContent(built?.html ? fullHtml(built.html) : summaryHtml(page), { html: true }) })
     .transform(res)
 }
 

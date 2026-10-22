@@ -10,5 +10,6 @@ Disallow: /account
 Disallow: /admin
 Disallow: /check-email
 Disallow: /reset-password
+Disallow: /_content/
 
 Sitemap: https://tafutakazi.co.ke/sitemap.xml

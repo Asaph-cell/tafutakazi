@@ -5,6 +5,7 @@ import { PublicHeader } from '../components/PublicHeader'
 import { Seo } from '../components/Seo'
 import { LinkButton } from '../components/ui'
 import { SiteFooter } from '../components/SiteFooter'
+import { Faq, GRADUATE_FAQ } from '../components/Faq'
 import { unsplash } from '../blog/ui'
 import { supabase } from '../lib/supabase'
 
@@ -189,6 +190,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <Faq title="Getting your first job in Kenya" items={GRADUATE_FAQ} />
 
         {/* ── Promises ──────────────────────────────────────────────────── */}
         <section className="grid gap-8 sm:grid-cols-3">

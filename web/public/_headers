@@ -10,3 +10,14 @@
 
 /practice/*
   Cache-Control: public, max-age=86400
+
+# Build-time page text for crawlers; served inside pages, not meant to be found on its own.
+/_content/*
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=300
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8

@@ -61,4 +61,14 @@ export function summaryHtml(page) {
     + `<nav><ul>${LINKS.map(([href, label]) => `<li><a href="${href}">${esc(label)}</a></li>`).join('')}</ul></nav></main>`
 }
 
+// The page's full text, rendered at build time (scripts/prerender.mjs writes dist/_content).
+export function fullHtml(html) {
+  return `<main style="max-width:720px;margin:40px auto;padding:0 20px;font-family:system-ui,sans-serif;color:#141414;line-height:1.6">`
+    + `<p style="font-weight:700">tafutakazi.</p>${html}`
+    + `<nav><ul>${LINKS.map(([href, label]) => `<li><a href="${href}">${esc(label)}</a></li>`).join('')}</ul></nav></main>`
+}
+
+// File name of a page's build-time text: "/" is index, "/blog/x" is blog__x.
+export const contentKey = (path) => (path === '/' ? 'index' : path.slice(1).split('/').join('__'))
+
 export { esc }

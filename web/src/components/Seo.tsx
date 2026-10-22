@@ -54,15 +54,21 @@ export function Seo({
     setCanonical(url)
   }, [fullTitle, description, noindex, url])
 
+  return jsonLd ? <JsonLd data={jsonLd} /> : null
+}
+
+// Structured data for search engines. In the browser it goes into <head>; when the page is rendered at
+// build time (no document), it's written inline so the server can send it with the page.
+export function JsonLd({ data }: { data: object }) {
+  const json = JSON.stringify(data)
   useEffect(() => {
-    if (!jsonLd) return
     const el = document.createElement('script')
     el.type = 'application/ld+json'
     el.dataset.page = 'true'
-    el.textContent = JSON.stringify(jsonLd)
+    el.textContent = json
     document.head.appendChild(el)
     return () => el.remove()
-  }, [JSON.stringify(jsonLd)])
-
-  return null
+  }, [json])
+  if (typeof document !== 'undefined') return null
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json.replace(/</g, String.fromCharCode(92) + 'u003c') }} />
 }

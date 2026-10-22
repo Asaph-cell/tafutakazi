@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Logo } from './Logo'
 
 // A calm single-column frame for sign-up, login and similar pages.
-export function AuthShell({ title, intro, children, aside }: { title: string; intro?: ReactNode; children: ReactNode; aside?: ReactNode }) {
+export function AuthShell({ title, intro, children, aside, after }: { title: string; intro?: ReactNode; children: ReactNode; aside?: ReactNode; after?: ReactNode }) {
   return (
     <div className="min-h-screen">
       <header className="bg-brand-deep">
@@ -21,6 +21,7 @@ export function AuthShell({ title, intro, children, aside }: { title: string; in
         </div>
         {aside && <aside className="hidden min-w-0 flex-[1_1_300px] lg:block">{aside}</aside>}
       </main>
+      {after && <div className="mx-auto max-w-[1280px] px-5 pb-20 sm:px-6">{after}</div>}
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthShell } from '../components/AuthShell'
+import { EMPLOYER_FAQ, Faq } from '../components/Faq'
 import { Seo } from '../components/Seo'
 import { RolePicker } from '../components/RolePicker'
 import { Button, Field, Notice, Select } from '../components/ui'
@@ -67,6 +68,7 @@ export default function RecruiterSignup() {
     <AuthShell
       title="Hire from real work, not CVs."
       intro="Watch fresh graduates explain work they actually did. Free to join."
+      after={<Faq title="Hiring graduates through Tafutakazi" items={EMPLOYER_FAQ} />}
       aside={
         <div className="sticky top-8 flex flex-col gap-3 pt-24">
           {steps.map((s, k) => (
