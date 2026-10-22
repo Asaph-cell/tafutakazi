@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 17 100 75" role="img" aria-label="Tafutakazi">
+  <circle cx="34" cy="30" r="13" fill="#0A6B4D"/>
+  <circle cx="86" cy="30" r="13" fill="#043D2C"/>
+  <path d="M30 52 H44 C61 52 59 92 76 92 H30 A20 20 0 0 1 30 52 Z" fill="#0A6B4D"/>
+  <path d="M90 92 H76 C59 92 61 52 44 52 H90 A20 20 0 0 1 90 92 Z" fill="#043D2C"/>
+</svg>

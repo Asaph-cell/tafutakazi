@@ -1,17 +1,19 @@
 import type { ButtonHTMLAttributes, InputHTMLAttributes, ReactNode, SelectHTMLAttributes } from 'react'
 import { Link, type LinkProps } from 'react-router-dom'
 
-type Variant = 'primary' | 'outline' | 'light' | 'outlineLight'
+type Variant = 'primary' | 'accent' | 'outline' | 'light' | 'outlineLight'
 
+// Hover, press and glow live in index.css (.btn and its btn-* partners).
 const variants: Record<Variant, string> = {
-  primary: 'bg-brand text-white hover:bg-brand-dark hover:text-white',
-  outline: 'border border-ink bg-white text-ink hover:bg-ground hover:text-ink',
-  light: 'bg-ground text-ink hover:bg-white hover:text-ink',
-  // For dark backgrounds: white outline and white text.
-  outlineLight: 'border border-ground/70 bg-transparent text-ground hover:bg-white/10 hover:text-ground',
+  primary: 'btn-primary btn-shine bg-brand text-white hover:bg-brand-dark hover:text-white',
+  accent: 'btn-accent btn-shine bg-accent text-brand-deep hover:bg-[#F7C24E] hover:text-brand-deep',
+  outline: 'btn-outline border border-ink bg-white text-ink hover:border-brand hover:bg-brand hover:text-white',
+  light: 'btn-outline bg-ground text-ink hover:bg-white hover:text-brand',
+  // For dark backgrounds: white outline that fills white on hover.
+  outlineLight: 'btn-outline border border-ground/70 bg-transparent text-ground hover:border-white hover:bg-white hover:text-brand-deep',
 }
 
-const shape = 'press relative inline-flex min-h-[52px] items-center justify-center overflow-hidden rounded-xl px-6 font-semibold no-underline'
+const shape = 'btn relative inline-flex min-h-[52px] items-center justify-center gap-2 overflow-hidden rounded-xl px-6 font-semibold no-underline'
 const base = `${shape} disabled:cursor-not-allowed disabled:bg-[#DADAD4] disabled:text-[#6B6B66]`
 
 // busy: a spinner (or, with `fill`, a bar filling the button, for uploads) and busyLabel.
@@ -59,7 +61,12 @@ export function LinkButton({
   className = '',
   ...props
 }: LinkProps & { variant?: Variant }) {
-  return <Link className={`${base} ${variants[variant]} ${className}`} {...props} />
+  const { children, ...rest } = props
+  return (
+    <Link className={`${base} ${variants[variant]} ${className}`} {...rest}>
+      <span className="relative inline-flex items-center gap-2">{children}</span>
+    </Link>
+  )
 }
 
 const inputClass =

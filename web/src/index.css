@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
 
   --color-ground: #F6F6F3;
   --color-ink: #141414;
@@ -9,9 +10,13 @@
   --color-muted: #5C5C57;
   --color-line: #E3E3DE;
   --color-line-strong: #D6D6D0;
-  --color-brand: #0E5C45;
-  --color-brand-dark: #093F30;
-  --color-brand-soft: #E6EFEB;
+  /* Emerald green, with gold as the highlight on dark green. */
+  --color-brand: #0A6B4D;
+  --color-brand-dark: #075A40;
+  --color-brand-deep: #043D2C;
+  --color-brand-soft: #E2F1E9;
+  --color-accent: #F2B632;
+  --color-accent-dark: #DDA21F;
   --color-danger: #A3361B;
 
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
@@ -29,6 +34,11 @@
     font-family: var(--font-sans);
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
+  }
+  /* Headings in the serif. Small labels opt out with font-sans. */
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
   }
   a {
     color: var(--color-brand);
@@ -49,6 +59,67 @@
   }
   .press:active:not(:disabled) {
     transform: scale(0.97);
+  }
+}
+
+/* Buttons: lift on hover, sink on press, arrows nudge forward, a sheen sweeps across. */
+@layer components {
+  .btn {
+    transition:
+      transform 220ms var(--ease-out-strong),
+      background-color 200ms ease,
+      border-color 200ms ease,
+      color 200ms ease,
+      box-shadow 260ms var(--ease-out-strong);
+  }
+  .btn .arrow {
+    display: inline-block;
+    transition: transform 260ms var(--ease-out-strong);
+  }
+  .btn-shine::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.32) 50%, transparent 70%);
+    transform: translateX(-130%);
+    pointer-events: none;
+  }
+  /* Only where there's a real mouse, so phones don't get a stuck hover. */
+  @media (hover: hover) {
+    .btn:hover:not(:disabled) { transform: translateY(-2px); }
+    .btn:hover .arrow { transform: translateX(4px); }
+    .btn-shine:hover:not(:disabled)::before {
+      transform: translateX(130%);
+      transition: transform 700ms var(--ease-out-strong);
+    }
+  }
+  .btn:active:not(:disabled) {
+    transform: translateY(0) scale(0.97);
+    box-shadow: none;
+    transition-duration: 90ms;
+  }
+  .btn:focus-visible { outline-offset: 3px; }
+}
+
+/* Menu links: a line grows from the left on hover, and stays under the current page. */
+@layer components {
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 4px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-brand);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 280ms var(--ease-out-strong);
+  }
+  .nav-link-light::after { background: var(--color-accent); }
+  .nav-link.is-active::after { transform: scaleX(1); }
+  @media (hover: hover) {
+    .nav-link:hover::after { transform: scaleX(1); }
   }
 }
 
@@ -77,7 +148,10 @@
 @media (prefers-reduced-motion: reduce) {
   .rise { animation: none; opacity: 1; }
   .ch, .deck-card, .pop { transition: opacity 300ms ease; transition-delay: 0ms !important; }
-  .press { transition: none; }
+  .press, .btn, .btn .arrow { transition: none; }
+  .btn:hover:not(:disabled), .btn:active:not(:disabled) { transform: none; }
+  .btn-shine::before { display: none; }
+  .nav-link::after { transition: none; }
   .press:active:not(:disabled) { transform: none; }
 }
 
@@ -184,4 +258,9 @@ main {
   main, .reveal, .swap, .toast, .shake, .ripple { animation: none; }
   .sk::after { animation: none; }
   .fill-bar { animation-duration: 0s; }
+}
+
+/* Serif headings: the tight tracking used across the site was set for a sans-serif. */
+h1, h2, h3 {
+  letter-spacing: -0.005em;
 }

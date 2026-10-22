@@ -23,13 +23,21 @@ Checked one by one on **17 October 2026**, by opening each photo's Unsplash page
 | # | Used on | Photo page | Photographer | Published on Unsplash | Licence line on the page |
 |---|---|---|---|---|---|
 | 1 | Blog: *Kenya's graduate jobs gap in 2026* (cover, and on /blog) | https://unsplash.com/photos/a-graduate-throwing-a-mortar-in-the-air-3RqAj1C40yo | Oscar Omondi (https://unsplash.com/@xodusdigitals) | 19 February 2022 | Free to use under the Unsplash License |
-| 2 | Same post, "A generation waiting in line" | https://unsplash.com/photos/a-group-of-people-in-graduation-gowns-posing-for-a-picture-J2jdh2Wiw-8 | Oscar Omondi (https://unsplash.com/@xodusdigitals) | 19 February 2022 | Free to use under the Unsplash License |
-| 3 | Same post, "What the future looks like" | https://unsplash.com/photos/modern-cityscape-with-diverse-architectural-buildings-under-a-cloudy-sky-8JnXfVk6PdI | Seth Salimo (https://unsplash.com/@thesixthsalimo) | 15 June 2026 | Free to use under the Unsplash License |
+| 2 | Blog post, "A generation waiting in line" | https://unsplash.com/photos/a-group-of-people-in-graduation-gowns-posing-for-a-picture-J2jdh2Wiw-8 | Oscar Omondi (https://unsplash.com/@xodusdigitals) | 19 February 2022 | Free to use under the Unsplash License |
+| 3 | Homepage "For employers" band; same post, "What the future looks like" | https://unsplash.com/photos/modern-cityscape-with-diverse-architectural-buildings-under-a-cloudy-sky-8JnXfVk6PdI | Seth Salimo (https://unsplash.com/@thesixthsalimo) | 15 June 2026 | Free to use under the Unsplash License |
 | 4 | Same post, "Why the best graduates are being overlooked" | https://unsplash.com/photos/woman-using-macbook-KAULAzQwxzE | Christina @ wocintechchat.com (https://unsplash.com/@wocintechchat) | 7 November 2019 | Free to use under the Unsplash License |
 | 5 | Same post, "What this means if you hire" | https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-desk-in-front-of-a-computer-U6RmGyT-aJ4 | TheStandingDesk (https://unsplash.com/@thestandingdesk) | 29 September 2021 | Free to use under the Unsplash License |
-| 6 | Same post, after the opening | https://unsplash.com/photos/a-group-of-people-sitting-around-a-table-with-laptops-YDEiseFR_Q8 | UK Black Tech (https://unsplash.com/@ukblacktech) | 26 May 2022 | Free to use under the Unsplash License |
+| 6 | Homepage "Software and IT" card; same post, after the opening | https://unsplash.com/photos/a-group-of-people-sitting-around-a-table-with-laptops-YDEiseFR_Q8 | UK Black Tech (https://unsplash.com/@ukblacktech) | 26 May 2022 | Free to use under the Unsplash License |
 
-Image file IDs used in the site code (`web/src/blog/`): 1 `photo-1645262960735-1af893390f8b`, 2 `photo-1645262960690-5cb9db42d35a`, 3 `photo-1781504842018-c51ce0dac23f`, 4 `photo-1573167101669-476636b96cea`, 5 `photo-1632923943917-a1dd60878fa4`, 6 `photo-1653566031486-dc4ead13a35d`.
+Image file IDs used in the site code (`web/src/blog/` and `web/src/pages/Home.tsx`): 1 `photo-1645262960735-1af893390f8b`, 2 `photo-1645262960690-5cb9db42d35a`, 3 `photo-1781504842018-c51ce0dac23f`, 4 `photo-1573167101669-476636b96cea`, 5 `photo-1632923943917-a1dd60878fa4`, 6 `photo-1653566031486-dc4ead13a35d`.
+
+## Our own images
+| Used on | File | Source |
+|---|---|---|
+| Homepage hero (four graduates looking at a phone) | `web/public/home/graduates.webp` | Supplied by Tafutakazi on 22 October 2026, not a stock photo. Record here how it was made (taken by us, or made with an AI image tool, and which one) and confirm we hold the rights. |
+| About page, top (four graduates in caps on graduation day) | `web/public/about/graduates.webp` | Supplied by Tafutakazi on 22 October 2026, not a stock photo. Record how it was made and confirm we hold the rights. |
+| Homepage "Data and analysis" card (laptop with a sales dashboard) | `web/public/home/data.webp` | Supplied by Tafutakazi on 22 October 2026. Record where it came from and confirm we may use it. |
+| Homepage "Business and finance" card (desk with laptop, plans and coffee) | `web/public/home/business.webp` | Supplied by Tafutakazi on 22 October 2026. Record where it came from and confirm we may use it. |
 
 ## Screenshots
 

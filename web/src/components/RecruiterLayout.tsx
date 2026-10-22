@@ -17,22 +17,22 @@ export function RecruiterLayout({ children }: { children: ReactNode }) {
   const { profile } = useAuth()
   return (
     <div data-clarity-mask="true" className="min-h-screen">
-      <header className="border-b border-line bg-white">
-        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6 sm:py-4">
-          <Link to="/browse" className="text-xl no-underline"><Logo /></Link>
+      <header className="bg-brand-deep text-white">
+        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-x-6 gap-y-1 px-5 py-3 sm:px-6">
+          <Link to="/browse" className="text-xl no-underline"><Logo light /></Link>
           <nav className="order-last flex w-full gap-1 sm:order-none sm:w-auto sm:flex-1">
             {links.map((l) => (
               <NavLink key={l.to} to={l.to}
-                className={({ isActive }) => `press flex min-h-10 items-center rounded-lg px-3 no-underline transition-colors ${isActive ? 'bg-brand-soft font-semibold text-brand' : 'text-muted hover:bg-ground hover:text-ink'}`}>
+                className={({ isActive }) => `nav-link nav-link-light relative flex min-h-10 items-center px-3 no-underline transition-colors duration-200 ${isActive ? 'is-active font-semibold text-white hover:text-white' : 'text-white/75 hover:text-white'}`}>
                 {l.label}
               </NavLink>
             ))}
             {profile?.role === 'admin' && (
-              <Link to="/admin" className="flex min-h-10 items-center px-3 font-semibold text-brand no-underline">Admin</Link>
+              <Link to="/admin" className="flex min-h-10 items-center px-3 font-semibold text-accent no-underline hover:text-white">Admin</Link>
             )}
           </nav>
-          <span className="ml-auto hidden text-sm text-muted sm:ml-0 sm:inline">{me?.company?.name}</span>
-          <Link to="/post" className="press ml-auto flex min-h-10 items-center rounded-lg bg-brand px-4 text-sm font-semibold text-white no-underline hover:text-white sm:ml-0">
+          <span className="ml-auto hidden text-sm text-white/70 sm:ml-0 sm:inline">{me?.company?.name}</span>
+          <Link to="/post" className="btn btn-accent btn-shine relative ml-auto flex min-h-10 items-center overflow-hidden rounded-lg bg-accent px-4 text-sm font-semibold text-brand-deep no-underline hover:bg-[#F7C24E] hover:text-brand-deep sm:ml-0">
             Post a task
           </Link>
         </div>

@@ -19,23 +19,23 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
   const { profile } = useAuth()
   return (
     <div data-clarity-mask="true" className="min-h-screen pb-24 sm:pb-0">
-      <header className="border-b border-line bg-white">
-        <div className="mx-auto flex max-w-[1280px] items-center gap-8 px-5 py-3.5 sm:px-6">
-          <Link to="/me" className="flex-1 text-xl no-underline sm:flex-none"><Logo /></Link>
+      <header className="bg-brand-deep text-white">
+        <div className="mx-auto flex min-h-16 max-w-[1280px] items-center gap-8 px-5 py-3 sm:px-6">
+          <Link to="/me" className="flex-1 text-xl no-underline sm:flex-none"><Logo light /></Link>
           <nav className="hidden flex-1 gap-1 sm:flex">
             {tabs.map((t) => (
               <NavLink key={t.to} to={t.to} end={t.end}
-                className={({ isActive }) => `press flex min-h-10 items-center rounded-lg px-3 no-underline transition-colors ${isActive ? 'bg-brand-soft font-semibold text-brand' : 'text-muted hover:bg-ground hover:text-ink'}`}>
+                className={({ isActive }) => `nav-link nav-link-light relative flex min-h-10 items-center px-3 no-underline transition-colors duration-200 ${isActive ? 'is-active font-semibold text-white hover:text-white' : 'text-white/75 hover:text-white'}`}>
                 {t.label}
               </NavLink>
             ))}
           </nav>
           {profile?.role === 'admin' && (
-            <Link to="/admin" className="flex min-h-11 items-center text-sm font-semibold text-brand no-underline">Admin</Link>
+            <Link to="/admin" className="flex min-h-11 items-center text-sm font-semibold text-accent no-underline hover:text-white">Admin</Link>
           )}
-          <Link to="/me/profile" className="flex items-center gap-2.5 text-sm text-ink no-underline hover:text-ink">
+          <Link to="/me/profile" className="flex items-center gap-2.5 text-sm text-white/85 no-underline hover:text-white">
             <span className="hidden sm:inline">{profile?.full_name}</span>
-            <span aria-hidden="true" className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-soft text-[13px] font-semibold text-brand">
+            <span aria-hidden="true" className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-[13px] font-semibold text-brand-deep">
               {initials(profile?.full_name)}
             </span>
           </Link>
@@ -50,7 +50,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
         {tabs.map((t) => (
           <NavLink key={t.to} to={t.to} end={t.end}
             className={({ isActive }) =>
-              `press flex flex-1 flex-col items-center justify-center gap-0.5 text-xs no-underline ${isActive ? 'font-semibold text-brand' : 'text-muted'}`}>
+              `press relative flex flex-1 flex-col items-center justify-center gap-0.5 text-xs no-underline ${isActive ? 'font-semibold text-brand before:absolute before:inset-x-6 before:top-0 before:h-[3px] before:rounded-b before:bg-accent' : 'text-muted'}`}>
             <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{t.icon}</svg>
             {t.label}
           </NavLink>
@@ -61,7 +61,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
 }
 
 export function SectionTitle({ children }: { children: ReactNode }) {
-  return <h2 className="m-0 text-[13px] font-semibold uppercase tracking-[0.06em] text-muted">{children}</h2>
+  return <h2 className="m-0 font-sans text-[13px] font-semibold uppercase tracking-[0.06em] text-muted">{children}</h2>
 }
 
 // A white card with an optional heading row, the basic building block of the grad pages.

@@ -66,7 +66,7 @@ export default function MyTasks() {
                   <span className="min-w-7 text-sm text-ink-2">{on ? 'On' : 'Off'}</span>
                   <button role="switch" aria-checked={on} aria-label={`Show "${t.title}" to graduates`} onClick={() => setOn(t, !on)}
                     className="press h-8 w-[52px] cursor-pointer rounded-full border-0 p-[3px] transition-colors duration-200"
-                    style={{ background: on ? '#0E5C45' : '#C9C9C3' }}>
+                    style={{ background: on ? 'var(--color-brand)' : '#C9C9C3' }}>
                     <span className="block h-[26px] w-[26px] rounded-full bg-white transition-transform duration-200 ease-[var(--ease-out-strong)]"
                       style={{ transform: `translateX(${on ? 20 : 0}px)` }} />
                   </button>

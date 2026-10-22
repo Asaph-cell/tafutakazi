@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="tafutakazi">
-  <rect width="64" height="64" rx="14" fill="#F6F6F3"/>
-  <path d="M17 11h10v9h9v8h-9v14q0 4 4 4h5v8h-7q-12 0-12-11V28h-5v-8h5z" fill="#141414"/>
-  <rect x="41" y="44" width="10" height="10" fill="#0E5C45"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><rect width="132" height="132" rx="28" fill="#0A6B4D"/><g transform="translate(6 11.5)"><circle cx="34" cy="30" r="13" fill="#F2B632"/><circle cx="86" cy="30" r="13" fill="#FFFFFF"/><path d="M30 52 H44 C61 52 59 92 76 92 H30 A20 20 0 0 1 30 52 Z" fill="#F2B632"/><path d="M90 92 H76 C59 92 61 52 44 52 H90 A20 20 0 0 1 90 92 Z" fill="#FFFFFF"/></g></svg>

@@ -98,7 +98,7 @@ export default function Account() {
           </span>
           <button role="switch" aria-checked={me.digest_enabled} aria-labelledby="r-digest" onClick={toggleDigest}
             className="press h-8 w-[52px] shrink-0 cursor-pointer rounded-full border-0 p-[3px] transition-colors duration-200"
-            style={{ background: me.digest_enabled ? '#0E5C45' : '#C9C9C3' }}>
+            style={{ background: me.digest_enabled ? 'var(--color-brand)' : '#C9C9C3' }}>
             <span className="block h-[26px] w-[26px] rounded-full bg-white transition-transform duration-200 ease-[var(--ease-out-strong)]"
               style={{ transform: `translateX(${me.digest_enabled ? 20 : 0}px)` }} />
           </button>

@@ -48,7 +48,7 @@ export default function GradSignup() {
 
   return (
     <AuthShell
-      title="Show your work. Get hired."
+      title="Prove what you can do."
       intro="Do short tasks from Kenyan companies. Recruiters see what you can do, not just your CV."
     >
       <Seo title="Sign up as a fresh graduate" description="Just graduated with no work experience? Join free, do short tasks from Kenyan companies and get seen by people who are hiring." />

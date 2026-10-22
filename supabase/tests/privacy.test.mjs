@@ -459,5 +459,10 @@ ok((await as(grad1, () => fails(q(`select public.impact_stats()`)))) !== null, '
 ok((await as(recA, () => fails(q(`select public.impact_stats()`)))) !== null, 'recruiters cannot see impact numbers')
 ok((await as('anon', () => fails(q(`select public.impact_stats()`)))) !== null, 'visitors cannot see impact numbers')
 
+// Email design
+const mails = (await q(`select body from net.calls where url like '%resend%'`)).map((r) => r.body.html)
+ok(mails.length > 0 && mails.every((h) => h.includes('/brand/email-logo.png')), 'every email carries the logo')
+ok((await q(`select count(*)::int as n from pg_proc p join pg_namespace n on n.oid = p.pronamespace where n.nspname = 'public' and p.prosrc like '%#0E5C45%'`))[0].n === 0, 'no email uses the old green')
+
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)

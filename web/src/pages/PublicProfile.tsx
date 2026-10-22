@@ -53,9 +53,11 @@ export default function PublicProfile() {
   return (
     <div className="min-h-screen">
       <Seo title={`${data.full_name} · Practical work`} description={`${data.full_name}, fresh graduate in ${data.course}. Practical tasks and honest verdicts on Tafutakazi.`} noindex />
-      <header className="mx-auto flex max-w-[960px] items-center gap-4 px-5 py-5 sm:px-6">
-        <Link to="/" className="flex-1 text-xl no-underline"><Logo /></Link>
-        <Link to="/login" className="flex min-h-11 items-center font-semibold text-ink no-underline">Log in</Link>
+      <header className="bg-brand-deep">
+        <div className="mx-auto flex min-h-16 max-w-[960px] items-center gap-4 px-5 py-3 sm:px-6">
+          <Link to="/" className="flex-1 text-xl no-underline"><Logo light /></Link>
+          <Link to="/login" className="btn btn-accent flex min-h-10 items-center rounded-lg border border-white/60 px-4 font-semibold text-white no-underline hover:border-accent hover:bg-accent hover:text-brand-deep">Log in</Link>
+        </div>
       </header>
       <main className="mx-auto flex max-w-[960px] flex-col gap-10 px-5 pb-20 pt-6 sm:px-6">
         <section className="flex flex-col gap-2.5">

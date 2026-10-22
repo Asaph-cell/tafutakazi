@@ -22,7 +22,7 @@ function Bars() {
   return (
     <div aria-hidden="true" className="hidden h-[88px] w-[150px] shrink-0 items-end gap-2 rounded-md bg-[#EEF1EE] px-4 py-3 sm:flex">
       {[30, 70, 50, 85, 40].map((h, k) => (
-        <div key={k} className="w-4 rounded-sm" style={{ height: `${h}%`, background: k % 2 ? '#0E5C45' : '#A9C2B7' }} />
+        <div key={k} className="w-4 rounded-sm" style={{ height: `${h}%`, background: k % 2 ? 'var(--color-brand)' : '#A9C2B7' }} />
       ))}
     </div>
   )

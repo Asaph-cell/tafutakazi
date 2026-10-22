@@ -6,7 +6,7 @@ import posts from '../src/blog/posts.json'
 const HOME_DESC = 'Fresh graduates in Kenya do short tasks set by real companies, explain their work on video, and get seen by people who are hiring. Free.'
 
 export const PAGES = {
-  '/': { title: 'Tafutakazi · Show your work. Get hired.', h1: 'Show your work. Get hired.', description: HOME_DESC },
+  '/': { title: "Tafutakazi · Breaking Kenya's unemployment loop", h1: "Breaking Kenya's unemployment loop.", description: HOME_DESC },
   '/about': {
     title: 'Why Tafutakazi exists · Tafutakazi',
     h1: 'Why Tafutakazi exists',

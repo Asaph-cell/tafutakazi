@@ -39,7 +39,7 @@ export function Seo({
   jsonLd?: object
 }) {
   const { pathname } = useLocation()
-  const fullTitle = title ? `${title} · Tafutakazi` : 'Tafutakazi · Show your work. Get hired.'
+  const fullTitle = title ? `${title} · Tafutakazi` : "Tafutakazi · Breaking Kenya's unemployment loop"
   const url = SITE_URL + pathname
 
   useEffect(() => {

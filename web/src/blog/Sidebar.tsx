@@ -60,7 +60,7 @@ export function Sidebar({ articleRef, audience }: { articleRef: RefObject<HTMLEl
           </>
         ) : (
           <>
-            <span className="text-lg font-semibold leading-snug">Just graduated? Show your work.</span>
+            <span className="text-lg font-semibold leading-snug">Just graduated? Prove what you can do.</span>
             <span className="text-[15px] text-[#C9C9C3]">Do short tasks from real companies and get seen by people who are hiring. Free.</span>
             <Link to="/join" className="press mt-1 flex min-h-11 items-center justify-center rounded-lg bg-white px-4 font-semibold text-ink no-underline hover:text-ink">Join free</Link>
           </>

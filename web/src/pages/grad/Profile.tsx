@@ -34,7 +34,7 @@ function Toggle({ on, onClick, labelId }: { on: boolean; onClick: () => void; la
   return (
     <button role="switch" aria-checked={on} aria-labelledby={labelId} onClick={onClick}
       className="press h-8 w-[52px] shrink-0 cursor-pointer rounded-full border-0 p-[3px] transition-colors duration-200"
-      style={{ background: on ? '#0E5C45' : '#C9C9C3' }}>
+      style={{ background: on ? 'var(--color-brand)' : '#C9C9C3' }}>
       <span className="block h-[26px] w-[26px] rounded-full bg-white transition-transform duration-200 ease-[var(--ease-out-strong)]"
         style={{ transform: `translateX(${on ? 20 : 0}px)` }} />
     </button>

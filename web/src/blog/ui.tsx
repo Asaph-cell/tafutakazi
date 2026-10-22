@@ -43,7 +43,7 @@ export function Bars({ rows, max, note }: { rows: [string, number, boolean?][]; 
             <span className={`tabular-nums ${strong ? 'font-semibold text-brand' : ''}`}>{value.toLocaleString('en-KE')}</span>
           </div>
           <div className="h-2.5 rounded-full bg-[#EEEEE9]">
-            <div className="h-full rounded-full" style={{ width: `${Math.max(1, (value / max) * 100)}%`, background: strong ? '#0E5C45' : '#A9A9A2' }} />
+            <div className="h-full rounded-full" style={{ width: `${Math.max(1, (value / max) * 100)}%`, background: strong ? 'var(--color-brand)' : '#A9A9A2' }} />
           </div>
         </div>
       ))}
