@@ -9,6 +9,7 @@ export const POSTS = (list as Post[]).slice().sort((a, b) => b.date.localeCompar
 
 export const BODIES: Record<string, LazyExoticComponent<ComponentType>> = {
   'kenya-graduate-jobs-gap-2026': lazy(() => import('./kenya-graduate-jobs-gap-2026')),
+  'kenya-youth-jobs-gap-the-numbers': lazy(() => import('./kenya-youth-jobs-gap-the-numbers')),
 }
 
 export const postDate = (iso: string) => new Date(iso).toLocaleDateString('en-KE', { day: 'numeric', month: 'long', year: 'numeric' })

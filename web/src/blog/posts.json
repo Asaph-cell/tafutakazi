@@ -13,5 +13,20 @@
       "user": "xodusdigitals",
       "caption": "Graduation day in Nairobi."
     }
+  },
+  {
+    "slug": "kenya-youth-jobs-gap-the-numbers",
+    "title": "Kenya's Youth Jobs Gap: What the Numbers Say",
+    "description": "In the best case, at most 1 in 8 young Kenyans entering the job market each year can land a formal job, and in reality far fewer. Here are the numbers behind that figure.",
+    "audience": "The data",
+    "date": "2026-10-27",
+    "readMinutes": 6,
+    "cover": {
+      "id": "/blog/nairobi-street.webp",
+      "alt": "Matatus and people on a busy street in Nairobi",
+      "by": "Tafutakazi",
+      "user": "",
+      "caption": "Nairobi."
+    }
   }
 ]

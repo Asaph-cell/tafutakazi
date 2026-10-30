@@ -65,7 +65,7 @@ export function BlogPost() {
           dateModified: post.date,
           mainEntityOfPage: url,
           url,
-          image: post.cover ? unsplash(post.cover.id, 1200, 16 / 9) : `${SITE_URL}/og-image.png`,
+          image: post.cover ? new URL(unsplash(post.cover.id, 1200, 16 / 9), SITE_URL).href : `${SITE_URL}/og-image.png`,
           author: { '@type': 'Organization', name: 'Tafutakazi', url: SITE_URL },
           publisher: { '@id': `${SITE_URL}/#organization` },
         }}

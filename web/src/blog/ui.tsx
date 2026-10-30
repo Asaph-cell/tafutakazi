@@ -52,11 +52,37 @@ export function Bars({ rows, max, note }: { rows: [string, number, boolean?][]; 
   )
 }
 
+// A plain data table. Scrolls sideways on phones instead of squeezing the columns.
+export function Table({ head, rows, note }: { head: string[]; rows: ReactNode[][]; note?: ReactNode }) {
+  return (
+    <figure className="m-0 my-2 flex flex-col gap-2">
+      <div className="overflow-x-auto rounded-2xl border border-line bg-white">
+        <table className="w-full border-collapse text-left text-[15px]">
+          <thead>
+            <tr className="border-b border-line bg-brand-soft text-ink">
+              {head.map((h) => <th key={h} className="px-4 py-3 font-semibold">{h}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, r) => (
+              <tr key={r} className="border-b border-line last:border-0">
+                {row.map((cell, c) => <td key={c} className="px-4 py-3 align-top">{cell}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {note && <figcaption className="text-[13px] text-muted">{note}</figcaption>}
+    </figure>
+  )
+}
+
 // A photo from Unsplash (free under the Unsplash License), loaded from Unsplash's servers. by/user record who took it.
 export type PhotoInfo = { id: string; alt: string; by: string; user: string; caption?: string }
 
+// Our own images are addresses on this site ("/blog/x.webp"), used as they are.
 export const unsplash = (id: string, w: number, ratio: number) =>
-  `https://images.unsplash.com/${id}?w=${w}&h=${Math.round(w / ratio)}&fit=crop&crop=faces,entropy&auto=format&q=72`
+  id.startsWith('/') ? id : `https://images.unsplash.com/${id}?w=${w}&h=${Math.round(w / ratio)}&fit=crop&crop=faces,entropy&auto=format&q=72`
 
 export function Photo({ photo, ratio = 3 / 2, priority = false }: { photo: PhotoInfo; ratio?: number; priority?: boolean }) {
   return (

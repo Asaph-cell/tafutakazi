@@ -38,6 +38,8 @@ Image file IDs used in the site code (`web/src/blog/` and `web/src/pages/Home.ts
 | About page, top (four graduates in caps on graduation day) | `web/public/about/graduates.webp` | Supplied by Tafutakazi on 22 October 2026, not a stock photo. Record how it was made and confirm we hold the rights. |
 | Homepage "Data and analysis" card (laptop with a sales dashboard) | `web/public/home/data.webp` | Supplied by Tafutakazi on 22 October 2026. Record where it came from and confirm we may use it. |
 | Homepage "Business and finance" card (desk with laptop, plans and coffee) | `web/public/home/business.webp` | Supplied by Tafutakazi on 22 October 2026. Record where it came from and confirm we may use it. |
+| Blog: *Kenya's Youth Jobs Gap* (cover, Nairobi street) | `web/public/blog/nairobi-street.webp` | Supplied by Tafutakazi on 30 October 2026. Record where it came from and confirm we may use it. |
+| Blog: *Kenya's Youth Jobs Gap* (inline, young people in a crowd) | `web/public/blog/young-people.webp` | Supplied by Tafutakazi on 30 October 2026. Identifiable people: record where it came from and confirm we may use it. |
 
 ## Screenshots
 
