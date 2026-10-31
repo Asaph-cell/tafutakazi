@@ -15,6 +15,37 @@ const EVIDENCE: [string, number, boolean][] = [
 
 const SOURCE ='https://www.businessdailyafrica.com/bd/economy/kenya-s-youth-joblessness-highest-in-the-region-5432820'
 
+const mission: { title: string; sub: string; caption: string; gold: boolean; icon: ReactNode }[] = [
+  {
+    title: 'First jobs',
+    sub: 'for fresh graduates',
+    caption: 'Give fresh graduates a real chance at their first job',
+    gold: true,
+    icon: <><path d="M3 9.5 12 5l9 4.5-9 4.5z" /><path d="M7 12v4.5c0 1 2.2 2.5 5 2.5s5-1.5 5-2.5V12" /></>,
+  },
+  {
+    title: 'Skills',
+    sub: 'before anything else',
+    caption: 'Make skills-based hiring the norm, so people are judged on what they can do',
+    gold: false,
+    icon: <><path d="M12 3.5 14.6 9l6 .8-4.4 4.2 1.1 6-5.3-2.9L6.7 20l1.1-6-4.4-4.2 6-.8z" /></>,
+  },
+  {
+    title: 'Merit',
+    sub: 'over who you know',
+    caption: 'Beat connections, nepotism and lies on CVs',
+    gold: true,
+    icon: <><path d="M12 3.5 19.5 6v5.5c0 4.5-3 7.5-7.5 9-4.5-1.5-7.5-4.5-7.5-9V6z" /><path d="m8.5 12 2.5 2.5 4.5-5" /></>,
+  },
+  {
+    title: 'More jobs',
+    sub: 'from like-minded employers',
+    caption: 'Reduce unemployment by opening up job opportunities with like-minded employers',
+    gold: false,
+    icon: <><rect x="3.5" y="8" width="17" height="11.5" rx="2" /><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3.5 13h17" /></>,
+  },
+]
+
 const stats = [
   ['286,695', 'graduates from universities and TVET colleges entered the job market in Kenya in 2024'],
   ['75,000', 'formal jobs were created in the same year'],
@@ -76,7 +107,7 @@ export default function About() {
     <div className="min-h-screen">
       <Seo
         title="Why Tafutakazi exists"
-        description="Kenyan employers ask for experience that fresh graduates can't get without a job. Tafutakazi breaks that loop: graduates prove what they can do through short tasks from real companies."
+        description="Tafutakazi brings skills-based hiring to Kenya: fresh graduates prove what they can do through short tasks from real companies, so hiring rests on skills, not connections or CVs."
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
@@ -111,6 +142,30 @@ export default function About() {
               job market rarely offers them: a fair chance to prove their skills before anyone asks about experience.
             </p>
           </div>
+        </section>
+
+        {/* ── Mission ── */}
+        <section aria-label="Our mission" className="flex flex-col items-center gap-10 rounded-2xl bg-brand-soft/60 px-5 py-10 sm:gap-14 sm:px-8 sm:py-14">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.14em] text-brand">Our mission</span>
+            <h2 className="m-0 max-w-[26ch] text-[30px] font-semibold leading-tight sm:text-[40px]">Hiring that rewards what you can do</h2>
+            <span aria-hidden="true" className="block h-[3px] w-14 bg-brand" />
+          </div>
+          <ul className="m-0 grid w-full list-none grid-cols-2 gap-x-5 gap-y-10 p-0 lg:grid-cols-4 lg:gap-x-8">
+            {mission.map(({ title, sub, caption, gold, icon }, k) => (
+              <li key={title} className={`flex flex-col items-center gap-5 text-center ${k % 2 ? 'lg:mt-16' : ''}`}>
+                <div className="relative w-full max-w-[250px]">
+                  <span aria-hidden="true" className={`absolute -inset-1.5 rounded-full border-2 border-dotted sm:-inset-2.5 ${gold ? 'border-accent-dark/50' : 'border-brand/35'}`} />
+                  <div className={`relative flex aspect-square flex-col items-center justify-center gap-1 rounded-full p-4 sm:gap-2 ${gold ? 'bg-[linear-gradient(160deg,#F7CD6B,#F2B632_55%,#DDA21F)] text-brand-deep' : 'bg-[linear-gradient(200deg,#0A6B4D,#075A40_50%,#043D2C)] text-white'}`}>
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 sm:h-9 sm:w-9">{icon}</svg>
+                    <span className={`${display} text-[25px] font-semibold leading-none sm:text-[36px]`}>{title}</span>
+                    <span className="max-w-[17ch] text-[12px] leading-snug sm:text-[14px]">{sub}</span>
+                  </div>
+                </div>
+                <span className="max-w-[28ch] text-[15px] leading-snug text-ink sm:text-[17px]">{caption}</span>
+              </li>
+            ))}
+          </ul>
         </section>
 
         {/* ── 2. The problem: photo beside the numbers and what they mean ── */}

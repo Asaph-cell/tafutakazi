@@ -10,7 +10,7 @@ export const PAGES = {
   '/about': {
     title: 'Why Tafutakazi exists · Tafutakazi',
     h1: 'Why Tafutakazi exists',
-    description: "Kenyan employers ask for experience that fresh graduates can't get without a job. Tafutakazi breaks that loop: graduates prove what they can do through short tasks from real companies.",
+    description: 'Tafutakazi brings skills-based hiring to Kenya: fresh graduates prove what they can do through short tasks from real companies, so hiring rests on skills, not connections or CVs.',
   },
   '/jobs': {
     title: 'Jobs and internships for fresh graduates in Kenya · Tafutakazi',
@@ -23,9 +23,9 @@ export const PAGES = {
     description: 'Just graduated with no work experience? Join free, do short tasks from Kenyan companies and get seen by people who are hiring.',
   },
   '/hiring': {
-    title: 'Hire fresh graduates in Kenya · Tafutakazi',
-    h1: 'Hire fresh graduates in Kenya',
-    description: 'Post a short task for the role and watch graduates explain work they actually did. Hire from real work, not CVs. Free for employers.',
+    title: 'Skills-based hiring for fresh graduates in Kenya · Tafutakazi',
+    h1: 'Skills-based hiring for fresh graduates in Kenya',
+    description: 'Skills-based hiring in Kenya: post a short task for the role and watch graduates explain work they actually did. Hire from real work, not CVs. Free for employers.',
   },
   '/partners': {
     title: 'Partner with Tafutakazi · Tafutakazi',

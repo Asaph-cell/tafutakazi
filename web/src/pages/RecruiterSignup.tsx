@@ -67,7 +67,7 @@ export default function RecruiterSignup() {
   return (
     <AuthShell
       title="Hire from real work, not CVs."
-      intro="Watch fresh graduates explain work they actually did. Free to join."
+      intro="Skills-based hiring for fresh graduates in Kenya. Watch them explain work they actually did. Free to join."
       after={<Faq title="Hiring graduates through Tafutakazi" items={EMPLOYER_FAQ} />}
       aside={
         <div className="sticky top-8 flex flex-col gap-3 pt-24">
@@ -80,7 +80,7 @@ export default function RecruiterSignup() {
         </div>
       }
     >
-      <Seo title="Hire fresh graduates in Kenya" description="Post a short task for the role and watch graduates explain work they actually did. Hire from real work, not CVs. Free for employers." />
+      <Seo title="Skills-based hiring for fresh graduates in Kenya" description="Skills-based hiring in Kenya: post a short task for the role and watch graduates explain work they actually did. Hire from real work, not CVs. Free for employers." />
       <form onSubmit={onSubmit} className="flex max-w-[560px] flex-col gap-4">
         <div className="flex flex-wrap gap-4">
           <div className="flex-[1_1_200px]"><Field id="name" name="name" label="Your name" autoComplete="name" required minLength={2} /></div>

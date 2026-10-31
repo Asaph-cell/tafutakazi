@@ -70,6 +70,10 @@ export const GRADUATE_FAQ: QA[] = [
 // For employers (hiring page).
 export const EMPLOYER_FAQ: QA[] = [
   {
+    q: 'What is skills-based hiring?',
+    a: "Skills-based hiring means choosing people for what they can do, not for their degree, their connections or what their CV claims. On Tafutakazi you post a short task from the role, and graduates show you real work and explain it on video.",
+  },
+  {
     q: 'How do I hire fresh graduates in Kenya without reading hundreds of CVs?',
     a: 'Post a short task from the role. Graduates do it and explain their work on video, you score it with a simple guide, and you invite the ones you want to meet. You judge real work instead of near-identical CVs.',
   },
