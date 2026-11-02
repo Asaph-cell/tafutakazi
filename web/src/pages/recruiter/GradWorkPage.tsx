@@ -163,7 +163,7 @@ export default function GradWorkPage() {
       <div className="-mt-4 flex flex-wrap items-end justify-between gap-3">
         <div className="flex flex-col gap-1">
           <h1 className="m-0 text-[30px] font-bold leading-tight tracking-[-0.03em] sm:text-[36px]">{work.full_name}</h1>
-          <span className="text-muted">Fresh graduate · {[work.course, work.institution, work.grad_year].filter(Boolean).join(', ')}</span>
+          <span className="text-muted">{[work.course, work.institution, work.grad_year].filter(Boolean).join(', ')}</span>
         </div>
         <span className="text-sm text-muted">{s.views} views of this work</span>
       </div>

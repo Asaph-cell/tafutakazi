@@ -9,10 +9,6 @@ const tabs = [
   { to: '/me/profile', label: 'Profile', end: false, icon: <><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></> },
 ]
 
-export function initials(name: string | undefined) {
-  return (name ?? '').split(/\s+/).filter(Boolean).map((p) => p[0]).slice(0, 2).join('').toUpperCase()
-}
-
 // Graduate pages: top navigation on wide screens, a thumb-friendly tab bar on phones.
 // Content lines up with the menu. Reading pages (a task, the submit form) pass `narrow`.
 export function GradLayout({ children, narrow = false }: { children: ReactNode; narrow?: boolean }) {
@@ -34,10 +30,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
             <Link to="/admin" className="flex min-h-11 items-center text-sm font-semibold text-accent no-underline hover:text-white">Admin</Link>
           )}
           <Link to="/me/profile" className="flex items-center gap-2.5 text-sm text-white/85 no-underline hover:text-white">
-            <span className="hidden sm:inline">{profile?.full_name}</span>
-            <span aria-hidden="true" className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-[13px] font-semibold text-brand-deep">
-              {initials(profile?.full_name)}
-            </span>
+            <span className="max-w-[140px] truncate sm:max-w-none">{profile?.full_name}</span>
           </Link>
         </div>
       </header>

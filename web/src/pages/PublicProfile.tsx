@@ -52,7 +52,7 @@ export default function PublicProfile() {
 
   return (
     <div className="min-h-screen">
-      <Seo title={`${data.full_name} · Practical work`} description={`${data.full_name}, fresh graduate in ${data.course}. Practical tasks and honest verdicts on Tafutakazi.`} noindex />
+      <Seo title={`${data.full_name} · Practical work`} description={`${data.full_name}, ${data.course}. Practical tasks and honest verdicts on Tafutakazi.`} noindex />
       <header className="bg-brand-deep">
         <div className="mx-auto flex min-h-16 max-w-[960px] items-center gap-4 px-5 py-3 sm:px-6">
           <Link to="/" className="flex-1 text-xl no-underline"><Logo light /></Link>
@@ -63,7 +63,7 @@ export default function PublicProfile() {
         <section className="flex flex-col gap-2.5">
           <span className="text-sm text-muted">tafutakazi.co.ke/{slug}</span>
           <h1 className="m-0 text-[36px] font-bold leading-tight tracking-[-0.03em] sm:text-[44px]">{data.full_name}</h1>
-          <span className="text-[18px] text-ink-2">Fresh graduate · {study}</span>
+          <span className="text-[18px] text-ink-2">{study}</span>
           <div className="mt-1.5 flex flex-wrap gap-2 text-sm">
             {data.invites > 0 && (
               <span className="rounded-full bg-brand-soft px-3 py-1.5 font-semibold text-brand">

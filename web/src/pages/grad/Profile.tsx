@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
-import { Card, GradLayout, initials } from '../../components/GradLayout'
+import { Card, GradLayout } from '../../components/GradLayout'
 import { OtherWorkEditor } from '../../components/OtherWork'
 import { Button, Field, Notice, Select, SkeletonPage } from '../../components/ui'
 import { useAuth } from '../../lib/auth'
@@ -44,7 +44,7 @@ function Toggle({ on, onClick, labelId }: { on: boolean; onClick: () => void; la
 export default function Profile() {
   const { session, profile, signOut, refreshProfile } = useAuth()
   const queryClient = useQueryClient()
-  const { data: grad } = useGrad()
+  const { data: grad, isError } = useGrad()
   const { data: subs } = useMySubmissions()
   const { data: activity } = useMyActivity()
   const [editing, setEditing] = useState(false)
@@ -53,6 +53,7 @@ export default function Profile() {
   const [error, setError] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
 
+  if (isError) return <GradLayout><p className="m-0 text-ink-2">{profile?.role === 'admin' ? 'This is an admin account, so it has no graduate profile.' : "Couldn't load your profile. Check your connection and try again."}</p></GradLayout>
   if (!grad || !profile || !session) return <GradLayout><SkeletonPage cards={2} /></GradLayout>
 
   const link = `${SITE}/${grad.slug}`
@@ -114,12 +115,9 @@ export default function Profile() {
     <GradLayout>
       {/* Identity */}
       <section className="flex flex-wrap items-center gap-x-6 gap-y-5 rounded-2xl border border-line bg-white p-5 sm:p-7">
-        <span aria-hidden="true" className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-full bg-brand-soft text-2xl font-semibold text-brand">
-          {initials(profile.full_name)}
-        </span>
         <div className="flex min-w-0 flex-[999_1_260px] flex-col gap-1">
           <h1 className="m-0 text-[26px] font-bold leading-tight tracking-[-0.03em] sm:text-[32px]">{profile.full_name}</h1>
-          <span className="text-ink-2">Fresh graduate · {grad.track}</span>
+          <span className="text-ink-2">{grad.track}</span>
           {study && <span className="text-sm text-muted">{study}</span>}
         </div>
         <div className="flex flex-[1_1_260px] flex-col gap-2 sm:items-end">
