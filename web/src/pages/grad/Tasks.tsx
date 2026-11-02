@@ -48,7 +48,7 @@ export default function Tasks() {
         <section className="flex flex-col gap-3">
           <SectionTitle>Practice tasks · always open</SectionTitle>
           <div className="grid gap-3 md:grid-cols-2">{practice.map((t) => <TaskCardLink key={t.id} task={t} />)}</div>
-          <span className="text-sm text-muted">Written by Tafutakazi, based on real Kenyan businesses. Your work goes on your profile, where employers can see it.</span>
+          <span className="text-sm text-muted">Based on real Kenyan businesses. Your work goes on your profile, where employers can see it.</span>
         </section>
       )}
 
