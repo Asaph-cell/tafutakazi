@@ -37,17 +37,10 @@ export default function Tasks() {
       {isLoading && <SkeletonCards count={4} />}
       {error && <p className="text-danger">Couldn't load tasks. Check your connection and try again.</p>}
 
-      {!isLoading && (
+      {!isLoading && company.length > 0 && (
         <section className="flex flex-col gap-3">
           <SectionTitle>From companies · {company.length}</SectionTitle>
-          {company.length === 0 ? (
-            <p className="m-0 max-w-[62ch] rounded-2xl border border-line bg-white p-5 text-ink-2">
-              No company has posted {all || !grad ? 'a task' : `a ${grad.track} task`} right now. Start with a practice
-              task below: recruiters see that work too. We'll email you when one is posted.
-            </p>
-          ) : (
-            <div className="grid gap-3 md:grid-cols-2">{company.map((t) => <TaskCardLink key={t.id} task={t} />)}</div>
-          )}
+          <div className="grid gap-3 md:grid-cols-2">{company.map((t) => <TaskCardLink key={t.id} task={t} />)}</div>
         </section>
       )}
 
@@ -55,7 +48,7 @@ export default function Tasks() {
         <section className="flex flex-col gap-3">
           <SectionTitle>Practice tasks · always open</SectionTitle>
           <div className="grid gap-3 md:grid-cols-2">{practice.map((t) => <TaskCardLink key={t.id} task={t} />)}</div>
-          <span className="text-sm text-muted">Written by Tafutakazi, based on real Kenyan businesses. Your work goes on your profile like any other task.</span>
+          <span className="text-sm text-muted">Written by Tafutakazi, based on real Kenyan businesses. Your work goes on your profile, where employers can see it.</span>
         </section>
       )}
 
