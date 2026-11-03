@@ -10,7 +10,7 @@ const db = new PGlite()
 const stubs = `
 create role anon nologin; create role authenticated nologin;
 create schema auth;
-create table auth.users (id uuid primary key default gen_random_uuid(), email text, raw_user_meta_data jsonb);
+create table auth.users (id uuid primary key default gen_random_uuid(), email text, raw_user_meta_data jsonb, email_confirmed_at timestamptz);
 create function auth.uid() returns uuid language sql stable as $$
   select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
 grant usage on schema auth to anon, authenticated;
@@ -471,6 +471,32 @@ ok((await as(grad2, () => q(`select * from public.cvs`))).length === 0, 'other g
 ok((await as(recA, () => q(`select * from public.cvs`))).length === 0, 'recruiters cannot read a CV')
 ok(/permission denied/.test(await as('anon', () => fails(q(`select * from public.cvs`))) ?? ''), 'visitors cannot read a CV')
 ok((await as(grad2, () => fails(q(`insert into public.cvs (grad_id, data) values ($1, $2)`, [grad1, {}])))) !== null, 'nobody can write a CV for someone else')
+
+// Welcome email
+const mailCount = async () => (await q(`select count(*)::int as n from net.calls where url like '%resend%'`))[0].n
+let mailsBeforeWelcome = await mailCount()
+await q(`update auth.users set email_confirmed_at = now() where id = $1`, [grad1])
+const welcome = (await q(`select body from net.calls where url like '%resend%' order by ctid desc limit 1`))[0].body
+ok(await mailCount() === mailsBeforeWelcome + 1 && welcome.to[0] === 'wanjiru@gmail.com' && welcome.subject.startsWith('Welcome to Tafutakazi') && welcome.html.includes('Hi Wanjiru') && welcome.html.includes('/me/cv'), 'a graduate is welcomed when they confirm their email')
+mailsBeforeWelcome = await mailCount()
+await q(`update auth.users set email_confirmed_at = now() where id = $1`, [grad1])
+ok(await mailCount() === mailsBeforeWelcome, 'the welcome email is sent only once')
+await q(`update auth.users set email_confirmed_at = now() where id = $1`, [recA])
+ok(await mailCount() === mailsBeforeWelcome, 'recruiters do not get the graduate welcome')
+
+// Task request emails
+const mailWith = async (subject) => (await q(`select body from net.calls where url like '%resend%' and body->>'subject' like $1`, [subject + '%']))[0]?.body
+let mailsBeforeRequest = await mailCount()
+const [rq2] = await as(grad2, () => reqIns(grad2, 'A task about <b>pivot tables</b>, please.'))
+const newReq = await mailWith('New task request')
+ok(await mailCount() === mailsBeforeRequest + 1 && newReq.to[0] === 'admin@tafutakazi.co.ke' && newReq.subject === 'New task request: Data Analyst' && newReq.html.includes('&lt;b&gt;pivot tables') && newReq.html.includes('/admin/requests'), 'admins are emailed about a new task request, safely escaped')
+mailsBeforeRequest = await mailCount()
+await as(admin, () => q(`update public.task_requests set status = 'done', task_id = $2, answered_at = now() where id = $1`, [rq2.id, pt.id]))
+const answered = await mailWith('We made a task for you')
+ok(await mailCount() === mailsBeforeRequest + 1 && answered.to[0] === 'brian@gmail.com' && answered.subject === 'We made a task for you: Shortlist five CVs' && answered.html.includes(`/tasks/${pt.id}`), 'the graduate is emailed when their task is made')
+mailsBeforeRequest = await mailCount()
+await as(admin, () => q(`update public.task_requests set admin_note = 'x', status = 'done' where id = $1`, [rq2.id]))
+ok(await mailCount() === mailsBeforeRequest, 'the graduate is emailed only once per request')
 
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)
