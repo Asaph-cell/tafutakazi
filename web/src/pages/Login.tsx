@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { AuthShell } from '../components/AuthShell'
 import { Seo } from '../components/Seo'
 import { Button, Field, Notice } from '../components/ui'
@@ -8,6 +8,7 @@ import { supabase } from '../lib/supabase'
 
 export default function Login() {
   const navigate = useNavigate()
+  const location = useLocation()
   const [email, setEmail] = useState('')
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
@@ -27,7 +28,9 @@ export default function Login() {
     }
     const { data: profile } = await supabase.from('profiles').select('role').eq('id', data.user.id).maybeSingle()
     setBusy(false)
-    navigate(homeFor((profile?.role as Role | undefined) ?? undefined))
+    // Back to the page that asked them to log in, such as the CV builder. Only paths on this site.
+    const from = (location.state as { from?: string } | null)?.from
+    navigate(from?.startsWith('/') && !from.startsWith('//') ? from : homeFor((profile?.role as Role | undefined) ?? undefined))
   }
 
   async function forgot() {

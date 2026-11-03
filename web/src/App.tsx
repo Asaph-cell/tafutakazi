@@ -12,6 +12,10 @@ const RecruiterSignup = lazy(() => import('./pages/RecruiterSignup'))
 const Login = lazy(() => import('./pages/Login'))
 const Support = lazy(() => import('./pages/Support'))
 const About = lazy(() => import('./pages/About'))
+const SkillsIndex = lazy(() => import('./pages/Skills').then((m) => ({ default: m.SkillsIndex })))
+const SkillTrack = lazy(() => import('./pages/Skills').then((m) => ({ default: m.SkillTrack })))
+const Interview = lazy(() => import('./pages/Interview'))
+const CvBuilderInfo = lazy(() => import('./pages/CvBuilderInfo'))
 const BlogIndex = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogIndex })))
 const BlogPost = lazy(() => import('./pages/Blog').then((m) => ({ default: m.BlogPost })))
 const Jobs = lazy(() => import('./pages/Jobs'))
@@ -25,6 +29,7 @@ const Privacy = lazy(() => import('./pages/Legal').then((m) => ({ default: m.Pri
 
 const MyWork = lazy(() => import('./pages/grad/MyWork'))
 const Profile = lazy(() => import('./pages/grad/Profile'))
+const Cv = lazy(() => import('./pages/grad/Cv'))
 const Tasks = lazy(() => import('./pages/grad/Tasks'))
 const TaskPage = lazy(() => import('./pages/grad/TaskPage'))
 const Submit = lazy(() => import('./pages/grad/Submit'))
@@ -64,6 +69,10 @@ export default function App() {
         <Route path="/partners" element={<Support />} />
         <Route path="/support" element={<Navigate to="/partners" replace />} />
         <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<SkillsIndex />} />
+        <Route path="/skills/:slug" element={<SkillTrack />} />
+        <Route path="/interview" element={<Interview />} />
+        <Route path="/cv-builder" element={<CvBuilderInfo />} />
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/terms" element={<Terms />} />
@@ -71,6 +80,7 @@ export default function App() {
 
         <Route path="/me" element={<RequireRole role="grad"><MyWork /></RequireRole>} />
         <Route path="/me/profile" element={<RequireRole role="grad"><Profile /></RequireRole>} />
+        <Route path="/me/cv" element={<RequireRole role="grad"><Cv /></RequireRole>} />
         <Route path="/tasks" element={<RequireRole role="grad"><Tasks /></RequireRole>} />
         <Route path="/tasks/request" element={<RequireRole role="grad"><RequestTask /></RequireRole>} />
         <Route path="/tasks/:id" element={<RequireRole role="grad"><TaskPage /></RequireRole>} />

@@ -39,9 +39,15 @@ const FACTS = [
 ]
 
 const FIELDS = [
-  { photo: PHOTO.data, title: 'Data and analysis', sub: 'Clean data, find the story, chart it.' },
-  { photo: PHOTO.business, title: 'Business and finance', sub: 'Accounts, reports, sales and operations.' },
-  { photo: PHOTO.tech, title: 'Software and IT', sub: 'Build, fix and explain working code.' },
+  { to: '/skills/data-analyst', photo: PHOTO.data, title: 'Data and analysis', sub: 'Clean data, find the story, chart it.' },
+  { to: '/skills/accountant', photo: PHOTO.business, title: 'Business and finance', sub: 'Accounts, reports, sales and operations.' },
+  { to: '/skills/software-developer', photo: PHOTO.tech, title: 'Software and IT', sub: 'Build, fix and explain working code.' },
+]
+
+const TOOLS = [
+  { to: '/skills', title: 'Skill tracks', sub: 'What 15 careers need, where to learn it for free, and tasks to prove it.', cta: 'Pick a track' },
+  { to: '/interview', title: 'Interview practice', sub: 'The questions employers ask, how to answer them, and questions for your field.', cta: 'Start practising' },
+  { to: '/cv-builder', title: 'CV builder', sub: 'Four professional templates, built around your proven work. Download it as a PDF.', cta: 'Build my CV' },
 ]
 
 const STEPS = [
@@ -125,7 +131,7 @@ export default function Home() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {FIELDS.map((c) => (
-              <Link key={c.title} to="/join" className="press group flex flex-col overflow-hidden rounded-xl border border-line bg-white text-ink no-underline hover:border-line-strong hover:text-ink">
+              <Link key={c.title} to={c.to} className="press group flex flex-col overflow-hidden rounded-xl border border-line bg-white text-ink no-underline hover:border-line-strong hover:text-ink">
                 <div className="aspect-[4/3] overflow-hidden bg-line">
                   <img src={c.photo.src} alt={c.photo.alt} loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 ease-[var(--ease-out-strong)] group-hover:scale-[1.04]" />
@@ -136,10 +142,28 @@ export default function Home() {
                 </div>
               </Link>
             ))}
-            <Link to="/join" className="press flex flex-col justify-between gap-6 rounded-xl bg-brand p-5 text-white no-underline hover:bg-brand-dark hover:text-white">
+            <Link to="/skills" className="press flex flex-col justify-between gap-6 rounded-xl bg-brand p-5 text-white no-underline hover:bg-brand-dark hover:text-white">
               <span className="font-[family-name:var(--font-display)] text-[22px] font-semibold leading-snug">Marketing, design, HR, logistics and more</span>
-              <span className="text-[14px] text-[#C5D6CE]">Not listed? Ask for a task in your field. <span aria-hidden="true" className="text-accent">→</span></span>
+              <span className="text-[14px] text-[#C5D6CE]">See all 15 skill tracks. <span aria-hidden="true" className="text-accent">→</span></span>
             </Link>
+          </div>
+        </section>
+
+        {/* ── What's useful from day one ─────────────────────────────────── */}
+        <section className="flex flex-col gap-8">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.14em] text-brand">Free from day one</span>
+            <h2 className="m-0 max-w-[24ch] text-[32px] font-semibold leading-tight tracking-[-0.015em] sm:text-[40px]">Get ready for the job before you apply</h2>
+            <span aria-hidden="true" className="block h-[3px] w-14 bg-brand" />
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {TOOLS.map((t) => (
+              <Link key={t.title} to={t.to} className="press flex flex-col gap-3 rounded-2xl border border-line bg-white p-6 text-ink no-underline hover:border-brand hover:text-ink">
+                <span className="font-[family-name:var(--font-display)] text-[24px] font-semibold">{t.title}</span>
+                <span className="flex-1 text-ink-2">{t.sub}</span>
+                <span className="font-semibold text-brand">{t.cta} <span aria-hidden="true">→</span></span>
+              </Link>
+            ))}
           </div>
         </section>
 

@@ -6,6 +6,9 @@ import { useAuth } from '../lib/auth'
 const tabs = [
   { to: '/me', label: 'My work', end: true, icon: <path d="M4 11 12 4l8 7v9H4z" /> },
   { to: '/tasks', label: 'Tasks', end: false, icon: <><rect x="4" y="6" width="16" height="14" rx="2" /><path d="M9 6V4h6v2" /></> },
+  { to: '/skills', label: 'Skills', end: false, icon: <path d="M12 3.5 14.6 9l6 .8-4.4 4.2 1.1 6-5.3-2.9L6.7 20l1.1-6-4.4-4.2 6-.8z" /> },
+  { to: '/interview', label: 'Interview', end: false, wide: true, icon: null },
+  { to: '/me/cv', label: 'CV', end: false, icon: <><path d="M6 3.5h9l4 4v13H6z" /><path d="M9 12h7M9 16h7" /></> },
   { to: '/me/profile', label: 'Profile', end: false, icon: <><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></> },
 ]
 
@@ -40,7 +43,7 @@ export function GradLayout({ children, narrow = false }: { children: ReactNode; 
       </main>
 
       <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-10 flex h-[72px] border-t border-line bg-white sm:hidden">
-        {tabs.map((t) => (
+        {tabs.filter((t) => !t.wide).map((t) => (
           <NavLink key={t.to} to={t.to} end={t.end}
             className={({ isActive }) =>
               `press relative flex flex-1 flex-col items-center justify-center gap-0.5 text-xs no-underline ${isActive ? 'font-semibold text-brand before:absolute before:inset-x-6 before:top-0 before:h-[3px] before:rounded-b before:bg-accent' : 'text-muted'}`}>

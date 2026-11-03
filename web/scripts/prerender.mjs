@@ -11,8 +11,10 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)))
 const SITE = 'https://tafutakazi.co.ke'
 const posts = JSON.parse(fs.readFileSync(path.join(root, 'src/blog/posts.json'), 'utf8'))
 
-const STATIC = ['/', '/about', '/jobs', '/join', '/hiring', '/partners', '/blog', '/terms', '/privacy']
-const paths = [...STATIC, ...posts.map((p) => `/blog/${p.slug}`)]
+const tracks = JSON.parse(fs.readFileSync(path.join(root, 'src/tracks/tracks.json'), 'utf8'))
+
+const STATIC = ['/', '/about', '/jobs', '/join', '/hiring', '/skills', '/interview', '/cv-builder', '/partners', '/blog', '/terms', '/privacy']
+const paths = [...STATIC, ...tracks.map((t) => `/skills/${t.slug}`), ...posts.map((p) => `/blog/${p.slug}`)]
 
 const { render } = await import(pathToFileURL(path.join(root, 'dist-ssr/prerender.js')).href)
 
@@ -69,6 +71,9 @@ const llms = `# Tafutakazi
 - [Home](${SITE}/): what Tafutakazi is and how it works
 - [About](${SITE}/about): why it exists, the evidence, and its principles
 - [Jobs and internships](${SITE}/jobs): open roles at Kenyan companies that hire fresh graduates
+- [Skill tracks](${SITE}/skills): free tracks for 15 entry-level careers: what each job needs, where to learn it and how to prove it
+- [Interview practice](${SITE}/interview): common interview questions and how to answer them
+- [Free CV builder](${SITE}/cv-builder): four professional CV templates with a live preview and PDF download, free for graduates
 - [For employers](${SITE}/hiring): how companies post a task and hire from real work, free
 - [Sign up as a graduate](${SITE}/join)
 - [Partner with us](${SITE}/partners): for companies, universities, NGOs and programmes reducing youth unemployment

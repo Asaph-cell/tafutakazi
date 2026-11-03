@@ -464,5 +464,13 @@ const mails = (await q(`select body from net.calls where url like '%resend%'`)).
 ok(mails.length > 0 && mails.every((h) => h.includes('/brand/email-logo.png')), 'every email carries the logo')
 ok((await q(`select count(*)::int as n from pg_proc p join pg_namespace n on n.oid = p.pronamespace where n.nspname = 'public' and p.prosrc like '%#0E5C45%'`))[0].n === 0, 'no email uses the old green')
 
+// CV builder
+await as(grad1, () => q(`insert into public.cvs (grad_id, data) values ($1, $2)`, [grad1, { phone: '0700000001' }]))
+ok((await as(grad1, () => q(`select * from public.cvs`))).length === 1, 'a graduate can read their own CV')
+ok((await as(grad2, () => q(`select * from public.cvs`))).length === 0, 'other graduates cannot read a CV')
+ok((await as(recA, () => q(`select * from public.cvs`))).length === 0, 'recruiters cannot read a CV')
+ok(/permission denied/.test(await as('anon', () => fails(q(`select * from public.cvs`))) ?? ''), 'visitors cannot read a CV')
+ok((await as(grad2, () => fails(q(`insert into public.cvs (grad_id, data) values ($1, $2)`, [grad1, {}])))) !== null, 'nobody can write a CV for someone else')
+
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)

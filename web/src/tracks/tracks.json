@@ -1,0 +1,310 @@
+[
+  {
+    "slug": "data-analyst", "role": "Data Analyst", "name": "Data analysis",
+    "summary": "Turn messy numbers into answers a business can act on.",
+    "skills": [
+      ["Excel or Google Sheets", "Cleaning data, formulas, pivot tables and simple charts."],
+      ["SQL", "Pulling the data you need out of a database."],
+      ["Power BI or Tableau", "Building a dashboard people can read at a glance."],
+      ["Explaining findings", "Saying what the numbers mean and what to do next, in plain words."]
+    ],
+    "learn": [
+      ["SQLBolt", "https://sqlbolt.com/", "Short, interactive SQL lessons that run in your browser."],
+      ["Power BI on Microsoft Learn", "https://learn.microsoft.com/en-us/training/powerplatform/power-bi", "Microsoft's own free training."],
+      ["Kaggle Learn", "https://www.kaggle.com/learn", "Short Python, pandas and data visualisation courses."]
+    ],
+    "questions": [
+      ["Tell me about a time you found something unexpected in data.", "Say what you noticed, how you checked it was real, and what changed because of it."],
+      ["How do you clean a messy dataset?", "Walk through your order: duplicates, blanks, wrong formats, outliers. Say why each one matters."],
+      ["What is the difference between a VLOOKUP and a pivot table?", "One finds a value, the other summarises many rows. Give a real example of each."],
+      ["How would you explain a chart to someone who hates numbers?", "Lead with the one message. Show that you think about your audience."]
+    ]
+  },
+  {
+    "slug": "accountant", "role": "Accountant", "name": "Accounting",
+    "summary": "Keep a business's money records accurate and on time.",
+    "skills": [
+      ["Bookkeeping", "Recording transactions and keeping ledgers correct."],
+      ["Reconciliations", "Matching the books to bank and M-Pesa statements."],
+      ["Financial statements", "Reading and preparing an income statement and balance sheet."],
+      ["Excel and accounting software", "QuickBooks, Sage or similar, plus strong spreadsheets."]
+    ],
+    "learn": [
+      ["AccountingCoach", "https://www.accountingcoach.com/", "Plain explanations of core accounting topics."],
+      ["Khan Academy finance", "https://www.khanacademy.org/economics-finance-domain/core-finance", "Free lessons on statements and business finance."],
+      ["Corporate Finance Institute", "https://corporatefinanceinstitute.com/resources/", "Free guides on accounting and Excel."]
+    ],
+    "questions": [
+      ["How would you handle a bank reconciliation that doesn't balance?", "Show your method: timing differences, missing entries, then errors."],
+      ["What is the difference between cash and accrual accounting?", "Explain when income and costs are recorded, with a simple example."],
+      ["A manager asks you to backdate an invoice. What do you do?", "Say no politely, explain why, and offer the correct way."],
+      ["How do you avoid mistakes when work piles up at month end?", "Talk about checklists, order of work and checking your own numbers."]
+    ]
+  },
+  {
+    "slug": "finance", "role": "Finance", "name": "Finance",
+    "summary": "Help a business decide what it can afford and what is worth doing.",
+    "skills": [
+      ["Budgeting", "Planning income and costs, and tracking against the plan."],
+      ["Cash flow", "Knowing when money comes in and goes out."],
+      ["Financial modelling", "Building a clear spreadsheet to test a decision."],
+      ["Writing recommendations", "Giving a clear answer, not just a table of numbers."]
+    ],
+    "learn": [
+      ["Khan Academy finance", "https://www.khanacademy.org/economics-finance-domain/core-finance", "Free lessons on core finance."],
+      ["Corporate Finance Institute", "https://corporatefinanceinstitute.com/resources/", "Free guides on modelling and analysis."]
+    ],
+    "questions": [
+      ["How would you decide if a business should buy a new machine?", "Compare the cost with the extra profit, work out payback time, then state a view."],
+      ["What is the difference between profit and cash flow?", "A business can show a profit and still run out of cash. Give an example."],
+      ["Which numbers would you check first in a small business?", "Name a few, such as cash, margin and debtors, and say why."],
+      ["Tell me about a time your numbers changed a decision.", "A university project works. Say what the decision was and how you influenced it."]
+    ]
+  },
+  {
+    "slug": "digital-marketer", "role": "Digital Marketer", "name": "Digital marketing",
+    "summary": "Find the right customers online and turn their attention into sales.",
+    "skills": [
+      ["Knowing your audience", "Working out who buys, and what makes them act."],
+      ["Writing and creative", "Clear messages, simple design, short video."],
+      ["Paid ads", "Setting up Meta and Google ads on a small budget."],
+      ["Reading results", "Using analytics to see what worked and what to stop."]
+    ],
+    "learn": [
+      ["Google Skillshop", "https://skillshop.withgoogle.com/", "Free training and certificates for Google Ads and Analytics."],
+      ["HubSpot Academy", "https://academy.hubspot.com/", "Free marketing courses with certificates."],
+      ["Meta Blueprint", "https://www.facebook.com/business/learn", "Free training on Facebook and Instagram ads."]
+    ],
+    "questions": [
+      ["You have KSh 10,000 to promote a small shop. What do you do?", "Choose one goal and one audience, then say how you would measure it."],
+      ["Tell me about a campaign you admire. Why did it work?", "Pick a Kenyan brand if you can. Explain the idea, not just that you liked it."],
+      ["Which numbers tell you a campaign is working?", "Go past likes. Talk about clicks, cost per lead and sales."],
+      ["An ad gets many likes but no sales. What do you check?", "Audience, offer, landing page, then how easy it is to buy."]
+    ]
+  },
+  {
+    "slug": "software-developer", "role": "Software Developer", "name": "Software development",
+    "summary": "Build software that works, and explain how you built it.",
+    "skills": [
+      ["One language, well", "JavaScript or Python is a good place to start."],
+      ["Databases", "Designing tables and writing SQL."],
+      ["Git", "Saving your work and collaborating on code."],
+      ["Debugging", "Finding the cause of a problem instead of guessing."]
+    ],
+    "learn": [
+      ["freeCodeCamp", "https://www.freecodecamp.org/", "Free full courses with projects."],
+      ["The Odin Project", "https://www.theodinproject.com/", "A free path through web development."],
+      ["MDN Learn", "https://developer.mozilla.org/en-US/docs/Learn", "The trusted reference for HTML, CSS and JavaScript."]
+    ],
+    "questions": [
+      ["Walk me through something you built.", "Cover the problem, your choices, what broke and what you would change."],
+      ["How do you debug something you don't understand?", "Reproduce it, narrow it down, read the error, test one idea at a time."],
+      ["What is the difference between SQL and NoSQL databases?", "Explain each in a sentence, then say when you would use it."],
+      ["How do you use AI tools when you code?", "Be honest. Show that you check and understand what they produce."]
+    ]
+  },
+  {
+    "slug": "sales", "role": "Sales", "name": "Sales",
+    "summary": "Understand what people need and help them say yes.",
+    "skills": [
+      ["Finding customers", "Knowing who to approach and how to reach them."],
+      ["Asking questions", "Listening before you pitch."],
+      ["Handling objections", "Responding calmly to 'it's too expensive' or 'not now'."],
+      ["Following up", "Keeping records and staying in touch."]
+    ],
+    "learn": [
+      ["HubSpot Academy", "https://academy.hubspot.com/", "Free sales courses with certificates."],
+      ["Alison", "https://alison.com/", "Free short courses on sales and negotiation."]
+    ],
+    "questions": [
+      ["Sell me this pen.", "Ask what I need first, then link the pen to that need."],
+      ["A customer says your price is too high. What do you say?", "Ask what they are comparing it with, then talk about value."],
+      ["Tell me about a time you persuaded someone.", "Any real story works. Say what they wanted and how you got there."],
+      ["How do you handle being told no all day?", "Be honest, and show how you learn from it and keep going."]
+    ]
+  },
+  {
+    "slug": "customer-service", "role": "Customer Service", "name": "Customer service",
+    "summary": "Solve people's problems and keep them coming back.",
+    "skills": [
+      ["Clear writing", "Replies that are polite, short and correct."],
+      ["Staying calm", "Handling an angry customer without taking it personally."],
+      ["Solving problems", "Finding the actual issue and fixing it."],
+      ["Keeping records", "Logging issues so nobody has to explain twice."]
+    ],
+    "learn": [
+      ["HubSpot Academy", "https://academy.hubspot.com/", "Free customer service courses."],
+      ["Alison", "https://alison.com/", "Free short courses on customer care and communication."]
+    ],
+    "questions": [
+      ["A customer is shouting at you. What do you do?", "Listen, acknowledge, apologise for the problem, and give a next step."],
+      ["What makes good customer service?", "Use an example of when a business treated you well."],
+      ["How do you handle a problem you can't solve yourself?", "Tell the customer what happens next, escalate it, and follow up."],
+      ["Tell me about a time you helped someone who was upset.", "Use a real story from school, church, a shop or home."]
+    ]
+  },
+  {
+    "slug": "it-support", "role": "IT Support", "name": "IT support",
+    "summary": "Keep people's computers and networks working.",
+    "skills": [
+      ["Troubleshooting", "Working step by step from symptom to cause."],
+      ["Networking basics", "IP addresses, routers, Wi-Fi and DNS."],
+      ["Windows and Microsoft 365", "Accounts, updates, email and common faults."],
+      ["Explaining simply", "Helping non-technical people without talking down to them."]
+    ],
+    "learn": [
+      ["Cisco Networking Academy", "https://www.netacad.com/", "Free introductory networking and IT courses."],
+      ["Professor Messer", "https://www.professormesser.com/", "Free video courses for CompTIA A+ and Network+."],
+      ["Microsoft Learn", "https://learn.microsoft.com/en-us/training/", "Free training on Windows and Microsoft 365."]
+    ],
+    "questions": [
+      ["A user says the internet is down. What do you check first?", "Is it one person or everyone? Then cable, Wi-Fi, IP, router, provider."],
+      ["How would you explain DNS to a non-technical person?", "A phone book for the internet works well."],
+      ["What would you do if a computer gets a virus?", "Disconnect it, scan it, recover the data, and find how it got in."],
+      ["How do you handle many urgent requests at once?", "Say how you decide what comes first, and how you keep people informed."]
+    ]
+  },
+  {
+    "slug": "graphic-designer", "role": "Graphic Designer", "name": "Graphic design",
+    "summary": "Make ideas clear and attractive, and explain why they work.",
+    "skills": [
+      ["Layout and hierarchy", "Deciding what people see first."],
+      ["Type and colour", "Choosing and combining them with purpose."],
+      ["Tools", "Canva, Photoshop, Illustrator, Figma or CorelDRAW."],
+      ["Working from a brief", "Designing for the client's goal, not your own taste."]
+    ],
+    "learn": [
+      ["Canva Design School", "https://www.canva.com/designschool/", "Free design basics courses."],
+      ["Figma Help Centre", "https://help.figma.com/", "Free guides for learning Figma."]
+    ],
+    "questions": [
+      ["Walk me through one piece of your work.", "Start with the goal and the audience, then explain your choices."],
+      ["A client says, 'Make the logo bigger.' What do you do?", "Find the real concern behind the request, and show options."],
+      ["How do you take criticism of your work?", "Show that you separate yourself from the work and ask useful questions."],
+      ["Design a poster for a kiosk with no budget. Where do you start?", "Message first, audience second, tools last."]
+    ]
+  },
+  {
+    "slug": "content-writer", "role": "Content Writer", "name": "Content writing",
+    "summary": "Write words people actually read and act on.",
+    "skills": [
+      ["Clear writing", "Short sentences, plain words, no padding."],
+      ["Research", "Getting facts right and using reliable sources."],
+      ["Writing for search", "Basic SEO, so people can find the page."],
+      ["Editing", "Cutting your own work and fixing it."]
+    ],
+    "learn": [
+      ["Google Technical Writing", "https://developers.google.com/tech-writing", "Free courses on writing clearly."],
+      ["Yoast SEO Academy", "https://yoast.com/academy/", "Includes free SEO training."],
+      ["HubSpot Academy", "https://academy.hubspot.com/", "Free content marketing courses."]
+    ],
+    "questions": [
+      ["How do you write about a topic you know nothing about?", "Explain how you research, check facts and find the angle."],
+      ["How do you change your writing for different readers?", "Compare two examples, such as a boda rider and a bank manager."],
+      ["How do you use AI tools in your writing?", "Be honest. Say how you check facts and keep your own voice."],
+      ["Someone rewrites your work heavily. How do you react?", "Ask what they changed and why, then use it next time."]
+    ]
+  },
+  {
+    "slug": "social-media-manager", "role": "Social Media Manager", "name": "Social media",
+    "summary": "Build an audience for a brand and turn it into customers.",
+    "skills": [
+      ["Content planning", "Deciding what to post, when and why."],
+      ["Short video", "Filming and editing for TikTok and Reels."],
+      ["Community", "Replying to comments and messages in the brand's voice."],
+      ["Measuring results", "Tracking what grows the business, not just likes."]
+    ],
+    "learn": [
+      ["TikTok Creator Academy", "https://www.tiktok.com/creator-academy", "TikTok's own lessons for creators."],
+      ["Meta Blueprint", "https://www.facebook.com/business/learn", "Free training for Facebook and Instagram."],
+      ["Canva Design School", "https://www.canva.com/designschool/", "Free lessons on making social graphics."]
+    ],
+    "questions": [
+      ["Plan a week of posts for a local salon.", "Mix types: results, tips, behind the scenes, an offer. Say why."],
+      ["A post gets an angry comment. What do you do?", "Reply quickly and calmly, take it to DMs, and don't delete fair complaints."],
+      ["Which brand in Kenya does social media well?", "Name one, and say what they do that you would copy."],
+      ["How do you know social media is helping the business?", "Link it to leads, bookings or sales."]
+    ]
+  },
+  {
+    "slug": "hr", "role": "HR", "name": "Human resources",
+    "summary": "Help a business hire, look after and keep good people.",
+    "skills": [
+      ["Recruitment", "Writing job ads, shortlisting fairly, running interviews."],
+      ["Kenyan employment law", "The basics of contracts, leave and termination."],
+      ["Staff records", "Keeping personal information accurate and private."],
+      ["Handling people issues", "Listening, staying fair and keeping confidence."]
+    ],
+    "learn": [
+      ["Kenya Law", "https://new.kenyalaw.org/", "Search for the Employment Act and read it at the source."],
+      ["Alison", "https://alison.com/", "Free short courses on human resources."],
+      ["OpenLearn", "https://www.open.edu/openlearn/", "Free courses from The Open University."]
+    ],
+    "questions": [
+      ["How would you shortlist 200 applications fairly?", "Set criteria before you read, and score each person the same way."],
+      ["An employee tells you something in confidence about a manager. What do you do?", "Listen, explain the limits of confidentiality, and follow the process."],
+      ["What should every employment contract include?", "Role, pay, hours, leave, notice period, and start date."],
+      ["How would you make a new employee's first week go well?", "Talk about preparation, introductions, and clear first tasks."]
+    ]
+  },
+  {
+    "slug": "admin-office", "role": "Admin / Office", "name": "Office administration",
+    "summary": "Keep an office organised so everyone else can do their job.",
+    "skills": [
+      ["Organisation", "Managing calendars, files, meetings and deadlines."],
+      ["Word, Excel and email", "Clean documents and simple trackers."],
+      ["Writing", "Professional emails, minutes and notices."],
+      ["Discretion", "Handling people and confidential information with care."]
+    ],
+    "learn": [
+      ["Microsoft Learn", "https://learn.microsoft.com/en-us/training/", "Free training on Microsoft 365."],
+      ["Alison", "https://alison.com/", "Free short courses on office administration."]
+    ],
+    "questions": [
+      ["Your boss gives you three urgent jobs at once. What do you do?", "Ask what comes first, and say what can wait."],
+      ["How do you keep track of many deadlines?", "Show your real system, even if it is simple."],
+      ["A visitor arrives angry and without an appointment. What do you do?", "Stay calm, listen, and find the right person or time."],
+      ["How do you take meeting minutes?", "Capture decisions, actions, owners and dates, not every word."]
+    ]
+  },
+  {
+    "slug": "procurement", "role": "Procurement", "name": "Procurement",
+    "summary": "Buy the right things at the right price, honestly.",
+    "skills": [
+      ["Comparing suppliers", "Looking at price, quality, delivery and reliability."],
+      ["Excel", "Building clear comparison sheets."],
+      ["Public procurement rules", "Knowing how tendering works in Kenya."],
+      ["Integrity", "Declaring conflicts and refusing gifts."]
+    ],
+    "learn": [
+      ["PPRA Kenya", "https://ppra.go.ke/", "Kenya's public procurement regulator: laws and guidance."],
+      ["Alison", "https://alison.com/", "Free short courses on procurement and supply chains."]
+    ],
+    "questions": [
+      ["How would you choose between three suppliers?", "Set your criteria first, score each one, and explain the trade-offs."],
+      ["A supplier offers you a gift. What do you do?", "Decline, report it, and follow company policy."],
+      ["A delivery arrives late and incomplete. What are your next steps?", "Record it, contact the supplier, tell users, and review the contract."],
+      ["How can a company save money without lowering quality?", "Talk about combining orders, negotiation, and total cost."]
+    ]
+  },
+  {
+    "slug": "logistics", "role": "Logistics", "name": "Logistics",
+    "summary": "Get goods to the right place, on time, at a sensible cost.",
+    "skills": [
+      ["Route and delivery planning", "Making the best use of vehicles and time."],
+      ["Stock control", "Knowing what you have and when to reorder."],
+      ["Excel", "Tracking orders, deliveries and costs."],
+      ["Solving problems fast", "Dealing with breakdowns, delays and shortages."]
+    ],
+    "learn": [
+      ["Alison", "https://alison.com/", "Free short courses on logistics and supply chains."],
+      ["OpenLearn", "https://www.open.edu/openlearn/", "Free courses from The Open University."]
+    ],
+    "questions": [
+      ["A lorry breaks down with urgent orders on board. What do you do?", "Sort out safety first, tell customers, find another vehicle, then review."],
+      ["How would you plan deliveries to 30 shops with two lorries?", "Group shops by area, consider load limits, then schedule by priority."],
+      ["How do you stop stock running out?", "Talk about reorder levels and regular counts."],
+      ["Which costs would you track in a delivery business?", "Fuel, maintenance, driver time and failed deliveries."]
+    ]
+  }
+]

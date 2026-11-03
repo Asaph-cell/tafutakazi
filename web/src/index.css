@@ -264,3 +264,16 @@ main {
 h1, h2, h3 {
   letter-spacing: -0.005em;
 }
+
+/* The CV builder prints one full-size copy of the CV, kept outside the app so no blank pages follow it. */
+@media screen {
+  .cv-print { display: none; }
+  .cv-guide [data-cv-section] { cursor: pointer; border-radius: 6px; outline: 2px dashed transparent; outline-offset: 4px; transition: outline-color 150ms ease; }
+  .cv-guide [data-cv-section]:hover { outline-color: var(--color-accent); }
+}
+@media print {
+  @page { size: A4; margin: 0; }
+  #root { display: none; }
+  body { background: #fff; }
+  .cv-page { width: 210mm !important; min-height: 296mm !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

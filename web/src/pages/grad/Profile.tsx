@@ -146,7 +146,7 @@ export default function Profile() {
       <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         {/* Left: what you show the world */}
         <div className="flex flex-col gap-6">
-          <Card title="For your CV" action={work.length > 0 ? <CopyButton text={cvLines.join('\n')} label="Copy" /> : undefined}>
+          <Card title="For your CV" action={<Link to="/me/cv" className="text-sm font-semibold">Build my CV</Link>}>
             {work.length === 0 ? (
               <p className="m-0 text-ink-2">Finish a task and a ready-made CV entry appears here, with your link. <Link to="/tasks">Find a task</Link></p>
             ) : (
@@ -156,6 +156,7 @@ export default function Profile() {
                 ))}
               </div>
             )}
+            {work.length > 0 && <CopyButton text={cvLines.join('\n')} label="Copy these lines" />}
             <span className="text-[13px] text-muted">Your link shows your tasks and verdicts. Videos and work stay private to signed-in recruiters.</span>
           </Card>
 

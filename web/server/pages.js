@@ -2,6 +2,7 @@
 // and a short summary. Keep in step with the <Seo> props in src/pages.
 // Plain JSON import: Cloudflare's bundler reads it; the newer "with { type: 'json' }" form breaks its build.
 import posts from '../src/blog/posts.json'
+import tracks from '../src/tracks/tracks.json'
 
 const HOME_DESC = 'Fresh graduates in Kenya do short tasks set by real companies, explain their work on video, and get seen by people who are hiring. Free.'
 
@@ -37,6 +38,21 @@ export const PAGES = {
     h1: 'Blog',
     description: 'Data and ideas on graduate hiring and youth employment in Kenya, from Tafutakazi.',
   },
+  '/skills': {
+    title: 'Free skill tracks for jobs in Kenya · Tafutakazi',
+    h1: 'Learn what the job needs, then prove it',
+    description: 'Free skill tracks for 15 entry-level careers in Kenya: what each job needs, where to learn it for free, practice tasks to prove it, and interview questions.',
+  },
+  '/interview': {
+    title: 'Interview practice for jobs in Kenya · Tafutakazi',
+    h1: 'Practise before it counts',
+    description: 'Free interview practice for Kenyan job seekers: the questions employers ask, how to answer them, and questions for each field.',
+  },
+  '/cv-builder': {
+    title: 'Free CV builder for graduates in Kenya · Tafutakazi',
+    h1: 'A CV that shows what you can do',
+    description: 'Build a professional CV for free. Four templates, a live preview and a PDF download, made for graduates in Kenya, with your proven work included.',
+  },
   '/terms': { title: 'Terms of Use · Tafutakazi', h1: 'Terms of Use', description: 'The terms for using Tafutakazi, the free site where fresh graduates in Kenya show their work to employers.' },
   '/privacy': { title: 'Privacy Policy · Tafutakazi', h1: 'Privacy Policy', description: 'What Tafutakazi collects, why, who can see it, and your rights under Kenya’s Data Protection Act.' },
 }
@@ -45,7 +61,15 @@ for (const post of posts) {
   PAGES[`/blog/${post.slug}`] = { title: `${post.title} · Tafutakazi`, h1: post.title, description: post.description }
 }
 
-const LINKS = [['/', 'Home'], ['/jobs', 'Jobs and internships'], ['/about', 'About'], ['/blog', 'Blog'], ['/hiring', 'For employers'], ['/join', 'Sign up as a graduate']]
+for (const t of tracks) {
+  PAGES[`/skills/${t.slug}`] = {
+    title: `${t.name} skills for jobs in Kenya · Tafutakazi`,
+    h1: t.name,
+    description: `${t.summary} What a ${t.role} job usually needs, free places to learn it, a task to prove it, and interview questions.`,
+  }
+}
+
+const LINKS = [['/', 'Home'], ['/jobs', 'Jobs and internships'], ['/skills', 'Skill tracks'], ['/interview', 'Interview practice'], ['/cv-builder', 'Free CV builder'], ['/about', 'About'], ['/blog', 'Blog'], ['/hiring', 'For employers'], ['/join', 'Sign up as a graduate']]
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 

@@ -5,7 +5,7 @@ import { Seo } from '../components/Seo'
 import { SiteFooter } from '../components/SiteFooter'
 
 const EMAIL = 'hello@tafutakazi.co.ke'
-const UPDATED = '18 October 2026'
+const UPDATED = '3 November 2026'
 
 const Mail = () => <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
 
@@ -235,6 +235,7 @@ export function Privacy() {
     ['Work previews, full-work links, video links, write-ups, tools used, "Other work" links', 'Graduates', 'Showing your work to recruiters'],
     ['Name, job title, work email, company, website, LinkedIn or business social media page, roles hired for', 'Recruiters', 'Your account, and showing graduates your company is real'],
     ['Tasks posted', 'Recruiters', 'Showing them to graduates, and checking them before they go live'],
+    ['Phone, town, LinkedIn, summary, skills, competencies, languages, past jobs, education and referees you add to the CV builder', 'Graduates', 'Building your CV. Only you can see these details, unless you share the CV'],
     ['Thumbs up, comments, invites and their status, views', 'Recruiters and graduates', 'Feedback for graduates, and each company\'s record'],
     ['Answers to an employer\'s screening questions, and second-round answers', 'Graduates', 'Shown only to the employer who asked'],
     ['Scores an employer gives to work on its own task', 'Recruiters', 'Seen only by that employer, to rank the work it received'],

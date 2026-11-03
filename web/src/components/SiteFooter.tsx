@@ -15,6 +15,9 @@ export function SiteFooter() {
         <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-2.5 text-[15px] sm:grid-cols-3">
           <Link to="/about" className={link}>About</Link>
           <Link to="/jobs" className={link}>Jobs</Link>
+          <Link to="/skills" className={link}>Skill tracks</Link>
+          <Link to="/interview" className={link}>Interview practice</Link>
+          <Link to="/cv-builder" className={link}>CV builder</Link>
           <Link to="/blog" className={link}>Blog</Link>
           <Link to="/hiring" className={link}>For employers</Link>
           <Link to="/join" className={link}>For graduates</Link>

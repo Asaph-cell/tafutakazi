@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Card, GradLayout, Stat } from '../../components/GradLayout'
 import { GradInviteCard } from '../../components/InviteCards'
+import { ProgressCard } from '../../components/ProgressCard'
 import { Round2Card, useMyRound2 } from '../../components/Round2Card'
 import { TaskCardLink } from '../../components/TaskCardLink'
 import { LinkButton, Notice, Skeleton } from '../../components/ui'
@@ -99,6 +100,8 @@ export default function MyWork() {
             </Card>
           )}
 
+          {!isLoading && <ProgressCard work={work} gradId={grad?.id} />}
+
           {!isLoading && !hasWork && (
             <Card title="How it works">
               <ol className="m-0 flex flex-col gap-3 pl-5 text-ink-2">
@@ -106,7 +109,6 @@ export default function MyWork() {
                 <li><strong className="text-ink">Do it, then explain it</strong> in a 2–3 minute video and a short write-up.</li>
                 <li><strong className="text-ink">Get seen.</strong> Recruiters looking for {grad ? `a ${grad.track}` : 'graduates'} watch, comment and invite.</li>
               </ol>
-              <LinkButton to="/tasks" className="self-start">Find your first task</LinkButton>
             </Card>
           )}
 
@@ -156,6 +158,11 @@ export default function MyWork() {
               <CopyLink url={`https://tafutakazi.co.ke/${grad.slug}`} />
             </Card>
           )}
+
+          <Link to="/interview" className="press flex flex-col gap-1 rounded-2xl border border-line bg-white p-5 text-ink no-underline hover:border-brand hover:text-ink">
+            <span className="font-semibold text-brand">Practise for interviews</span>
+            <span className="text-sm text-ink-2">The questions employers ask, and how to answer them.</span>
+          </Link>
 
           <Link to="/tasks/request" className="press flex flex-col gap-1 rounded-2xl border border-dashed border-brand bg-white p-5 text-ink no-underline hover:text-ink">
             <span className="font-semibold text-brand">Want to show a specific skill?</span>
