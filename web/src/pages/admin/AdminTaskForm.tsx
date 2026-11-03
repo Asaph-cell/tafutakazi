@@ -174,6 +174,9 @@ export default function AdminTaskForm() {
                       onChange={(e) => setFiles((prev) => ({ ...prev, [v]: e.target.files?.[0] }))} />
                     {current.length || files[v] ? 'Replace' : 'Upload'}
                   </label>
+                  {files[v] && (
+                    <button type="button" onClick={() => setFiles((prev) => ({ ...prev, [v]: undefined }))} className="press min-h-10 cursor-pointer border-0 bg-transparent text-sm text-danger">Clear</button>
+                  )}
                   {current.map((c) => (
                     <button key={c.id} type="button" onClick={() => removeFile(c)} className="press min-h-10 cursor-pointer border-0 bg-transparent text-sm text-danger">Remove</button>
                   ))}
